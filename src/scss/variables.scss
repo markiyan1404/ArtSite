@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap");
+@import "~normalize.css";
+
+html {
+    --mainColor: #ffc700;
+    --contrastColorBlack: #080808;
+    --contrastColorWhite: #fff;
+    --transitionTime: 0;
+}
+
+$colorTransition: var(--transitionTime);
+
+@mixin main-color-background {
+    background: var(--mainColor);
+    transition: $colorTransition;
+}
+
+@mixin main-color-color {
+    color: var(--mainColor);
+    transition: $colorTransition;
+}
+
+@mixin contrast-color-black-background {
+    background: var(--contrastColorBlack);
+    transition: $colorTransition;
+}
+
+@mixin contrast-color-black-color {
+    color: var(--contrastColorBlack);
+    transition: $colorTransition;
+}
+
+@mixin contrast-color-white-background {
+    background: var(--contrastColorWhite);
+    transition: $colorTransition;
+}
+
+@mixin contrast-color-white-color {
+    color: var(--contrastColorWhite);
+    transition: $colorTransition;
+}
+
+@keyframes increase {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes reduction {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+// Left and right
+
+@keyframes leftToStatic {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightToStatic {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+// Top and bottom
+
+@keyframes topToStatic {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottomToStatic {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

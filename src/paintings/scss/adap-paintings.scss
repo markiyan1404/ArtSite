@@ -1,0 +1,237 @@
+@media screen and (min-width: 3200px) {
+    .scrollbar {
+        h1 {
+            font-size: 105px;
+            margin: 0 30px;
+        }
+
+        .swiper-scrollbar {
+            height: 5px;
+            width: 13vw;
+        }
+
+        .swiper-scrollbar .swiper-scrollbar-drag::after {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .swiper-slide p {
+        font-size: 45px;
+    }
+
+    .year {
+        font-size: 420px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+    .scrollbar {
+        h1 {
+            font-size: 80px;
+            margin: 0 30px;
+        }
+
+        .swiper-scrollbar {
+            height: 4px;
+            width: 15vw;
+        }
+
+        .swiper-scrollbar .swiper-scrollbar-drag::after {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    .swiper-wrapper {
+        margin-top: 18vh;
+    }
+
+    .swiper-slide p {
+        font-size: 32px;
+    }
+
+    .year {
+        font-size: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .swiper-slide p {
+        font-size: 22px;
+    }
+
+    .year {
+        font-size: 200px;
+    }
+
+    .swiper-slide img {
+        width: 78%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .scrollbar {
+        top: -8vh;
+
+        .swiper-scrollbar {
+            width: 22vw;
+        }
+
+        h1 {
+            font-size: 52px;
+        }
+
+        .swiper-scrollbar .swiper-scrollbar-drag::after {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .swiper-wrapper {
+        margin-top: 15vh;
+
+        p {
+            font-size: 19px;
+        }
+    }
+
+    .year {
+        font-size: 170px;
+    }
+
+    .swiper-slide img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+    .scrollbar {
+        .swiper-scrollbar {
+            width: 27vw;
+        }
+
+        h1 {
+            font-size: 52px;
+        }
+
+        .swiper-scrollbar .swiper-scrollbar-drag::after {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .swiper-wrapper {
+        p {
+            font-size: 21px;
+        }
+    }
+
+    .year {
+        font-size: 170px;
+    }
+
+    .swiper-slide img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .scrollbar {
+        .swiper-scrollbar {
+            width: 200px;
+        }
+
+        h1 {
+            font-size: 47px;
+        }
+
+        .swiper-scrollbar .swiper-scrollbar-drag::after {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .swiper-wrapper {
+        p {
+            font-size: 19px;
+        }
+    }
+
+    .year {
+        font-size: 120px;
+    }
+
+    .swiper-slide img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .scrollbar {
+        .swiper-scrollbar {
+            width: 35vw;
+        }
+
+        h1 {
+            font-size: 33px;
+            margin: 0 15px;
+        }
+
+        .swiper-scrollbar .swiper-scrollbar-drag::after {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .swiper-wrapper {
+        margin-top: 18vh;
+
+        p {
+            font-size: 17px;
+        }
+    }
+
+    .year {
+        font-size: 80px;
+    }
+
+    .swiper-slide img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+    .scrollbar {
+        h1 {
+            font-size: 75px;
+        }
+
+        .swiper-scrollbar {
+            width: 25vw;
+        }
+    }
+
+    .swiper-wrapper p {
+        font-size: 22px;
+    }
+
+    .year {
+        font-size: 225px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .swiper-slide-active {
+        animation: fadeInSlider 0.7s forwards;
+        transform: scale(1);
+    }
+
+    .swiper-slide__image-NOactive:hover {
+        transform: scale(1);
+    }
+
+    .swiper-slide-activeSwipe {
+        transform: none;
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "en": {
+        "mainTitle": "Paintings",
+        "paintingName0": "Arnolfini portrait",
+        "paintingName1": "Birth of Venus",
+        "paintingName2": "Mona Lisa",
+        "paintingName3": "Creation of Adam",
+        "paintingName4": "Garden of earthly delights",
+        "paintingName5": "Harvesters",
+        "paintingName6": "Girl with a pearl earring",
+        "paintingName7": "Raft of the Medusa",
+        "paintingName8": "Wanderer above the Sea of Fog",
+        "paintingName9": "Breakfast on the grass",
+        "paintingName10": "Gross clinic",
+        "paintingName11": "Luncheon of The boating party",
+        "paintingName12": "Self portrait with bandaged ear",
+        "paintingName13": "Starry night",
+        "paintingName14": "Son of man"
+    },
+
+    "ua": {
+        "mainTitle": "Картини",
+        "paintingName0": "Портрет Арнолфіні",
+        "paintingName1": "Народження Венери",
+        "paintingName2": "Мона Ліза",
+        "paintingName3": "Створення Адама",
+        "paintingName4": "Сад земних насолод",
+        "paintingName5": "Жнива",
+        "paintingName6": "Дівчина з перлинною сережкою",
+        "paintingName7": "Пліт Медузи",
+        "paintingName8": "Мандрівник над морем туманів",
+        "paintingName9": "Сніданок на траві",
+        "paintingName10": "Клініка Гросс",
+        "paintingName11": "Обід човна",
+        "paintingName12": "Автопортрет із забинтованим вухом",
+        "paintingName13": "Зоряна ніч",
+        "paintingName14": "Син людський"
+    },
+
+    "ru": {
+        "mainTitle": "Картины",
+        "paintingName0": "Портрет Арнолфини",
+        "paintingName1": "Рождение Венеры",
+        "paintingName2": "Мона Лиза",
+        "paintingName3": "Создание Адама",
+        "paintingName4": "Сад земных удовольствий",
+        "paintingName5": "Жатва",
+        "paintingName6": "Девушка с жемчужной серьгой",
+        "paintingName7": "Плит Медузы",
+        "paintingName8": "Путешественник над морем туманов",
+        "paintingName9": "Завтрак на траве",
+        "paintingName10": "Клиника Гросс",
+        "paintingName11": "Обед лодки",
+        "paintingName12": "Автопортрет с забинтованным ухом",
+        "paintingName13": "Звездная ночь",
+        "paintingName14": "Сын человеческий"
+    }
+}

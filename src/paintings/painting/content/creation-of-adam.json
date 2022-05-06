@@ -1,0 +1,28 @@
+{
+    "en": {
+        "mainTitle": "Creation of adam",
+        "name": "Creation of adam",
+        "author": "Michelangelo Buonarroti",
+        "year": "1510",
+        "description": "The Creation of Adam is probably the most famous fresco in the Sistine Chapel and one of the most famous in modern art. It was built by Michelangelo in about 1511 and is located in the ceiling of the Sistine Chapel inside the Vatican Museums. It was one of the most complex and difficult paintings to make: it took sixteen days to complete. Michelangelo began with the figure of God and the Angels and later frescoed the figure of Adam.",
+        "authorLink": "michelangelo-buonarroti"
+    },
+    
+    "ua": {
+        "mainTitle": "Створення Адама",
+        "name": "Створення Адама",
+        "author": "Мікеланджело Буонарроті",
+        "year": "1510",
+        "description": "«Створення Адама», мабуть, найвідоміша фреска в Сікстинській капелі та одна з найвідоміших у сучасному мистецтві. Він був побудований Мікеланджело приблизно в 1511 році і розташований на стелі Сікстинської капели всередині музеїв Ватикану. Це була одна з найскладніших і важких у створенні картин: на її створення пішло шістнадцять днів. Мікеланджело почав з фігури Бога та ангелів, а пізніше розписав фігуру Адама.",
+        "authorLink": "michelangelo-buonarroti"
+    },
+
+    "ru": {
+        "mainTitle": "Сотворение Адама",
+        "name": "Сотворение Адама",
+        "author": "Микеланджело Буонарроти",
+        "year": "1510",
+        "description": "«Сотворение Адама», пожалуй, самая известная фреска Сикстинской капеллы и одна из самых известных в современном искусстве. Он был построен Микеланджело примерно в 1511 году и расположен в потолке Сикстинской капеллы в музеях Ватикана. Это была одна из самых сложных и сложных картин: на ее создание ушло шестнадцать дней. Микеланджело начал с фигуры Бога и ангелов, а затем расписал фигуру Адама.",
+        "authorLink": "michelangelo-buonarroti"
+    }
+}

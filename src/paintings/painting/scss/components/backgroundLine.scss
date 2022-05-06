@@ -1,0 +1,31 @@
+.content__background-line {
+    @include main-color-background;
+
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 27%;
+    z-index: 0;
+}
+
+.paintingsToPainting .content__background-line {
+    animation: backgroundLine 0.8s forwards ease;
+}
+
+@keyframes backgroundLine {
+    from {
+        transform: translateX(-120%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.paintingAuthor .content__background-line {
+    animation: backgroundLine 0.5s reverse forwards ease;
+}

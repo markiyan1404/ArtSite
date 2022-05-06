@@ -1,0 +1,338 @@
+@media screen and (min-width: 3200px) {
+
+    .navigation__menu {
+
+        .menu__lines {
+            height: 4px;
+            margin: 4px 15px;
+        }
+
+        .menu__lines-active {
+            width: 85px;
+        }
+
+        .menu__lines-lines2 {
+            width: 62px;
+        }
+
+        .menu__lines-lines3 {
+            width: 44px;
+        }
+
+        .menu__lines-lines4 {
+            width: 25px;
+        }
+
+        .menu__lines-lines5 {
+            width: 9px;
+        }
+    }
+
+    .navigation__clouse .navigation__clouse-diamond {
+        border-width: 4px;
+        font-size: 30px;
+        height: 52px;
+        width: 52px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+    .navigation__menu {
+
+        .menu__lines {
+            margin: 2.5px 15px;
+        }
+
+        .menu__lines-active {
+            width: 52px;
+        }
+
+        .menu__lines-lines2 {
+            width: 40px;
+        }
+
+        .menu__lines-lines3 {
+            width: 29px;
+        }
+
+        .menu__lines-lines4 {
+            width: 18px;
+        }
+
+        .menu__lines-lines5 {
+            width: 8px;
+        }
+    }
+
+    .navigation__clouse .navigation__clouse-diamond {
+        font-size: 22px;
+        height: 34px;
+        width: 34px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .navigation__menu {
+
+        .menu__lines {
+            margin: 1.5px 15px;
+        }
+
+        .menu__lines-active {
+            width: 39px;
+        }
+
+        .menu__lines-lines2 {
+            width: 29px;
+        }
+
+        .menu__lines-lines3 {
+            width: 21px;
+        }
+
+        .menu__lines-lines4 {
+            width: 12px;
+        }
+
+        .menu__lines-lines5 {
+            width: 5px;
+        }
+    }
+
+    .navigation__clouse .navigation__clouse-diamond {
+        font-size: 15px;
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .navigation__menu {
+
+        .menu__lines {
+            margin: 1.5px 15px;
+        }
+
+        .menu__lines-active {
+            width: 39px;
+        }
+
+        .menu__lines-lines2 {
+            width: 29px;
+        }
+
+        .menu__lines-lines3 {
+            width: 21px;
+        }
+
+        .menu__lines-lines4 {
+            width: 12px;
+        }
+
+        .menu__lines-lines5 {
+            width: 5px;
+        }
+    }
+
+    .navigation__clouse .navigation__clouse-diamond {
+        font-size: 16px;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+    .navigation__menu {
+        right: -8px;
+
+        .menu__lines-lines1 {
+            width: 38px;
+        }
+
+        .menu__lines-lines2 {
+            width: 29px;
+        }
+
+        .menu__lines-lines3 {
+            width: 18px;
+        }
+
+        .menu__lines-lines4 {
+            width: 12px;
+        }
+
+        .menu__lines-lines5 {
+            width: 4px;
+        }
+    }
+
+    .menu__lines {
+        margin: 2px 0px;
+    }
+
+    .navigation__clouse {
+        margin: 0px -1px 0 13px;
+
+        .navigation__clouse-diamond {
+            font-size: 13px;
+            height: 22px;
+            width: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .navigation__menu {
+
+        .menu__lines-lines1 {
+            width: 35px;
+        }
+
+        .menu__lines-lines2 {
+            width: 25px;
+        }
+
+        .menu__lines-lines3 {
+            width: 17px;
+        }
+
+        .menu__lines-lines4 {
+            width: 9px;
+        }
+
+        .menu__lines-lines5 {
+            width: 3px;
+        }
+    }
+
+    .menu__lines {
+        margin: 2px 0px;
+    }
+
+    .navigation__clouse {
+        margin: 0px 6px 0 3px;
+
+        .navigation__clouse-diamond {
+            font-size: 13px;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    .navigation__menu {
+
+        .menu__lines-lines1 {
+            width: 35px;
+        }
+
+        .menu__lines-lines2 {
+            width: 26px;
+        }
+
+        .menu__lines-lines3 {
+            width: 19px;
+        }
+
+        .menu__lines-lines4 {
+            width: 11px;
+        }
+
+        .menu__lines-lines5 {
+            width: 3px;
+        }
+    }
+
+    .navigation__clouse {
+        margin: 0px 5px 0 4px;
+
+        .navigation__clouse-diamond {
+            font-size: 13px;
+            height: 22px;
+            width: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 350px) {
+    .navigation__menu {
+
+        .menu__lines-lines1 {
+            width: 32px;
+        }
+
+        .menu__lines-lines2 {
+            width: 24px;
+        }
+
+        .menu__lines-lines3 {
+            width: 15px;
+        }
+
+        .menu__lines-lines4 {
+            width: 8px;
+        }
+
+        .menu__lines-lines5 {
+            width: 2px;
+        }
+    }
+
+    .menu__lines {
+        margin: 2px 0px;
+    }
+
+    .navigation__clouse {
+        margin: 0px 4px 0;
+
+        .navigation__clouse-diamond {
+            font-size: 11px;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .navigation__menu {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+    .navigation__menu {
+        position: relative;
+        right: -8px;
+
+        .menu__lines-lines1 {
+            width: 50px;
+        }
+
+        .menu__lines-lines2 {
+            width: 36px;
+        }
+
+        .menu__lines-lines3 {
+            width: 25px;
+        }
+
+        .menu__lines-lines4 {
+            width: 12px;
+        }
+
+        .menu__lines-lines5 {
+            width: 5px;
+        }
+    }
+
+    .navigation__clouse {
+        margin: 0px 0px 0px 18px;
+
+        .navigation__clouse-diamond {
+            font-size: 17px;
+            height: 27px;
+            width: 27px;
+        }
+    }
+}

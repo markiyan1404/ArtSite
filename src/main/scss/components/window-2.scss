@@ -1,0 +1,283 @@
+.window-2 {
+    @include main-color-background;
+
+    .window-2__title-1 {
+        @include contrast-color-black-color;
+
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Spectral SC";
+        font-size: 70px;
+        justify-content: flex-end;
+        line-height: 1.3;
+        margin: 0 0 0 37%;
+        padding-top: 4vh;
+        text-transform: uppercase;
+        width: 60%;
+
+        .whitespace {
+            width: 15px !important;
+        }
+
+        b {
+            color: transparent;
+            letter-spacing: 10px;
+            -webkit-text-stroke: 2px var(--contrastColorBlack);
+            transition: $colorTransition;
+        }
+    }
+    .images__img {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .image-paint__img-0 {
+        z-index: 1;
+    }
+
+    .images__img-active {
+        animation: images__img-active-anim 1s;
+        display: block;
+    }
+
+    @keyframes images__img-active-anim {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    .images__img-NOactive {
+        animation: images__img-NOactive-anim 1s;
+        display: block;
+    }
+
+    @keyframes images__img-NOactive-anim {
+        from {
+            transform: translateY(0%);
+        }
+        to {
+            transform: translateY(100%);
+        }
+    }
+
+    .images__img-prev-active {
+        animation: images__img-prev-active-anim 1s;
+        display: block;
+    }
+
+    @keyframes images__img-prev-active-anim {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    .images__img-prev-NOactive {
+        animation: images__img-prev-NOactive-anim 1s;
+        display: block;
+    }
+
+    @keyframes images__img-prev-NOactive-anim {
+        from {
+            transform: translateY(0%);
+        }
+        to {
+            transform: translateY(-100%);
+        }
+    }
+
+    .window-2__slider-paint {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+        opacity: 0;
+        width: 70%;
+
+        .slider-paint__image-paint {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .image-paint__images {
+        height: 465px;
+        margin: -53px 0 0 71px;
+        overflow: hidden;
+        position: absolute;
+        width: 323px;
+    }
+
+    .image-paint__button {
+        border-bottom: 44px solid var(--contrastColorBlack);
+        border-left: 28px solid transparent;
+        border-right: 28px solid transparent;
+        display: flex;
+        height: 0;
+        margin: -210px 0 0 -84px;
+        position: absolute;
+        transition: 0.3s;
+        width: 0;
+    }
+
+    .image-paint__button:hover {
+        transform: scale(0.9);
+        transition: 0.5s;
+    }
+
+    .image-paint__next {
+        margin-top: 110px;
+        transform: rotate(180deg);
+    }
+
+    .image-paint__next:hover {
+        transform: scale(0.9) rotate(180deg);
+    }
+
+    .image-paint__button::before {
+        border-bottom: 35px solid var(--mainColor);
+        border-left: 22px solid transparent;
+        border-right: 22px solid transparent;
+        content: "";
+        display: block;
+        margin: 6px 0 0 -22px;
+        position: absolute;
+        transition: $colorTransition;
+    }
+
+    .image-paint__button:hover::before {
+        border-bottom-color: var(--contrastColorBlack);
+        transition: $colorTransition;
+    }
+
+    .button__child {
+        border-bottom: 13px solid var(--contrastColorWhite);
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        height: 0;
+        left: -8px;
+        position: relative;
+        top: 20px;
+        transition: $colorTransition;
+        width: 0;
+    }
+
+    .image-paint__number {
+        color: #fff;
+        font-family: "Spectral SC";
+        font-size: 50px;
+        left: -50px;
+        position: relative;
+        top: -40px;
+        z-index: 1;
+    }
+
+    .slider-paint__text-paint {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+
+        .text-paint__name {
+            @include contrast-color-white-color;
+
+            display: none;
+            font-family: "Spectral SC";
+            font-size: 52px;
+            margin: 0;
+        }
+
+        .text-paint__cost {
+            color: transparent;
+            display: none;
+            font-family: "Viaoda Libre";
+            font-size: 32px;
+            letter-spacing: 5px;
+            margin: 30px 0;
+            -webkit-text-stroke: 0.01px var(--contrastColorWhite);
+            text-transform: uppercase;
+            transition: $colorTransition;
+        }
+
+        hr {
+            @include contrast-color-black-background;
+
+            border: none;
+            display: flex;
+            height: 5px;
+            justify-content: flex-end;
+            margin: 0;
+            width: 50%;
+        }
+
+        hr::after {
+            @include contrast-color-black-background;
+
+            content: "";
+            display: block;
+            height: 20px;
+            margin-top: -8px;
+            transform: rotate(45deg);
+            width: 20px;
+        }
+
+        .text-paint__description {
+            @include contrast-color-black-color;
+
+            display: none;
+            font-family: "Spectral SC";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 30px;
+        }
+
+        .text-paint__name-active,
+        .text-paint__description-active,
+        .text-paint__cost-active {
+            animation: paints-texts 0.6s;
+            display: block;
+        }
+
+        @keyframes paints-texts {
+            from {
+                opacity: 0;
+                transform: translateX(10%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .window-2__end {
+        display: flex;
+        position: relative;
+        top: 4vh;
+    }
+
+    .end__block {
+        @include main-color-background;
+
+        height: 70px;
+        margin-left: 10px;
+        transform: rotate(45deg);
+        width: 70px;
+    }
+
+    .end__block:first-child {
+        margin-left: 5px;
+    }
+}

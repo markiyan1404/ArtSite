@@ -1,0 +1,18 @@
+@media screen and (min-width: 0px) and (max-width: 1500px) {
+    #cursor .progress-wrap {
+        height: 38px;
+        width: 38px;
+    }
+
+    .cursor {
+        height: 5px;
+        width: 5px;
+    }
+
+    .activeCursor {
+        height: 38px;
+        left: -18px;
+        top: -18px;
+        width: 38px;
+    }
+}

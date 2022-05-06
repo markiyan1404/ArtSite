@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Sandro Botticelli",
+        "name": "Sandro Botticelli",
+        "birthday_year": "1445",
+        "dead_year": "1510",
+        "description": "At the height of his fame, the Florentine painter and draughtsman Sandro Botticelli was one of the most esteemed artists in Italy. His graceful pictures of the Madonna and Child, his altarpieces and his life-size mythological paintings, such as 'Venus and Mars', were immensely popular in his lifetime."
+    },
+
+    "ua": {
+        "mainTitle": "Сандро Боттічеллі",
+        "name": "Сандро Боттічеллі",
+        "birthday_year": "1445",
+        "dead_year": "1510",
+        "description": "На піку своєї слави флорентійський художник і кресляр Сандро Боттічеллі був одним із найшанованіших художників Італії. Його витончені картини Мадонни з немовлям, його вівтарні образи та його міфологічні картини в натуральну величину, такі як «Венера і Марс», були надзвичайно популярні за його життя."
+    },
+
+    "ru": {
+        "mainTitle": "Сандро Боттичелли",
+        "name": "Сандро Боттичелли",
+        "birthday_year": "1445",
+        "dead_year": "1510",
+        "description": "На пике своей славы флорентийский живописец и рисовальщик Сандро Боттичелли был одним из самых уважаемых художников Италии. Его изящные изображения Мадонны с младенцем, его запрестольные образы и его мифологические картины в натуральную величину, такие как «Венера и Марс», пользовались огромной популярностью при его жизни."
+    }
+}

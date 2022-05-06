@@ -1,0 +1,224 @@
+@media screen and (min-width: 3200px) {
+    .content__year {
+        p {
+            font-size: 52px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 45px;
+            width: 6px;
+        }
+
+        .year-line-1 {
+            height: 38px;
+        }
+
+        .year-line-2,
+        .year-line-4,
+        .year-line-6 {
+            height: 55px;
+        }
+
+        .year-line-3,
+        .year-line-5 {
+            height: 65px;
+        }
+
+        .year-line-active-5,
+        .year-line-active-1 {
+            height: 90px;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+    .content__year {
+        p {
+            font-size: 42px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 35px;
+            width: 6px;
+        }
+
+        .year-line-1 {
+            height: 28px;
+        }
+
+        .year-line-2,
+        .year-line-4,
+        .year-line-6 {
+            height: 45px;
+        }
+
+        .year-line-3,
+        .year-line-5 {
+            height: 55px;
+        }
+
+        .year-line-active-5,
+        .year-line-active-1 {
+            height: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .content__year {
+        p {
+            font-size: 26px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 22px;
+            width: 3px;
+        }
+
+        .year-line-1 {
+            height: 18px;
+        }
+
+        .year-line-2,
+        .year-line-4,
+        .year-line-6 {
+            height: 25px;
+        }
+
+        .year-line-3,
+        .year-line-5 {
+            height: 35px;
+        }
+
+        .year-line-active-5,
+        .year-line-active-1 {
+            height: 55px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .content__year {
+        p {
+            font-size: 23px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 20px;
+            width: 3px;
+        }
+
+        .year-line-1 {
+            height: 18px;
+        }
+
+        .year-line-2,
+        .year-line-4,
+        .year-line-6 {
+            height: 25px;
+        }
+
+        .year-line-3,
+        .year-line-5 {
+            height: 35px;
+        }
+
+        .year-line-active-5,
+        .year-line-active-1 {
+            height: 55px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .content__year {
+        p {
+            font-size: 23px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 3%;
+            width: 3px;
+        }
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+    .content__year {
+        p {
+            font-size: 21px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 4%;
+            width: 3px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .content__year {
+        p {
+            font-size: 19px;
+        }
+
+        .year-line,
+        .year-line-active {
+            margin-left: 15px;
+            width: 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .content__year {
+        justify-content: center;
+        width: 100%;
+
+        p {
+            top: 75px !important;
+        }
+    }
+
+    .authorToAuthor .content__year {
+        animation: mobileYearShow 0.5s forwards;
+        animation-delay: 0.5s;
+        opacity: 0;
+    }
+
+    @keyframes mobileYearShow {
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .authorToPainting .content__year {
+        animation: mobileYearShow 0.3s reverse forwards;
+    }
+
+    .year-line:first-child {
+        margin-left: 0;
+    }
+
+    .authorToAuthor .content__year p {
+        animation: show 0.3s forwards;
+    }
+
+    .paintingToAuthor .content__year {
+        animation: show 0.6s forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,48 @@
+$zoomAnimation: 0.3s;
+
+.zoom-area-active {
+    animation: zoomAreaActive $zoomAnimation forwards;
+}
+
+@keyframes zoomAreaActive {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+.zoom-area-NoActive {
+    animation: zoomAreaNoActive 0.2s forwards;
+    display: block !important;
+}
+
+@keyframes zoomAreaNoActive {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+.zoom-image-active {
+    animation: show $zoomAnimation forwards;
+}
+
+.zoom-image-Noactive {
+    animation: zoomNoActive $zoomAnimation forwards;
+    display: block !important;
+}
+
+@keyframes zoomNoActive {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none !important;
+        opacity: 0;
+    }
+}

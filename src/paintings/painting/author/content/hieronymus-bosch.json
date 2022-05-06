@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Hieronymus Bosch",
+        "name": "Hieronymus Bosch",
+        "birthday_year": "1450",
+        "dead_year": "1516",
+        "description": "Very little is known about the artist Hieronymus Bosch. His date of birth, thoughts, writings, personality, and the meaning of his art have all been lost to time. What is left, though, is a series of paintings that defy the imagination as well as any set art form before him. What is known is that he received many commissions to paint from abroad, and it is thought that he was taught to paint by his father or an uncle." 
+    },
+
+    "ua": {
+        "mainTitle": "Ієронім Босх",
+        "name": "Ієронім Босх",
+        "birthday_year": "1450",
+        "dead_year": "1516",
+        "description": "Про художника Ієроніма Босха відомо дуже мало. Його дата народження, думки, твори, особистість і значення його мистецтва – все це втрачено для часу. Але все, що залишилося, це серія картин, які кидають виклик уяві, а також будь-якій формі мистецтва перед ним. Відомо, що він отримував багато замовлень малювати з-за кордону, і вважається, що малювати його навчив батько чи дядько."
+    },
+
+    "ru": {
+        "mainTitle": "Иероним Босх",
+        "name": "Иероним Босх",
+        "birthday_year": "1450",
+        "dead_year": "1516",
+        "description": "О художнике Иерониме Босхе известно очень мало. Его дата рождения, мысли, сочинения, личность и значение его искусства были потеряны во времени. Однако осталась серия картин, которые бросают вызов воображению, а также любой другой форме искусства, существовавшей до него. Что известно, так это то, что он получил много заказов на живопись из-за границы, и считается, что рисовать его научил отец или дядя."
+    }
+}

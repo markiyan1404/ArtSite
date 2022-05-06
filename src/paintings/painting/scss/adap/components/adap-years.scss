@@ -1,0 +1,58 @@
+@media screen and (min-width: 3200px) {
+    .content__year {
+        font-size: 135px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+    .content__year {
+        font-size: 110px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .content__year {
+        font-size: 70px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .content__year {
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .content__year {
+        font-size: 64px;
+        right: 25%;
+        top: 11.5vh;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+    .content__year {
+        font-size: 64px;
+        right: 15%;
+        top: 10.5vh;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .content__year {
+        font-size: 50px;
+        right: 6%;
+        top: 10.5vh;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .content__year {
+        -webkit-text-stroke: 1px var(--contrastColorWhite);
+        z-index: 2;
+    }
+
+    .paintingsToPainting .content__year {
+        opacity: 0;
+    }
+}

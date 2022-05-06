@@ -1,0 +1,28 @@
+{
+    "en": {
+        "mainTitle": "Gross clinic",
+        "name": "Gross clinic",
+        "author": "Thomas Eakins",
+        "year": "1875",
+        "description": "From the point of view of a modern viewer, some of the moments captured on this canvas seem frightening and even a little implausible. For example, the fact that Gross himself, all his assistants and students, are in the audience in street clothes. In addition, the rather meager coverage of the “operating room”, which also has an explanation, raises doubts. Such classrooms were lit only by natural light through the windows in the ceiling, so students for the most part remained in the shade.",
+        "authorLink": "thomas-eakins"
+    },
+
+    "ua": {
+        "mainTitle": "Клініка Гросса",
+        "name": "Клініка Гросса",
+        "author": "Томас Ікінс",
+        "year": "1875",
+        "description": "З погляду сучасного глядача деякі моменти, зняті на цьому полотні, здаються лякаючими і навіть трохи неправдоподібними. Наприклад, те, що сам Гросс, всі його помічники і студенти, знаходяться в аудиторії у вуличному одязі. Крім того, сумніви викликає досить убоге освітлення «операційної», якому теж є пояснення. Подібні аудиторії висвітлювалися лише природним світлом, що проникало крізь вікна у стелі, тому студенти здебільшого залишалися в тіні.",
+        "authorLink": "thomas-eakins"
+    },
+
+    "ru": {
+        "mainTitle": "Клиника Гросса",
+        "name": "Клиника Гросса",
+        "author": "Томас Икинс",
+        "year": "1875",
+        "description": "С точки зрения современного зрителя некоторые моменты, запечатленные на этом полотне, кажутся пугающими и даже немного неправдоподобными. К примеру, то, что сам Гросс, все его ассистенты и студенты, находятся в аудитории в уличной одежде. Кроме того, сомнения вызывает довольно скудное освещение «операционной», которому тоже есть объяснение. Подобные аудитории освещались только естественным светом, проникавшим сквозь окна в потолке, поэтому студенты по большей части оставались в тени.",
+        "authorLink": "thomas-eakins"
+    }
+}

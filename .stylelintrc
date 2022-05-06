@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss"
+    ],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-declaration-block-no-ignored-properties",
+        "stylelint-order"
+    ],
+    "rules": {
+        "indentation": 4,
+        "block-no-empty": true,
+        "color-named": "never",
+        "font-family-name-quotes": "always-unless-keyword",
+        "string-quotes": "double",
+        "unit-case": "lower",
+        "value-keyword-case": "lower",
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": true,
+        "scss/dollar-variable-pattern": "$",
+        "scss/selector-no-redundant-nesting-selector": true,
+        "rule-empty-line-before": "inside-block",
+        "comment-empty-line-before": "always",
+        "shorthand-property-no-redundant-values": true,
+        "length-zero-no-unit": null,
+        "selector-class-pattern": null,
+        "font-family-no-missing-generic-family-keyword": null,
+        "keyframes-name-pattern": null,
+        "custom-property-pattern": null,
+        "keyframe-declaration-no-important": null,
+        "selector-id-pattern": null,
+        "order/order": [
+            "custom-properties",
+            "declarations"
+        ],
+        "order/properties-alphabetical-order": true
+    }
+}

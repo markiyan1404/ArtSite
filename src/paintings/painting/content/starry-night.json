@@ -1,0 +1,28 @@
+{
+    "en": {
+        "mainTitle": "Starry night",
+        "name": "Starry night",
+        "author": "Vincent van Gogh",
+        "year": "1889",
+        "description": "Vincent van Gogh painted Starry Night in 1889 during his stay at the asylum of Saint-Paul-de-Mausole near Saint-Rémy-de-Provence. Notice the brush strokes. For the sky they swirl, each dab of color rolling with the clouds around the stars and moon. On the cypress tree they bend with the curve of the branches. The whole effect is ethereal and dreamlike. The hills easily roll down into the little village below. In contrast, the town is straight up and down, done with rigid lines that interrupt the flow of the brush strokes. Tiny little trees soften the inflexibility of the town.",
+        "authorLink": "vincent-van-gogh"
+    },
+
+    "ua": {
+        "mainTitle": "Зоряна ніч",
+        "name": "Зоряна ніч",
+        "author": "Вінсент Ван Гог",
+        "year": "1889",
+        "description": "Вінсент Ван Гог написав «Зоряну ніч» у 1889 році під час перебування в притулку Сен-Поль-де-Мозоль поблизу Сен-Ремі-де-Прованс. Зверніть увагу на мазки пензля. На небі вони крутяться, кожна пляма кольору котиться разом із хмарами навколо зірок і місяця. На кипарисі вони згинаються з вигином гілок. Весь ефект ефірний і подібний до мрії. Пагорби легко згортаються в маленьке село внизу. На відміну від цього, місто пряме вгору і вниз, виконане жорсткими лініями, які переривають потік мазків пензля. Маленькі деревця пом’якшують негнучкість міста.",
+        "authorLink": "vincent-van-gogh"
+    },
+
+    "ru": {
+        "mainTitle": "Звездная ночь",
+        "name": "Звездная ночь",
+        "author": "Винсент ван Гог",
+        "year": "1889",
+        "description": "Винсент Ван Гог написал «Звездную ночь» в 1889 году во время своего пребывания в приюте Сен-Поль-де-Мавсоль недалеко от Сен-Реми-де-Прованс. Обратите внимание на мазки кисти. В небе они кружатся, каждый мазок цвета катится вместе с облаками вокруг звезд и луны. У кипариса они гнутся изгибом ветвей. Весь эффект эфирный и сказочный. Холмы легко скатываются в маленькую деревню внизу. Напротив, город прямолинейный вверх и вниз, выполненный жесткими линиями, которые прерывают поток мазков. Крошечные деревца смягчают негибкость города.",
+        "authorLink": "vincent-van-gogh"
+    }
+}

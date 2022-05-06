@@ -1,0 +1,174 @@
+@media screen and (min-width: 3200px) {
+    .menu .menu__section p {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+    .menu .menu__section p {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .menu .menu__section p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .menu .menu__section p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+    .menu {
+        .menu__section p {
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .menu {
+        .menu__section p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .menu {
+        .menu__section p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .menu__section p {
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .menu {
+        align-items: center;
+        flex-direction: column;
+        width: 100% !important;
+
+        section {
+            border-bottom: 1px solid #4e4e4e;
+            border-left: none;
+            border-right: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        .menu__section p {
+            animation-delay: 0.8s;
+        }
+
+        .menu__section span {
+            height: 100%;
+        }
+
+        .menu__section-main span {
+            background-image: url("./../img/Main-mobile.webp");
+        }
+
+        .menu__section-paintings span {
+            background-image: url("./../img/Paintings-mobile.webp");
+        }
+
+        .menu__section-architecture span {
+            background-image: url("./../img/Architecture-mobile.webp");
+        }
+
+        .menu__section-sculptures span {
+            background-image: url("./../img/Sculptures-mobile.webp");
+        }
+
+        .menu__section-music span {
+            background-image: url("./../img/Music-mobile.webp");
+        }
+    }
+
+    @keyframes menu__section {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+    .menu {
+        align-items: center;
+        flex-direction: column;
+        height: 94vh;
+        top: 6vh;
+        width: 100% !important;
+
+        section {
+            border-bottom: 1px solid #4e4e4e;
+            border-left: none;
+            border-right: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        .menu__section p {
+            animation-delay: 0.8s;
+            font-size: 30px;
+        }
+
+        .menu__section span {
+            height: 100%;
+        }
+
+        .menu__section-main span {
+            background-image: url("./../img/Main-mobile.webp");
+        }
+
+        .menu__section-paintings span {
+            background-image: url("./../img/Paintings-mobile.webp");
+        }
+
+        .menu__section-architecture span {
+            background-image: url("./../img/Architecture-mobile.webp");
+        }
+
+        .menu__section-sculptures span {
+            background-image: url("./../img/Sculptures-mobile.webp");
+        }
+
+        .menu__section-music span {
+            background-image: url("./../img/Music-mobile.webp");
+        }
+    }
+
+    @keyframes menu__section {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0px) and (max-height: 500px) {
+    .menu {
+        .menu__section p {
+            font-size: 21px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

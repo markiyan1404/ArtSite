@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Edouard Manet",
+        "name": "Edouard Manet",
+        "birthday_year": "1832",
+        "dead_year": "1883",
+        "description": "French painter who broke new ground by defying traditional techniques of representation and by choosing subjects from the events and circumstances of his own time. His Le Déjeuner sur l’herbe (Luncheon on the Grass), exhibited in 1863 at the Salon des Refusés, aroused the hostility of critics and the enthusiasm of the young painters who later formed the nucleus of the Impressionist group." 
+    },
+
+    "ua": {
+        "mainTitle": "Едуард Мане",
+        "name": "Едуард Мане",
+        "birthday_year": "1832",
+        "dead_year": "1883",
+        "description": "Французький художник, який відкрив новий шлях, кидаючи виклик традиційним прийомам зображення та вибираючи сюжети з подій і обставин свого часу. Його Le Déjeuner sur l’herbe (Обід на траві), виставлений у 1863 році в Salon des Refusés, викликав ворожість критиків і ентузіазм у молодих художників, які згодом склали ядро групи імпресіоністів."
+    },
+
+    "ru": {
+        "mainTitle": "Эдуард Мане",
+        "name": "Эдуард Мане",
+        "birthday_year": "1832",
+        "dead_year": "1883",
+        "description": "Французский художник, который открыл новые горизонты, бросив вызов традиционным методам изображения и выбрав сюжеты из событий и обстоятельств своего времени. Его Le Déjeuner sur l’herbe («Завтрак на траве»), выставленный в 1863 году в Салоне Отверженных, вызвал враждебность критиков и энтузиазм молодых художников, впоследствии составивших ядро группы импрессионистов."
+    }
+}

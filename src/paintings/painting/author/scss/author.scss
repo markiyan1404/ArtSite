@@ -1,0 +1,31 @@
+@import "src/scss/variables";
+@import "./components/backgroundLine";
+@import "./components/close";
+@import "./components/contentInformation";
+@import "./components/navigating";
+@import "./components/year";
+
+$zoomAnimation: 0.3s;
+
+body,
+.content {
+    overflow-x: clip;
+}
+
+body {
+    @include contrast-color-black-background;
+
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content {
+    @include contrast-color-black-background;
+
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+}

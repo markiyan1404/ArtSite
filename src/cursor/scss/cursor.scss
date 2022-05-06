@@ -1,0 +1,116 @@
+@import "src/scss/variables";
+
+$cursorTransitionProperty: 0.2s;
+
+@mixin cursor-transition {
+    transition:
+        width $cursorTransitionProperty,
+        height $cursorTransitionProperty,
+        opacity 0.7s,
+        left $cursorTransitionProperty,
+        top $cursorTransitionProperty;
+}
+
+* {
+    cursor: none !important;
+}
+
+.cursor {
+    @include main-color-background;
+    @include cursor-transition;
+
+    border-radius: 50%;
+    height: 7px;
+    left: -3.5px;
+    mix-blend-mode: difference;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: -3.5px;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    z-index: 997;
+}
+
+#cursor {
+    @include cursor-transition;
+
+    left: 0;
+    mix-blend-mode: difference;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    z-index: 997;
+
+    .progress-wrap {
+        border-radius: 50px;
+        box-shadow: inset 0 0 0 2px rgb(255 255 255 / 20%);
+        cursor: pointer;
+        height: 45px;
+        margin: -50% 0 0 -50%;
+        mix-blend-mode: difference;
+        width: 45px;
+    }
+
+    .cursor-circle {
+        @include cursor-transition;
+
+        border: solid 1px #fff;
+        border-radius: 50%;
+        height: 40px;
+        margin: -50% 0 0 -50%;
+        mix-blend-mode: difference;
+        width: 40px;
+    }
+}
+
+.mouse-active:hover .cursor {
+    height: 50px;
+    width: 50px;
+}
+
+.mousedown {
+    color: #db393900;
+    transform: scale(0);
+    transition: transform 0.3s !important;
+}
+
+.progress-wrap svg path {
+    fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+    box-sizing: border-box;
+    stroke: #ecedf3;
+    stroke-width: 4;
+}
+
+.hideCursor {
+    opacity: 0 !important;
+}
+
+.activeCursor {
+    @include cursor-transition;
+
+    height: 50px;
+    left: -25px;
+    opacity: 0.3 !important;
+    top: -25px;
+    width: 50px;
+}
+
+.activeCursore2 {
+    opacity: 0 !important;
+    transition: opacity 0.5s;
+}
+
+.close-cursor {
+    opacity: 0 !important;
+    transition: opacity 0.3s !important;
+}
+
+html:not(html:hover) .hideCursor {
+    opacity: 0 !important;
+    transition: opacity 0.5s;
+}

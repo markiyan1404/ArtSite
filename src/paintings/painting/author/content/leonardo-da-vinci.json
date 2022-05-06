@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Leonardo da Vinci",
+        "name": "Leonardo da Vinci",
+        "birthday_year": "1452",
+        "dead_year": "1519",
+        "description": "Growing up in his father's Vinci home, Leonardo had access to scholarly texts owned by family and friends. He was also exposed to Vinci's longstanding painting tradition, and when he was about 15 his father apprenticed him to the renowned workshop of Andrea del Verrochio in Florence. Even as an apprentice, Leonardo demonstrated his great talent. Indeed, his genius seems to appear in a number of pieces produced by the Verrocchio's workshop from the period 1470 to 1475. For example, one of Leonardo's first big breaks was to paint an angel in Verrochio's 'Baptism of Christ,' and Leonardo was so much better than his master's that Verrochio allegedly resolved never to paint again."
+    },
+
+    "ua": {
+        "mainTitle": "Леонардо да Вінчі",
+        "name": "Леонардо да Вінчі",
+        "birthday_year": "1452",
+        "dead_year": "1519",
+        "description": "Виріс у будинку свого батька Вінчі, Леонардо мав доступ до наукових текстів, які належали родині та друзям. Він також ознайомився з давньою традицією живопису Вінчі, і коли йому було близько 15 років, його батько віддав його у учень у відому майстерню Андреа дель Веррокіо у Флоренції. Ще будучи учнем, Леонардо продемонстрував свій великий талант. Справді, його геній, здається, проявляється в ряді творів, виготовлених майстернею Верроккіо в період з 1470 по 1475 рік. Наприклад, одним із перших великих успіхів Леонардо було намалювати ангела у «Хрещенні Христа» Верроккіо, і Леонардо був таким. набагато краще, ніж у його господаря, що Веррочіо нібито вирішив ніколи більше не малювати."
+    },
+
+    "ru": {
+        "mainTitle": "Леонардо да Винчи",
+        "name": "Леонардо да Винчи",
+        "birthday_year": "1452",
+        "dead_year": "1519",
+        "description": "Выросший в доме своего отца Винчи, Леонардо имел доступ к научным текстам, принадлежавшим семье и друзьям. Он также познакомился с давними традициями живописи Винчи, и когда ему было около 15 лет, отец отдал его в ученики в известную мастерскую Андреа дель Веррокио во Флоренции. Еще будучи учеником, Леонардо продемонстрировал свой большой талант. В самом деле, его гениальность, по-видимому, проявляется во многих произведениях, созданных мастерской Верроккьо в период с 1470 по 1475 год. Например, одним из первых больших прорывов Леонардо было изображение ангела в «Крещении Христа» Верроккьо, и Леонардо был настолько гораздо лучше, чем у своего хозяина, который Веррокьо якобы решил больше никогда не писать."
+    }
+}

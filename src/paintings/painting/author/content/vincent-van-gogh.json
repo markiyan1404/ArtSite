@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Vincent van Gogh",
+        "name": "Vincent van Gogh",
+        "birthday_year": "1853",
+        "dead_year": "1890",
+        "description": "Van Gogh is today one of the most popular of the Post-Impressionist painters, although he was not widely appreciated during his lifetime. He is now famed for the great vitality of his works which are characterised by expressive and emotive use of brilliant colour and energetic application of impastoed paint. The traumas of his life, documented in his letters, have tended to dominate and distort modern perceptions of his art." 
+    },
+
+    "ua": {
+        "mainTitle": "Вінсент ван Гог",
+        "name": "Вінсент ван Гог",
+        "birthday_year": "1853",
+        "dead_year": "1890",
+        "description": "Ван Гог сьогодні є одним із найпопулярніших художників постімпресіоністів, хоча за життя він не отримав широкої оцінки. Нині він славиться великою живучістю своїх робіт, які характеризуються виразним і емоційним використанням блискучого кольору та енергійним нанесенням нанесеної фарби. Травми його життя, задокументовані в його листах, мали тенденцію домінувати та спотворювати сучасне уявлення про його мистецтво."
+    },
+
+    "ru": {
+        "mainTitle": "Винсент ван Гог",
+        "name": "Винсент ван Гог",
+        "birthday_year": "1853",
+        "dead_year": "1890",
+        "description": "Ван Гог сегодня является одним из самых популярных художников-постимпрессионистов, хотя при жизни он не получил широкого признания. В настоящее время он известен большой жизненной силой своих работ, которые характеризуются выразительным и эмоциональным использованием яркого цвета и энергичным применением пастозной краски. Травмы его жизни, задокументированные в его письмах, имели тенденцию доминировать и искажать современное восприятие его искусства."
+    }
+}

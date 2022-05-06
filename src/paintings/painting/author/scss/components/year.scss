@@ -1,0 +1,116 @@
+.content__year {
+    display: flex;
+    font-size: 80px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+
+    .year-line {
+        @include contrast-color-white-background;
+
+        margin-left: 27px;
+        opacity: 0.2;
+        width: 3px;
+    }
+
+    .year-line-1 {
+        height: 18px;
+    }
+
+    .year-line-2,
+    .year-line-4,
+    .year-line-6 {
+        height: 35px;
+    }
+
+    .year-line-3,
+    .year-line-5 {
+        height: 45px;
+    }
+
+    .year-line-show {
+        animation: topToStatic 0.3s forwards;
+    }
+
+    .year-line-active {
+        @include main-color-background;
+
+        height: 35px;
+        margin-left: 27px;
+        width: 3px;
+    }
+
+    .year-line-active-1,
+    .year-line-active-5 {
+        height: 75px;
+    }
+
+    p {
+        @include main-color-color;
+
+        font-family: "Spectral SC";
+        font-size: 27px;
+        font-weight: 300;
+        margin: 0;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
+
+.paintingToAuthor .content__year p {
+    animation: show 0.3s forwards;
+    animation-delay: 1000s;
+    opacity: 0;
+}
+
+.nextAuthor .content__year p {
+    animation: content__yearShow 0.5s forwards;
+    animation-delay: 0s !important;
+}
+
+@keyframes content__yearShow {
+    from {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%) translateX(-50%);
+    }
+}
+
+.authorToAuthor .content__year p {
+    animation: content__yearShow 0.5s reverse forwards;
+}
+
+.authorToPainting .content__year p {
+    opacity: 0;
+    transition: opacity 0.3s, $colorTransition;
+}
+
+.paintingToAuthor .year-line,
+.paintingToAuthor .year-line-active {
+    transform: translateY(-100%);
+}
+
+.authorToPainting .year-line-show {
+    animation: topToStatic 0.1s reverse forwards;
+}
+
+.swipeRight .content__year,
+.swipeLeft .content__year {
+    animation: mobileHideYears 0.3s forwards;
+}
+
+@keyframes mobileHideYears {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}

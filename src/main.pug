@@ -1,0 +1,14 @@
+include pug/header
+body(data-name="main" data-menu="main")
+
+include pug/preloader
+
+main.content
+  .scroll-container#scroll-container
+   include main/pug/window-1
+   include main/pug/window-2
+   include main/pug/window-3
+   include main/pug/window-4
+   include main/pug/window-5
+
+include navigation/navigation

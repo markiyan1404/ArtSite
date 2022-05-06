@@ -1,0 +1,125 @@
+.window-1 {
+    align-items: center;
+    animation: show 1s forwards;
+    background-attachment: fixed;
+    background-image: url("../img/main.webp");
+    background-position: 40% 0%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+
+    .window-1__title-1 {
+        @include contrast-color-white-color;
+
+        animation: window-1__title-1 0.3s forwards;
+        font-family: "Viaoda Libre";
+        font-size: 160px;
+        margin: 0;
+        opacity: 0;
+        padding: 0 20px;
+        text-transform: uppercase;
+    }
+
+    @keyframes window-1__title-1 {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    b {
+        font-weight: 100;
+        padding: 0 20px;
+    }
+
+    b:first-child {
+        padding-left: 60px;
+    }
+
+    b:nth-child(3) {
+        padding-right: 60px;
+    }
+
+    hr {
+        @include contrast-color-white-background;
+
+        animation: window-1Lines 1s;
+        height: 3px;
+        margin: 0;
+    }
+
+    @keyframes window-1Lines {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    .window-1__title-2 {
+        @include main-color-color;
+
+        font-family: "Spectral SC";
+        font-size: 35px;
+        font-weight: 300;
+        letter-spacing: 15px;
+        margin: 20px 0 20px 20px;
+        text-transform: uppercase;
+    }
+
+    .window-1__button {
+        align-items: center;
+        animation: window-1__button 1s forwards;
+        background: none;
+        border: 2px solid var(--contrastColorWhite);
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        margin-top: 75vh;
+        opacity: 0;
+        position: absolute;
+        transform: rotate(45deg);
+        transition: $colorTransition, transform 0.3s;
+        width: 65px;
+    }
+
+    @keyframes window-1__button {
+        from {
+            margin-top: 80vh;
+            opacity: 0;
+        }
+
+        to {
+            margin-top: 75vh;
+            opacity: 1;
+        }
+    }
+
+    .window-1__button:hover {
+        @include main-color-background;
+
+        transform: rotate(45deg) scale(0.9);
+        transition: transform 0.3s, $colorTransition;
+    }
+
+    .window-1__button span {
+        border: 12px solid transparent;
+        border-top: 20px solid var(--mainColor);
+        margin: 30% 0 0 30%;
+        transform: rotate(315deg);
+        transition: $colorTransition;
+    }
+
+    .window-1__button:hover span {
+        border-top-color: var(--contrastColorWhite);
+        transition: $colorTransition;
+    }
+}

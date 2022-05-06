@@ -1,0 +1,41 @@
+@import "src/scss/variables";
+@import "./components/colors";
+@import "./components/language";
+@import "./components/menu_icon";
+
+.navigation {
+    @include contrast-color-white-background;
+
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 0;
+    width: 4%;
+    z-index: 97;
+}
+
+.active__close-modal {
+    @include main-color-color;
+
+    align-items: center;
+    border: 2px solid var(--contrastColorWhite);
+    color: var(--mainColor);
+    display: none;
+    font-size: 27px;
+    height: 40px;
+    justify-content: center;
+    position: fixed;
+    right: 4%;
+    top: 2.5vh;
+    transform: rotate(45deg);
+    width: 40px;
+}
+
+// Scroll
+
+::-webkit-scrollbar {
+    display: none;
+}

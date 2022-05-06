@@ -1,0 +1,28 @@
+{
+    "en": {
+        "mainTitle": "Girl with a pearl earring",
+        "name": "Girl with a pearl earring",
+        "author": "Johannes Vermeer",
+        "year": "1665",
+        "description": "Girl with a Pearl Earring, oil painting on canvas by Dutch artist Johannes Vermeer, one of his most well-known works. It depicts an imaginary young woman in exotic dress and a very large pearl earring. The work permanently resides in the Mauritshuis museum in The Hague.",
+        "authorLink": "johannes-vermeer"
+    },
+
+    "ua": {
+        "mainTitle": "Дівчина з перлинною сережкою",
+        "name": "Дівчина з перлинною сережкою",
+        "author": "Ян Вермер",
+        "year": "1665",
+        "description": "«Дівчина з перлинною сережкою», картина олійними фарбами на полотні голландського художника Йоханнеса Вермеєра, одна з його найвідоміших робіт. На ньому зображена уявна молода жінка в екзотичній сукні та дуже великій перловій сережці. Робота постійно знаходиться в музеї Мауріцхейса в Гаазі.",
+        "authorLink": "johannes-vermeer"
+    },
+
+    "ru": {
+        "mainTitle": "Девушка с жемчужной сережкой",
+        "name": "Девушка с жемчужной сережкой",
+        "author": "Ян Вермеер",
+        "year": "1665",
+        "description": "Девушка с жемчужной сережкой, картина маслом на холсте голландского художника Йоханнеса Вермеера, одна из его самых известных работ. На нем изображена воображаемая молодая женщина в экзотическом платье и с очень большой жемчужной серьгой. Работа постоянно находится в музее Маурицхёйс в Гааге.",
+        "authorLink": "johannes-vermeer"
+    }
+}

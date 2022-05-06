@@ -1,0 +1,45 @@
+.content__year {
+    color: transparent;
+    font-family: "Viaoda Libre";
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0;
+    position: absolute;
+    right: 2%;
+    -webkit-text-stroke: 1px var(--mainColor);
+    top: 1vh;
+    transition: $colorTransition;
+}
+
+.paintingsToPainting .content__year {
+    animation: topToStatic 0.5s forwards;
+    animation-delay: 1s;
+    transform: translateY(-100%);
+}
+
+.paintingToPainting .content__year {
+    animation: nextYear 0.5s reverse forwards;
+}
+
+.nextPainting .content__year,
+.paintingAuthor .content__year {
+    animation: nextYear 0.5s forwards;
+    opacity: 1;
+}
+
+.swipeRight .content__year,
+.swipeLeft .content__year {
+    animation: nextYear 0.5s forwards;
+}
+
+@keyframes nextYear {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}

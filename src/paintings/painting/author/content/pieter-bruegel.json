@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Pieter Bruegel",
+        "name": "Pieter Bruegel",
+        "birthday_year": "1525",
+        "dead_year": "1569",
+        "description": "Pieter Brueghel the Elder - one of the largest representatives of the Flemish Renaissance. The most famous are his paintings and engravings of landscape and genre subjects. At an early age, Brueghel was apprenticed to the artist Pieter Krokke van Aelst. Already in 1551, when he was 26 years old, he was accepted into the painters' guild in Antwerp." 
+    },
+
+    "ua": {
+        "mainTitle": "Пітер Брейгель",
+        "name": "Пітер Брейгель",
+        "birthday_year": "1525",
+        "dead_year": "1569",
+        "description": "Пітер Брейгель Старший – один із найбільших представників Фламандського Відродження. Найбільш відомі його картини та гравюри пейзажної та жанрової тематики. У ранньому віці Брейгеля віддали вчення до художника Пітера Крокке ван Альста. Вже в 1551, коли йому було 26 років, його прийняли в гільдію художників в Антверпені."
+    },
+
+    "ru": {
+        "mainTitle": "Питер Брейгель",
+        "name": "Питер Брейгель",
+        "birthday_year": "1525",
+        "dead_year": "1569",
+        "description": "Питер Брейгель Старший - один из крупнейших представителей Фламандского Возрождения. Наиболее известны его картины и гравюры пейзажной и жанровой тематики. В раннем возрасте Брейгеля отдали в учение к художнику Питеру Крокке ван Альсту. Уже в 1551 году, когда ему было 26 лет, его приняли в гильдию живописцев в Антверпене."
+    }
+}

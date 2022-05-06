@@ -1,0 +1,25 @@
+{
+    "en": {
+        "mainTitle": "Michelangelo Buonarroti",
+        "name": "Michelangelo Buonarroti",
+        "birthday_year": "1475",
+        "dead_year": "1564",
+        "description": "Michelangelo was born in Caprese in the 1470s and trained first as a painter with Ghirlandaio, and then as a sculptor under the patronage of Lorenzo de' Medici. In 1496, already known as sculptor, he went to Rome, where he carved the 'Pietà' for St Peter's. Back in Florence in 1501 he began work on many sculptural and painterly projects most of which were left unfinished in 1505, when he was summoned to Rome to begin work on a sculpted tomb for Pope Julius II, a project that dogged him until 1545." 
+    },
+
+    "ua": {
+        "mainTitle": "Мікеланджело Буонарроті",
+        "name": "Мікеланджело Буонарроті",
+        "birthday_year": "1475",
+        "dead_year": "1564",
+        "description": "Мікеланджело народився в Капрезе в 1470-х роках і навчався спочатку як художник у Гірландайо, а потім як скульптор під патронатом Лоренцо Медічі. У 1496 році, вже відомий як скульптор, він відправився до Риму, де вирізьбив «П'єту» для собору Святого Петра. Повернувшись у Флоренцію в 1501 році, він розпочав роботу над багатьма скульптурними та живописними проектами, більшість з яких залишилися незавершеними в 1505 році, коли його викликали до Риму, щоб почати роботу над скульптурною гробницею для Папи Юлія II, проект, який переслідував його до 1545 року."
+    },
+
+    "ru": {
+        "mainTitle": "Микеланджело Буонарроти",
+        "name": "Микеланджело Буонарроти",
+        "birthday_year": "1475",
+        "dead_year": "1564",
+        "description": "Микеланджело родился в Капрезе в 1470-х годах и обучался сначала как художник у Гирландайо, а затем как скульптор под покровительством Лоренцо Медичи. В 1496 году, уже известный как скульптор, он отправился в Рим, где вырезал «Пьету» для собора Святого Петра. Вернувшись во Флоренцию в 1501 году, он начал работу над многими скульптурными и живописными проектами, большинство из которых остались незавершенными в 1505 году, когда его вызвали в Рим, чтобы начать работу над скульптурной гробницей для папы Юлия II, проект, который преследовал его до 1545 года."
+    }
+}
