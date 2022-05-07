@@ -1,5 +1,4 @@
 const path = require("path"),
-      fs = require("fs"),
       HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
       CopyWebpackPlugin = require("copy-webpack-plugin"),
@@ -10,15 +9,6 @@ const path = require("path"),
       StylelintPlugin = require("stylelint-webpack-plugin"),
       isDev = process.env.NODE_ENV === "development",
       isProd = !isDev;
-
-const PATHS = {
-    src: path.join(__dirname, "src/pug"),
-    dist: path.join(__dirname, "dist")
-};
-
-const PAGES_DIR = `${PATHS.src}`,
-
-      PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
 
 const optimization = () => {
     const config = {
@@ -57,10 +47,10 @@ module.exports = {
         title: ["@standartTS/title.ts"],
     },
 
-    output: {
-        filename: filename("js"),
-        path: path.resolve(__dirname, "dist"),
-    },
+    output: { 
+        filename: filename('.js'),    // prepend folder name
+        path: path.resolve(__dirname, 'dist'),
+ },
 
     plugins: [
 
@@ -101,11 +91,6 @@ module.exports = {
             },
         }),
         
-        ...PAGES.map(page => new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/, ".html")}`
-        })),
-        
         // CLEAN plagin
         new CleanWebpackPlugin(),
 
@@ -119,7 +104,11 @@ module.exports = {
             ]
         }),
 
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            // filename: 'css/[name].[contenthash].css',  
+            // chunkFilename: 'css/[name].[id].css',
+            // ignoreOrder: false,
+        }),
 
         // STYLELINT plagin
         new StylelintPlugin(),
@@ -149,19 +138,15 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
-                        loader: 'css-loader',
+                        loader: "css-loader",
                         options: {
-                            sourceMap: true,
                             url: false,
                         },
                     },
                     {
-                        loader: 'resolve-url-loader',
+                        loader: "resolve-url-loader",
                         options: {
-                            debug: true,
-                            root: path.join(__dirname, 'src/img'),
-                            includeRoot: true,
-                            absolute: true,
+                            
                         },
                     },
                     {
