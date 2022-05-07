@@ -16,9 +16,9 @@ const PATHS = {
     dist: path.join(__dirname, "dist")
 };
 
-// const PAGES_DIR = `${PATHS.src}`,
+const PAGES_DIR = `${PATHS.src}`,
 
-//       PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
+      PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
 
 const optimization = () => {
     const config = {
@@ -57,17 +57,16 @@ module.exports = {
         title: ["@standartTS/title.ts"],
     },
 
-    output: { 
-        filename: './js/[name].bundle.js',    // prepend folder name
-        path: path.resolve(__dirname, 'dist'),
-        chunkFilename: './js/chunkFilename.[name].bundle.js'    // prepend folder name
- },
+    output: {
+        filename: filename("js"),
+        path: path.resolve(__dirname, "dist"),
+    },
 
     plugins: [
 
         // HTML plagin
         new HtmlWebpackPlugin({
-            filename: "html/index.html",
+            filename: "index.html",
             template: "./main.pug",
             chunks: ["check_page_language", "main", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "title"],
             minify: {
@@ -76,7 +75,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            filename: "html/paintings.html",
+            filename: "paintings.html",
             template: "./paintings/paintings.pug",
             chunks: ["check_page_language",  "paintings", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "firstLoad", "title"],
             minify: {
@@ -85,7 +84,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            filename: "html/painting.html",
+            filename: "painting.html",
             template: "./paintings/painting/painting.pug",
             chunks: ["check_page_language", "languages", "painting", "navigation", "cursor", "menu", "menu_icon", "colors", "firstLoad", "title"],
             minify: {
@@ -94,7 +93,7 @@ module.exports = {
         }),
         
         new HtmlWebpackPlugin({
-            filename: "html/author.html",
+            filename: "author.html",
             template: "./paintings/painting/author/author.pug",
             chunks: ["check_page_language", "painting_author", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "firstLoad", "title"],
             minify: {
@@ -102,10 +101,10 @@ module.exports = {
             },
         }),
         
-        // ...PAGES.map(page => new HtmlWebpackPlugin({
-        //     template: `${PAGES_DIR}/${page}`,
-        //     filename: `./${page.replace(/\.pug/, ".html")}`
-        // })),
+        ...PAGES.map(page => new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/${page}`,
+            filename: `./${page.replace(/\.pug/, ".html")}`
+        })),
         
         // CLEAN plagin
         new CleanWebpackPlugin(),
@@ -120,11 +119,7 @@ module.exports = {
             ]
         }),
 
-        new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash].css',  // prepend folder name
-            chunkFilename: 'css/[name].[id].css',    // prepend folder name
-            ignoreOrder: false,
-        }),
+        new MiniCssExtractPlugin(),
 
         // STYLELINT plagin
         new StylelintPlugin(),
@@ -164,7 +159,7 @@ module.exports = {
                         loader: 'resolve-url-loader',
                         options: {
                             debug: true,
-                            root: path.join(__dirname, './src/img/'),
+                            root: path.join(__dirname, 'src/img'),
                             includeRoot: true,
                             absolute: true,
                         },
