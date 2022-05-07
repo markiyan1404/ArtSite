@@ -11,7 +11,7 @@ const changeIcon = (typeIcon: string): any => {
 
     activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "FFC700";
 
-    $("link[rel*='icon']").attr("href",  "./head/" + activeColor + `-${typeIcon}.webp`);
+    $("link[rel*='icon']").attr("href",  "img/head/" + activeColor + `-${typeIcon}.webp`);
 };
 
 page.on("blur", (): void => { 

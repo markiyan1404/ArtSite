@@ -53,6 +53,7 @@
     "mini-css-extract-plugin": "^2.4.2",
     "node-scss": "^7.0.3",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.3.0",

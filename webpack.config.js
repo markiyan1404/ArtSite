@@ -16,16 +16,9 @@ const PATHS = {
     dist: path.join(__dirname, "dist")
 };
 
-// PATHS_PAINTINGS = {
-//     src: path.join(__dirname, "src/paintings/painting/pages"),
-//     dist: path.join(__dirname, "dist")
-// }
+// const PAGES_DIR = `${PATHS.src}`,
 
-const PAGES_DIR = `${PATHS.src}`,
-    //   PAGES_DIR_PAINTINGS = `${PATHS_PAINTINGS.src}`
-
-      PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
-    //   PAINTINGS = fs.readdirSync(PAGES_DIR_PAINTINGS).filter(fileName => fileName.endsWith(".pug"));
+//       PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
 
 const optimization = () => {
     const config = {
@@ -64,16 +57,17 @@ module.exports = {
         title: ["@standartTS/title.ts"],
     },
 
-    output: {
-        filename: filename("js"),
-        path: path.resolve(__dirname, "dist"),
-    },
+    output: { 
+        filename: './js/[name].bundle.js',    // prepend folder name
+        path: path.resolve(__dirname, 'dist'),
+        chunkFilename: './js/chunkFilename.[name].bundle.js'    // prepend folder name
+ },
 
     plugins: [
 
         // HTML plagin
         new HtmlWebpackPlugin({
-            filename: "index.html",
+            filename: "html/index.html",
             template: "./main.pug",
             chunks: ["check_page_language", "main", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "title"],
             minify: {
@@ -82,7 +76,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            filename: "paintings.html",
+            filename: "html/paintings.html",
             template: "./paintings/paintings.pug",
             chunks: ["check_page_language",  "paintings", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "firstLoad", "title"],
             minify: {
@@ -91,7 +85,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            filename: "painting.html",
+            filename: "html/painting.html",
             template: "./paintings/painting/painting.pug",
             chunks: ["check_page_language", "languages", "painting", "navigation", "cursor", "menu", "menu_icon", "colors", "firstLoad", "title"],
             minify: {
@@ -100,7 +94,7 @@ module.exports = {
         }),
         
         new HtmlWebpackPlugin({
-            filename: "author.html",
+            filename: "html/author.html",
             template: "./paintings/painting/author/author.pug",
             chunks: ["check_page_language", "painting_author", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "firstLoad", "title"],
             minify: {
@@ -108,16 +102,11 @@ module.exports = {
             },
         }),
         
-        ...PAGES.map(page => new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/, ".html")}`
-        })),
-
-        // ...PAINTINGS.map(page => new HtmlWebpackPlugin({
-        //     template: `${PAGES_DIR_PAINTINGS}/${page}`,
+        // ...PAGES.map(page => new HtmlWebpackPlugin({
+        //     template: `${PAGES_DIR}/${page}`,
         //     filename: `./${page.replace(/\.pug/, ".html")}`
         // })),
-
+        
         // CLEAN plagin
         new CleanWebpackPlugin(),
 
@@ -126,12 +115,16 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(__dirname, "src/img"),
-                    to: path.resolve(__dirname, "dist")
+                    to: path.resolve(__dirname, "dist/img")
                 },
             ]
         }),
 
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[contenthash].css',  // prepend folder name
+            chunkFilename: 'css/[name].[id].css',    // prepend folder name
+            ignoreOrder: false,
+        }),
 
         // STYLELINT plagin
         new StylelintPlugin(),
@@ -154,24 +147,35 @@ module.exports = {
 
     module: {
         rules: [
-            // Loading FONT-FAMILY
-            {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                use: ["file-loader"]
-            },
-
-            // Loading HTML
-            {
-                test: /\.html$/,
-                exclude: /node_modules/,
-                use: { loader: "html-loader" }
-            },
-
 
             // Loading SCSS/SASS
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],              
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            url: false,
+                        },
+                    },
+                    {
+                        loader: 'resolve-url-loader',
+                        options: {
+                            debug: true,
+                            root: path.join(__dirname, './src/img/'),
+                            includeRoot: true,
+                            absolute: true,
+                        },
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true,
+                        },
+                    }
+                ],              
             },
 
             // Loading CSS
@@ -179,23 +183,10 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {},
+                        loader: MiniCssExtractPlugin.loader
                     },
                     "css-loader"
                 ],
-            },
-            // Loading BABEL JS
-            {
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ["@babel/preset-env"],
-                        plugins: ["@babel/plugin-proposal-object-rest-spread"]
-                    }
-                },
             },
 
             // Loading BABEL TS
@@ -205,14 +196,12 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: [
-                            "@babel/preset-env",
-                            "@babel/preset-typescript"],
+                        presets: ["@babel/preset-env", "@babel/preset-typescript"],
                         plugins: ["@babel/plugin-proposal-object-rest-spread"]
                     }
                 },
                 resolve: {
-                    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+                    extensions: ['.js', '.ts'],
                 }
             },
 

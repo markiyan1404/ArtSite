@@ -42,7 +42,7 @@ $(".content__close").on("click", (): void => {
     }, 810);
 });
 
-$(".content__information img").attr("src", "./paintings/authors/" + key + ".webp");
+$(".content__information img").attr("src", "img/paintings/authors/" + key + ".webp");
 
 // Active author
 

@@ -16,7 +16,7 @@ page.on("load", (): any => {
     for (let p: number = 0; p < allPaintingsName.length; p++) {
         $(".swiper-wrapper").append(`<section class="swiper-slide swiper-slide-${p}"></section>`); 
 
-        $(`.swiper-slide-${p}`).append(`<img data-src="paintings/${allPaintingsName[p]}.webp" data-name="${allPaintingsName[p]}" data-author="${allAuthorsName[p]}">`);
+        $(`.swiper-slide-${p}`).append(`<img data-src="img/paintings/${allPaintingsName[p]}.webp" data-name="${allPaintingsName[p]}" data-author="${allAuthorsName[p]}">`);
         $(".swiper-slide img").addClass("swiper-lazy swiper-slide__image-NOactive swiper-slide__image mouse-active");
         
         $(`.swiper-slide-${p}`).append("<div class='swiper-lazy-preloader'></div>");
