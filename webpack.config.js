@@ -11,6 +11,15 @@ const path = require("path"),
       isDev = process.env.NODE_ENV === "development",
       isProd = !isDev;
 
+const PATHS = {
+    src: path.join(__dirname, "src/pug"),
+    dist: path.join(__dirname, "dist")
+};
+
+// const PAGES_DIR = `${PATHS.src}`,
+
+//       PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
+
 const optimization = () => {
     const config = {
         splitChunks: {
@@ -48,10 +57,11 @@ module.exports = {
         title: ["@standartTS/title.ts"],
     },
 
-    output: {
-        filename: filename("js"),
-        path: path.resolve(__dirname, "dist"),
-    },
+    output: { 
+        filename: './js/[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        chunkFilename: './js/chunkFilename.[name].bundle.js'
+ },
 
     plugins: [
 
@@ -105,7 +115,11 @@ module.exports = {
             ]
         }),
 
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[contenthash].css',  // prepend folder name
+            chunkFilename: 'css/[name].[id].css',    // prepend folder name
+            ignoreOrder: false,
+        }),
 
         // STYLELINT plagin
         new StylelintPlugin(),
@@ -128,26 +142,35 @@ module.exports = {
 
     module: {
         rules: [
+
             // Loading SCSS/SASS
             {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
-                      loader: 'css-loader',
-                      options: {
-                           url: false
-                      }
-                    }, {
-                      loader: 'resolve-url-loader',
-                      options: {}
-                    }, {
-                      loader: 'sass-loader',
-                      options: {
-                        sourceMap: true,
-                      }
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            url: false,
+                        },
+                    },
+                    {
+                        loader: 'resolve-url-loader',
+                        options: {
+                            debug: true,
+                            root: path.join(__dirname, '/dist/'),
+                            includeRoot: true,
+                            absolute: true,
+                        },
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true,
+                        },
                     }
-                  ]            
+                ],              
             },
 
             // Loading CSS
@@ -155,24 +178,10 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {},
+                        loader: MiniCssExtractPlugin.loader
                     },
                     "css-loader"
                 ],
-            },
-            
-            // Loading BABEL JS
-            {
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ["@babel/preset-env"],
-                        plugins: ["@babel/plugin-proposal-object-rest-spread"]
-                    }
-                },
             },
 
             // Loading BABEL TS
@@ -182,14 +191,12 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: [
-                            "@babel/preset-env",
-                            "@babel/preset-typescript"],
+                        presets: ["@babel/preset-env", "@babel/preset-typescript"],
                         plugins: ["@babel/plugin-proposal-object-rest-spread"]
                     }
                 },
                 resolve: {
-                    extensions: ['.js','.ts'],
+                    extensions: ['.js', '.ts'],
                 }
             },
 

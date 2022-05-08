@@ -41,7 +41,7 @@ $(".content__close").on("click", (): void => {
 
 // Get image
 
-page.on("load", (): JQuery<Element> => $("#information__image img").attr("src", "img/paintings/" + key + ".webp"));
+page.on("load", (): JQuery<Element> => $("#information__image img").attr("src", "./img/paintings/" + key + ".webp"));
 
 // Active painting
 
