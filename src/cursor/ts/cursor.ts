@@ -73,19 +73,19 @@ const mouveHover = (): void => {
         cursorInner.addClass("activeCursor");
     });
 
-page.on("mouseover", (e): void => {
-    if ($(e.target).hasClass("mouse-active")) return;
-    else {
-        cursorInner.removeClass("activeCursor");
-    }
-  });
+    page.on("mouseover", (e): void => {
+        if ($(e.target).hasClass("mouse-active")) return;
+        else {
+            cursorInner.removeClass("activeCursor");
+        }
+    });
 };
 
 const mouveHover2 = (): void => {
     const mouseActive2 = $(".mouse-active2");
 
     mouseActive2.on("mouseenter", function (): void {
-       if ($(this).hasClass("mouse-active2")) cursorInnerAndCursor.addClass("activeCursore2");
+        if ($(this).hasClass("mouse-active2")) cursorInnerAndCursor.addClass("activeCursore2");
     });
     
     mouseActive2.on("mouseleave", (): void => {
@@ -109,7 +109,7 @@ $("*").on("mouseup", (): JQuery<Element> => cursorCircle.removeClass("mousedown"
 
 page.on("load", (): void => {
     const progressPath: JQuery<Element> | any = $(".progress-wrap__path"),
-          pathLength: number = progressPath[0].getTotalLength();
+        pathLength: number = progressPath[0].getTotalLength();
 
     progressPath.css({
         transition: "stroke-dashoffset 10ms linear",
@@ -120,8 +120,8 @@ page.on("load", (): void => {
 
     const updateProgress = (): void => {
         const scroll: number = page.scrollTop(),
-              height: number = $(document).height() - page.height(),
-              progress: number = pathLength - (scroll * pathLength / height);
+            height: number = $(document).height() - page.height(),
+            progress: number = pathLength - (scroll * pathLength / height);
 
         progressPath.css("strokeDashoffset", progress);
     };
@@ -133,7 +133,7 @@ page.on("load", (): void => {
 
 const saveMousePosition = (): void => {
     const left: string = String(cursorInner.position().left + cursorInner.width() / 2),
-          top: string = String(cursorInner.position().top + cursorInner.height() / 2);
+        top: string = String(cursorInner.position().top + cursorInner.height() / 2);
 
     localStorage.setItem("lastMousePositionLeft", left);
     localStorage.setItem("lastMousePositionTop", top);
@@ -141,7 +141,7 @@ const saveMousePosition = (): void => {
 
 function checkLastMousePosition (): number[] {
     const left: number = Number(localStorage.getItem("lastMousePositionLeft")),
-          top: number = Number(localStorage.getItem("lastMousePositionTop"));
+        top: number = Number(localStorage.getItem("lastMousePositionTop"));
 
     const cursorPosition: number[] = [left, top];
 
@@ -152,7 +152,7 @@ function checkLastMousePosition (): number[] {
 
 page.on("load", (): void => {
     const checkActiveCursor: boolean = JSON.parse(localStorage.getItem("activeCursor")),
-          mouseLeave: boolean = JSON.parse(localStorage.getItem("mouseLeave"));
+        mouseLeave: boolean = JSON.parse(localStorage.getItem("mouseLeave"));
 
     if (mouseLeave || checkLastMousePosition()[0] === 0 && checkLastMousePosition()[1] === 0) return;
 
@@ -164,7 +164,8 @@ page.on("load", (): void => {
             pageHover();         
         }, 200);
         
-    } else{
+    }
+    else {
         setTimeout((): void => {
             cursorInnerAndCursor.css("opacity", "1");
             pageHover();
@@ -211,7 +212,8 @@ page.on("load", (): void => checkClientDevice());
 const checkClientDevice = () => {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || $(window).width() < 500) {
         cursorInnerAndCursor.css("display", "none");
-    } else{
+    }
+    else {
         cursorInnerAndCursor.fadeIn();
     } 
 };

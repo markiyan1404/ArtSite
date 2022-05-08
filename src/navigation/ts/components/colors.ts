@@ -1,16 +1,17 @@
 import * as $ from "jquery";
 
 const blackColor: string = "#0b0b0b", 
-      whiteColor: string = "#fff";
+    whiteColor: string = "#fff";
 
 const html: JQuery<Element> = $("html"),
-      colors__icon: JQuery<Element> = $(".colors__icon");
+    colors__icon: JQuery<Element> = $(".colors__icon");
 
 // Get data from Local Storage
 const checkTheme = (): void => {
     if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
         addUserColor(blackColor, whiteColor, ".colors__white");
-    } else {
+    } 
+    else {
         addUserColor(whiteColor, blackColor, ".colors__black");
     }
 };
@@ -30,7 +31,7 @@ const changeIcon = (): void => {
     
     activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "ffc700";
 
-    $("link[rel*='icon']").attr("href",  "./head/" + activeColor + "-activeIcon.webp");
+    $("link[rel*='icon']").attr("href", "./head/" + activeColor + "-activeIcon.webp");
 };  
 
 $(window).on("load", (): JQuery<Element> => html.css(
@@ -38,14 +39,15 @@ $(window).on("load", (): JQuery<Element> => html.css(
 );
 
 const contrastColor1LS: string = localStorage.getItem("contrastColor1LS"),
-      contrastColor2LS: string = localStorage.getItem("contrastColor2LS"),
-      mainColorLS: string = localStorage.getItem("color"),
-      contrastActiveIconLS: string = localStorage.getItem("activeColorContrastIcon"),
-      mainActiveIconLS: string = localStorage.getItem("activeColorMainIcon");
+    contrastColor2LS: string = localStorage.getItem("contrastColor2LS"),
+    mainColorLS: string = localStorage.getItem("color"),
+    contrastActiveIconLS: string = localStorage.getItem("activeColorContrastIcon"),
+    mainActiveIconLS: string = localStorage.getItem("activeColorMainIcon");
 
 if (contrastColor1LS === null || contrastColor2LS === null) {
     checkTheme();
-} else {
+} 
+else {
     html.css({"--contrastColorBlack": contrastColor1LS, "--contrastColorWhite": contrastColor2LS});
 }
 
@@ -70,7 +72,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ():
 
 $(".colors__main .colors__color").on("click", function (): void {
     const color: string = $(this).attr("background"),
-          colorsIcons: JQuery<Element> = $(".colors__color");
+        colorsIcons: JQuery<Element> = $(".colors__color");
 
     $(".active-main-color").addClass("no-active-main-color");
     colorsIcons.removeClass("active-main-color");
@@ -141,7 +143,8 @@ $("body").on("click", (e): void => {
     if (e.target.localName === "path" || e.target.localName === "svg") {
         $(".colors__active").fadeOut(300);
         colors__icon.removeClass("color-active");
-    } else {
+    } 
+    else {
         clickColorActive = e.target.className.indexOf("color");
         clickColorIcon = e.target.className.indexOf("navigation__color");
         clickColorHeader = e.target.className.indexOf("colors__head");
@@ -153,4 +156,3 @@ $("body").on("click", (e): void => {
         }
     }
 });
-

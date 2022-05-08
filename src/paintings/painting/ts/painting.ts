@@ -7,8 +7,8 @@ import "./components/zoom";
 import "./components/swipe";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      body: JQuery<HTMLElement> = $("body"),
-      informationImage: JQuery<HTMLElement> = $("#information__image");
+    body: JQuery<HTMLElement> = $("body"),
+    informationImage: JQuery<HTMLElement> = $("#information__image");
 
 // Get page identification key 
 
@@ -21,7 +21,7 @@ const newUser = (): void => {
     if (localStorage.getItem("allPaintings")) return;
 
     const allPaintings: string = String(allPaintingsName),
-          allAuthors: string = String(allAuthorsName);
+        allAuthors: string = String(allAuthorsName);
 
     localStorage.setItem("allPaintings", allPaintings);
     localStorage.setItem("allAuthors", allAuthors);
@@ -36,7 +36,7 @@ $(".content__close").on("click", (): void => {
     setTimeout((): JQuery<Element> => $(".anim-show2").addClass("allPaintings"), 700);
     $(".cursor, #cursor, .progress-wrap").addClass("close-cursor");
 
-   setTimeout((): string => location.href="./paintings.html", 1500);
+    setTimeout((): string => location.href="./paintings.html", 1500);
 });
 
 // Get image
@@ -46,15 +46,15 @@ page.on("load", (): JQuery<Element> => $("#information__image img").attr("src", 
 // Active painting
 
 export const allPaintings = (): string[] => {
-        const allPaintingsLS: string = localStorage.getItem("allPaintings"),
-              allPaintings: string[] = allPaintingsLS.split(",");
+    const allPaintingsLS: string = localStorage.getItem("allPaintings"),
+        allPaintings: string[] = allPaintingsLS.split(",");
 
-        return allPaintings;
+    return allPaintings;
 };
 
 export const activePainting = (): string => {
     const lastPainting: string = String(allPaintings().indexOf(key)),
-          lastPaintingName: string = allPaintings()[lastPainting];
+        lastPaintingName: string = allPaintings()[lastPainting];
 
     localStorage.setItem("lastPainting", lastPainting); 
     localStorage.setItem("lastPaintingName", lastPaintingName);
@@ -81,7 +81,7 @@ $(".description__link").on("click", (): void => {
 const checkBodyClass = (): void => {
     const getTypeAnimLS: string = localStorage.getItem("typePaintingAnim");
 
-    getTypeAnimLS == null ? body.addClass("paintingToPainting") : body.addClass(getTypeAnimLS);
+    getTypeAnimLS === null ? body.addClass("paintingToPainting") : body.addClass(getTypeAnimLS);
 };
 
 $(".languages__choice").on("click", (): void => {

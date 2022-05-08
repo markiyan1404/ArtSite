@@ -2,7 +2,7 @@ import * as $ from "jquery";
 import { changeLang, contentUpdate } from "../navigation/ts/components/check_page_language";
 
 const page = $(window),
-      timeChangeHead = 3000;
+    timeChangeHead = 3000;
 
 // Check focus
 
@@ -11,7 +11,7 @@ const changeIcon = (typeIcon: string): any => {
 
     activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "FFC700";
 
-    $("link[rel*='icon']").attr("href",  "img/head/" + activeColor + `-${typeIcon}.webp`);
+    $("link[rel*='icon']").attr("href", "img/head/" + activeColor + `-${typeIcon}.webp`);
 };
 
 page.on("blur", (): void => { 

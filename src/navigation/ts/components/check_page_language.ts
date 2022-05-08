@@ -31,12 +31,12 @@ export const changeLang = (langVal: string): void => contentUpdate(langVal);
 
 export const contentUpdate = (language: string): void => {
     const pageName: string = $("body").attr("data-name"),
-          pageType: string = $("body").attr("data-type");
+        pageType: string = $("body").attr("data-type");
 
-    if (pageName === "main") import("../../../main/content/main.json").then((content) => importContent(content["default"], language));
-    if (pageName === "paintings") import("../../../paintings/content/contentPaintings.json").then((content) => importContent(content["default"], language));
-    if (pageType === "painting") import(`../../../paintings/painting/content/${pageName}.json`).then((content) => importContent(content["default"], language));
-    if (pageType === "author") import(`../../../paintings/painting/author/content/${pageName}.json`).then((content) => importContent(content["default"], language));
+    if (pageName === "main") import("../../../main/content/main.json").then(content => importContent(content["default"], language));
+    if (pageName === "paintings") import("../../../paintings/content/contentPaintings.json").then(content => importContent(content["default"], language));
+    if (pageType === "painting") import(`../../../paintings/painting/content/${pageName}.json`).then(content => importContent(content["default"], language));
+    if (pageType === "author") import(`../../../paintings/painting/author/content/${pageName}.json`).then(content => importContent(content["default"], language));
 };
 
 $(".choice__language").on("click", function (): void {
@@ -47,12 +47,12 @@ $(".choice__language").on("click", function (): void {
 
 function importContent (obj: Object, language: string): void {
     const content: number = obj[language],
-          contentNum = Object.entries(content).length;
+        contentNum = Object.entries(content).length;
 
     for (let l: number = 0; l < contentNum + repeatItem(); l++) {
-    const getSelectorExport: langApp = $(".language")[l],
+        const getSelectorExport: langApp = $(".language")[l],
             getAttrExport: string = getSelectorExport.getAttribute("data-key");
-    getSelectorExport.innerHTML = content[getAttrExport];
+        getSelectorExport.innerHTML = content[getAttrExport];
     }
 };
 
@@ -60,7 +60,7 @@ const repeatItem = (): number => {
     const allContentChangeBlocks: string[] = []; 
 
     for (let i: number = 0; i < $(".language").length; i++) {
-       allContentChangeBlocks.push($(".language")[i].attributes["data-key"].textContent);
+        allContentChangeBlocks.push($(".language")[i].attributes["data-key"].textContent);
     }
 
     const toFindDuplicates = (array: string[]): string[] => array.filter((item, index) => array.indexOf(item) !== index);

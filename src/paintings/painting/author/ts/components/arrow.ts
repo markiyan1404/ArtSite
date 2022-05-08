@@ -7,7 +7,7 @@ interface langApp {
 }
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      body: JQuery<HTMLElement> = $("body");
+    body: JQuery<HTMLElement> = $("body");
 
 // Arrow 
 
@@ -69,10 +69,10 @@ page.on("popstate", (): void => location.reload());
 export const nearbyPages = (direction: string, arrowName: string): void => {
     const activeLanguageLS: string = localStorage.getItem("lang");
 
-    import("../../../../../paintings/painting/author/content/" + direction + ".json").then((langJSON) => {
+    import("../../../../../paintings/painting/author/content/" + direction + ".json").then(langJSON => {
         const currLangExport: langApp = Object.entries(langJSON.default)[Object.keys(langJSON.default).indexOf(activeLanguageLS)][1], 
-              nearbyPageName = currLangExport.mainTitle;
-              $(arrowName).html(nearbyPageName);   
+            nearbyPageName = currLangExport.mainTitle;
+        $(arrowName).html(nearbyPageName);   
     }); 
 };
 
@@ -80,7 +80,7 @@ export const nearbyPages = (direction: string, arrowName: string): void => {
 
 page.on("load", (): void => {
     const newPageArrowClickLS: string = localStorage.getItem("newPageArrowClick"),
-          activeCursorLS: string = localStorage.getItem("activeCursor");
+        activeCursorLS: string = localStorage.getItem("activeCursor");
 
     if (newPageArrowClickLS !== null && activeCursorLS !== "false") {
         $("." + newPageArrowClickLS).css("opacity", "1").css("display", "block");

@@ -6,7 +6,7 @@ import {nearbyPages, leftArrow, rightArrow} from "./components/arrow";
 import "./components/years";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      body: JQuery<HTMLElement> = $("body");
+    body: JQuery<HTMLElement> = $("body");
 
 // Get page identification key 
 
@@ -16,10 +16,10 @@ body.attr("data-name", key);
 // New user 
 
 const newUser = (): void => {
-    if(localStorage.getItem("allAuthors")) return;
+    if (localStorage.getItem("allAuthors")) return;
 
     const allPaintings: string = String(allPaintingsName),
-          allAuthors: string = String(allAuthorsName);
+        allAuthors: string = String(allAuthorsName);
 
     localStorage.setItem("allPaintings", allPaintings);
     localStorage.setItem("allAuthors", allAuthors);
@@ -48,7 +48,7 @@ $(".content__information img").attr("src", "./img/paintings/authors/" + key + ".
 
 export const allAuthors = (): string[] => {
     const allAuthorsLS: string = localStorage.getItem("allAuthors"),
-          allAuthors: string[] = allAuthorsLS.split(",");
+        allAuthors: string[] = allAuthorsLS.split(",");
 
     return allAuthors;
 };
@@ -67,7 +67,7 @@ activeAuthor();
 const checkBodyClass = (): void => {
     const getTypeAnim: string = localStorage.getItem("typeAuthorAnim");
 
-    getTypeAnim == null ? body.addClass("authorToAuthor") : body.addClass(getTypeAnim);
+    getTypeAnim === null ? body.addClass("authorToAuthor") : body.addClass(getTypeAnim);
 };
 
 $(".languages__choice").on("click", (): void => {
@@ -89,10 +89,11 @@ page.on("load", (): void => {
 const mobileYearsPosition = (): void => {
     if (page.width() < 1000) {
         const image: JQuery<Element> = $(".content__information img"),
-              yearsPosition: number = image[0].getBoundingClientRect().top + image.height() - $(".navigation").outerHeight();
+            yearsPosition: number = image[0].getBoundingClientRect().top + image.height() - $(".navigation").outerHeight();
     
         $(".content__year").css("top", yearsPosition);
-    } else{
+    }
+    else {
         $(".content__year").css("top", "0");
     }
 };

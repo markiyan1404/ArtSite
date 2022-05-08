@@ -6,7 +6,7 @@ interface langApp {
 }
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      body: JQuery<HTMLElement> = $("body");
+    body: JQuery<HTMLElement> = $("body");
 
 // Arrow 
 
@@ -68,10 +68,10 @@ page.on("popstate", (): void => location.reload());
 export const nearbyPages = (direction: string, arrowName: string): void => {
     const activeLanguageLS = localStorage.getItem("lang");
 
-    import("../../../../paintings/painting/content/" + direction + ".json").then((langJSON) => {
+    import("../../../../paintings/painting/content/" + direction + ".json").then(langJSON => {
         const currLangExport: langApp = Object.entries(langJSON.default)[Object.keys(langJSON.default).indexOf(activeLanguageLS)][1], 
-              nearbyPageName: string = currLangExport.mainTitle;
-              $(arrowName).html(nearbyPageName);   
+            nearbyPageName: string = currLangExport.mainTitle;
+        $(arrowName).html(nearbyPageName);   
     }); 
 };
 

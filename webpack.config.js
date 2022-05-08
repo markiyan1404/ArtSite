@@ -7,6 +7,7 @@ const path = require("path"),
       terserWebpackPlugin = require("terser-webpack-plugin"),
 
       StylelintPlugin = require("stylelint-webpack-plugin"),
+      ESLintPlugin = require("eslint-webpack-plugin"),
       isDev = process.env.NODE_ENV === "development",
       isProd = !isDev;
 
@@ -128,6 +129,8 @@ module.exports = {
 
         // STYLELINT plagin
         new StylelintPlugin(),
+
+        new ESLintPlugin(),
     ],
 
     resolve: {
@@ -198,7 +201,7 @@ module.exports = {
                     options: {
                         presets: ["@babel/preset-env", "@babel/preset-typescript"],
                         plugins: ["@babel/plugin-proposal-object-rest-spread"]
-                    }
+                    },
                 },
                 resolve: {
                     extensions: ['.js', '.ts'],

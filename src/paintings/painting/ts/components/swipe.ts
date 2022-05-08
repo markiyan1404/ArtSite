@@ -2,7 +2,7 @@ import * as $ from "jquery";
 import { bottomArrowClick, rightArrow, leftArrow} from "./arrows";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      phone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i;
+    phone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i;
 
 // Swipe on phone
 
@@ -25,8 +25,8 @@ $("*").on("touchmove", (event): void => {
 
 $("*").on("touchend", (): void => {
     const windowWidth: number = page.width(),
-          checkPhone: boolean = phone.test(navigator.userAgent),
-          navWindowDisplay: string = $(".menu, .languages__choice, .colors__active").css("display");
+        checkPhone: boolean = phone.test(navigator.userAgent),
+        navWindowDisplay: string = $(".menu, .languages__choice, .colors__active").css("display");
 
     if (startingX + 150 < movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000){
         bottomArrowClick("swipeLeft", "paintingToPainting", "arrow__prev-page-name", leftArrow());

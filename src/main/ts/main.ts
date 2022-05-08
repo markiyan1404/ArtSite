@@ -16,7 +16,7 @@ const page = $(window);
 // Loader animation
 
 const loaderContetnt = (): void => {
-  $("body").addClass("loadedPage");
+    $("body").addClass("loadedPage");
 
     updateScroller();  
     page.focus();
@@ -29,43 +29,44 @@ const loaderContetnt = (): void => {
 };
 
 if (localStorage.getItem("firstLoad") === null) {
-  let firstLoad: boolean | string = true;
+    let firstLoad: boolean | string = true;
 
-  setTimeout(loaderContetnt, 1700);  
+    setTimeout(loaderContetnt, 1700);  
 
-  firstLoad = false;
-  firstLoad = String(firstLoad);
+    firstLoad = false;
+    firstLoad = String(firstLoad);
   
-  localStorage.setItem("firstLoad", firstLoad);
-} else{
-  $(".preloader").css("display", "none");
-  setTimeout(loaderContetnt, 200);  
+    localStorage.setItem("firstLoad", firstLoad);
+}
+else {
+    $(".preloader").css("display", "none");
+    setTimeout(loaderContetnt, 200);  
 }
 
 // Animation show  
 
 const reveal = (): void => {
-  const revealBlocks: JQuery<Element> = $(".reveal-blocks"),
+    const revealBlocks: JQuery<Element> = $(".reveal-blocks"),
         revealTexts: JQuery<Element> = $(".reveal-texts"),
         windowHeight: number = page.innerHeight();
 
-  for (let i: number = 0; i < revealBlocks.length; i++) {
-    const elementTop: number = revealBlocks[i].getBoundingClientRect().top;
+    for (let i: number = 0; i < revealBlocks.length; i++) {
+        const elementTop: number = revealBlocks[i].getBoundingClientRect().top;
 
-    if (elementTop < windowHeight) {
-      $(revealBlocks[i]).addClass("scrolled");
+        if (elementTop < windowHeight) {
+            $(revealBlocks[i]).addClass("scrolled");
+        }
     }
-  }
 
-  for (let t: number = 0; t < revealTexts.length; t++) {
-    const elementTop: number = revealTexts[t].getBoundingClientRect().top - 50;
+    for (let t: number = 0; t < revealTexts.length; t++) {
+        const elementTop: number = revealTexts[t].getBoundingClientRect().top - 50;
 
-    if (elementTop < windowHeight) {
-      $(revealTexts[t]).attr("data-splitting", "words");
-      $(revealTexts[t]).addClass("scrolled-text");
-      Splitting();
+        if (elementTop < windowHeight) {
+            $(revealTexts[t]).attr("data-splitting", "words");
+            $(revealTexts[t]).addClass("scrolled-text");
+            Splitting();
+        }
     }
-  }
 };
 
 page.on("scroll", reveal);

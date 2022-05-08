@@ -5,7 +5,7 @@ import "swiper/css";
 import "./components/slider";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      cursor: JQuery<HTMLElement> = $(".cursor, #cursor");
+    cursor: JQuery<HTMLElement> = $(".cursor, #cursor");
 
 // Adap paintings 
 

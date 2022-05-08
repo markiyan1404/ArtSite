@@ -22,11 +22,11 @@ const changeLang = (langVal: string): void => {
 
 const contentUpdate = (cl: string): void => {
     const currLangExport: langApp = Object.entries(menulangJSON)[Object.keys(menulangJSON).indexOf(cl)][1],
-          langContExport: number = Object.entries(currLangExport).length;
+        langContExport: number = Object.entries(currLangExport).length;
 
     for (let i: number = 0; i < langContExport; i++) {
         const getSelectorExport: langApp = $(".language-export")[i],
-        getAttrExport: string = getSelectorExport.getAttribute("data-key");
+            getAttrExport: string = getSelectorExport.getAttribute("data-key");
         getSelectorExport.innerHTML = currLangExport[getAttrExport];
     }
 };
@@ -74,8 +74,8 @@ $(".choice__language").on("click", function (): void {
 
 const languagesPosition = (): void => {
     const languagesHeight: number = $(".languages__choice").height(),
-          bodyHeight: number = page.height(),
-          languagesPosition: string = ((bodyHeight - languagesHeight) / 2) + "px";
+        bodyHeight: number = page.height(),
+        languagesPosition: string = ((bodyHeight - languagesHeight) / 2) + "px";
 
     $(".languages__choice").css("top", languagesPosition);
 };
@@ -88,7 +88,8 @@ $(".languages__language").on("click", function (): void {
         $(".languages__choice").fadeOut(300);
         $(this).removeClass("languages-active");
 
-    } else {
+    }
+    else {
         $(this).addClass("languages-active");
         $(".languages__choice").fadeIn(300);
         $(".languages__choice").css("display", "flex");
@@ -108,13 +109,14 @@ $(".languages__language").on("click", function (): void {
     languagesPosition();
 });
 
-$("body").on("click", (e) => {
+$("body").on("click", e => {
     let clickLeng: number | string, clickLeng2: number | string;
 
     if (e.target.localName === "path" || e.target.localName === "svg") {
         $(".languages__choice").fadeOut(300);
         $(".languages__language").removeClass("languages-active");
-    } else {
+    }
+    else {
         clickLeng = e.target.className.indexOf("choice__language");
         clickLeng2 = e.target.className.indexOf("languages");
         
@@ -139,8 +141,8 @@ $(".choice__language").on("click", (): void => activeLanguageBackground());
 
 const activeLanguageBackground = () => {
     const language: JQuery<Element> = $(".languages-active"),
-          languageHeight: number = language.innerHeight(),
-          topOffset: string = "translateY(" + language.position().top + "px)";
+        languageHeight: number = language.innerHeight(),
+        topOffset: string = "translateY(" + language.position().top + "px)";
 
     languagesActiveBackground.height(languageHeight);
     languagesActiveBackground.css("transform", topOffset);

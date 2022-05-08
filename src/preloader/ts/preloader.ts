@@ -18,7 +18,7 @@ $(window).on("load", (): void => {
         preloadImageNum++;
         $(".preloader__image-" + preloadImageNum).addClass("preloaderActiveImage");
 
-        if(preloadImageNum >= 6 ) {
+        if (preloadImageNum >= 6 ) {
             preloadImageNum = 1;
             cycleOfPictures++;
             $(".preloader__image-1").addClass("preloaderActiveImage");

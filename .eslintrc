@@ -40,7 +40,7 @@
         "implicit-arrow-linebreak": ["error", "beside"],
         "indent": "error",
         "keyword-spacing": ["error", { "before": true }],
-        "max-len": ["error", { "code": 150, "tabWidth": 5 }],
+        "max-len": ["error", { "code": 200, "tabWidth": 5 }],
         "no-multi-spaces": "error",
         "semi-style": ["error", "last"]
     }

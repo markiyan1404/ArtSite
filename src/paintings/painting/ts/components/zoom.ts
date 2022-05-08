@@ -12,10 +12,10 @@ interface zoom {
 }
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      zoomArea: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-area"),
-      zoomImage: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-image"),
-      informationImage: JQuery<HTMLElement> = $("#information__image"),
-      phone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i;
+    zoomArea: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-area"),
+    zoomImage: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-image"),
+    informationImage: JQuery<HTMLElement> = $("#information__image"),
+    phone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i;
 
 // Zoom image
 
@@ -28,7 +28,7 @@ const zoom = (): void => {
     const options: zoom = {
         width: imageSize(),
         zoomWidth: imageSize(),
-        offset: {vertical: 0, horizontal: 10},
+        offset: {vertical: 0, horizontal: 10}
     };
     
     $(".js-image-zoom__zoomed-area, .js-image-zoom__zoomed-image").remove();
@@ -48,7 +48,8 @@ informationImage.on("mousemove", function (e): void {
 
     if (checkPhone || page.width() <= 1000) {
         $(".js-image-zoom__zoomed-area, .js-image-zoom__zoomed-image").remove();
-    } else {
+    }
+    else {
         const zoomImageiD = document.getElementById("js-image-zoom__zoomed-image");
 
         if ($(e.target).hasClass("js-image-zoom__zoomed-image")) { 
@@ -60,7 +61,7 @@ informationImage.on("mousemove", function (e): void {
 
         $(".js-image-zoom__zoomed-image").attr("id", "js-image-zoom__zoomed-image");
     
-        if(zoomImageiD) zoomImageiD.style.setProperty("display", "block", "important");
+        if (zoomImageiD) zoomImageiD.style.setProperty("display", "block", "important");
         
         removeAddActiveClass("zoom-area-NoActive", "zoom-area-active", "zoom-image-Noactive", "zoom-image-active");
     }
@@ -71,7 +72,8 @@ informationImage.on("mouseleave", function (e): void {
 
     if (checkPhone || page.width() <= 1000) {
         $(".js-image-zoom__zoomed-area, .js-image-zoom__zoomed-image").remove();
-    } else {
+    }
+    else {
 
         $(zoomImage).attr("id", "js-image-zoom__zoomed-image");
         const zoomImageiD: HTMLElement = document.getElementById("js-image-zoom__zoomed-image");
@@ -87,13 +89,13 @@ informationImage.on("mouseleave", function (e): void {
 
 const removeAddActiveClass = (removeClass1: string, addClass1: string, removeClass2: string, addClass2: string) => {
     const zoomArea: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-area"),
-          zoomImage: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-image");
+        zoomImage: JQuery<HTMLElement> = $(".js-image-zoom__zoomed-image");
 
     zoomArea.removeClass(removeClass1).addClass(addClass1);
     zoomImage.removeClass(removeClass2).addClass(addClass2);
 };  
 
-const hideZoomImage = (zoomImageiD) => {
+const hideZoomImage = zoomImageiD => {
     setTimeout((): void => {
         zoomImageiD.style.setProperty("display", "none", "important");
         $(".js-image-zoom__zoomed-image").removeClass("zoom-image-Noactive");

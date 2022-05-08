@@ -10,16 +10,16 @@ const nextSlide = (): void => {
 
     if (checkActiveImage) return;
     else {
-            removeFromSlideClass();
+        removeFromSlideClass();
 
-            imageNum++;
-            if (imageNum === 6) imageNum = 1;
+        imageNum++;
+        if (imageNum === 6) imageNum = 1;
 
-            let noActiveImage: string = "";
-            imageNum === 1 ? noActiveImage = ".images__img-" + 5 : noActiveImage = ".images__img-" + (imageNum - 1);
+        let noActiveImage: string = "";
+        imageNum === 1 ? noActiveImage = ".images__img-" + 5 : noActiveImage = ".images__img-" + (imageNum - 1);
 
-            addToSlideClass(noActiveImage, "images__img-NOactive", "images__img-active");
-        }
+        addToSlideClass(noActiveImage, "images__img-NOactive", "images__img-active");
+    }
 };
 
 
@@ -28,16 +28,16 @@ const prevSlide = (): void => {
 
     if (checkActiveImage) return;
     else {
-            removeFromSlideClass();
+        removeFromSlideClass();
 
-            imageNum--;
-            if (imageNum === 0) imageNum = 5;
+        imageNum--;
+        if (imageNum === 0) imageNum = 5;
 
-            let noActiveImage: string = "";
-            imageNum === 5 ? noActiveImage = ".images__img-" + 1 : noActiveImage = ".images__img-" + (imageNum + 1);
+        let noActiveImage: string = "";
+        imageNum === 5 ? noActiveImage = ".images__img-" + 1 : noActiveImage = ".images__img-" + (imageNum + 1);
 
-            addToSlideClass(noActiveImage, "images__img-prev-NOactive", "images__img-prev-active");
-        }
+        addToSlideClass(noActiveImage, "images__img-prev-NOactive", "images__img-prev-active");
+    }
 };
 
 const removeFromSlideClass = () => {
@@ -64,6 +64,6 @@ $(".image-paint__next").on("click", nextSlide);
 
 // Generate background Blocks
 
-for(let i: number = 0; i < 23; i++) {
+for (let i: number = 0; i < 23; i++) {
     $(".window-2__end").append("<span class='end__block'></span>");
 }

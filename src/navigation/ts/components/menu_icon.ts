@@ -1,8 +1,8 @@
 import * as $ from "jquery";
 
 const menuShow: JQuery<Element> = $(".anim-show"),
-      animShow1: JQuery<Element> = $(".anim-show1"),
-      navigationMenuAndClouse: JQuery<Element> = $(".navigation__menu, .navigation__clouse");
+    animShow1: JQuery<Element> = $(".anim-show1"),
+    navigationMenuAndClouse: JQuery<Element> = $(".navigation__menu, .navigation__clouse");
 
 // Show menu animation
 
@@ -34,7 +34,7 @@ const noClickMenuIcon = (): void => {
 
 // Show menu
 
-$(".navigation__menu").on("click", (): void  => showMenu());
+$(".navigation__menu").on("click", (): void => showMenu());
 
 export const showMenu = (): void => {
     const noClickBlocks: string = $(".navigation__menu, .navigation__clouse").attr("value");

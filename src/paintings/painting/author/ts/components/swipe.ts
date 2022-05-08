@@ -21,14 +21,14 @@ $("*").on("touchmove", (event): void => {
 
 $("*").on("touchend", (): void => {
     const windowWidth: number = page.width(),
-          checkPhone: boolean = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent),
-          navWindowDisplay: string = $(".menu, .languages__choice, .colors__active").css("display");
+        checkPhone: boolean = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent),
+        navWindowDisplay: string = $(".menu, .languages__choice, .colors__active").css("display");
 
-    if(startingX + 150 < movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000){
+    if (startingX + 150 < movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000){
         bottomArrowClick("swipeLeft", "authorToAuthor swipeLeftLoad", "arrow__prev-page-name", leftArrow());
     }
 
-    if(startingX - 150 > movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000) {
+    if (startingX - 150 > movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000) {
         bottomArrowClick("swipeRight", "authorToAuthor", "arrow__next-page-name", rightArrow());
     }
 });

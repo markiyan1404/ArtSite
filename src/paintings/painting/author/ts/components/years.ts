@@ -1,14 +1,14 @@
 import * as $ from "jquery";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-      body: JQuery<HTMLElement> = $("body");
+    body: JQuery<HTMLElement> = $("body");
 
 // Creation years
 
 const creationYears = (): void => {
     const floatNumberYears: number = 6,
-          activeNumberYears: number = 5,
-          yearsBlock: JQuery<Element> = $(".content__year");
+        activeNumberYears: number = 5,
+        yearsBlock: JQuery<Element> = $(".content__year");
     
     for (let leftLinesNum: number = 1; leftLinesNum <= floatNumberYears; leftLinesNum++) {
         yearsBlock.append(`<div class="year-line year-line-${leftLinesNum}"></div>`);
@@ -32,7 +32,7 @@ creationYears();
 
 const chengeYearsPosition = (): void => {
     const year1Position: DOMRect = $(".year-line-active-1")[0].getBoundingClientRect(),
-          year2Position: DOMRect = $(".year-line-active-5")[0].getBoundingClientRect();
+        year2Position: DOMRect = $(".year-line-active-5")[0].getBoundingClientRect();
 
     $(".year__text1").css("top", year1Position.bottom);
     $(".year__text2").css("top", year2Position.bottom);
@@ -55,9 +55,9 @@ function allLinesAnim (): void {
 
     let yearLineNum: number = 1;
     const addClassToLines = setInterval((): void => {
-         $(".year-line-" + yearLineNum).addClass("year-line-show");
-         yearLineNum++;
-     }, speedAnim); 
+        $(".year-line-" + yearLineNum).addClass("year-line-show");
+        yearLineNum++;
+    }, speedAnim); 
  
     const animationTime: number = $(".year-line").length * speedAnim;
  
@@ -67,20 +67,20 @@ function allLinesAnim (): void {
 
 function activeLineAnim (speed: number): void {
     const test: string[] = [],
-          NumActiveLine: JQuery<Element> = $(".year-line-active");
+        NumActiveLine: JQuery<Element> = $(".year-line-active");
     
     for (let i: number = 1; i <= NumActiveLine.length; i++) { 
         test.push(`year-line-active-${i}`);
     }
     
-   const addClassToActiveLines = setInterval((): void => {
-     if (test.length >= 1 ) {
-        $("." + test[0]).addClass("year-line-show"); 
-        $("." + test[test.length - 1]).addClass("year-line-show");
+    const addClassToActiveLines = setInterval((): void => {
+        if (test.length >= 1 ) {
+            $("." + test[0]).addClass("year-line-show"); 
+            $("." + test[test.length - 1]).addClass("year-line-show");
         
-        test.pop();
-        test.shift();
-     };
+            test.pop();
+            test.shift();
+        };
     }, speed);
 
     const animationTime: number = NumActiveLine.length * speed;

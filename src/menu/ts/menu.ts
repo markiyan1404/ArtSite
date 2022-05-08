@@ -8,13 +8,13 @@ const addActiveClassToMenu = () => {
     const pageName: string = $("body").attr("data-menu");
 
     $(".navigation__menu, .text__button-footer").on("click", (): void => {
-       setTimeout((): void => {
+        setTimeout((): void => {
             const activeMenuSection: JQuery<Element> = $(".menu__section-" + pageName);
             activeMenuSection.addClass("active-menu__child");
 
             setTimeout((): JQuery<Element> => activeMenuSection.css("transition", "$colorTransition"), 300);
             $("body").css("overflow", "hidden");
-       }, 1500);
+        }, 1500);
     });
 };
 addActiveClassToMenu();
@@ -49,4 +49,3 @@ $(".menu__section").on("click", function () {
     if (nameNextPage === "main") nameNextPage = "index";
     setTimeout((): string => location.href = `./${nameNextPage}.html`, 3100);
 }); 
-

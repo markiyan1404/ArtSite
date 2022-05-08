@@ -80,7 +80,7 @@ page.on("load", (): void => {
                 }
             },
             1000: {
-                slidesPerView: 4,
+                slidesPerView: 4
             },
             767: {
                 slidesPerView: 3,
@@ -99,7 +99,7 @@ page.on("load", (): void => {
             },
     
             "@0.74": {
-                slidesPerView: 2.5,
+                slidesPerView: 2.5
             }
         },
     
@@ -144,25 +144,25 @@ page.on("load", (): void => {
 
 const allPaintings = (): string[] => {
     const allPaintingsLS: string = localStorage.getItem("allPaintings"),
-          allPaintings: string[] = allPaintingsLS.split(",");
+        allPaintings: string[] = allPaintingsLS.split(",");
 
     return allPaintings;
 };
 
 const lastActivePaintingLS = (): string => {
-const lastPaintingLS: string = localStorage.getItem("lastPaintingName"),
-      lastPainting: string = String(allPaintings().indexOf(lastPaintingLS)),
-      lastPaintingName: string = allPaintings()[lastPainting];
+    const lastPaintingLS: string = localStorage.getItem("lastPaintingName"),
+        lastPainting: string = String(allPaintings().indexOf(lastPaintingLS)),
+        lastPaintingName: string = allPaintings()[lastPainting];
 
-localStorage.setItem("lastPainting", lastPainting); 
-localStorage.setItem("lastPaintingName", lastPaintingName);
+    localStorage.setItem("lastPainting", lastPainting); 
+    localStorage.setItem("lastPaintingName", lastPaintingName);
 
-return lastPainting;
+    return lastPainting;
 };
 
 const paintingNum = (): void => {
     const paintingName: string[] = [],
-          authorName: string[] = [];
+        authorName: string[] = [];
 
     const paintings = $(".swiper-slide__image");
 
