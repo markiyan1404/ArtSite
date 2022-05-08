@@ -167,11 +167,11 @@
     }
 
     .menu__lines {
-        margin: 2px 0px;
+        margin: 2px 0;
     }
 
     .navigation__clouse {
-        margin: 0px -1px 0 13px;
+        margin: 0 -1px 0 13px;
 
         .navigation__clouse-diamond {
             font-size: 13px;
@@ -206,11 +206,11 @@
     }
 
     .menu__lines {
-        margin: 2px 0px;
+        margin: 2px 0;
     }
 
     .navigation__clouse {
-        margin: 0px 6px 0 3px;
+        margin: 0 6px 0 3px;
 
         .navigation__clouse-diamond {
             font-size: 13px;
@@ -245,7 +245,7 @@
     }
 
     .navigation__clouse {
-        margin: 0px 5px 0 4px;
+        margin: 0 5px 0 4px;
 
         .navigation__clouse-diamond {
             font-size: 13px;
@@ -255,7 +255,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0) and (max-width: 350px) {
     .navigation__menu {
 
         .menu__lines-lines1 {
@@ -280,11 +280,11 @@
     }
 
     .menu__lines {
-        margin: 2px 0px;
+        margin: 2px 0;
     }
 
     .navigation__clouse {
-        margin: 0px 4px 0;
+        margin: 0 4px;
 
         .navigation__clouse-diamond {
             font-size: 11px;
@@ -294,7 +294,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .navigation__menu {
         position: relative;
     }
@@ -327,7 +327,7 @@
     }
 
     .navigation__clouse {
-        margin: 0px 0px 0px 18px;
+        margin: 0 0 0 18px;
 
         .navigation__clouse-diamond {
             font-size: 17px;

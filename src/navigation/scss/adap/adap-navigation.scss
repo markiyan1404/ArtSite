@@ -32,7 +32,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0) and (max-width: 350px) {
     .navigation {
         padding: 15px 0;
     }
@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .navigation {
         align-items: center;
         flex-direction: row;
@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0px) and (max-height: 500px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
     .navigation {
         height: 40px;
         padding: 1.5vh 0;

@@ -4,7 +4,7 @@
 
         .window-3__title-1 {
             font-size: 130px;
-            margin: 210px 0 0px 3%;
+            margin: 210px 0 0 3%;
         }
 
         .point__child {
@@ -355,11 +355,11 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin: 320px 0 0 0px;
+            margin: 320px 0 0;
             text-align: center;
 
             .description__header {
-                margin: 30px 0 40px 0px;
+                margin: 30px 0 40px;
                 text-align: center;
                 width: 90%;
             }
@@ -469,7 +469,7 @@
                 text-align: center;
 
                 .description__header {
-                    margin: 100px 0 40px 0px;
+                    margin: 100px 0 40px;
                     text-align: center;
                     width: 90%;
                 }
@@ -562,7 +562,7 @@
                     border-left: 35px solid var(--contrastColorWhite);
                     border-top: 22px solid transparent;
                     left: 47%;
-                    margin: 240px 0px 0 0;
+                    margin: 240px 0 0;
                     position: absolute;
                 }
 
@@ -600,7 +600,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0) and (max-width: 500px) {
     .window-3 {
         padding-bottom: 70px;
 
@@ -758,7 +758,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0) and (max-width: 350px) {
     .window-3 {
         padding-bottom: 50px;
 
@@ -916,7 +916,7 @@
                     border-left: 35px solid var(--contrastColorWhite);
                     border-top: 25px solid transparent;
                     left: 47%;
-                    margin: 315px 0px 0 0;
+                    margin: 315px 0 0;
                     position: absolute;
                 }
 
@@ -924,7 +924,7 @@
                     border-bottom: 11px solid transparent;
                     border-left: 15px solid var(--mainColor);
                     border-top: 11px solid transparent;
-                    margin: -11px 0px 0px -28px;
+                    margin: -11px 0 0 -28px;
                 }
 
                 .next-slide__image-active {
@@ -944,7 +944,7 @@
 
             .description__header {
                 font-size: 52px;
-                margin: 65px 0 40px 0px;
+                margin: 65px 0 40px;
                 text-align: center;
                 width: 90%;
             }
@@ -958,7 +958,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0px) and (max-height: 500px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
     .window-3 {
         padding-bottom: 60px;
 

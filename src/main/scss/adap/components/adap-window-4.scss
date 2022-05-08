@@ -160,7 +160,7 @@
                 border: 1px solid #fff;
                 font-size: 14px;
                 height: 8px;
-                margin: 15px 16px 0 0px;
+                margin: 15px 16px 0 0;
                 width: 8px;
             }
 
@@ -227,7 +227,7 @@
                 border: 1px solid #fff;
                 font-size: 12px;
                 height: 5px;
-                margin: 10px 9px 0 0px;
+                margin: 10px 9px 0 0;
                 width: 5px;
             }
 
@@ -316,7 +316,7 @@
             .close-architecture {
                 border: 2px solid #fff;
                 height: 10px;
-                margin: 15px 15px 0 0px;
+                margin: 15px 15px 0 0;
                 width: 10px;
             }
 
@@ -356,7 +356,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0) and (max-width: 500px) {
     .window-4 {
         .window-4__title-block .title-block__text {
 
@@ -388,7 +388,7 @@
                 border: 2px solid #fff;
                 font-size: 16px;
                 height: 8px;
-                margin: 12px 12px 0 0px;
+                margin: 12px 12px 0 0;
                 width: 8px;
             }
 
@@ -428,7 +428,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0) and (max-width: 350px) {
     .window-4 {
 
         .window-4__architecture .image-architecture__text h3 {
@@ -483,7 +483,7 @@
                 border: 2px solid #fff;
                 font-size: 21px;
                 height: 20px;
-                margin: 18px 18px 0 0px;
+                margin: 18px 18px 0 0;
                 width: 20px;
             }
 
@@ -531,7 +531,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0px) and (max-height: 500px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
 
     .images-block__image-architecture-1 {
         height: 300px;

@@ -52,7 +52,7 @@
         border-bottom: 2px solid var(--contrastColorBlack);
         font-family: "Spectral SC";
         font-size: 25px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
 
         @include contrast-color-black-color;
     }

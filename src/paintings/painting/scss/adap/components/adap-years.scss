@@ -38,7 +38,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 0) and (max-width: 550px) {
     .content__year {
         font-size: 50px;
         right: 6%;
@@ -46,7 +46,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .content__year {
         -webkit-text-stroke: 1px var(--contrastColorWhite);
         z-index: 2;

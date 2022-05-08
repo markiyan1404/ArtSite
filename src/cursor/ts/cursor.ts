@@ -8,15 +8,14 @@ interface cursor {
 };
 
 const page: JQuery<Window & typeof globalThis> = $(window),
+    cursorInner: JQuery<Element> = $(".cursor"),
+    cursor: JQuery<Element> = $("#cursor"),
+    cursorInnerAndCursor: JQuery<Element> = $("#cursor, .cursor"),
+    cursorCircle: JQuery<Element> = $(".progress-wrap"),
 
-      cursorInner: JQuery<Element> = $(".cursor"),
-      cursor: JQuery<Element> = $("#cursor"),
-      cursorInnerAndCursor: JQuery<Element> = $("#cursor, .cursor"),
-      cursorCircle: JQuery<Element> = $(".progress-wrap"),
-
-      mouse: cursor = { x: checkLastMousePosition()[0], y: checkLastMousePosition()[1] },
-      pos: cursor = { x: checkLastMousePosition()[0], y: checkLastMousePosition()[1] },
-      speed: number = 0.11;
+    mouse: cursor = { x: checkLastMousePosition()[0], y: checkLastMousePosition()[1] },
+    pos: cursor = { x: checkLastMousePosition()[0], y: checkLastMousePosition()[1] },
+    speed: number = 0.11;
 
 // Get mouse position
 
@@ -29,8 +28,8 @@ page.on("mousemove", function (e: number | any): void {
 
 const getSqueeze = (diffX: number, diffY: number): number => {
     const distance: number = Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2)),
-          maxSqueeze: number = 20.15,
-          accelerator: number = 1500;
+        maxSqueeze: number = 20.15,
+        accelerator: number = 1500;
 
     return Math.min(distance / accelerator, maxSqueeze);
 };
@@ -38,7 +37,7 @@ const getSqueeze = (diffX: number, diffY: number): number => {
 
 const updateCursor = (): void => {
     const diffX: number = Math.round(mouse.x - pos.x),
-          diffY: number = Math.round(mouse.y - pos.y);
+        diffY: number = Math.round(mouse.y - pos.y);
 
     pos.x += diffX * speed;
     pos.y += diffY * speed;
@@ -65,16 +64,16 @@ requestAnimationFrame(loop);
 
 const mouveHover = (): void => {
     
-$(".mouse-active").on("mousemove", function (): void {
-    if ($(this).hasClass("activeArchitecture")) {
-       cursorInner.removeClass("activeCursor");
-        return;
-    }
+    $(".mouse-active").on("mousemove", function (): void {
+        if ($(this).hasClass("activeArchitecture")) {
+            cursorInner.removeClass("activeCursor");
+            return;
+        }
 
-    cursorInner.addClass("activeCursor");
-});
+        cursorInner.addClass("activeCursor");
+    });
 
-page.on("mouseover", (e): void  => {
+page.on("mouseover", (e): void => {
     if ($(e.target).hasClass("mouse-active")) return;
     else {
         cursorInner.removeClass("activeCursor");

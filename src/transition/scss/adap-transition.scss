@@ -34,13 +34,13 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0) and (max-width: 500px) {
     .anim-show1__text {
         font-size: 45px;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .anim-show {
         width: 100% !important;
         z-index: 999;

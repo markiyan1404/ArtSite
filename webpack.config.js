@@ -1,5 +1,4 @@
 const path = require("path"),
-      fs = require("fs"),
       HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
       CopyWebpackPlugin = require("copy-webpack-plugin"),
@@ -10,15 +9,6 @@ const path = require("path"),
       StylelintPlugin = require("stylelint-webpack-plugin"),
       isDev = process.env.NODE_ENV === "development",
       isProd = !isDev;
-
-const PATHS = {
-    src: path.join(__dirname, "src/pug"),
-    dist: path.join(__dirname, "dist")
-};
-
-// const PAGES_DIR = `${PATHS.src}`,
-
-//       PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"))
 
 const optimization = () => {
     const config = {
@@ -37,7 +27,24 @@ const optimization = () => {
     return config
 }
 
-const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
+const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
+
+function print_names (...files) {
+    const baseFiles = [
+        "check_page_language", 
+        "navigation", 
+        "cursor", 
+        "menu", 
+        "menu_icon", 
+        "languages", 
+        "colors", 
+        "title"
+    ]
+
+    for (let i=0; i<files.length; i++) baseFiles.push(files[i]);
+
+    return baseFiles;
+}
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
@@ -58,9 +65,8 @@ module.exports = {
     },
 
     output: { 
-        filename: './js/[name].bundle.js',
+        filename: `./js/${filename('.js')}`,
         path: path.resolve(__dirname, 'dist'),
-        chunkFilename: './js/chunkFilename.[name].bundle.js'
  },
 
     plugins: [
@@ -69,7 +75,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./main.pug",
-            chunks: ["check_page_language", "main", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "title"],
+            chunks: print_names("main"),
             minify: {
                 collapseWhitespace: isProd,
             },
@@ -78,7 +84,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "paintings.html",
             template: "./paintings/paintings.pug",
-            chunks: ["check_page_language",  "paintings", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "firstLoad", "title"],
+            chunks: print_names("paintings"),
             minify: {
                 collapseWhitespace: isProd,
             },
@@ -87,7 +93,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "painting.html",
             template: "./paintings/painting/painting.pug",
-            chunks: ["check_page_language", "languages", "painting", "navigation", "cursor", "menu", "menu_icon", "colors", "firstLoad", "title"],
+            chunks: print_names("painting"),
             minify: {
                 collapseWhitespace: isProd,
             },
@@ -96,7 +102,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "author.html",
             template: "./paintings/painting/author/author.pug",
-            chunks: ["check_page_language", "painting_author", "navigation", "cursor", "menu", "menu_icon", "languages", "colors", "firstLoad", "title"],
+            chunks: print_names("painting_author"),
             minify: {
                 collapseWhitespace: isProd,
             },
@@ -116,8 +122,7 @@ module.exports = {
         }),
 
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash].css',  // prepend folder name
-            chunkFilename: 'css/[name].[id].css',    // prepend folder name
+            filename: 'css/[name].css',
             ignoreOrder: false,
         }),
 

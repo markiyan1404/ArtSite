@@ -21,6 +21,27 @@
             "double"
         ],
         "no-var": "error",
-        "prefer-const": "error"
+        "prefer-const": "error",
+        "no-duplicate-imports": ["error", { "includeExports": true }],
+        "no-sparse-arrays": "error",
+        "eqeqeq": ["error", "always"],
+        "operator-assignment": ["error", "always"],
+        "spaced-comment": ["error", "always"],
+        "array-bracket-newline": ["error", "consistent"],
+        "arrow-parens": ["error", "as-needed"],
+        "block-spacing": "error",
+        "arrow-spacing": "error",
+        "brace-style": ["error", "stroustrup"],
+        "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "comma-style": ["error", "last"],
+        "eol-last": ["error", "never"],
+        "function-call-argument-newline": ["error", "never"],
+        "implicit-arrow-linebreak": ["error", "beside"],
+        "indent": "error",
+        "keyword-spacing": ["error", { "before": true }],
+        "max-len": ["error", { "code": 150, "tabWidth": 5 }],
+        "no-multi-spaces": "error",
+        "semi-style": ["error", "last"]
     }
 }

@@ -177,7 +177,7 @@
 
         .text__button-footer {
             font-size: 28px;
-            margin-bottom: 0vh;
+            margin-bottom: 0;
             padding: 3.3% 10%;
         }
 
@@ -220,7 +220,7 @@
 
         .text__button-footer {
             font-size: 25px;
-            margin-bottom: 0vh;
+            margin-bottom: 0;
             padding: 3.5% 10%;
         }
 
@@ -238,7 +238,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .window-5 {
         .text__button-to-top:hover,
         .text__button-footer:hover {
@@ -248,7 +248,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0) and (max-width: 500px) {
     .window-5 {
         flex-direction: column;
         margin-top: -5vh;
@@ -273,7 +273,7 @@
 
         .text__button-footer {
             font-size: 22px;
-            margin-bottom: 0vh;
+            margin-bottom: 0;
             padding: 4% 13%;
         }
 
@@ -291,7 +291,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0) and (max-width: 350px) {
     .window-5 {
         .text__title-footer {
             font-size: 27px;
@@ -337,7 +337,7 @@
 
         .text__button-footer {
             font-size: 28px;
-            margin-bottom: 0vh;
+            margin-bottom: 0;
             padding: 3.2% 9%;
         }
 
@@ -356,7 +356,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0px) and (max-height: 500px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
     .window-5 {
         .window-5__image-1 {
             margin-left: 35%;
@@ -372,7 +372,7 @@
 
         .text__button-footer {
             font-size: 23px;
-            margin-bottom: 0vh;
+            margin-bottom: 0;
             padding: 2.2% 5.5%;
         }
 

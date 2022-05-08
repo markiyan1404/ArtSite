@@ -24,14 +24,14 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 0) and (max-width: 550px) {
     .content__background-line {
         height: 30%;
         width: 100%;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .content__navigating .navigating__line {
         display: none;
     }

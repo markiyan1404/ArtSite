@@ -233,7 +233,7 @@
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
 
     .window-2 {
-        padding-bottom: 0vh;
+        padding-bottom: 0;
 
         .window-2__title-1 {
             font-size: 47px;
@@ -344,7 +344,7 @@
 
         .window-2__slider-paint {
             flex-direction: column;
-            margin: 5vh 0 0 0px;
+            margin: 5vh 0 0;
             width: 100%;
         }
 
@@ -571,7 +571,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0) and (max-width: 500px) {
     .window-2 {
         .window-2__title-1 {
             font-size: 38px;
@@ -689,7 +689,7 @@
 
         .end__block {
             height: 50px;
-            margin-left: 0px;
+            margin-left: 0;
             width: 50px;
         }
     }
@@ -733,7 +733,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0) and (max-width: 350px) {
     .window-2 {
         .window-2__title-1 {
             font-size: 31px;
@@ -909,7 +909,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0px) and (max-height: 500px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
     .window-2 {
 
         .window-2__title-1 {

@@ -151,7 +151,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 0) and (max-width: 550px) {
     .content__information {
         top: 15vh;
         width: 100vw;
@@ -186,7 +186,7 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
     .content__information {
         flex-direction: column;
         margin-right: 0;
