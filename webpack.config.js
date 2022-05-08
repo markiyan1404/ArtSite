@@ -1,4 +1,5 @@
 const path = require("path"),
+      fs = require("fs"),
       HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
       CopyWebpackPlugin = require("copy-webpack-plugin"),
@@ -47,10 +48,10 @@ module.exports = {
         title: ["@standartTS/title.ts"],
     },
 
-    output: { 
-        filename: filename('.js'),    // prepend folder name
-        path: path.resolve(__dirname, 'dist'),
- },
+    output: {
+        filename: filename("js"),
+        path: path.resolve(__dirname, "dist"),
+    },
 
     plugins: [
 
@@ -104,11 +105,7 @@ module.exports = {
             ]
         }),
 
-        new MiniCssExtractPlugin({
-            // filename: 'css/[name].[contenthash].css',  
-            // chunkFilename: 'css/[name].[id].css',
-            // ignoreOrder: false,
-        }),
+        new MiniCssExtractPlugin(),
 
         // STYLELINT plagin
         new StylelintPlugin(),
@@ -131,31 +128,26 @@ module.exports = {
 
     module: {
         rules: [
-
             // Loading SCSS/SASS
             {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
-                        loader: "css-loader",
-                        options: {
-                            url: false,
-                        },
-                    },
-                    {
-                        loader: "resolve-url-loader",
-                        options: {
-                            
-                        },
-                    },
-                    {
-                        loader: "sass-loader",
-                        options: {
-                            sourceMap: true,
-                        },
+                      loader: 'css-loader',
+                      options: {
+                           url: false
+                      }
+                    }, {
+                      loader: 'resolve-url-loader',
+                      options: {}
+                    }, {
+                      loader: 'sass-loader',
+                      options: {
+                        sourceMap: true,
+                      }
                     }
-                ],              
+                  ]            
             },
 
             // Loading CSS
@@ -163,10 +155,24 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: MiniCssExtractPlugin.loader
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {},
                     },
                     "css-loader"
                 ],
+            },
+            
+            // Loading BABEL JS
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"],
+                        plugins: ["@babel/plugin-proposal-object-rest-spread"]
+                    }
+                },
             },
 
             // Loading BABEL TS
@@ -176,12 +182,14 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ["@babel/preset-env", "@babel/preset-typescript"],
+                        presets: [
+                            "@babel/preset-env",
+                            "@babel/preset-typescript"],
                         plugins: ["@babel/plugin-proposal-object-rest-spread"]
                     }
                 },
                 resolve: {
-                    extensions: ['.js', '.ts'],
+                    extensions: ['.js','.ts'],
                 }
             },
 
