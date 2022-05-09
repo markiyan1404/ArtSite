@@ -1,0 +1,33 @@
+.points {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: fixed;
+    top: 6vh;
+    width: 96%;
+
+    .points__line {
+        @include main-color-background;
+
+        height: 3px;
+        position: fixed;
+        width: 96%;
+    }
+
+    .points__point,
+    .points__point-big {
+        @include contrast-color-black-background;
+
+        border: 3px solid var(--mainColor);
+        height: 15px;
+        transform: rotate(45deg);
+        width: 15px;
+        z-index: 2;
+    }
+
+    .points__point-big {
+        height: 20px;
+        width: 20px;
+    }
+}

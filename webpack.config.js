@@ -56,6 +56,7 @@ module.exports = {
         paintings: ["@paintings/paintings.ts"],
         painting: ["@painting/painting.ts"],
         painting_author: ["@painting_author/author.ts"],
+        sculptures: ["@sculptures/sculptures.ts"],
         menu: ["@menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
@@ -109,6 +110,15 @@ module.exports = {
             },
         }),
         
+        new HtmlWebpackPlugin({
+            filename: "sculptures.html",
+            template: "./sculptures/sculptures.pug",
+            chunks: print_names("sculptures"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
         // CLEAN plagin
         new CleanWebpackPlugin(),
 
@@ -142,6 +152,7 @@ module.exports = {
             "@paintings": path.resolve(__dirname, "./src/paintings/ts"),
             "@painting": path.resolve(__dirname, "./src/paintings/painting/ts"),
             "@painting_author": path.resolve(__dirname, "./src/paintings/painting/author/ts"),
+            "@sculptures": path.resolve(__dirname, "./src/sculptures/ts"),
             "@standartTS": path.resolve(__dirname, "./src/ts")
         }
     },

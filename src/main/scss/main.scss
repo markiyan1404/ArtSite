@@ -74,3 +74,10 @@ body {
     opacity: 1;
     transition: opacity 0.3s;
 }
+
+canvas {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}

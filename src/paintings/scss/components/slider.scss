@@ -1,0 +1,85 @@
+.swiper-wrapper {
+    align-items: center !important;
+    margin-top: 20vh;
+}
+
+.swiper-slide {
+    animation: fadeInSlider 0.7s forwards;
+    animation-delay: 0.25s;
+    background-position: 50%;
+    background-size: cover;
+    opacity: 0;
+    text-align: center;
+    transition: transform 0.5s;
+
+    p {
+        @include contrast-color-white-color;
+
+        font-family: "Viaoda Libre";
+        font-size: 28px;
+        margin-left: 12.5%;
+        width: 75%;
+    }
+}
+
+@keyframes fadeInSlider {
+
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.swiper-slide img {
+    transition: 0.4s;
+    width: 73%;
+}
+
+.swiper-slide__image-NOactive:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s;
+}
+
+.swiper-slide-active {
+    animation: fadeInSliderActive 0.7s forwards;
+    transform: scale(1.15);
+}
+
+@keyframes fadeInSliderActive {
+
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.swiper-slide-activeSwipe {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+.painting-click {
+    animation: paintingClick 0.7s forwards;
+    display: flex !important;
+}
+
+@keyframes paintingClick {
+
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

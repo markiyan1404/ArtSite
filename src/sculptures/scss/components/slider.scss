@@ -1,0 +1,17 @@
+.slider {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+
+    .slider__images {
+        display: none;
+    }
+
+    .slider__images-active {
+        display: block;
+        width: 32%;
+        z-index: 2;
+    }
+}

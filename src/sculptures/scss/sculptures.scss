@@ -1,0 +1,31 @@
+@import "src/scss/variables";
+@import "./components/points";
+@import "./components/slider";
+
+body {
+    @include contrast-color-black-background;
+}
+
+// Background bloks
+
+.bg {
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    width: 96%;
+    z-index: -1;
+
+    span {
+        @include main-color-background;
+
+        display: flex;
+        height: 25vh;
+        width: 20%;
+    }
+
+    span:nth-child(2) {
+        height: 40vh;
+        width: 60%;
+    }
+}

@@ -1,0 +1,58 @@
+@import "./components/adap-scrollbar";
+@import "./components/adap-slider";
+
+@media screen and (min-width: 3200px) {
+
+    .year {
+        font-size: 420px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .year {
+        font-size: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .year {
+        font-size: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .year {
+        font-size: 170px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+
+    .year {
+        font-size: 170px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .year {
+        font-size: 120px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 500px) {
+
+    .year {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
+    .year {
+        font-size: 225px;
+    }
+}

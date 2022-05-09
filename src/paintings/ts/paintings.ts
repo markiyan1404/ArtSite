@@ -1,6 +1,6 @@
 import * as $ from "jquery";
 import "/paintings/scss/paintings.scss";
-import "/paintings/scss/adap-paintings.scss";
+import "/paintings/scss/adap/adap-paintings.scss";
 import "swiper/css";
 import "./components/slider";
 
