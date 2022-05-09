@@ -130,7 +130,7 @@ module.exports = {
         // STYLELINT plagin
         new StylelintPlugin(),
 
-        new ESLintPlugin(),
+        new ESLintPlugin({extensions: ['ts']})
     ],
 
     resolve: {
