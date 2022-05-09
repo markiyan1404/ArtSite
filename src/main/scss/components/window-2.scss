@@ -26,6 +26,7 @@
             transition: $colorTransition;
         }
     }
+
     .images__img {
         display: none;
         height: 100%;
@@ -44,9 +45,11 @@
     }
 
     @keyframes images__img-active-anim {
+
         from {
             transform: translateY(-100%);
         }
+
         to {
             transform: translateY(0%);
         }
@@ -58,9 +61,11 @@
     }
 
     @keyframes images__img-NOactive-anim {
+
         from {
             transform: translateY(0%);
         }
+
         to {
             transform: translateY(100%);
         }
@@ -72,9 +77,11 @@
     }
 
     @keyframes images__img-prev-active-anim {
+
         from {
             transform: translateY(100%);
         }
+
         to {
             transform: translateY(0%);
         }
@@ -86,9 +93,11 @@
     }
 
     @keyframes images__img-prev-NOactive-anim {
+
         from {
             transform: translateY(0%);
         }
+
         to {
             transform: translateY(-100%);
         }
@@ -250,6 +259,7 @@
         }
 
         @keyframes paints-texts {
+
             from {
                 opacity: 0;
                 transform: translateX(10%);

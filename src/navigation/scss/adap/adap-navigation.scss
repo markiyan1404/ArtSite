@@ -3,12 +3,14 @@
 @import "./components/adap-menu_icon";
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+
     .navigation {
         padding: 1.2vh 0;
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+
     .navigation {
         padding: 2.2vh 0;
     }
@@ -21,6 +23,7 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
+
     .navigation {
         padding: 15px 0;
     }
@@ -33,6 +36,7 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 350px) {
+
     .navigation {
         padding: 15px 0;
     }
@@ -45,6 +49,7 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
+
     .navigation {
         align-items: center;
         flex-direction: row;
@@ -65,6 +70,7 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
     .content {
         top: 4vh;
         width: 100% !important;
@@ -90,6 +96,7 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
+
     .navigation {
         height: 40px;
         padding: 1.5vh 0;

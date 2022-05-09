@@ -36,10 +36,12 @@ body {
 }
 
 @keyframes slide-in {
+
     from {
         clip-path: inset(0% 100% 0% 0%);
         opacity: 0;
     }
+
     to {
         clip-path: inset(0% 0% 0% 0%);
         opacity: 1;
@@ -51,10 +53,12 @@ body {
 }
 
 @keyframes scrolled {
+
     from {
         opacity: 0;
         transform: translateY(25%);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

@@ -1,29 +1,35 @@
 @media screen and (min-width: 3200px) {
+
     .menu .menu__section p {
         font-size: 60px;
     }
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3200px) {
+
     .menu .menu__section p {
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1700px) {
+
     .menu .menu__section p {
         font-size: 26px;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+
     .menu .menu__section p {
         font-size: 23px;
     }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+
     .menu {
+
         .menu__section p {
             font-size: 26px;
         }
@@ -31,7 +37,9 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+
     .menu {
+
         .menu__section p {
             font-size: 22px;
         }
@@ -39,7 +47,9 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 500px) {
+
     .menu {
+
         .menu__section p {
             font-size: 22px;
         }
@@ -47,12 +57,14 @@
 }
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
+
     .menu__section p {
         font-size: 24px !important;
     }
 }
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
+
     .menu {
         align-items: center;
         flex-direction: column;
@@ -96,6 +108,7 @@
     }
 
     @keyframes menu__section {
+
         from {
             transform: translateX(100%);
         }
@@ -107,6 +120,7 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
     .menu {
         align-items: center;
         flex-direction: column;
@@ -153,6 +167,7 @@
     }
 
     @keyframes menu__section {
+
         from {
             transform: translateX(100%);
         }
@@ -164,7 +179,9 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
+
     .menu {
+
         .menu__section p {
             font-size: 21px;
             margin: 0;

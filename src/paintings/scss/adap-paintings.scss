@@ -1,5 +1,7 @@
 @media screen and (min-width: 3200px) {
+
     .scrollbar {
+
         h1 {
             font-size: 105px;
             margin: 0 30px;
@@ -26,7 +28,9 @@
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3200px) {
+
     .scrollbar {
+
         h1 {
             font-size: 80px;
             margin: 0 30px;
@@ -57,6 +61,7 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
+
     .swiper-slide p {
         font-size: 22px;
     }
@@ -71,6 +76,7 @@
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+
     .scrollbar {
         top: -8vh;
 
@@ -106,7 +112,9 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+
     .scrollbar {
+
         .swiper-scrollbar {
             width: 27vw;
         }
@@ -122,6 +130,7 @@
     }
 
     .swiper-wrapper {
+
         p {
             font-size: 21px;
         }
@@ -137,7 +146,9 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+
     .scrollbar {
+
         .swiper-scrollbar {
             width: 200px;
         }
@@ -153,6 +164,7 @@
     }
 
     .swiper-wrapper {
+
         p {
             font-size: 19px;
         }
@@ -168,7 +180,9 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 500px) {
+
     .scrollbar {
+
         .swiper-scrollbar {
             width: 35vw;
         }
@@ -202,7 +216,9 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
     .scrollbar {
+
         h1 {
             font-size: 75px;
         }
@@ -222,6 +238,7 @@
 }
 
 @media screen and (max-width: 1050px) {
+
     .swiper-slide-active {
         animation: fadeInSlider 0.7s forwards;
         transform: scale(1);

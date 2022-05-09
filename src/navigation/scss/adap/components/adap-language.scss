@@ -1,4 +1,5 @@
 @media screen and (min-width: 3200px) {
+
     .navigation__languages .languages__language {
         font-size: 48px;
     }
@@ -20,6 +21,7 @@
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3200px) {
+
     .navigation__languages .languages__language {
         font-size: 32px;
     }
@@ -41,6 +43,7 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1700px) {
+
     .navigation__clouse .navigation__clouse-diamond {
         font-size: 15px;
         height: 25px;
@@ -73,6 +76,7 @@
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+
     .navigation__languages .languages__language {
         font-size: 20px;
     }
@@ -105,6 +109,7 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+
     .navigation__languages .languages__language {
         font-size: 23px;
     }
@@ -119,6 +124,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+
     .navigation__languages .languages__language {
         font-size: 22px;
     }
@@ -139,6 +145,7 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
+
     .navigation__languages .languages__language {
         font-size: 21px;
     }
@@ -159,6 +166,7 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 350px) {
+
     .navigation__languages .languages__language {
         font-size: 18px;
     }
@@ -173,6 +181,7 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
+
     .languages__choice {
         background: var(--contrastColorBlack);
         background: var(--contrastColorBlack) !important;
@@ -205,6 +214,7 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
     .navigation__languages .languages__choice::after {
         display: none;
     }
@@ -243,6 +253,7 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
+
     .languages__choice .choice__language {
         font-size: 34px;
         padding: 3vh 0;

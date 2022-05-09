@@ -1,4 +1,5 @@
 @media screen and (min-width: 3200px) {
+
     .content__close {
         border: 4px solid var(--contrastColorWhite);
         font-size: 32px;
@@ -8,6 +9,7 @@
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3200px) {
+
     .content__close {
         border: 4px solid var(--contrastColorWhite);
         font-size: 26px;
@@ -17,6 +19,7 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
+
     .content__close {
         border: 3px solid var(--contrastColorWhite);
         font-size: 19px;
@@ -26,6 +29,7 @@
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+
     .content__close {
         border: 2px solid var(--contrastColorWhite);
         font-size: 18px;
@@ -35,6 +39,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
+
     .content__close {
         font-size: 19px;
         height: 37px;
@@ -44,6 +49,7 @@
 }
 
 @media screen and (min-width: 550px) and (max-width: 767px) {
+
     .content__close {
         font-size: 19px;
         height: 37px;
@@ -53,6 +59,7 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 550px) {
+
     .content__close {
         font-size: 19px;
         height: 35px;
@@ -62,6 +69,7 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
+
     .content__close {
         color: var(--contrastColorBlack);
         position: absolute;

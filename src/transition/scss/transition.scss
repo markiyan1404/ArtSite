@@ -30,12 +30,15 @@
 }
 
 @keyframes anim-show-close {
+
     0% {
         transform: translateX(100%);
     }
+
     50% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -62,9 +65,11 @@
 }
 
 @keyframes show1Text {
+
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -87,9 +92,11 @@
 /* animation to fill text */
 
 @keyframes animate {
+
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }

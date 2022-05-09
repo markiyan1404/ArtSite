@@ -42,6 +42,7 @@ $colorTransition: var(--transitionTime);
 }
 
 @keyframes increase {
+
     from {
         transform: scale(0);
     }
@@ -52,6 +53,7 @@ $colorTransition: var(--transitionTime);
 }
 
 @keyframes reduction {
+
     from {
         transform: scale(1);
     }
@@ -62,6 +64,7 @@ $colorTransition: var(--transitionTime);
 }
 
 @keyframes show {
+
     from {
         opacity: 0;
     }
@@ -72,6 +75,7 @@ $colorTransition: var(--transitionTime);
 }
 
 @keyframes hide {
+
     from {
         opacity: 1;
     }
@@ -84,6 +88,7 @@ $colorTransition: var(--transitionTime);
 // Left and right
 
 @keyframes leftToStatic {
+
     from {
         transform: translateX(-100%);
     }
@@ -94,6 +99,7 @@ $colorTransition: var(--transitionTime);
 }
 
 @keyframes rightToStatic {
+
     from {
         transform: translateX(100%);
     }
@@ -106,6 +112,7 @@ $colorTransition: var(--transitionTime);
 // Top and bottom
 
 @keyframes topToStatic {
+
     from {
         transform: translateY(-100%);
     }
@@ -116,6 +123,7 @@ $colorTransition: var(--transitionTime);
 }
 
 @keyframes bottomToStatic {
+
     from {
         transform: translateY(100%);
     }

@@ -5,9 +5,11 @@ $zoomAnimation: 0.3s;
 }
 
 @keyframes zoomAreaActive {
+
     from {
         opacity: 0;
     }
+
     to {
         opacity: 0.4;
     }
@@ -19,9 +21,11 @@ $zoomAnimation: 0.3s;
 }
 
 @keyframes zoomAreaNoActive {
+
     from {
         opacity: 0.4;
     }
+
     to {
         display: none !important;
         opacity: 0;
@@ -38,9 +42,11 @@ $zoomAnimation: 0.3s;
 }
 
 @keyframes zoomNoActive {
+
     from {
         opacity: 1;
     }
+
     to {
         display: none !important;
         opacity: 0;

@@ -1,6 +1,7 @@
 @media screen and (min-width: 3200px) {
 
     .window-2 {
+
         .window-2__title-1 {
             font-size: 130px;
         }
@@ -78,7 +79,9 @@
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3000px) {
+
     .window-2 {
+
         .window-2__title-1 {
             font-size: 92px;
             margin-left: 47%;
@@ -147,6 +150,7 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1700px) {
+
     .window-2 {
         padding-bottom: 2vh;
 
@@ -332,7 +336,9 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+
     .window-2 {
+
         .window-2__title-1 {
             font-size: 58px;
             justify-content: center;
@@ -424,7 +430,9 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+
     .window-2 {
+
         .window-2__title-1 {
             font-size: 40px;
             justify-content: center;
@@ -533,15 +541,18 @@
     }
 
     @keyframes images__img-prev-active-anim {
+
         from {
             transform: translateX(-100%);
         }
+
         to {
             transform: translateX(0);
         }
     }
 
     @keyframes images__img-active-anim {
+
         from {
             transform: translateX(100%);
         }
@@ -552,6 +563,7 @@
     }
 
     @keyframes images__img-prev-NOactive-anim {
+
         from {
             transform: translateX(0);
         }
@@ -562,9 +574,11 @@
     }
 
     @keyframes images__img-NOactive-anim {
+
         from {
             transform: translateX(0%);
         }
+
         to {
             transform: translateX(-100%);
         }
@@ -572,7 +586,9 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 500px) {
+
     .window-2 {
+
         .window-2__title-1 {
             font-size: 38px;
             justify-content: center;
@@ -695,15 +711,18 @@
     }
 
     @keyframes images__img-prev-active-anim {
+
         from {
             transform: translateX(-100%);
         }
+
         to {
             transform: translateX(0);
         }
     }
 
     @keyframes images__img-active-anim {
+
         from {
             transform: translateX(100%);
         }
@@ -714,6 +733,7 @@
     }
 
     @keyframes images__img-prev-NOactive-anim {
+
         from {
             transform: translateX(0);
         }
@@ -724,9 +744,11 @@
     }
 
     @keyframes images__img-NOactive-anim {
+
         from {
             transform: translateX(0%);
         }
+
         to {
             transform: translateX(-100%);
         }
@@ -734,7 +756,9 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 350px) {
+
     .window-2 {
+
         .window-2__title-1 {
             font-size: 31px;
         }
@@ -799,7 +823,9 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
     .window-2 {
+
         .window-2__title-1 {
             font-size: 55px;
             justify-content: center;
@@ -900,6 +926,7 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1200px) {
+
     .window-2 .window-2__end {
         top: 2vh !important;
     }
@@ -910,6 +937,7 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) and (min-height: 0) and (max-height: 500px) {
+
     .window-2 {
 
         .window-2__title-1 {

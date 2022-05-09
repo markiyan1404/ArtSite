@@ -25,6 +25,7 @@
     }
 
     @keyframes window-1__title-1 {
+
         from {
             opacity: 0;
         }
@@ -56,9 +57,11 @@
     }
 
     @keyframes window-1Lines {
+
         from {
             width: 0;
         }
+
         to {
             width: 100%;
         }
@@ -92,6 +95,7 @@
     }
 
     @keyframes window-1__button {
+
         from {
             margin-top: 80vh;
             opacity: 0;

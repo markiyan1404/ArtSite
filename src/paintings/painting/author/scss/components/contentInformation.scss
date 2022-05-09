@@ -77,6 +77,7 @@
 }
 
 @keyframes authorToPainting {
+
     from {
         opacity: 1;
         transform: translateX(0);
@@ -97,6 +98,7 @@
 }
 
 @keyframes nextInformation {
+
     from {
         opacity: 1;
         transform: translateX(0);
@@ -113,6 +115,7 @@
 }
 
 @keyframes loadLeftSwipe {
+
     from {
         opacity: 0;
         transform: translateX(-30%);
@@ -130,6 +133,7 @@
 }
 
 @keyframes nextInformationSwipe {
+
     0% {
         opacity: 1;
         transform: translateX(0);
@@ -147,6 +151,7 @@
 }
 
 @keyframes prevInformation {
+
     0% {
         opacity: 1;
         transform: translateX(0);

@@ -55,9 +55,11 @@
     }
 
     @keyframes menu__section {
+
         from {
             transform: translateY(-100%);
         }
+
         to {
             transform: translateY(0);
         }
@@ -89,9 +91,11 @@
     }
 
     @keyframes menu__section-spanP {
+
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
@@ -148,6 +152,7 @@
 }
 
 @keyframes menuClick {
+
     from {
         transform: translateY(-100%);
     }

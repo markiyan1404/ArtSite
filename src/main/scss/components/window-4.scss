@@ -38,6 +38,7 @@
         }
 
         @keyframes title-block__text-anim {
+
             0% {
                 transform: translateX(0);
             }
@@ -53,9 +54,11 @@
     }
 
     @keyframes window-4__title-block {
+
         from {
             transform: translateX(-100%);
         }
+
         to {
             transform: translateX(-45%);
         }
@@ -208,6 +211,7 @@
         }
 
         @keyframes activeArchitecture {
+
             from {
                 opacity: 0;
             }
@@ -223,6 +227,7 @@
         }
 
         @keyframes activeArchitectureBackground {
+
             from {
                 opacity: 0;
             }
@@ -245,15 +250,18 @@
         }
 
         @keyframes NOactiveArchitecture {
+
             from {
                 opacity: 1;
             }
+
             to {
                 opacity: 0;
             }
         }
 
         @keyframes NOactiveArchitectureBackground {
+
             from {
                 opacity: 0.12;
             }

@@ -109,9 +109,11 @@
     }
 
     @keyframes images__sculptur-active-anim {
+
         from {
             transform: scale(0.3);
         }
+
         to {
             transform: scale(1);
         }
@@ -184,10 +186,12 @@
     }
 
     @keyframes description__text-active-animation {
+
         from {
             opacity: 0;
             transform: translateX(25px);
         }
+
         to {
             opacity: 1;
             transform: translateX(0);
@@ -215,9 +219,11 @@
         }
 
         @keyframes next-slide__image-active-anim {
+
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 0.2;
             }
