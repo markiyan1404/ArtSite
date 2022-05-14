@@ -1,5 +1,5 @@
 import * as $ from "jquery";
-import {allPaintingsName, allAuthorsName} from "./data-paintings";
+import {allPaintingsName, allAuthorsName} from "./data-name";
 
 import {
     Swiper,

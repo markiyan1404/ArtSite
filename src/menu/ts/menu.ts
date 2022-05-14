@@ -47,5 +47,5 @@ $(".menu__section").on("click", function () {
     $(".anim-show1").append(`<h1 data-text="${contentNextPage}" class="anim-show1__text">${contentNextPage}</h1>`);
     
     if (nameNextPage === "main") nameNextPage = "index";
-    setTimeout((): string => location.href = `./${nameNextPage}.html`, 3100);
+    setTimeout((): string => location.href = `./${nameNextPage}.html`, 3050);
 }); 

@@ -6,15 +6,25 @@ body {
     @include contrast-color-black-background;
 }
 
+.content {
+    overflow: hidden;
+    position: absolute;
+}
+
 // Background bloks
 
 .bg {
     align-items: flex-end;
+    animation: bottomToStatic 0.5s forwards;
     bottom: 0;
     display: flex;
-    position: fixed;
-    width: 96%;
+    position: absolute;
+    width: 100%;
     z-index: -1;
+
+    @keyframes bgShow {
+
+    }
 
     span {
         @include main-color-background;

@@ -1,7 +1,7 @@
 import "/paintings/painting/author/scss/author.scss";
 import "/paintings/painting/author/scss/adap/adap-author.scss";
 import * as $ from "jquery";
-import {allPaintingsName, allAuthorsName} from "../../../ts/components/data-paintings";
+import {allPaintingsName, allAuthorsName} from "../../../ts/components/data-name";
 import {nearbyPages, leftArrow, rightArrow} from "./components/arrow";
 import "./components/years";
 

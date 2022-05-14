@@ -1,23 +1,22 @@
 include ../pug/header
 body(data-name="sculptures" data-menu="sculptures")
 
-section.points
-    .points__line
+main.content
+    section.points
+        .points__line
 
-.slider
-    img(src="./img/sculptures/1.png").slider__images.slider__images-active
-    img(src="./img/sculptures/2.jpg").slider__images
-    img(src="./img/sculptures/3.png").slider__images
-    img(src="./img/sculptures/4.png").slider__images
-    img(src="./img/sculptures/5.jpg").slider__images
-    
-    section.arrow
-        .arrow__left
-        .arrow__right
+    .slider
 
-.bg
-    span
-    span
-    span
+    section.arrows
+        .arrows__arrow.arrows__arrow-left.mouse-active2
+            .arrow__icon
 
-include ../navigation/navigation
+        .arrows__arrow.arrows__arrow-right.mouse-active2
+            .arrow__icon
+
+    .bg
+        span
+        span
+        span
+
+    include ../navigation/navigation

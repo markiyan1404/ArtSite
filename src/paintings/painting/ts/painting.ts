@@ -2,7 +2,7 @@ import "/paintings/painting/scss/painting.scss";
 import "/paintings/painting/scss/adap/adap-painting.scss";
 import * as $ from "jquery";
 import {nearbyPages, rightArrow, leftArrow} from "./components/arrows";
-import {allPaintingsName, allAuthorsName} from "../../ts/components/data-paintings";
+import {allPaintingsName, allAuthorsName} from "../../ts/components/data-name";
 import "./components/zoom";
 import "./components/swipe";
 
