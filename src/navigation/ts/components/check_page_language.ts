@@ -1,4 +1,5 @@
 import * as $ from "jquery";
+import { error } from "jquery";
 
 interface langApp {
     [key: string]: string | any;
@@ -51,8 +52,10 @@ function importContent (obj: Object, language: string): void {
         contentNum = Object.entries(content).length;
 
     for (let l: number = 0; l < contentNum + repeatItem(); l++) {
-        const getSelectorExport: langApp = $(".language")[l],
-            getAttrExport: string = getSelectorExport.getAttribute("data-key");
+        const getSelectorExport: langApp = $(".language")[l];
+        if (getSelectorExport === undefined) continue;
+
+        const getAttrExport: string = getSelectorExport.getAttribute("data-key");
         getSelectorExport.innerHTML = content[getAttrExport];
     }
 };

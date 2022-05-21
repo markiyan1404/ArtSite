@@ -7,21 +7,15 @@
     justify-content: space-around;
     opacity: 0;
     position: fixed;
-    top: 3vh;
+    top: 4vh;
     width: 96%;
-
-    .points__line {
-        @include main-color-background;
-
-        height: 3px;
-        position: fixed;
-        width: 96%;
-    }
 
     .points__point {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        transform: translateY(-25%);
+        z-index: 2;
     }
 
     .point__icon {
@@ -65,4 +59,14 @@
         opacity: 1;
         transition: 0.3s;
     }
+}
+
+.points::after {
+    content: "";
+    display: inline;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+
+    @include main-color-background;
 }

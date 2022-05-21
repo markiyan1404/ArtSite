@@ -7,7 +7,6 @@ const menuShow: JQuery<Element> = $(".anim-show"),
 // Show menu animation
 
 const menuShowAnim = (): void => {
-    console.log("hi");
     menuShow.removeClass("anim-show-default anim-show-close");
     setTimeout(() => $(".anim-show1").addClass("anim-show-active"), 10);
     setTimeout(() => $(".anim-show2").addClass("anim-show-active"), 150);

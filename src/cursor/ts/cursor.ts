@@ -210,7 +210,7 @@ page.on("mousemove", (): void => checkClientDevice());
 page.on("load", (): void => checkClientDevice());
 
 const checkClientDevice = () => {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || $(window).width() < 500) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
         cursorInnerAndCursor.css("display", "none");
     }
     else {

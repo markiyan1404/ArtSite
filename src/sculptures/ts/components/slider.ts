@@ -1,33 +1,37 @@
 import * as $ from "jquery";
 import { allSculpturesName } from "./data-name";
 
+const page = $(window);
+
 // Create slides 
 
 const createSlides = () => {
     for (let p: number = 0; p < allSculpturesName.length; p++) {
         $(".slider").append(`
         <div class='slider__slide'>
-        <img src="./img/sculptures/${allSculpturesName[p]}.png" data-name="${allSculpturesName[p]}" class="slider__image"> 
-        <h1 class="slider__name language mouse-active" data-key="sculptureName${p}"></h1></div>`
+        <img src="./img/sculptures/${allSculpturesName[p]}.webp" data-name="${allSculpturesName[p]}" class="slide__image"> 
+        <section class="slider__text">
+        <h1 class="slide__name language mouse-active" data-key="sculptureName${p}"></h1>
+        </div>
+        </section>`
         );
     }
 
-    $($(".slider__image")[0]).addClass("slider__image-active");
-    $($(".slider__name")[0]).addClass("slider__name-active");
+    $($(".slider__slide")[0]).addClass("slider__slide-active");
 };
 
 createSlides();
 
 // Arrow click
 
-export const allImages: JQuery<Element> = $(".slider__image"),
-    allNames: JQuery<Element> = $(".slider__name"),
-    activeClassImages: string = "slider__image-active",
-    activeClassName: string = "slider__name-active";
+export const allSlides: JQuery<Element> = $(".slider__slide"),
+    activeClassSlide: string = "slider__slide-active",
+    allNames: JQuery<Element> = $(".slide__name");
+
 
 export const getActiveImage = (): number => {
-    for (let i: number = 0; i<allImages.length; i++) {
-        if (allImages[i].classList.value.indexOf(activeClassImages) !== -1) {
+    for (let i: number = 0; i<allSlides.length; i++) {
+        if (allSlides[i].classList.value.indexOf(activeClassSlide) !== -1) {
             return i;
         }
     }
@@ -36,41 +40,29 @@ export const getActiveImage = (): number => {
 $(".arrows__arrow-left").on("click", (): void => {
 
     if (getActiveImage() - 1 >= 0) {
-        $(allImages[getActiveImage() - 1]).addClass(activeClassImages);
-        $(allImages[getActiveImage() + 1]).removeClass(activeClassImages);
-
-        $(allNames[getActiveImage()]).addClass(activeClassName);
-        $(allNames[getActiveImage() + 1]).removeClass(activeClassName);
+        $(allSlides[getActiveImage() - 1]).addClass(activeClassSlide);
+        $(allSlides[getActiveImage() + 1]).removeClass(activeClassSlide);
     }
     else {
-        $(allImages[allImages.length - 1]).addClass(activeClassImages);
-        $(allImages[0]).removeClass(activeClassImages);
-
-        $(allNames[allNames.length - 1]).addClass(activeClassName);
-        $(allNames[0]).removeClass(activeClassName);
+        $(allSlides[allSlides.length - 1]).addClass(activeClassSlide);
+        $(allSlides[0]).removeClass(activeClassSlide);
     }
 
-    $(".slider__image").css("animation-delay", "0s");
+    $(".slide__image").css("animation-delay", "0s");
 });
 
 $(".arrows__arrow-right").on("click", (): void => {
-    $(".slider__name").css("animation", "slideActive 0.6s forwards");
-    if (getActiveImage() + 1 >= allImages.length) {
-        $(allImages[0]).addClass(activeClassImages);
-        $(allImages[allImages.length - 1]).removeClass(activeClassImages);
-
-        $(allNames[0]).addClass(activeClassName);
-        $(allNames[allNames.length - 1]).removeClass(activeClassName);
+    $(".slide__name").css("animation", "slideActive 0.6s forwards");
+    if (getActiveImage() + 1 >= allSlides.length) {
+        $(allSlides[0]).addClass(activeClassSlide);
+        $(allSlides[allSlides.length - 1]).removeClass(activeClassSlide);
     }
     else {
-        $(allImages[getActiveImage() + 1]).addClass(activeClassImages);
-        $(allImages[getActiveImage()]).removeClass(activeClassImages);
-
-        $(allNames[getActiveImage()]).addClass(activeClassName);
-        $(allNames[getActiveImage() - 1]).removeClass(activeClassName);
+        $(allSlides[getActiveImage() + 1]).addClass(activeClassSlide);
+        $(allSlides[getActiveImage()]).removeClass(activeClassSlide);
     }
 
-    $(".slider__image").css("animation-delay", "0s");
+    $(".slide__image").css("animation-delay", "0s");
 });
 
 // Arrow size
@@ -81,25 +73,47 @@ const squareSize = (...squarer: string[]): void => {
     }
 };
 
-squareSize(".point__icon-big", ".arrows__arrow");
-$(window).on("resize", (): void => squareSize(".point__icon-big", ".arrows__arrow"));
+squareSize(".arrows__arrow");
+page.on("resize", (): void => squareSize(".arrows__arrow"));
 
 const arrowSize = (): void => {
     $(".arrow__icon").css("border-width", $(".arrows__arrow").width() * 0.25);
     $(".arrow__icon").css("border-top-width", $(".arrows__arrow").width() * 0.35);
 };
 
-$(window).on("resize", (): void => arrowSize());
+page.on("resize", (): void => arrowSize());
 arrowSize();
 
-// Check name width 
+// Generate button on mobile 
 
-const nameWidth = () => {
-    for (let i: number = 0; i < allNames.length; i++) {
-        if ($(allNames[i]).width() > $(".content").width() * 0.7) $(allNames[i]).css("width", "80%");
-    };
+const generateButton = () => {
+    $(".slider__text").append("<button class='slide__button language' data-key='button'></button>");
 };
 
-setTimeout(() => {
-    nameWidth();
-}, 300);
+page.on("load", () => {
+    if (page.width() <= 1000) generateButton();
+});
+
+page.on("resize", () => {
+    const getButton = $(".slide__button").length === 0;
+    if (page.width() <= 1000 && getButton) generateButton();
+    if (page.width() > 1000) $(".slide__button").remove();
+});
+
+// Add anim class 
+
+page.on("load", () => addAnimClass());
+
+const addAnimClass = () => {
+    const allSlides = $(".slider__slide"),
+        speedAnim: number = 250;
+    let SlideNum: number = 1;
+
+    $(allSlides[0]).addClass("slider__slide-mobile-anim");
+    const addClassToLines = setInterval((): void => {
+        $(allSlides[SlideNum]).addClass("slider__slide-mobile-anim");
+        SlideNum++;
+    }, speedAnim); 
+    
+    setTimeout((): void => clearInterval(addClassToLines), speedAnim * allSlides.length);
+};

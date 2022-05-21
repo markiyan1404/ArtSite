@@ -1,15 +1,14 @@
 import * as $ from "jquery";
-import { getActiveImage, allImages, allNames, activeClassImages, activeClassName } from "./slider";
+import { getActiveImage, allSlides, activeClassSlide } from "./slider";
+import { contentUpdate } from "./../../../navigation/ts/components/check_page_language";
 
-const pointActiveClass = "points__point-active",
-    page = $(window);
+const pointActiveClass: string = "points__point-active",
+    page: JQuery<Window & typeof globalThis> = $(window);
 
 // Generate points
 
 const generateSliderPoints = (): void => {
-    const allImages: JQuery<Element> = $(".slider__image");
-
-    for (let p: number = 0; p < allImages.length; p++) {
+    for (let p: number = 0; p < allSlides.length; p++) {
         let pointClass: string;
 
         p % 2 && p !== 0 ? pointClass = "point__icon-big" : pointClass = "point__icon-small";
@@ -21,11 +20,11 @@ generateSliderPoints();
 
 // Add active class
 
-const addActiveClass = (): any => {
-    const activePoints: JQuery<Element> = $(".points__point");
+const addActiveClass = (): void => {
+    const allPoints: JQuery<Element> = $(".points__point");
 
-    activePoints.removeClass(pointActiveClass);
-    $(activePoints[getActiveImage()]).addClass(pointActiveClass);
+    allPoints.removeClass(pointActiveClass);
+    $(allPoints[getActiveImage()]).addClass(pointActiveClass);
 };
 addActiveClass();
 
@@ -39,13 +38,10 @@ $(".point__icon").on("click", function(): void {
     $(".points__point").removeClass(pointActiveClass);
     $(this.parentElement).addClass(pointActiveClass);
 
-    allImages.removeClass(activeClassImages);
-    $(allImages[activationSlide()]).addClass(activeClassImages);
+    allSlides.removeClass(activeClassSlide);
+    $(allSlides[activationSlide()]).addClass(activeClassSlide);
 
-    allNames.removeClass(activeClassName);
-    $(allNames[activationSlide()]).addClass(activeClassName);
-
-    $(".slider__image").css("animation-delay", "0s");
+    $(".slide__image").css("animation-delay", "0s");
 });
 
 export const activationSlide = (): number => {
@@ -58,20 +54,46 @@ export const activationSlide = (): number => {
     }
 };
 
-// Line position
+// Points and years position on phone
 
-const linePosition = () => {
-    const pointsPotion = $(".point__icon").offset().top + $(".point__icon").height();
+page.on("load", (): void => {
+    if (page.width() < 1000) {
+        pointsPotionOnPhone();
+        generateYearsOnPhone();
+    }
+});
 
-    $(".points__line").css("top", pointsPotion);
+page.on("resize", (): void => {
+    if (page.width() < 1000) {
+        generateYearsOnPhone();
+        pointsPotionOnPhone();
+    }
+    else {
+        $(".slide__year-mobile").remove();
+        $(".content").animate({scrollTop: 0}, 0);
+    }
+});
+
+const pointsPotionOnPhone = (): void => {
+    const allPoints: JQuery<Element> = $(".points__point"),
+        allBlocks: JQuery<Element> = $(".slider__slide");
+
+    for (let b: number = 0; b < allBlocks.length; b++) {
+        const activeBlockSettings = $(allBlocks[b])[0].getBoundingClientRect();
+
+        $(allPoints[b]).css("top", activeBlockSettings.top + $(".content").scrollTop() + parseInt($(allBlocks[b]).css("padding-top")));
+    }
 };
 
-page.on("load", () => {
-    setTimeout(() => {
-        linePosition();
-    }, 25); 
-});
+const generateYearsOnPhone = () => {
+    const allBlocks: JQuery<Element> = $(".slider__slide");
 
-page.on("resize", () => {
-    linePosition();
-});
+    if ($(".slide__year-mobile").length !== 0) return;
+
+    for (let b: number = 0; b < allBlocks.length; b++) {
+
+        $(allBlocks[b]).append(`<h2 class="slide__year-mobile language" data-key="year${b}"></h2>`);
+    }
+
+    contentUpdate("en");
+};

@@ -21,6 +21,12 @@ const scroller: scroll = {
     scrollRequest: 0
 };
 
+if ($(window).width() < 1000) scroller.ease = 0.70;
+
+$(window).on("resize", () => {
+    $(window).width() < 1000 ? scroller.ease = 0.70 : scroller.ease = 0.045;
+});
+
 let requestId: number | null = null;
 
 TweenLite.set(scroller.target, {
@@ -82,3 +88,5 @@ $(window).on("load", (): void => {
         onResize();
     });
 });
+
+// Add overflow: auto; and add position: static; plus change top

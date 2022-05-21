@@ -27,11 +27,11 @@ const addUserColor = (color1: string, color2: string, activeIcon: string): void 
 };
 
 const changeIcon = (): void => {
-    let activeColor = localStorage.getItem("color");
-    
-    activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "ffc700";
+    let activeColor: string = localStorage.getItem("color");
 
-    $("link[rel*='icon']").attr("href", "./head/" + activeColor + "-activeIcon.webp");
+    activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "FFC700";
+
+    $("link[rel*='icon']").attr("href", "img/head/" + activeColor + "-activeIcon.webp");
 };  
 
 $(window).on("load", (): JQuery<Element> => html.css(

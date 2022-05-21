@@ -34,17 +34,115 @@
     .points {
 
         .point__icon {
-            height: 1vw;
-            width: 1vw;
+            height: 0.9vw;
+            width: 0.9vw;
         }
 
         .point__icon-big {
-            height: 1.7vw;
-            width: 1.7vw;
+            height: 1.3vw;
+            width: 1.3vw;
         }
 
         .point__year {
             font-size: 20px;
         }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+
+    .slide__year-mobile {
+        @include contrast-color-white-color;
+
+        font-size: 26px;
+        margin: 0;
+        position: absolute;
+        right: -4%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+    .slide__year-mobile {
+        @include contrast-color-white-color;
+
+        font-size: 22px;
+        margin: 0;
+        position: absolute;
+        right: -4%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 500px) {
+
+    .slide__year-mobile {
+        @include contrast-color-black-color;
+
+        font-family: "Viaoda Libre";
+        font-size: 26px;
+        letter-spacing: 2px;
+        margin: 1vh 0 0;
+        order: 2;
+        position: static;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+
+    .points {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 1000px) {
+
+    .points {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        left: 3.3%;
+        position: absolute;
+        top: 0;
+        width: fit-content;
+
+        .point__year {
+            display: none;
+        }
+
+        .points__point {
+            position: absolute;
+            transform: translate(0);
+        }
+
+        .point__icon-big {
+            height: 3vw;
+            width: 3vw;
+        }
+
+        .point__icon-small {
+            height: 2vw;
+            width: 2vw;
+        }
+
+        .points__point-active .point__icon {
+            @include contrast-color-black-background;
+
+            transform: scale(1) rotate(45deg);
+        }
+    }
+
+    .points::after {
+        height: 100%;
+        position: fixed;
+        top: 0 !important;
+        width: 5px;
+    }
+
+    .slide__year-mobile {
+        opacity: 1;
+        padding: 0;
     }
 }

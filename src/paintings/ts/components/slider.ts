@@ -80,22 +80,42 @@ page.on("load", (): void => {
                 }
             },
             1000: {
-                slidesPerView: 4
+                slidesPerView: 4,
+                lazy: {
+                    loadPrevNext: true,
+                    loadOnTransitionStart: true,
+                    loadPrevNextAmount: 6
+                }
             },
             767: {
                 slidesPerView: 3,
                 scrollbar: {
                     dragSize: 20
+                },
+                lazy: {
+                    loadPrevNext: true,
+                    loadOnTransitionStart: true,
+                    loadPrevNextAmount: 6
                 }
             },
             500: {
                 slidesPerView: 2.2,
                 scrollbar: {
                     dragSize: 20
+                },
+                lazy: {
+                    loadPrevNext: true,
+                    loadOnTransitionStart: true,
+                    loadPrevNextAmount: 6
                 }
             },
             0: {
-                slidesPerView: 1.5
+                slidesPerView: 1.5,
+                lazy: {
+                    loadPrevNext: true,
+                    loadOnTransitionStart: true,
+                    loadPrevNextAmount: 6
+                }
             },
     
             "@0.74": {
