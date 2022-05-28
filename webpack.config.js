@@ -57,6 +57,8 @@ module.exports = {
         painting: ["@painting/painting.ts"],
         painting_author: ["@painting_author/author.ts"],
         sculptures: ["@sculptures/sculptures.ts"],
+        sculpture: ["@sculpture/sculpture.ts"],
+        sculpture_author: ["@sculpture_author/author.ts"],
         menu: ["@menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
@@ -102,7 +104,7 @@ module.exports = {
         }),
         
         new HtmlWebpackPlugin({
-            filename: "author.html",
+            filename: "painting_author.html",
             template: "./paintings/painting/author/author.pug",
             chunks: print_names("painting_author"),
             minify: {
@@ -114,6 +116,24 @@ module.exports = {
             filename: "sculptures.html",
             template: "./sculptures/sculptures.pug",
             chunks: print_names("sculptures"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "sculpture.html",
+            template: "./sculptures/sculpture/sculpture.pug",
+            chunks: print_names("sculpture"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "sculpture_author.html",
+            template: "./sculptures/sculpture/author/author.pug",
+            chunks: print_names("sculpture_author"),
             minify: {
                 collapseWhitespace: isProd,
             },
@@ -153,6 +173,8 @@ module.exports = {
             "@painting": path.resolve(__dirname, "./src/paintings/painting/ts"),
             "@painting_author": path.resolve(__dirname, "./src/paintings/painting/author/ts"),
             "@sculptures": path.resolve(__dirname, "./src/sculptures/ts"),
+            "@sculpture": path.resolve(__dirname, "./src/sculptures/sculpture/ts"),
+            "@sculpture_author": path.resolve(__dirname, "./src/sculptures/sculpture/author/ts"),
             "@standartTS": path.resolve(__dirname, "./src/ts")
         }
     },

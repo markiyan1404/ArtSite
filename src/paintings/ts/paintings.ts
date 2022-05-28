@@ -3,6 +3,7 @@ import "/paintings/scss/paintings.scss";
 import "/paintings/scss/adap/adap-paintings.scss";
 import "swiper/css";
 import "./components/slider";
+import "./components/linkToAuthor";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
     cursor: JQuery<HTMLElement> = $(".cursor, #cursor");
@@ -29,7 +30,7 @@ page.on("load", (): void => {
     
         setTimeout((): void => {
             localStorage.setItem("typePaintingAnim", "paintingsToPainting");
-    
+
             const namePicting: string = $(this).attr("data-name");
             location.href = "painting.html#" + namePicting;
         }, 1500);

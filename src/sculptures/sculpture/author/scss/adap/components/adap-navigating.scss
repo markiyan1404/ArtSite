@@ -1,0 +1,147 @@
+@media screen and (min-width: 3200px) {
+
+    .content__navigating .navigating__arrow {
+        border-width: 0 8px 8px 0;
+        margin: 0 27px;
+        padding: 27px;
+    }
+
+    .arrow__page-name {
+        font-size: 28px;
+    }
+
+    .content__navigating .navigating__line {
+        width: 3px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .content__navigating .navigating__arrow {
+        border-width: 0 6px 6px 0;
+        margin: 0 20px;
+        padding: 22px;
+    }
+
+    .arrow__page-name {
+        font-size: 22px;
+    }
+
+    .content__navigating .navigating__line {
+        width: 3px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .content__navigating {
+        right: 6.5%;
+
+        .navigating__arrow {
+            border-width: 0 4px 4px 0;
+            margin: 0 15px;
+            padding: 15px;
+        }
+    }
+
+    .arrow__page-name {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .content__navigating {
+        right: 7%;
+
+        .navigating__arrow {
+            border-width: 0 4px 4px 0;
+            margin: 0 15px;
+            padding: 15px;
+        }
+    }
+
+    .arrow__page-name {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .content__navigating {
+
+        .navigating__arrow-left {
+            left: 3%;
+        }
+
+        .navigating__arrow-right {
+            right: 3%;
+        }
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+
+    .content__navigating {
+
+        .navigating__arrow-left {
+            left: 3%;
+        }
+
+        .navigating__arrow-right {
+            right: 3%;
+        }
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 550px) {
+
+    .content__navigating {
+
+        .navigating__arrow {
+            border-width: 0 3px 3px 0;
+            padding: 11px;
+        }
+
+        .navigating__arrow-left {
+            left: 1%;
+        }
+
+        .navigating__arrow-right {
+            right: 1%;
+        }
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 1000px) {
+
+    .content__navigating {
+        animation: none;
+        position: static;
+        transform: none;
+
+        .navigating__arrow {
+            position: absolute;
+            top: 35vh;
+        }
+
+        .navigating__line {
+            display: none;
+        }
+    }
+
+    .paintingToAuthor .content__navigating {
+        animation: show 0.5s forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        transform: initial;
+    }
+
+    .authorToPainting .content__navigating {
+        animation: hide 0.3s forwards !important;
+    }
+
+    .arrow__page-name {
+        display: none !important;
+    }
+}

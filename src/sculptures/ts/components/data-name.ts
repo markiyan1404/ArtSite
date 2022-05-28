@@ -1,6 +1,6 @@
 export const allSculpturesName: string[] = 
 
-["bust-of-nefertiti", 
+["nefertiti-bust", 
     "the-discus-thrower",
     "venus-de-milo",
     "laocoon-and-his-sons",
@@ -13,17 +13,11 @@ export const allSculpturesName: string[] =
 
     allAuthorsName: string[] = 
 
-["jan-van-eyck",
-    "sandro-botticelli",
-    "leonardo-da-vinci",
+["auguste-rodin",
+    "benvenuto-cellini",
+    "constantine-brancusi",
+    "gian-lorenzo-bernini",
     "michelangelo-buonarroti",
-    "hieronymus-bosch",
-    "pieter-bruegel",
-    "johannes-vermeer",
-    "theodore-gericault",
-    "caspar-david-friedrich",
-    "edouard-manet",
-    "thomas-eakins",
-    "pierre-auguste-renoir",
-    "vincent-van-gogh",
-    "rene-magritte"];
+    "myron",
+    "pliny-the-elder",
+    "thutmose"];

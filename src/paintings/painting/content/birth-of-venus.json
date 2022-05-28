@@ -4,8 +4,7 @@
         "name": "Birth of venus",
         "author": "Sandro Botticelli",
         "year": "1485",
-        "description": "Known as the “Birth of Venus”, the composition actually shows the goddess of love and beauty arriving on land, on the island of Cyprus, born of the sea spray and blown there by the winds, Zephyr and, perhaps, Aura. The goddess is standing on a giant scallop shell, as pure and as perfect as a pearl. She is met by a young woman, who is sometimes identified as one of the Graces or as the Hora of spring, and who holds out a cloak covered in flowers.",
-        "authorLink": "sandro-botticelli"
+        "description": "Known as the “Birth of Venus”, the composition actually shows the goddess of love and beauty arriving on land, on the island of Cyprus, born of the sea spray and blown there by the winds, Zephyr and, perhaps, Aura. The goddess is standing on a giant scallop shell, as pure and as perfect as a pearl. She is met by a young woman, who is sometimes identified as one of the Graces or as the Hora of spring, and who holds out a cloak covered in flowers."
     },
 
     "ua": {
@@ -13,8 +12,7 @@
         "name": "Народження Венери",
         "author": "Сандро Боттічеллі",
         "year": "1485",
-        "description": "Відома як «Народження Венери», композиція насправді показує богиню кохання та краси, що прибуває на сушу, на острів Кіпр, народжену від морських бризок і рознесену туди вітрами, Зефір і, можливо, Ауру. Богиня стоїть на гігантській раковині гребінця, чистій і досконалій, як перлина. Її зустрічає молода жінка, яку іноді ідентифікують як одну з Грацій або як Гору весни, і яка простягає плащ, укритий квітами.",
-        "authorLink": "sandro-botticelli"
+        "description": "Відома як «Народження Венери», композиція насправді показує богиню кохання та краси, що прибуває на сушу, на острів Кіпр, народжену від морських бризок і рознесену туди вітрами, Зефір і, можливо, Ауру. Богиня стоїть на гігантській раковині гребінця, чистій і досконалій, як перлина. Її зустрічає молода жінка, яку іноді ідентифікують як одну з Грацій або як Гору весни, і яка простягає плащ, укритий квітами."
     },
 
     "ru": {
@@ -22,7 +20,10 @@
         "name": "Рождение Венеры",
         "author": "Сандро Боттичелли",
         "year": "1485",
-        "description": "Известная как «Рождение Венеры», композиция на самом деле изображает богиню любви и красоты, прибывающую на сушу, на остров Кипр, рожденную морскими брызгами и уносимую туда ветрами, Зефиром и, возможно, Аурой. Богиня стоит на гигантской раковине морского гребешка, чистой и совершенной, как жемчужина. Ее встречает молодая женщина, которую иногда называют одной из Граций или Хорой весны, и которая протягивает плащ, усыпанный цветами.",
+        "description": "Известная как «Рождение Венеры», композиция на самом деле изображает богиню любви и красоты, прибывающую на сушу, на остров Кипр, рожденную морскими брызгами и уносимую туда ветрами, Зефиром и, возможно, Аурой. Богиня стоит на гигантской раковине морского гребешка, чистой и совершенной, как жемчужина. Ее встречает молодая женщина, которую иногда называют одной из Граций или Хорой весны, и которая протягивает плащ, усыпанный цветами."
+    },
+
+    "specifical": {
         "authorLink": "sandro-botticelli"
     }
 }

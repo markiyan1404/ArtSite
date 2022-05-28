@@ -4,3 +4,7 @@
 @import "./components/adap-close";
 @import "./components/adap-navigating";
 @import "./components/adap-years";
+
+body {
+    overflow: auto;
+}

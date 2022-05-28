@@ -1,0 +1,181 @@
+.content__information {
+    align-items: center;
+    display: flex;
+    margin-left: 12%;
+    opacity: 1;
+    position: absolute;
+    width: 88%;
+    z-index: 2;
+
+    img {
+        width: 33%;
+    }
+
+    .information__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 4%;
+
+        h1 {
+            @include contrast-color-black-color;
+
+            font-family: "Spectral SC";
+            font-size: 70px;
+            font-weight: 400;
+            margin: 0;
+            width: 85%;
+        }
+
+        h1::after {
+            @include contrast-color-white-background;
+
+            content: "";
+            display: block;
+            height: 3px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        a {
+            @include contrast-color-white-color;
+
+            border-bottom: 2px solid var(--contrastColorWhite);
+            font-family: "Spectral SC";
+            font-size: 22px;
+            font-weight: 400;
+            margin: 30px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+
+        p {
+            @include contrast-color-black-color;
+
+            font-family: "Spectral SC";
+            font-size: 20px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            line-height: 32px;
+            margin: 0;
+            width: 80%;
+        }
+
+        button {
+            background: none;
+            border: 2px solid var(--contrastColorBlack);
+            font-size: 22px;
+            margin-top: 4vh;
+            padding: 2% 7%;
+            text-transform: uppercase;
+            transition: $colorTransition, transform 0.3s;
+            width: fit-content;
+        }
+
+        button:hover {
+            @include contrast-color-black-background;
+            @include contrast-color-white-color;
+
+            transform: scale(0.95);
+            transition: $colorTransition, transform 0.3s;
+        }
+    }
+}
+
+.sculpturesToSculpture .content__information {
+    animation: show 0.8s forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.sculptureToSculpture .content__information {
+    animation: nextInformation 0.7s reverse forwards ease-in-out;
+}
+
+.nextSculpture .content__information {
+    animation: nextInformation 0.5s forwards;
+}
+
+.swipeRightLoad .content__information {
+    animation: loadSwipe 0.7s forwards ease-in-out;
+}
+
+@keyframes loadSwipe {
+
+    from {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.swipeRight .content__information {
+    animation: nextInformationSwipe 0.5s forwards;
+    opacity: 1;
+}
+
+@keyframes nextInformationSwipe {
+
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+}
+
+.swipeLeft .content__information {
+    animation: prevInformation 0.5s forwards;
+    opacity: 1;
+}
+
+@keyframes prevInformation {
+
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+}
+
+@keyframes nextInformation {
+
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+}
+
+.sculptureToAuthor .content__information {
+    animation: activeAuthor 0.6s forwards ease-in-out;
+}
+
+@keyframes activeAuthor {
+
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}

@@ -4,8 +4,7 @@
         "name": "Arnolfini portrait",
         "author": "Jan van Eyck",
         "year": "1434",
-        "description": "The subject of the Arnolfini Portrait is domestic: a man and a woman hold hands in an interior setting, with a window behind him and a bed behind her in natural symbolism of fifteenth century marital roles – while husbands went out to engage in business, wives concerned themselves with domestic duties. The clothes the pair are wearing would also have been intended as demonstrative, this time of wealth and social standing.",
-        "authorLink": "jan-van-eyck"
+        "description": "The subject of the Arnolfini Portrait is domestic: a man and a woman hold hands in an interior setting, with a window behind him and a bed behind her in natural symbolism of fifteenth century marital roles – while husbands went out to engage in business, wives concerned themselves with domestic duties. The clothes the pair are wearing would also have been intended as demonstrative, this time of wealth and social standing."
     },
 
     "ua": {
@@ -13,8 +12,7 @@
         "name": "Портрет Арнолфіні",
         "author": "Ян ван Ейк",
         "year": "1434",
-        "description": "Тема портрета Арнолфіні домашня: чоловік і жінка тримаються за руки в інтер'єрі, за ним вікно і ліжко за нею в природному символіці подружніх ролей п'ятнадцятого століття - в той час як чоловіки йшли займатися бізнесом, дружини займалися домашніми обов'язками. Одяг, який носить пара, також мав би демонструвати, цього разу багатство та соціальне становище.",
-        "authorLink": "jan-van-eyck"
+        "description": "Тема портрета Арнолфіні домашня: чоловік і жінка тримаються за руки в інтер'єрі, за ним вікно і ліжко за нею в природному символіці подружніх ролей п'ятнадцятого століття - в той час як чоловіки йшли займатися бізнесом, дружини займалися домашніми обов'язками. Одяг, який носить пара, також мав би демонструвати, цього разу багатство та соціальне становище."
     },
 
     "ru": {
@@ -22,7 +20,10 @@
         "name": "Портрет Арнольфини",
         "author": "Ян ван Эйк",
         "year": "1434",
-        "description": "Сюжет «Портрета Арнольфини» — домашний: мужчина и женщина держатся за руки в интерьере, за ним окно, а за ней — кровать в естественной символике супружеских ролей пятнадцатого века — пока мужья ушли заниматься бизнесом, жены занимались домашними делами. Одежда, которую носит пара, также должна была служить демонстрацией богатства и социального положения.",
+        "description": "Сюжет «Портрета Арнольфини» — домашний: мужчина и женщина держатся за руки в интерьере, за ним окно, а за ней — кровать в естественной символике супружеских ролей пятнадцатого века — пока мужья ушли заниматься бизнесом, жены занимались домашними делами. Одежда, которую носит пара, также должна была служить демонстрацией богатства и социального положения."
+    },
+
+    "specifical": {
         "authorLink": "jan-van-eyck"
     }
 }

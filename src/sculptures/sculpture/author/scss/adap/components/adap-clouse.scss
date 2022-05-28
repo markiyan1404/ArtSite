@@ -1,0 +1,82 @@
+@media screen and (min-width: 3200px) {
+
+    .content__close {
+        border: 4px solid var(--contrastColorWhite);
+        font-size: 32px;
+        height: 65px;
+        width: 65px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .content__close {
+        border: 4px solid var(--contrastColorWhite);
+        font-size: 26px;
+        height: 47px;
+        width: 47px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .content__close {
+        border: 3px solid var(--contrastColorWhite);
+        font-size: 19px;
+        height: 32px;
+        width: 32px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .content__close {
+        border: 2px solid var(--contrastColorWhite);
+        font-size: 18px;
+        height: 32px;
+        width: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .content__close {
+        font-size: 19px;
+        height: 37px;
+        top: 4.5vh;
+        width: 37px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+
+    .content__close {
+        font-size: 19px;
+        height: 37px;
+        top: 4.5vh;
+        width: 37px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 550px) {
+
+    .content__close {
+        font-size: 19px;
+        height: 35px;
+        top: 4.5vh;
+        width: 35px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 1000px) {
+
+    .content__close {
+        color: var(--mainColor);
+        position: absolute;
+        z-index: 90;
+    }
+
+    .content__close:hover {
+        color: var(--contrastColorBlack);
+    }
+}

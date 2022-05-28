@@ -4,8 +4,7 @@
         "name": "Self portrait with bandaged ear",
         "author": "Vincent van Gogh",
         "year": "1889",
-        "description": "This famous painting, Self-Portrait with Bandaged Ear by Vincent van Gogh, expresses his artistic power and personal struggles. Van Gogh painted it in January 1889, a week after leaving hospital. He had received treatment there after cutting off most of his left ear (shown here as the bandaged right ear because he painted himself in a mirror). This self-mutilation was a desperate act committed a few weeks earlier, following a heated argument with his fellow painter Paul Gauguin who had come to stay with him in Arles, in the south of France.",
-        "authorLink": "vincent-van-gogh"
+        "description": "This famous painting, Self-Portrait with Bandaged Ear by Vincent van Gogh, expresses his artistic power and personal struggles. Van Gogh painted it in January 1889, a week after leaving hospital. He had received treatment there after cutting off most of his left ear (shown here as the bandaged right ear because he painted himself in a mirror). This self-mutilation was a desperate act committed a few weeks earlier, following a heated argument with his fellow painter Paul Gauguin who had come to stay with him in Arles, in the south of France."
     },
 
     "ua": {
@@ -13,8 +12,7 @@
         "name": "Автопортрет із забинтованим вухом",
         "author": "Вінсент ван Гог",
         "year": "1889",
-        "description": "Ця знаменита картина Вінсента Ван Гога «Автопортрет із забинтованим вухом» виражає його художню силу та особисту боротьбу. Ван Гог намалював її в січні 1889 року, через тиждень після виписки з лікарні. Там він проходив лікування після того, як відрізав більшу частину лівого вуха (показано тут як забинтоване праве вухо, оскільки він намалював себе в дзеркалі). Це самокалічення було відчайдушним актом, скоєним кількома тижнями раніше, після гострої суперечки з його колегою-художником Полем Гогеном, який приїхав зупинитися з ним в Арлі, на півдні Франції.",
-        "authorLink": "vincent-van-gogh"
+        "description": "Ця знаменита картина Вінсента Ван Гога «Автопортрет із забинтованим вухом» виражає його художню силу та особисту боротьбу. Ван Гог намалював її в січні 1889 року, через тиждень після виписки з лікарні. Там він проходив лікування після того, як відрізав більшу частину лівого вуха (показано тут як забинтоване праве вухо, оскільки він намалював себе в дзеркалі). Це самокалічення було відчайдушним актом, скоєним кількома тижнями раніше, після гострої суперечки з його колегою-художником Полем Гогеном, який приїхав зупинитися з ним в Арлі, на півдні Франції."
     },
 
     "ru": {
@@ -22,7 +20,10 @@
         "name": "Автопортрет с забинтованным ухом",
         "author": "Винсент ван Гог",
         "year": "1889",
-        "description": "Эта знаменитая картина Винсента Ван Гога «Автопортрет с перевязанным ухом» выражает его художественную силу и личную борьбу. Ван Гог написал ее в январе 1889 года, через неделю после выписки из больницы. Там он лечился после того, как ему отрезали большую часть левого уха (здесь оно показано как перевязанное правое ухо, потому что он нарисовал себя в зеркале). Это членовредительство было совершено несколькими неделями ранее в отчаянном поступке после жаркой ссоры с его коллегой-художником Полем Гогеном, который приехал к нему в Арль на юге Франции.",
+        "description": "Эта знаменитая картина Винсента Ван Гога «Автопортрет с перевязанным ухом» выражает его художественную силу и личную борьбу. Ван Гог написал ее в январе 1889 года, через неделю после выписки из больницы. Там он лечился после того, как ему отрезали большую часть левого уха (здесь оно показано как перевязанное правое ухо, потому что он нарисовал себя в зеркале). Это членовредительство было совершено несколькими неделями ранее в отчаянном поступке после жаркой ссоры с его коллегой-художником Полем Гогеном, который приехал к нему в Арль на юге Франции."
+    },
+
+    "specifical": {
         "authorLink": "vincent-van-gogh"
     }
 }

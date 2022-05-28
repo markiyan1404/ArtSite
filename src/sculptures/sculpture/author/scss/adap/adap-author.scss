@@ -1,0 +1,12 @@
+@import "./components/adap-clouse";
+@import "./components/adap-contentInformation";
+@import "./components/adap-navigating";
+@import "./components/adap-year";
+@import "./components/backgroundLine";
+
+@media screen and (min-width: 0) and (max-width: 1000px) {
+
+    body {
+        overflow-y: scroll;
+    }
+}

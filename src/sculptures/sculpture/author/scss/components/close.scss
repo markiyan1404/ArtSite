@@ -1,0 +1,48 @@
+.content__close {
+    @include contrast-color-black-color;
+
+    align-items: center;
+    border: 2px solid var(--contrastColorWhite);
+    display: flex;
+    font-size: 19px;
+    height: 35px;
+    justify-content: center;
+    position: fixed;
+    top: 3vh;
+    transform: rotate(45deg);
+    width: 35px;
+}
+
+.sculptureToAuthor .content__close {
+    animation: content__closeShow 0.5s forwards;
+    animation-delay: 0.8s;
+    transform: scale(0);
+}
+
+.authorToSculpture .content__close {
+    animation: content__closeShow 0.3s reverse forwards;
+}
+
+.authorToSculpture .content__close,
+.nextAuthor .content__close,
+.swipeRight .content__close,
+.swipeLeft .content__close {
+    transform: rotate(45deg) scale(1);
+}
+
+@keyframes content__closeShow {
+
+    from {
+        transform: scale(0) rotate(45deg);
+    }
+
+    to {
+        transform: scale(1) rotate(45deg);
+    }
+}
+
+.content__close:hover {
+    background: var(--contrastColorWhite);
+    color: var(--contrastColorBlack);
+    transition: $colorTransition;
+}

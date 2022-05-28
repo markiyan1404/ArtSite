@@ -1,0 +1,25 @@
+include ../../../pug/header
+body(data-type="sculpture_author" data-menu="sculptures")
+
+    main.content
+        section.content__information
+            img(src="#")
+
+            article.information__description    
+                h1.language(data-key="name") 
+                p.language(data-key="description") 
+
+        span.content__close.mouse-active2 &#10010;
+
+        section.content__year
+            
+        section.content__navigating
+            span.navigating__arrow.span.navigating__arrow-left.mouse-active
+                p.arrow__page-name.arrow__prev-page-name
+            span.navigating__line
+            span.navigating__arrow.span.navigating__arrow-right.mouse-active
+                p.arrow__page-name.arrow__next-page-name
+
+        .content__background-line
+
+include ../../../navigation/navigation

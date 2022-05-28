@@ -66,14 +66,18 @@ activePainting();
 
 // Generate link to author
 
-$(".description__link").on("click", (): void => {
+import(`./../content/${key}.json`).then(langJSON => {
+    $(".description__link").attr("data-author-link", langJSON.specifical.authorLink);
+}); 
+
+$(".description__link").on("click", function (): void {
     body.removeClass();
     setTimeout((): JQuery<Element> => body.addClass("paintingAuthor"));
     $(".cursor, #cursor, .progress-wrap").addClass("close-cursor");
     
-    const activeAuthor: string = $(".author-link").html();
+    const activeAuthor: string = $(this).attr("data-author-link");
     localStorage.setItem("typeAuthorAnim", "paintingToAuthor");
-    setTimeout((): string => location.href = "./author.html#" + activeAuthor, 500);
+    setTimeout((): string => location.href = "./painting_author.html#" + activeAuthor, 500);
 });
 
 // Get and change body class

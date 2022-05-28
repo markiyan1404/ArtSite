@@ -1,0 +1,46 @@
+.content__year {
+    color: transparent;
+    font-family: "Viaoda Libre";
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0;
+    position: absolute;
+    right: 2%;
+    -webkit-text-stroke: 1px var(--contrastColorBlack);
+    top: 1vh;
+    transition: $colorTransition;
+}
+
+.sculpturesToSculpture .content__year {
+    animation: topToStatic 0.5s forwards;
+    animation-delay: 1s;
+    transform: translateY(-100%);
+}
+
+.sculptureToSculpture .content__year {
+    animation: nextYear 0.5s reverse forwards;
+}
+
+.nextSculpture .content__year,
+.sculptureToAuthor .content__year {
+    animation: nextYear 0.5s forwards;
+    opacity: 1;
+}
+
+.swipeRight .content__year,
+.swipeLeft .content__year {
+    animation: nextYear 0.5s forwards;
+}
+
+@keyframes nextYear {
+
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}

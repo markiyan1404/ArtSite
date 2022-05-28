@@ -1,0 +1,21 @@
+.content__background-line {
+    @include contrast-color-black-background;
+
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 27%;
+    z-index: 0;
+}
+
+.sculptureToAuthor .content__background-line {
+    animation: rightToStatic 0.7s forwards;
+}
+
+.authorToSculpture .content__background-line {
+    animation: rightToStatic 0.7s reverse forwards;
+}

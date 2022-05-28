@@ -17,10 +17,20 @@ const createSlides = () => {
         );
     }
 
-    $($(".slider__slide")[0]).addClass("slider__slide-active");
+    $($(".slider__slide")[checkActiveSlide()]).addClass("slider__slide-active");
 };
 
 createSlides();
+
+// Check active slide 
+
+function checkActiveSlide (): number {
+    const lastSculpture: number = Number(localStorage.getItem("lastSculpture"));
+
+    if (lastSculpture !== null) return lastSculpture;
+    else return 0;
+    
+};
 
 // Arrow click
 
@@ -88,6 +98,7 @@ arrowSize();
 
 const generateButton = () => {
     $(".slider__text").append("<button class='slide__button language' data-key='button'></button>");
+    goToSculpture();
 };
 
 page.on("load", () => {
@@ -117,3 +128,24 @@ const addAnimClass = () => {
     
     setTimeout((): void => clearInterval(addClassToLines), speedAnim * allSlides.length);
 };
+
+// Go to sculpture
+
+const goToSculpture = () => {
+    $(".slide__name, .slide__button").on("click", function (): void {
+        $(".anim-show2").addClass("sculpture-click");
+        setTimeout((): JQuery<Element> => $(".anim-show1").addClass("sculpture-click").css("z-index", "1000"), 700);
+        $(".cursor, #cursor, .progress-wrap").addClass("close-cursor");
+    
+    
+        const allChild: any = this.parentElement.parentElement.childNodes;
+        for (let i:number = 0; i<allChild.length; i++) {
+            if (allChild[i].localName === "img") {
+                localStorage.setItem("typeSculptureAnim", "sculpturesToSculpture");
+                setTimeout(() => location.href = "sculpture.html#" + $(allChild[i]).attr("data-name"), 1550);
+            }
+        }
+    });
+};
+
+goToSculpture();

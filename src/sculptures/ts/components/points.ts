@@ -8,7 +8,7 @@ const pointActiveClass: string = "points__point-active",
 // Generate points
 
 const generateSliderPoints = (): void => {
-    for (let p: number = 0; p < allSlides.length; p++) {
+    for (let p: number = 0; p < allSlides.length; p++) { 
         let pointClass: string;
 
         p % 2 && p !== 0 ? pointClass = "point__icon-big" : pointClass = "point__icon-small";

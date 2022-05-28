@@ -2,11 +2,9 @@
 @import "./components/points";
 @import "./components/slider";
 
-body {
-    @include contrast-color-black-background;
-}
-
 .content {
+    @include contrast-color-black-background;
+
     overflow: hidden;
     position: absolute;
 }
@@ -20,7 +18,7 @@ body {
     display: flex;
     position: absolute;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 
     @keyframes bgShow {
 
@@ -38,4 +36,8 @@ body {
         height: 40vh;
         width: 60%;
     }
+}
+
+.sculpture-click {
+    animation: topToStatic 0.9s forwards;
 }

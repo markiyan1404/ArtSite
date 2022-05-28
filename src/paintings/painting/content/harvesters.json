@@ -4,8 +4,7 @@
         "name": "Harvesters",
         "author": "Pieter Bruegel",
         "year": "1565",
-        "description": "The picture depicts the August and September harvest: workers taking a break for lunch in the shade of a tree, figures amusing themselves in the distance, ships sailing from the port. Subtly feeling natural forms, Brueghel marked a turning point in the history of Western art, in which the religious motif inherent in landscape painting was supplanted in favor of a new humanism. The scene recreated by Brueghel is based on the observation of nature and human activity and is far from idealized.",
-        "authorLink": "pieter-bruegel"
+        "description": "The picture depicts the August and September harvest: workers taking a break for lunch in the shade of a tree, figures amusing themselves in the distance, ships sailing from the port. Subtly feeling natural forms, Brueghel marked a turning point in the history of Western art, in which the religious motif inherent in landscape painting was supplanted in favor of a new humanism. The scene recreated by Brueghel is based on the observation of nature and human activity and is far from idealized."
     },
 
     "ua": {
@@ -13,8 +12,7 @@
         "name": "Комбайни",
         "author": "Пітер Брейгель",
         "year": "1565",
-        "description": "Картина зображує серпневий і вересневий збір урожаю: працівники, що перервалися на обід у тіні дерева, бавляться вдалині фігури, кораблі, що відпливають з порту. Тонко відчуваючи природні форми, Брейгель позначив переломний момент історії західного мистецтва, у якому релігійний мотив, властивий пейзажного живопису, був витіснений на користь нового гуманізму. Сцена, відтворена Брейгелем, заснована на спостереженні природи та людської діяльності та далека від ідеалізації.",
-        "authorLink": "pieter-bruegel"
+        "description": "Картина зображує серпневий і вересневий збір урожаю: працівники, що перервалися на обід у тіні дерева, бавляться вдалині фігури, кораблі, що відпливають з порту. Тонко відчуваючи природні форми, Брейгель позначив переломний момент історії західного мистецтва, у якому релігійний мотив, властивий пейзажного живопису, був витіснений на користь нового гуманізму. Сцена, відтворена Брейгелем, заснована на спостереженні природи та людської діяльності та далека від ідеалізації."
     },
 
     "ru": {
@@ -22,7 +20,10 @@
         "name": "Комбайны",
         "author": "Питер Брейгель",
         "year": "1565",
-        "description": "Картина изображает августовский и сентябрьский сбор урожая: работники, прервавшиеся на обед в тени дерева, забавляющиеся вдали фигуры, корабли, отплывающие из порта. Тонко чувствуя природные формы, Брейгель обозначил переломный момент в истории западного искусства, в котором религиозный мотив, присущий пейзажной живописи, был вытеснен в пользу нового гуманизма. Сцена, воссозданная Брейгелем, основана на наблюдении природы и человеческой деятельности и далека от идеализации.",
+        "description": "Картина изображает августовский и сентябрьский сбор урожая: работники, прервавшиеся на обед в тени дерева, забавляющиеся вдали фигуры, корабли, отплывающие из порта. Тонко чувствуя природные формы, Брейгель обозначил переломный момент в истории западного искусства, в котором религиозный мотив, присущий пейзажной живописи, был вытеснен в пользу нового гуманизма. Сцена, воссозданная Брейгелем, основана на наблюдении природы и человеческой деятельности и далека от идеализации."
+    },
+
+    "specifical": {
         "authorLink": "pieter-bruegel"
     }
 }
