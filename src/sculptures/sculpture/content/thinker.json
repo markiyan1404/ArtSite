@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "The Thinker",
+        "main_title": "The Thinker",
         "name": "The Thinker",
         "author": "Auguste Rodin",
         "year": "1902",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Мислитель",
+        "main_title": "Мислитель",
         "name": "Мислитель",
         "author": "Огюст Роден",
         "year": "1902",
@@ -17,8 +17,8 @@
         "button": "3Д"  
     },
 
-    "ru": {
-        "mainTitle": "El Pensador",
+    "es": {
+        "main_title": "El Pensador",
         "name": "El Pensador",
         "author": "Augusto Rodin",
         "year": "1902",

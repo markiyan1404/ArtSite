@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Mademoiselle Pogany",
+        "main_title": "Mademoiselle Pogany",
         "name": "Mademoiselle Pogany",
         "author": "Constantine Brancusi",
         "year": "1911",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Мадемуазель Погані",
+        "main_title": "Мадемуазель Погані",
         "name": "Мадемуазель Погані",
         "author": "Костянтин Бранкузі",
         "year": "1911",
@@ -17,8 +17,8 @@
         "button": "3Д"
     },
 
-    "ru": {
-        "mainTitle": "Señorita Pogany",
+    "es": {
+        "main_title": "Señorita Pogany",
         "name": "Señorita Pogany",
         "author": "Constantino Brancusi",
         "year": "1911",

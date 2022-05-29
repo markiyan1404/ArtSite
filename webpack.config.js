@@ -59,6 +59,7 @@ module.exports = {
         sculptures: ["@sculptures/sculptures.ts"],
         sculpture: ["@sculpture/sculpture.ts"],
         sculpture_author: ["@sculpture_author/author.ts"],
+        architecture: ["@architecture/architecture.ts"],
         menu: ["@menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
@@ -138,6 +139,15 @@ module.exports = {
                 collapseWhitespace: isProd,
             },
         }),
+        
+        new HtmlWebpackPlugin({
+            filename: "architecture.html",
+            template: "./architecture/architecture.pug",
+            chunks: print_names("architecture"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
 
         // CLEAN plagin
         new CleanWebpackPlugin(),
@@ -165,6 +175,7 @@ module.exports = {
 
     resolve: {
         alias: {
+            "@standartTS": path.resolve(__dirname, "./src/ts"),
             "@mainTS": path.resolve(__dirname, "./src/main/ts"),
             "@navigation": path.resolve(__dirname, "./src/navigation/ts"),
             "@cursor": path.resolve(__dirname, "./src/cursor"),
@@ -175,7 +186,7 @@ module.exports = {
             "@sculptures": path.resolve(__dirname, "./src/sculptures/ts"),
             "@sculpture": path.resolve(__dirname, "./src/sculptures/sculpture/ts"),
             "@sculpture_author": path.resolve(__dirname, "./src/sculptures/sculpture/author/ts"),
-            "@standartTS": path.resolve(__dirname, "./src/ts")
+            "@architecture": path.resolve(__dirname, "./src/architecture/ts"),
         }
     },
 

@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Jan van Eyck",
+        "main_title": "Jan van Eyck",
         "name": "Jan van Eyck",
         "birthday_year": "1390",
         "dead_year": "1441",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Ван Ейк Ян",
+        "main_title": "Ван Ейк Ян",
         "name": "Ван Ейк Ян",
         "birthday_year": "1390",
         "dead_year": "1441",
         "description": "Яну ван Ейку приписують створення стилю живопису, що характеризується тонкими реалістичними зображеннями поверхневих ефектів і природного світла. Це стало можливим завдяки використанню масляного середовища, що дозволяло нарощувати фарбу напівпрозорими шарами або глазур'ю. Про походження ван Ейка відомо небагато, але він, ймовірно, походив з Маасейка, поблизу Маастрихта, і належав до стану дворянства. Вперше про нього чують у 1422 році, коли він працював у Гаазі на Іоанна Баварського, правителя Голландії."
     },
 
-    "ru": {
-        "mainTitle": "Ван Эйк Ян",
-        "name": "Ван Эйк Ян",
+    "es": {
+        "main_title": "Jan van Eyck",
+        "name": "Jan van Eyck",
         "birthday_year": "1390",
         "dead_year": "1441",
-        "description": "Яну ван Эйку приписывают создание стиля живописи, характеризующегося мельчайшими реалистичными изображениями поверхностных эффектов и естественного света. Это стало возможным благодаря использованию масляной среды, которая позволяла наносить краску полупрозрачными слоями или глазурью. Мало что известно о происхождении ван Эйка, но, вероятно, он происходил из Маасейка, недалеко от Маастрихта, и принадлежал к дворянскому сословию. Впервые о нем узнали в 1422 году, когда он работал в Гааге на Иоанна Баварского, правителя Голландии."
+        "description": "A Jan van Eyck se le atribuye la creación de un estilo de pintura caracterizado por representaciones minuciosamente realistas de efectos superficiales y luz natural. Esto fue posible gracias al uso de un medio de aceite, que permitió la acumulación de pintura en capas translúcidas, o Esmaltes. Poco se sabe de los orígenes de van Eyck, pero probablemente procedía de Maaseik, cerca de Maastricht, y pertenecía a la clase alta. Se supo por primera vez de él en 1422 trabajando en La Haya para Juan de Baviera, gobernante de Holanda."
     }
 }

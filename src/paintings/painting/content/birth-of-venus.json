@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Birth of venus",
+        "main_title": "Birth of venus",
         "name": "Birth of venus",
         "author": "Sandro Botticelli",
         "year": "1485",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Народження Венери",
+        "main_title": "Народження Венери",
         "name": "Народження Венери",
         "author": "Сандро Боттічеллі",
         "year": "1485",
         "description": "Відома як «Народження Венери», композиція насправді показує богиню кохання та краси, що прибуває на сушу, на острів Кіпр, народжену від морських бризок і рознесену туди вітрами, Зефір і, можливо, Ауру. Богиня стоїть на гігантській раковині гребінця, чистій і досконалій, як перлина. Її зустрічає молода жінка, яку іноді ідентифікують як одну з Грацій або як Гору весни, і яка простягає плащ, укритий квітами."
     },
 
-    "ru": {
-        "mainTitle": "Рождение Венеры",
-        "name": "Рождение Венеры",
-        "author": "Сандро Боттичелли",
+    "es": {
+        "main_title": "Nacimiento de venus",
+        "name": "Nacimiento de venus",
+        "author": "Sandro Botticelli",
         "year": "1485",
-        "description": "Известная как «Рождение Венеры», композиция на самом деле изображает богиню любви и красоты, прибывающую на сушу, на остров Кипр, рожденную морскими брызгами и уносимую туда ветрами, Зефиром и, возможно, Аурой. Богиня стоит на гигантской раковине морского гребешка, чистой и совершенной, как жемчужина. Ее встречает молодая женщина, которую иногда называют одной из Граций или Хорой весны, и которая протягивает плащ, усыпанный цветами."
+        "description": "Conocida como el 'Nacimiento de Venus', la composición en realidad muestra a la diosa del amor y la belleza llegando a la tierra, a la isla de Chipre, nacida de la espuma del mar y llevada allí por los vientos, Zephyr y, tal vez , Aura. La diosa está de pie sobre una concha de vieira gigante, tan pura y perfecta como una perla. Se encuentra con una mujer joven, que a veces se identifica como una de las Gracias o como la Hora de la primavera, y que le ofrece un manto cubierto de flores."
     },
 
     "specifical": {

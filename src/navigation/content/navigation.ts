@@ -2,7 +2,7 @@ const menulangJSON = {
     "en": {
         "en_language": "EN",
         "ua_language": "UA",
-        "ru_language": "RU",
+        "es_language": "ES",
         "main": "main",
         "paintings": "paintings",
         "architecture": "architecture",
@@ -13,24 +13,24 @@ const menulangJSON = {
         "main_colors": "Main color"
     },
 
-    "ru": {
-        "en_language": "АНГ",
-        "ua_language": "УКР",
-        "ru_language": "РУС",
-        "main": "главная",
-        "paintings": "картины",
-        "architecture": "архитектура",
-        "sculptures": "скульптуры",
-        "music": "музыка",
-        "active_language": "РУС",
-        "contrast_colors": "Контрастный цвет",
-        "main_colors": "Основной цвет"
+    "es": {
+        "en_language": "ING",
+        "ua_language": "UCR",
+        "es_language": "ESP",
+        "main": "hogar",
+        "paintings": "pinturas",
+        "architecture": "arquitectura",
+        "sculptures": "escultura",
+        "music": "música",
+        "active_language": "ESP",
+        "contrast_colors": "color de contraste",
+        "main_colors": "Color principal"
     },
 
     "ua": {
         "en_language": "АНГ",
         "ua_language": "УКР",
-        "ru_language": "РОС",
+        "es_language": "ІСП",
         "main": "головна",
         "paintings": "картини",
         "architecture": "архітектура",

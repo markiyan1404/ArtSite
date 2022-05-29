@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Venus de Milo",
+        "main_title": "Venus de Milo",
         "name": "Venus de Milo",
         "author": "The author is unknown",
         "year": "137 BC",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Венера Мілосська",
+        "main_title": "Венера Мілосська",
         "name": "Венера Мілосська",
         "author": "Автор невідомий",
         "year": "137 до н.е.",
@@ -17,8 +17,8 @@
         "button": "3Д"
     },
 
-    "ru": {
-        "mainTitle": "Venus de Milo",
+    "es": {
+        "main_title": "Venus de Milo",
         "name": "Venus de Milo",
         "author": "El autor es desconocido",
         "year": "137 aC",

@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Arnolfini portrait",
+        "main_title": "Arnolfini portrait",
         "name": "Arnolfini portrait",
         "author": "Jan van Eyck",
         "year": "1434",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Портрет Арнолфіні",
+        "main_title": "Портрет Арнолфіні",
         "name": "Портрет Арнолфіні",
         "author": "Ян ван Ейк",
         "year": "1434",
         "description": "Тема портрета Арнолфіні домашня: чоловік і жінка тримаються за руки в інтер'єрі, за ним вікно і ліжко за нею в природному символіці подружніх ролей п'ятнадцятого століття - в той час як чоловіки йшли займатися бізнесом, дружини займалися домашніми обов'язками. Одяг, який носить пара, також мав би демонструвати, цього разу багатство та соціальне становище."
     },
 
-    "ru": {
-        "mainTitle": "Портрет Арнольфини",
-        "name": "Портрет Арнольфини",
-        "author": "Ян ван Эйк",
+    "es": {
+        "main_title": "Retrato de Arnolfini",
+        "name": "Retrato de Arnolfini",
+        "author": "Jan van Eyck",
         "year": "1434",
-        "description": "Сюжет «Портрета Арнольфини» — домашний: мужчина и женщина держатся за руки в интерьере, за ним окно, а за ней — кровать в естественной символике супружеских ролей пятнадцатого века — пока мужья ушли заниматься бизнесом, жены занимались домашними делами. Одежда, которую носит пара, также должна была служить демонстрацией богатства и социального положения."
+        "description": "El tema del Retrato de Arnolfini es doméstico: un hombre y una mujer se toman de la mano en un ambiente interior, con una ventana detrás de él y una cama detrás de ella en el simbolismo natural de los roles maritales del siglo XV, mientras los esposos salían a se dedican a los negocios, las esposas se preocupan por las tareas domésticas. La ropa que visten la pareja también habría sido concebida como demostrativa, esta vez de riqueza y posición social."
     },
 
     "specifical": {

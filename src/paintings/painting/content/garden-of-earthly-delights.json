@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Garden of earthly delights",
+        "main_title": "Garden of earthly delights",
         "name": "Garden of earthly delights",
         "author": "Hieronymus Bosch",
         "year": "1510",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Сад земних насолод",
+        "main_title": "Сад земних насолод",
         "name": "Сад земних насолод",
         "author": "Ієронім Босх",
         "year": "1510",
         "description": "На малюнку зображений один з варіантів раю. На одній ділянці група оголених фігур переплітається, кусаючи величезну соковиту полуницю. Інші з ентузіазмом коливаються від палаців, побудованих із форм, що нагадують брудні репродуктивні органи, мерехтливі кристали та коробочки для насіння, які готові лопнути. Фонтани чистої блакитної води стікають прямо в рот; плоди зриваються; і дуети плекають блискучі бульбашки."
     },
 
-    "ru": {
-        "mainTitle": "Сад земных наслаждений",
-        "name": "Сад земных наслаждений",
-        "author": "Иероним Босх",
+    "es": {
+        "main_title": "Jardín de las delicias terrenales",
+        "name": "Jardín de las delicias terrenales",
+        "author": "Hieronymus Bosch",
         "year": "1510",
-        "description": "На картинке показан один из вариантов рая. В одной зоне группа обнаженных фигур переплетается, кусая огромную сочную клубнику. Другие с энтузиазмом раскачиваются из дворцов, построенных из форм, напоминающих грязные репродуктивные органы, мерцающие кристаллы и коробочки с семенами, готовые лопнуть. Фонтаны чистой голубой воды текут прямо в рот; плоды срывают; и дуэты взращивают блестящие пузыри."
+        "description": "La imagen muestra una de las opciones para el paraíso. En un área, un grupo de figuras desnudas se entrelazan, mordiendo una enorme y jugosa fresa. Otros se balancean con entusiasmo desde palacios construidos con formas que se asemejan a órganos reproductivos embarrados, cristales brillantes y cajas de semillas. a punto de reventar. Fuentes de agua azul pura fluyen directamente en la boca; los frutos se arrancan; y los dúos nutren burbujas brillantes."
     },
 
     "specifical": {

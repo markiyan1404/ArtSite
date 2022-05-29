@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Gross clinic",
+        "main_title": "Gross clinic",
         "name": "Gross clinic",
         "author": "Thomas Eakins",
         "year": "1875",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Клініка Гросса",
+        "main_title": "Клініка Гросса",
         "name": "Клініка Гросса",
         "author": "Томас Ікінс",
         "year": "1875",
         "description": "З погляду сучасного глядача деякі моменти, зняті на цьому полотні, здаються лякаючими і навіть трохи неправдоподібними. Наприклад, те, що сам Гросс, всі його помічники і студенти, знаходяться в аудиторії у вуличному одязі. Крім того, сумніви викликає досить убоге освітлення «операційної», якому теж є пояснення. Подібні аудиторії висвітлювалися лише природним світлом, що проникало крізь вікна у стелі, тому студенти здебільшого залишалися в тіні."
     },
 
-    "ru": {
-        "mainTitle": "Клиника Гросса",
-        "name": "Клиника Гросса",
-        "author": "Томас Икинс",
+    "es": {
+        "main_title": "Clínica bruta",
+        "name": "Clínica bruta",
+        "author": "Thomas Eakins",
         "year": "1875",
-        "description": "С точки зрения современного зрителя некоторые моменты, запечатленные на этом полотне, кажутся пугающими и даже немного неправдоподобными. К примеру, то, что сам Гросс, все его ассистенты и студенты, находятся в аудитории в уличной одежде. Кроме того, сомнения вызывает довольно скудное освещение «операционной», которому тоже есть объяснение. Подобные аудитории освещались только естественным светом, проникавшим сквозь окна в потолке, поэтому студенты по большей части оставались в тени."
+        "description": "Desde el punto de vista de un espectador moderno, algunos de los momentos capturados en este lienzo parecen aterradores e incluso un poco inverosímiles. Por ejemplo, el hecho de que el propio Gross, todos sus asistentes y alumnos, estén entre el público en ropa de calle. Además, la escasa cobertura del “quirófano”, que también tiene una explicación, genera dudas. Tales aulas estaban iluminadas únicamente con luz natural a través de las ventanas del techo, por lo que la mayoría de los estudiantes permanecían en la sombra."
     },
 
     "specifical": {

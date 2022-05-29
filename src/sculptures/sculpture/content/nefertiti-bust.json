@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Nefertiti Bust",
+        "main_title": "Nefertiti Bust",
         "name": "Nefertiti Bust",
         "author": "Thutmose",
         "year": "1341 BC",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Бюст Нефертіті",
+        "main_title": "Бюст Нефертіті",
         "name": "Бюст Нефертіті",
         "author": "Тутмос",
         "year": "1341 до н.е.",
@@ -18,8 +18,8 @@
     
     },
 
-    "ru": {
-        "mainTitle": "Busto de Nefertiti",
+    "es": {
+        "main_title": "Busto de Nefertiti",
         "name": "Busto de Nefertiti",
         "autor": "Tutmosis",
         "year": "1341 aC",

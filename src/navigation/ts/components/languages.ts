@@ -43,7 +43,7 @@ const checkUserLangue = () => {
     
         if (userLang === "en" || userLang === "en-US") userLanguage = "en";
         else if (userLang === "uk") userLanguage = "ua";
-        else if (userLang === "ru") userLanguage = "ru";
+        else if (userLang === "es") userLanguage = "es";
         else userLanguage = "en";
     
         contentUpdate(userLanguage);
@@ -64,7 +64,7 @@ checkUserLangue();
 $(".choice__language").on("click", function (): void {
     if (this.classList.value.indexOf("ua") !== -1) changeLang("ua");
     if (this.classList.value.indexOf("en") !== -1) changeLang("en");
-    if (this.classList.value.indexOf("ru") !== -1) changeLang("ru");
+    if (this.classList.value.indexOf("es") !== -1) changeLang("es");
 
     $(".choice__language").removeClass("languages-active");
     $(this).addClass("languages-active");

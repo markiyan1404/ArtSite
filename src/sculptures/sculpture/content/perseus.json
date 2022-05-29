@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Perseus",
+        "main_title": "Perseus",
         "name": "Perseus",
         "author": "Benvenuto Cellini",
         "year": "1545",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Персей",
+        "main_title": "Персей",
         "name": "Персей",
         "author": "Бенвенуто Челліні",
         "year": "1545",
@@ -17,8 +17,8 @@
         "button": "3Д"
     },
 
-    "ru": {
-        "mainTitle": "Perseo",
+    "es": {
+        "main_title": "Perseo",
         "name": "Perseo",
         "author": "Benvenuto Cellini",
         "year": "1545",

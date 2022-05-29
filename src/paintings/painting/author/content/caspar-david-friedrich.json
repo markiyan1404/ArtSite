@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Caspar David Friedrich",
+        "main_title": "Caspar David Friedrich",
         "name": "Caspar David Friedrich",
         "birthday_year": "1774",
         "dead_year": "1840",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Каспар Давид Фрідріх",
+        "main_title": "Каспар Давид Фрідріх",
         "name": "Каспар Давид Фрідріх",
         "birthday_year": "1774",
         "dead_year": "1840",
         "description": "Каспар Давид Фрідріх був художником-пейзажистом німецького романтизму XIX століття, серед якого він нині вважається найважливішим художником. Художник і кресляр, Фрідріх найбільш відомий своїми пізнішими алегоричними пейзажами, на яких зображені споглядальні фігури на тлі нічного неба, ранкових туманів, безплідних дерев і готичних руїн."
     },
 
-    "ru": {
-        "mainTitle": "Каспар Давид Фридрих",
-        "name": "Каспар Давид Фридрих",
+    "es": {
+        "main_title": "Caspar David Friedrich",
+        "name": "Caspar David Friedrich",
         "birthday_year": "1774",
         "dead_year": "1840",
-        "description": "Каспар Давид Фридрих был художником-пейзажистом немецкого романтического движения девятнадцатого века, из которых он теперь считается самым важным художником. Художник и рисовальщик, Фридрих наиболее известен своими более поздними аллегорическими пейзажами, на которых изображены созерцательные фигуры, вырисовывающиеся на фоне ночного неба, утреннего тумана, бесплодных деревьев и готических руин."
+        "description": "Caspar David Friedrich fue un paisajista del movimiento romántico alemán del siglo XIX, del cual ahora se le considera el pintor más importante. Pintor y dibujante, Friedrich es mejor conocido por sus paisajes alegóricos posteriores, que presentan contemplativos figuras recortadas contra cielos nocturnos, nieblas matutinas, árboles estériles y ruinas góticas."
     }
 }

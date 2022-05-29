@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Johannes Vermeer",
+        "main_title": "Johannes Vermeer",
         "name": "Johannes Vermeer",
         "birthday_year": "1632",
         "dead_year": "1675",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Ян Вермер",
+        "main_title": "Ян Вермер",
         "name": "Ян Вермер",
         "birthday_year": "1632",
         "dead_year": "1675",
         "description": "Ян Вермеєр - нідерландський художник-живописець, майстер побутового живопису та жанрового портрета. Один із найталановитіших послідовників Терборха. Творчість Рембрандта, Хальса та Вермеєра прийнято вважати вершиною голландського мистецтва золотого віку. У російській мистецтвознавчій традиції найпоширенішим варіантом написання імені художника є Вермеєр Дельфтський. Інші варіанти - Йоханніс ван дер Мер, Йоханніс вір Мер, Вермер Делфтський."
     },
 
-    "ru": {
-        "mainTitle": "Ян Вермеер",
-        "name": "Ян Вермеер",
+    "es": {
+        "main_title": "Johannes Vermeer",
+        "name": "Johannes Vermeer",
         "birthday_year": "1632",
         "dead_year": "1675",
-        "description": "Ян Верме́ер – нидерландский художник-живописец, мастер бытовой живописи и жанрового портрета. Один из самых талантливых последователей Терборха. Творчество Рембрандта, Хальса и Вермеера принято считать вершиной голландского искусства золотого века. В русской искусствоведческой традиции более распространенным вариантом написания имени художника является Вермеер Дельфтский. Другие варианты – Йоханнис ван дер Мер, Йоханнис вер Мер, Вермер Делфтский."
+        "description": "Jan Vermeer es un pintor holandés, maestro de la pintura cotidiana y del retrato de género. Uno de los seguidores más talentosos de Terborch. El trabajo de Rembrandt, Hals y Vermeer se considera el pináculo del arte holandés de la edad de oro. En la tradición de la historia del arte ruso, la ortografía más común del nombre del artista es Vermeer de Delft. Otras opciones son Johannis van der Mer, Johannis ver Mer, Vermeer de Delft."
     }
 }

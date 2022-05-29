@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Self portrait with bandaged ear",
+        "main_title": "Self portrait with bandaged ear",
         "name": "Self portrait with bandaged ear",
         "author": "Vincent van Gogh",
         "year": "1889",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Автопортрет із забинтованим вухом",
+        "main_title": "Автопортрет із забинтованим вухом",
         "name": "Автопортрет із забинтованим вухом",
         "author": "Вінсент ван Гог",
         "year": "1889",
         "description": "Ця знаменита картина Вінсента Ван Гога «Автопортрет із забинтованим вухом» виражає його художню силу та особисту боротьбу. Ван Гог намалював її в січні 1889 року, через тиждень після виписки з лікарні. Там він проходив лікування після того, як відрізав більшу частину лівого вуха (показано тут як забинтоване праве вухо, оскільки він намалював себе в дзеркалі). Це самокалічення було відчайдушним актом, скоєним кількома тижнями раніше, після гострої суперечки з його колегою-художником Полем Гогеном, який приїхав зупинитися з ним в Арлі, на півдні Франції."
     },
 
-    "ru": {
-        "mainTitle": "Автопортрет с забинтованным ухом",
-        "name": "Автопортрет с забинтованным ухом",
-        "author": "Винсент ван Гог",
+    "es": {
+        "main_title": "Autorretrato con la oreja vendada",
+        "name": "Autorretrato con la oreja vendada",
+        "author": "Vincent van Gogh",
         "year": "1889",
-        "description": "Эта знаменитая картина Винсента Ван Гога «Автопортрет с перевязанным ухом» выражает его художественную силу и личную борьбу. Ван Гог написал ее в январе 1889 года, через неделю после выписки из больницы. Там он лечился после того, как ему отрезали большую часть левого уха (здесь оно показано как перевязанное правое ухо, потому что он нарисовал себя в зеркале). Это членовредительство было совершено несколькими неделями ранее в отчаянном поступке после жаркой ссоры с его коллегой-художником Полем Гогеном, который приехал к нему в Арль на юге Франции."
+        "description": "Esta famosa pintura, Autorretrato con la oreja vendada de Vincent van Gogh, expresa su poder artístico y sus luchas personales. Van Gogh la pintó en enero de 1889, una semana después de salir del hospital. Había recibido tratamiento allí después de cortarse la mayor parte de su oreja izquierda (que se muestra aquí como la oreja derecha vendada porque se pintó a sí mismo en un espejo).Esta automutilación fue un acto desesperado cometido unas semanas antes, luego de una acalorada discusión con su colega pintor Paul Gauguin, quien había venido a quédate con él en Arles, en el sur de Francia."
     },
 
     "specifical": {

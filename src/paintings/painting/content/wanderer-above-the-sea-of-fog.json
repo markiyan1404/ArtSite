@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Wanderer above the sea of fog",
+        "main_title": "Wanderer above the sea of fog",
         "name": "Wanderer above the sea of fog",
         "author": "Caspar David Friedrich",
         "year": "1818",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Мандрівник над морем туману",
+        "main_title": "Мандрівник над морем туману",
         "name": "Мандрівник над морем туману",
         "author": "Каспар Давид Фрідріх",
         "year": "1818",
         "description": "У культовому фільмі Каспара Давида Фрідріха «Мандрівник над морем туману» чоловік у темно-зеленому пальто та чоботях дивиться на хмарний пейзаж, тримаючись за допомогою тростини. Встановлена на темній, скелястій скелі, фігура стоїть у центрі далеких площин, що сходяться. Історик мистецтва Джозеф Кернер, професор Гарвардського університету, зазначає, що середина картини лежить на грудях чоловіка. «Серце є центром Всесвіту», — каже він."
     },
 
-    "ru": {
-        "mainTitle": "Странник над морем тумана",
-        "name": "Странник над морем тумана",
-        "author": "Каспар Давид Фридрих",
+    "es": {
+        "main_title": "Caminante sobre el mar de niebla",
+        "name": "Caminante sobre el mar de niebla",
+        "author": "Caspar David Friedrich",
         "year": "1818",
-        "description": "В культовом произведении Каспара Давида Фридриха «Странник над морем тумана» мужчина в темно-зеленом пальто и сапогах смотрит на облачный пейзаж, опираясь на трость. Фигура, установленная на темной скалистой скале, стоит в центре далеких сходящихся плоскостей. Историк искусства Джозеф Кернер, профессор Гарвардского университета, отмечает, что середина картины находится на груди мужчины. «Сердце — это центр вселенной», — говорит он."
+        "description": "En la icónica Wanderer above the Sea of Fog de Caspar David Friedrich, un hombre vestido con un abrigo verde oscuro y botas domina un paisaje nublado, apoyándose en un bastón. Montado sobre una roca oscura y escarpada, la figura se encuentra en el centro de planos distantes y convergentes. El historiador de arte Joseph Koerner, profesor de la Universidad de Harvard, señala que el punto medio de la pintura descansa en el pecho del hombre. 'El corazón es el centro del universo', dice."
     },
 
     "specifical": {

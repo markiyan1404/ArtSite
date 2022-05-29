@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "The discus thrower",
+        "main_title": "The discus thrower",
         "name": "The discus thrower",
         "author": "myron",
         "year": "455 BC",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Метальник диска",
+        "main_title": "Метальник диска",
         "name": "Метальник диска",
         "author": "мирон",
         "year": "455 до н.е.",
@@ -17,8 +17,8 @@
         "button": "3Д"
     },
 
-    "ru": {
-        "mainTitle": "El lanzador de disco",
+    "es": {
+        "main_title": "El lanzador de disco",
         "name": "El lanzador de disco",
         "author": "myron",
         "year": "455 aC",

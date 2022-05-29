@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Thomas Eakins",
+        "main_title": "Thomas Eakins",
         "name": "Thomas Eakins",
         "birthday_year": "1844",
         "dead_year": "1916",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Томас Ікінс",
+        "main_title": "Томас Ікінс",
         "name": "Томас Ікінс",
         "birthday_year": "1844",
         "dead_year": "1916",
         "description": "Томас Каупертуейт Ікінс був художником-реалістом, фотографом, скульптором і викладачем образотворчого мистецтва. Він широко визнаний одним з найважливіших художників в історії американського мистецтва. Протягом усієї своєї професійної кар’єри, з початку 1870-х років до тих пір, поки через сорок років його здоров’я не почало слабшати, Ікінс суворо працював від життя, обираючи своїм предметом людей свого рідного міста Філадельфії."
     },
 
-    "ru": {
-        "mainTitle": "Томас Икинс",
-        "name": "Томас Икинс",
+    "es": {
+        "main_title": "Tomás Eakins",
+        "name": "Thomas Eakins",
         "birthday_year": "1844",
         "dead_year": "1916",
-        "description": "Томас Каупертуэйт Икинс был художником-реалистом, фотографом, скульптором и педагогом изящных искусств. Он широко известен как один из самых важных художников в истории американского искусства. На протяжении всей своей профессиональной карьеры, с начала 1870-х годов и до тех пор, пока его здоровье не начало ухудшаться примерно сорок лет спустя, Икинс работал строго от жизни, выбирая в качестве своего предмета жителей своего родного города Филадельфии."
+        "description": "Thomas Cowperthwait Eakins fue un pintor realista, fotógrafo, escultor y educador de bellas artes. Es ampliamente reconocido como uno de los artistas más importantes en la historia del arte estadounidense. Por la duración de su carrera profesional, desde principios 1870 hasta que su salud comenzó a fallar unos cuarenta años más tarde, Eakins trabajó arduamente desde la vida, eligiendo como tema a la gente de su ciudad natal de Filadelfia."
     }
 }

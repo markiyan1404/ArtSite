@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Paintings",
+        "main_title": "Paintings",
         "paintingName0": "Arnolfini portrait",
         "paintingName1": "Birth of Venus",
         "paintingName2": "Mona Lisa",
@@ -19,7 +19,7 @@
     },
 
     "ua": {
-        "mainTitle": "Картини",
+        "main_title": "Картини",
         "paintingName0": "Портрет Арнолфіні",
         "paintingName1": "Народження Венери",
         "paintingName2": "Мона Ліза",
@@ -37,22 +37,22 @@
         "paintingName14": "Син людський"
     },
 
-    "ru": {
-        "mainTitle": "Картины",
-        "paintingName0": "Портрет Арнолфини",
-        "paintingName1": "Рождение Венеры",
-        "paintingName2": "Мона Лиза",
-        "paintingName3": "Создание Адама",
-        "paintingName4": "Сад земных удовольствий",
-        "paintingName5": "Жатва",
-        "paintingName6": "Девушка с жемчужной серьгой",
-        "paintingName7": "Плит Медузы",
-        "paintingName8": "Путешественник над морем туманов",
-        "paintingName9": "Завтрак на траве",
-        "paintingName10": "Клиника Гросс",
-        "paintingName11": "Обед лодки",
-        "paintingName12": "Автопортрет с забинтованным ухом",
-        "paintingName13": "Звездная ночь",
-        "paintingName14": "Сын человеческий"
+    "es": {
+        "main_title": "Pinturas",
+        "paintingName0": "Retrato de Arnolfini",
+        "paintingName1": "Nacimiento de Venus",
+        "paintingName2": "Mona Lisa",
+        "paintingName3": "Creación de Adán",
+        "paintingName4": "Jardín de las delicias terrenales",
+        "paintingName5": "Cosechadoras",
+        "paintingName6": "La chica de la perla",
+        "paintingName7": "Balsa de la Medusa",
+        "paintingName8": "Vagabundo sobre el Mar de Niebla",
+        "paintingName9": "Desayuno en el césped",
+        "paintingName10": "Clínica bruta",
+        "paintingName11": "Almuerzo del grupo de botes",
+        "paintingName12": "Autorretrato con la oreja vendada",
+        "paintingName13": "Noche estrellada",
+        "paintingName14": "Hijo del hombre"
     }
 }

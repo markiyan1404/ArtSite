@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Theodore Gericault",
+        "main_title": "Theodore Gericault",
         "name": "Theodore Gericault",
         "birthday_year": "1791",
         "dead_year": "1824",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Теодор Жеріко",
+        "main_title": "Теодор Жеріко",
         "name": "Теодор Жеріко",
         "birthday_year": "1791",
         "dead_year": "1824",
         "description": "Полум’яна, смілива особистість Жеріко та коротке життя відповідали образам художників-романтиків його епохи і, поряд з його суперечливими картинами, глибоко вплинули на мистецтво 19-го століття. Жеріко народився в 1791 році в заможній родині в Руані, яка кілька років потому переїхала до Парижа. Перші художні заняття він отримав у Парижі в майстернях Карла Верне та П’єра Герена. У 1811 році Жеріко вирішив відповідати за його навчання і почав копіювати роботи старих майстрів у Луврі."
     },
 
-    "ru": {
-        "mainTitle": "Теодор Жерико",
-        "name": "Теодор Жерико",
+    "es": {
+        "main_title": "Teodoro Géricault",
+        "name": "Teodoro Géricault",
         "birthday_year": "1791",
         "dead_year": "1824",
-        "description": "Пылкая, смелая личность и короткая жизнь Жерико соответствовали шаблону художников-романтиков его эпохи и, наряду с его противоречивыми картинами, оказали глубокое влияние на искусство 19 века. Жерико родился в 1791 году в богатой семье в Руане, которая через несколько лет переехала в Париж. Первые уроки рисования он получил в Париже в мастерских Карла Верне и Пьера Герена. В 1811 году Жерико решил взять на себя ответственность за свое обучение и начал копировать работы старых мастеров в Лувре."
+        "description": "La personalidad fogosa y atrevida de Géricault y su breve vida encajan en el molde de los artistas románticos de su época y, junto con sus controvertidas pinturas, influyeron profundamente en el arte del siglo XIX. Géricault nació en 1791 en una familia adinerada de Rouen que se trasladó a París algunos años después. Recibió sus primeras clases de arte en París en los estudios de Carle Vernet y Pierre Guérin. En 1811 Géricault decidió hacerse cargo de su formación y comenzó a copiar obras de los Viejos Maestros en el Louvre."
     }
 }

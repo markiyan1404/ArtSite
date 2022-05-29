@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Son of man",
+        "main_title": "Son of man",
         "name": "Son of man",
         "author": "Rene Magritte",
         "year": "1964",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Син людський",
+        "main_title": "Син людський",
         "name": "Син людський",
         "author": "Рене Магрітт",
         "year": "1964",
         "description": "Магрітт написав «Сина Людського» як автопортрет. Картина складається з чоловіка в пальті та котелі, що стоїть перед короткою стіною, за якою море й хмарне небо. Обличчя чоловіка значною мірою закрите ширяючим зеленим яблуком. Проте видно очі чоловіка, які визирають через край яблука. Ще одна тонка особливість полягає в тому, що ліва рука чоловіка здається зігнутою назад в лікті."
     },
 
-    "ru": {
-        "mainTitle": "Сын Человеческий",
-        "name": "Сын Человеческий",
-        "author": "Рене Магритт",
+    "es": {
+        "main_title": "Hijo del hombre",
+        "name": "Hijo del hombre",
+        "author": "René Magritte",
         "year": "1964",
-        "description": "Магритт написал «Сын человеческий» как автопортрет. На картине изображен мужчина в пальто и котелке, стоящий перед невысокой стеной, за которой море и облачное небо. Лицо мужчины в значительной степени закрыто парящим зеленым яблоком. Однако можно увидеть, как глаза мужчины выглядывают из-за края яблока. Еще одна тонкая особенность заключается в том, что левая рука мужчины кажется согнутой назад в локте."
+        "description": "Magritte pintó «El hijo del hombre» como un autorretrato. La pintura consiste en un hombre con un abrigo y un bombín de pie frente a una pared pequeña, más allá de la cual está el mar y un cielo nublado. El rostro del hombre está en gran parte oscurecido por una manzana verde que flota. Sin embargo, se pueden ver los ojos del hombre asomándose por el borde de la manzana. Otra característica sutil es que el brazo izquierdo del hombre parece doblarse hacia atrás a la altura del codo."
     },
 
     "specifical": {

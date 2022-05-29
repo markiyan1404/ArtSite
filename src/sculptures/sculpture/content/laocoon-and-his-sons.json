@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Laocoön and His Sons",
+        "main_title": "Laocoön and His Sons",
         "name": "Laocoön and His Sons",
         "author": "Pliny the Elder",
         "year": "49 BC",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Лаокоон та його сини",
+        "main_title": "Лаокоон та його сини",
         "name": "Лаокоон та його сини",
         "author": "Пліній Старший",
         "year": "49 до н.е.",
@@ -17,8 +17,8 @@
         "button": "3Д"
     },
 
-    "ru": {
-        "mainTitle": "Laocoonte y sus hijos",
+    "es": {
+        "main_title": "Laocoonte y sus hijos",
         "name": "Laocoonte y sus hijos",
         "author": "Plinio el Viejo",
         "year": "49 aC",

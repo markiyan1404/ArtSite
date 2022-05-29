@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Augustus of Prima Porta",
+        "main_title": "Augustus of Prima Porta",
         "name": "Augustus of Prima Porta",
         "author": "The author is unknown",
         "year": "20 BC",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Август з Прима Порти",
+        "main_title": "Август з Прима Порти",
         "name": "Август з Прима Порти",
         "author": "Автор невідомий",
         "year": "20 до н.е",
@@ -17,8 +17,8 @@
         "button": "3D"
     },
 
-    "ru": {
-        "mainTitle": "Agosto de Prima Porta",
+    "es": {
+        "main_title": "Agosto de Prima Porta",
         "name": "Agosto de Prima Porta",
         "author": "Autor desconocido",
         "year": "20 aC",

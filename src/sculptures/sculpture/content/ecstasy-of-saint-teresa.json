@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Ecstasy of Saint Teresa",
+        "main_title": "Ecstasy of Saint Teresa",
         "name": "Ecstasy of Saint Teresa",
         "author": "Gian Lorenzo Bernini",
         "year": "1650",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Екстаз святої Терези",
+        "main_title": "Екстаз святої Терези",
         "name": "Екстаз святої Терези",
         "author": "Джан Лоренцо Берніні",
         "year": "1650",
@@ -17,8 +17,8 @@
         "button": "3Д"
     },
 
-    "ru": {
-        "mainTitle": "Éxtasis de Santa Teresa",
+    "es": {
+        "main_title": "Éxtasis de Santa Teresa",
         "name": "Éxtasis de Santa Teresa",
         "autor": "Gian Lorenzo Bernini",
         "year": "1650",

@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Michelangelo Buonarroti",
+        "main_title": "Michelangelo Buonarroti",
         "name": "Michelangelo Buonarroti",
         "birthday_year": "1475",
         "dead_year": "1564",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Мікеланджело Буонарроті",
+        "main_title": "Мікеланджело Буонарроті",
         "name": "Мікеланджело Буонарроті",
         "birthday_year": "1475",
         "dead_year": "1564",
         "description": "Мікеланджело народився в Капрезе в 1470-х роках і навчався спочатку як художник у Гірландайо, а потім як скульптор під патронатом Лоренцо Медічі. У 1496 році, вже відомий як скульптор, він відправився до Риму, де вирізьбив «П'єту» для собору Святого Петра. Повернувшись у Флоренцію в 1501 році, він розпочав роботу над багатьма скульптурними та живописними проектами, більшість з яких залишилися незавершеними в 1505 році, коли його викликали до Риму, щоб почати роботу над скульптурною гробницею для Папи Юлія II, проект, який переслідував його до 1545 року."
     },
 
-    "ru": {
-        "mainTitle": "Микеланджело Буонарроти",
-        "name": "Микеланджело Буонарроти",
+    "es": {
+        "main_title": "Miguel Ángel Buonarroti",
+        "name": "Miguel Ángel Buonarroti",
         "birthday_year": "1475",
         "dead_year": "1564",
-        "description": "Микеланджело родился в Капрезе в 1470-х годах и обучался сначала как художник у Гирландайо, а затем как скульптор под покровительством Лоренцо Медичи. В 1496 году, уже известный как скульптор, он отправился в Рим, где вырезал «Пьету» для собора Святого Петра. Вернувшись во Флоренцию в 1501 году, он начал работу над многими скульптурными и живописными проектами, большинство из которых остались незавершенными в 1505 году, когда его вызвали в Рим, чтобы начать работу над скульптурной гробницей для папы Юлия II, проект, который преследовал его до 1545 года."
+        "description": "Michelangelo nació en Caprese en la década de 1470 y se formó primero como pintor con Ghirlandaio, y luego como escultor bajo el patrocinio de Lorenzo de' Medici. En 1496, ya conocido como escultor, fue a Roma, donde talló la 'Piedad' de San Pedro. De vuelta en Florencia en 1501, comenzó a trabajar en muchos proyectos escultóricos y pictóricos, la mayoría de los cuales quedaron sin terminar en 1505, cuando fue llamado a Roma para comenzar a trabajar en una tumba esculpida para el Papa Julio II. , un proyecto que lo persiguió hasta 1545."
     }
 }

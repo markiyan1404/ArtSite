@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Sculptures",
+        "main_title": "Sculptures",
         "sculptureName0": "Nefertiti Bust",
         "sculptureName1": "The discus thrower",
         "sculptureName2": "Venus de Milo",
@@ -25,12 +25,12 @@
     },
 
     "ua": {
-        "mainTitle": "Скульптури",
+        "main_title": "Скульптури",
         "sculptureName0": "Бюст Нефертіті",
         "sculptureName1": "Метальник диска",
         "sculptureName2": "Венера Мілосська",
         "sculptureName3": "Лаокоон та його сини",
-        "sculptureName4": "Август з Prima Porta",
+        "sculptureName4": "Август Прімапортський",
         "sculptureName5": "Давид",
         "sculptureName6": "Персей",
         "sculptureName7": "Екстаз святої Терези",
@@ -49,8 +49,8 @@
         "button": "Більше"
     },
 
-    "ru": {
-        "mainTitle": "Esculturas",
+    "es": {
+        "main_title": "Esculturas",
         "sculptureName0": "Busto de Nefertiti",
         "sculptureName1": "El lanzador de disco",
         "sculptureName2": "Venus de Milo",

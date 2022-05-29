@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "David",
+        "main_title": "David",
         "name": "David",
         "author": "Michelangelo",
         "year": "1503",
@@ -9,7 +9,7 @@
     },
 
     "ua": {
-        "mainTitle": "Давид",
+        "main_title": "Давид",
         "name": "Давид",
         "author": "Мікеланджело",
         "year": "1503",
@@ -17,8 +17,8 @@
         "button": "3D"
     },
 
-    "ru": {
-        "mainTitle": "David",
+    "es": {
+        "main_title": "David",
         "nombre": "David",
         "author": "Miguel Ángel",
         "year": "1503",

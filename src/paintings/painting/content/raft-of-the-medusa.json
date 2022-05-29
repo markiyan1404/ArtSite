@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Raft of the medusa",
+        "main_title": "Raft of the medusa",
         "name": "Raft of the medusa",
         "author": "Theodore Gericault",
         "year": "1818",
@@ -8,19 +8,19 @@
     },
 
     "ua": {
-        "mainTitle": "Пліт медузи",
+        "main_title": "Пліт медузи",
         "name": "Пліт медузи",
         "author": "Теодор Жеріко",
         "year": "1818",
         "description": "Пліт Медузи - картина французького художника Теодора Жерико, одне з найзнаменитіших полотен епохи романтизму. Приводом для створення картини стала морська катастрофа, що сталася в липні 1816 року з пасажирами та членами команди фрегата «Медуза», що залишили корабель, що сів на мілину, на плоту. «Пліт „Медузи“» експонувався на паризькому Салоні 1819 року та отримав неоднозначну оцінку художніх критиків та публіки."
     },
 
-    "ru": {
-        "mainTitle": "Плот медузы",
-        "name": "Плот медузы",
-        "author": "Теодор Жерико",
+    "es": {
+        "main_title": "Balsa de la medusa",
+        "name": "Balsa de la medusa",
+        "author": "Teodoro Géricault",
         "year": "1818",
-        "description": "Плот Медузы  — картина французского художника Теодора Жерико, одно из самых знаменитых полотен эпохи романтизма. Поводом для создания картины послужила морская катастрофа, произошедшая в июле 1816 года с пассажирами и членами команды фрегата «Медуза», покинувшими корабль, севший на мель, на плоту. «Плот „Медузы“» экспонировался на парижском Салоне 1819 года и получил неоднозначную оценку художественных критиков и публики."
+        "description": "Medusa's Balsa es una pintura del artista francés Theodore Jericho, una de las pinturas más famosas de la época romántica. El motivo de la imagen fue un desastre marino que ocurrió en julio de 1816 con pasajeros y tripulantes de la fragata «Medusa», que dejó el barco varado en la balsa. La Medusa Balsa se exhibió en el Salón de París de 1819 y recibió críticas mixtas de críticos de arte y público."
     },
 
     "specifical": {

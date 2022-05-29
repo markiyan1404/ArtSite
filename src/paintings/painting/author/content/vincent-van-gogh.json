@@ -1,6 +1,6 @@
 {
     "en": {
-        "mainTitle": "Vincent van Gogh",
+        "main_title": "Vincent van Gogh",
         "name": "Vincent van Gogh",
         "birthday_year": "1853",
         "dead_year": "1890",
@@ -8,18 +8,18 @@
     },
 
     "ua": {
-        "mainTitle": "Вінсент ван Гог",
+        "main_title": "Вінсент ван Гог",
         "name": "Вінсент ван Гог",
         "birthday_year": "1853",
         "dead_year": "1890",
         "description": "Ван Гог сьогодні є одним із найпопулярніших художників постімпресіоністів, хоча за життя він не отримав широкої оцінки. Нині він славиться великою живучістю своїх робіт, які характеризуються виразним і емоційним використанням блискучого кольору та енергійним нанесенням нанесеної фарби. Травми його життя, задокументовані в його листах, мали тенденцію домінувати та спотворювати сучасне уявлення про його мистецтво."
     },
 
-    "ru": {
-        "mainTitle": "Винсент ван Гог",
-        "name": "Винсент ван Гог",
+    "es": {
+        "main_title": "Vincent van Gogh",
+        "name": "Vincent van Gogh",
         "birthday_year": "1853",
         "dead_year": "1890",
-        "description": "Ван Гог сегодня является одним из самых популярных художников-постимпрессионистов, хотя при жизни он не получил широкого признания. В настоящее время он известен большой жизненной силой своих работ, которые характеризуются выразительным и эмоциональным использованием яркого цвета и энергичным применением пастозной краски. Травмы его жизни, задокументированные в его письмах, имели тенденцию доминировать и искажать современное восприятие его искусства."
+        "description": "Van Gogh es hoy uno de los pintores posimpresionistas más populares, aunque no fue muy apreciado durante su vida. Ahora es famoso por la gran vitalidad de sus obras, que se caracterizan por un uso expresivo y emotivo. de color brillante y aplicación enérgica de pintura empastada. Los traumas de su vida, documentados en sus cartas, han tendido a dominar y distorsionar las percepciones modernas de su arte."
     }
 }

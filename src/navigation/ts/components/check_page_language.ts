@@ -1,5 +1,4 @@
 import * as $ from "jquery";
-import { error } from "jquery";
 
 interface langApp {
     [key: string]: string | any;
@@ -16,7 +15,7 @@ $(window).on("load", (): void => {
 
         if (userLang === "en" || userLang === "en-US") userLanguage = "en";
         else if (userLang === "uk") userLanguage = "ua";
-        else if (userLang === "ru") userLanguage = "ru";
+        else if (userLang === "es") userLanguage = "es";
         else userLanguage = "en";
 
         contentUpdate(userLanguage);
@@ -33,7 +32,6 @@ export const changeLang = (langVal: string): void => contentUpdate(langVal);
 export const contentUpdate = (language: string): void => {
     const pageName: string = $("body").attr("data-name"),
         pageType: string = $("body").attr("data-type");
-
     if (pageName === "main") import("../../../main/content/main.json").then(content => importContent(content["default"], language));
     if (pageName === "paintings") import("../../../paintings/content/contentPaintings.json").then(content => importContent(content["default"], language));
     if (pageType === "painting") import(`../../../paintings/painting/content/${pageName}.json`).then(content => importContent(content["default"], language));
@@ -44,9 +42,9 @@ export const contentUpdate = (language: string): void => {
 };
 
 $(".choice__language").on("click", function (): void {
-    if (this.classList.value.indexOf("ua") !== -1) contentUpdate("ua");
-    if (this.classList.value.indexOf("en") !== -1) contentUpdate("en");
-    if (this.classList.value.indexOf("ru") !== -1) contentUpdate("ru");
+    if ($(this).hasClass("ua")) contentUpdate("ua");
+    if ($(this).hasClass("en")) contentUpdate("en");
+    if ($(this).hasClass("es")) contentUpdate("es");
 });
 
 function importContent (obj: Object, language: string): void {
