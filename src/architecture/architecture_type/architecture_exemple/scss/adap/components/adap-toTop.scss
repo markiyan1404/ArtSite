@@ -1,0 +1,81 @@
+@media screen and (min-width: 3200px) {
+
+    .toTop {
+        border-width: 4px;
+        height: 90px;
+        width: 90px;
+
+        .toTop__icon {
+            border-width: 18px;
+            border-top-width: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .toTop {
+        border-width: 3px;
+        height: 80px;
+        width: 80px;
+
+        .toTop__icon {
+            border-width: 16px;
+            border-top-width: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .toTop {
+        height: 45px;
+        width: 45px;
+
+        .toTop__icon {
+            border-width: 9px;
+            border-top-width: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .toTop {
+        height: 45px;
+        width: 45px;
+
+        .toTop__icon {
+            border-width: 9px;
+            border-top-width: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+
+    .toTop {
+        height: 45px;
+        margin-bottom: 15vh;
+        width: 45px;
+
+        .toTop__icon {
+            border-width: 9px;
+            border-top-width: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .toTop {
+        height: 40px;
+        margin-bottom: 15vh;
+        width: 40px;
+
+        .toTop__icon {
+            border-width: 9px;
+            border-top-width: 14px;
+        }
+    }
+}

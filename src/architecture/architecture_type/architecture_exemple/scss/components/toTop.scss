@@ -1,0 +1,32 @@
+.toTop {
+    align-items: center;
+    align-items: center;
+    border: 2px solid var(--contrastColorWhite);
+    display: flex;
+    font-size: 19px;
+    height: 48px;
+    justify-content: center;
+    margin-bottom: 8vh;
+    transform: rotate(45deg);
+    transition: $colorTransition, transform 0.3s;
+    width: 48px;
+
+    .toTop__icon {
+        border: 8px solid transparent;
+        border-top: 14px solid var(--mainColor);
+        transform: rotate(135deg) translateY(25%);
+        transition: $colorTransition;
+    }
+}
+
+.toTop:hover {
+    @include main-color-background;
+
+    transform: rotate(45deg) scale(0.95);
+    transition: $colorTransition, transform 0.3s;
+}
+
+.toTop:hover .toTop__icon {
+    border-top-color: var(--contrastColorWhite);
+    transition: $colorTransition;
+}

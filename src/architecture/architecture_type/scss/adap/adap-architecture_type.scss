@@ -1,0 +1,17 @@
+@import "./components/adap-close";
+@import "./components/adap-exemples";
+@import "./components/adap-text";
+@import "./components/adap-main_image";
+
+@media screen and (max-width: 1200px) {
+
+    body,
+    .content {
+        overflow-y: auto;
+    }
+
+    .content {
+        align-content: baseline;
+        justify-content: center;
+    }
+}

@@ -39,6 +39,8 @@ export const contentUpdate = (language: string): void => {
     if (pageName === "sculptures") import("../../../sculptures/content/sculptures.json").then(content => importContent(content["default"], language));
     if (pageType === "sculpture") import(`../../../sculptures/sculpture/content/${pageName}.json`).then(content => importContent(content["default"], language));
     if (pageType === "sculpture_author") import(`../../../sculptures/sculpture/author/content/${pageName}.json`).then(content => importContent(content["default"], language));
+    if (pageName === "architecture") import("../../../architecture/content/architecture.json").then(content => importContent(content["default"], language));
+    if (pageType === "architecture_type") import(`../../../architecture/architecture_type/content/${pageName}.json`).then(content => importContent(content["default"], language));
 };
 
 $(".choice__language").on("click", function (): void {

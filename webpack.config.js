@@ -60,6 +60,8 @@ module.exports = {
         sculpture: ["@sculpture/sculpture.ts"],
         sculpture_author: ["@sculpture_author/author.ts"],
         architecture: ["@architecture/architecture.ts"],
+        architecture_type: ["@architecture_type/architecture_type.ts"],
+        architecture_exemple: ["@architecture_exemple/architecture_exemple.ts"],
         menu: ["@menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
@@ -149,6 +151,33 @@ module.exports = {
             },
         }),
 
+        new HtmlWebpackPlugin({
+            filename: "architecture_type.html",
+            template: "./architecture/architecture_type/architecture_type.pug",
+            chunks: print_names("architecture_type"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "architecture_type.html",
+            template: "./architecture/architecture_type/architecture_type.pug",
+            chunks: print_names("architecture_type"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "architecture_exemple.html",
+            template: "./architecture/architecture_type/architecture_exemple/architecture_exemple.pug",
+            chunks: print_names("architecture_exemple"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
         // CLEAN plagin
         new CleanWebpackPlugin(),
 
@@ -187,6 +216,8 @@ module.exports = {
             "@sculpture": path.resolve(__dirname, "./src/sculptures/sculpture/ts"),
             "@sculpture_author": path.resolve(__dirname, "./src/sculptures/sculpture/author/ts"),
             "@architecture": path.resolve(__dirname, "./src/architecture/ts"),
+            "@architecture_type": path.resolve(__dirname, "./src/architecture/architecture_type/ts"),
+            "@architecture_exemple": path.resolve(__dirname, "./src/architecture/architecture_type/architecture_exemple/ts"),
         }
     },
 

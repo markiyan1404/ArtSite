@@ -20,7 +20,7 @@ page.on("blur", (): void => {
 
         if (appLang === "ua") document.title="Верніться 😭";
         if (appLang === "en") document.title="Come back 😭";
-        if (appLang === "es") document.title="Вернитесь 😭";
+        if (appLang === "es") document.title="Regresar 😭";
 
         changeIcon("noActiveIcon");
     }, timeChangeHead);

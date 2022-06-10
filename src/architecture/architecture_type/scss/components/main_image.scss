@@ -1,0 +1,35 @@
+.content__main_image {
+    align-items: center;
+    background-image: url("/img/architecture/architecture_type/1.png");
+    background-size: 100%;
+    border: 5px solid var(--mainColor);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    transform: rotate(45deg) translate(-36%, 40%);
+    transition: $colorTransition;
+    width: 42%;
+}
+
+.content__years {
+    color: #fff;
+    font-family: "Spectral SC";
+    font-size: 70px;
+    position: absolute;
+    text-align: center;
+    width: 24%;
+    z-index: 2;
+}
+
+.content__main_image::after {
+    @include main-color-background;
+
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

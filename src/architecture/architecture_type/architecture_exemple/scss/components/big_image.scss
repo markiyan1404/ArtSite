@@ -1,0 +1,21 @@
+.scroll-container__big_image {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        @include contrast-color-white-color;
+
+        font-size: 90px;
+        margin-top: 15vh;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        z-index: -1;
+    }
+
+    img {
+        margin-top: 25vh;
+        width: 100vw;
+    }
+}

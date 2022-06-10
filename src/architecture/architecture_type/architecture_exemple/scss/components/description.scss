@@ -1,0 +1,60 @@
+.scroll-container__years {
+    color: transparent;
+    font-family: "Spectral SC";
+    font-size: 65px;
+    letter-spacing: 4px;
+    text-align: center;
+    -webkit-text-stroke: 2px var(--mainColor);
+    transition: $colorTransition;
+}
+
+.description__block {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
+    position: relative;
+    flex-direction: row;
+
+    p {
+        @include contrast-color-white-color;
+
+        align-items: center;
+        display: flex;
+        font-family: "Spectral SC";
+        font-size: 22px;
+        line-height: 140%;
+        margin-right: 5%;
+        text-align: right;
+        width: 45%;
+        z-index: 2;
+    }
+
+    img {
+        width: 33%;
+        z-index: 2;
+    }
+}
+
+.description__block:nth-child(3) {
+    flex-direction: row-reverse;
+
+    p {
+        margin-left: 5%;
+        text-align: left;
+    }
+}
+
+.description__block::before {
+    @include main-color-background;
+
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
