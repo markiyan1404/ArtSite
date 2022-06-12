@@ -9,6 +9,7 @@ import "./components/window-2";
 import "./components/window-3";
 import "./components/window-4";
 import "./components/window-5";
+import "./components/3d";
 import "/preloader/ts/preloader";
 
 const page = $(window);
