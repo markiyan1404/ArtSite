@@ -1,0 +1,50 @@
+@import "./components/adap-close";
+
+@media screen and (min-width: 3200px) {
+
+    .content__text {
+        font-size: 375px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .content__text {
+        font-size: 275px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .content__text {
+        font-size: 175px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .content__text {
+        font-size: 110px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    .content__text {
+        font-size: 85px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+    .content__text {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .content__text {
+        font-size: 45px;
+    }
+}

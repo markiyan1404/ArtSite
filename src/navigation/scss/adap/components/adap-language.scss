@@ -183,11 +183,11 @@
 @media screen and (min-width: 0) and (max-width: 1000px) {
 
     .languages__choice {
+        align-items: center;
         background: var(--contrastColorBlack);
         background: var(--contrastColorBlack) !important;
         border: none !important;
         height: 100vh;
-        justify-content: center;
         justify-content: space-evenly;
         left: 0;
         top: 0 !important;

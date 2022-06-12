@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     margin-left: 35%;
-    margin-top: 13vh;
+    margin-top: 15vh;
     padding-bottom: 8vh;
     width: 100%;
 
@@ -14,7 +14,6 @@
 
         .image-section__block {
             align-items: center;
-            background-image: url("/img/architecture/baroque.webp");
             background-size: 100%;
             border: 3px solid var(--mainColor);
             display: flex;

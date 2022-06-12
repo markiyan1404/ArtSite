@@ -39,7 +39,7 @@ function print_names (...files) {
         "menu_icon", 
         "languages", 
         "colors", 
-        "title"
+        "last_page"
     ]
 
     for (let i=0; i<files.length; i++) baseFiles.push(files[i]);
@@ -62,6 +62,7 @@ module.exports = {
         architecture: ["@architecture/architecture.ts"],
         architecture_type: ["@architecture_type/architecture_type.ts"],
         architecture_exemple: ["@architecture_exemple/architecture_exemple.ts"],
+        404: ["@404/404.ts"],
         menu: ["@menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
@@ -69,6 +70,7 @@ module.exports = {
         cursor: ["@cursor/ts/cursor.ts"],
         firstLoad: ["@standartTS/checkFirstLoad.ts"],
         title: ["@standartTS/title.ts"],
+        last_page: ["@standartTS/lastPage.ts"],
     },
 
     output: { 
@@ -178,6 +180,15 @@ module.exports = {
             },
         }),
 
+        new HtmlWebpackPlugin({
+            filename: "404.html",
+            template: "./404/404.pug",
+            chunks: print_names("404"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
         // CLEAN plagin
         new CleanWebpackPlugin(),
 
@@ -218,6 +229,7 @@ module.exports = {
             "@architecture": path.resolve(__dirname, "./src/architecture/ts"),
             "@architecture_type": path.resolve(__dirname, "./src/architecture/architecture_type/ts"),
             "@architecture_exemple": path.resolve(__dirname, "./src/architecture/architecture_type/architecture_exemple/ts"),
+            "@404": path.resolve(__dirname, "./src/404/ts"),
         }
     },
 
@@ -286,7 +298,9 @@ module.exports = {
             // Loading PUG
             {
                 test: /\.pug$/,
-                loader: "pug-loader"
+                use: {
+                    loader: "pug-loader",
+                }
             },
         ]
     }

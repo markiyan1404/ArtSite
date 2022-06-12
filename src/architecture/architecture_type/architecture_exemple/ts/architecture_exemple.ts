@@ -8,6 +8,9 @@ import { ScrollTrigger} from "gsap/ScrollTrigger.js";
 
 const page = $(window);
 
+const key: string = location.href.split("#")[1];
+$("body").attr("data-name", key);
+
 // Loader animation
 
 const loaderContetnt = (): void => {
@@ -20,7 +23,13 @@ const loaderContetnt = (): void => {
     page.on("scroll", onScroll);
 };
 
-loaderContetnt();
+page.on("load", (): void => {
+    setTimeout((): void => {
+        loaderContetnt();
+        paralax();
+    }, 100);
+});
+
 
 // Close 
 
@@ -67,8 +76,7 @@ $(".toTop").on("click", (): JQuery<Element> => $("html").animate({scrollTop: 0},
 
 // Paralax for description
 
-gsap.utils.toArray(".description__block").forEach((description__block: any, i: number) => {
-    console.log(description__block, i);
+gsap.utils.toArray(".description__block").forEach((description__block: any) => {
     gsap.to(description__block, {
         backgroundPositionY: "50%",
         ease: "none",
@@ -80,3 +88,19 @@ gsap.utils.toArray(".description__block").forEach((description__block: any, i: n
         }
     });
 });
+
+// Add way for images
+
+const getExempleImages = (): void => {
+    const allBlocks: JQuery<Element> = $(".description__block"),
+        allImages: JQuery<Element> = $(".block__image");
+
+    for (let i: number = 0; i < allImages.length; i++) {
+        $(allImages[i]).attr("src", `img/architecture/architecture_exemple/descriptions_images/${key}/${key}-${[i]}.jpg`);
+        $(allBlocks[i]).css("background-image", `url(img/architecture/architecture_exemple/descriptions_images/${key}/backgrounds/bg-${key}-${[i]}.png)`);
+    }
+
+    $(".big_image__img").attr("src", `img/architecture/architecture_exemple/big_images/${key}.webp`);
+};
+
+getExempleImages();

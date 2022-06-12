@@ -1,0 +1,34 @@
+@import "src/scss/variables";
+@import "./components/close";
+
+.content {
+    @include contrast-color-black-background;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: absolute;
+}
+
+.content__central_image {
+    animation: show 0.5s forwards;
+    height: max-content;
+    width: 30%;
+}
+
+.content__text {
+    @include main-color-color;
+
+    animation: show 0.5s forwards;
+    display: flex;
+    font-family: "Viaoda Libre";
+    font-size: 200px;
+    font-weight: 300;
+    justify-content: space-between;
+    width: 25%;
+
+    b:nth-child(2) {
+        @include contrast-color-white-color;
+    }
+}

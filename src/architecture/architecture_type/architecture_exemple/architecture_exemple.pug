@@ -1,33 +1,34 @@
 include ../../../pug/header
 body(data-type="architecture_exemple" data-menu="architecture")
-    main.content
-    
-        .scroll-container#scroll-container
 
-            span.scroll-container__close_container
-                .scroll-container__close.mouse-active2 &#10010;
+main.content
 
-            section.scroll-container__big_image
-                h1(data-speed="1.6").scroll-container__paralax_text zamora cathedral
-                img(src="./img/architecture/architecture_exemple/1.png", alt="exemple image")
-                
+    .scroll-container#scroll-container
 
-            section.scroll-container__description
-                h2.scroll-container__years 1151-1174
+        span.scroll-container__close_container
+            .scroll-container__close.mouse-active2 &#10010;
 
-                section.description__block
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro repellendus quos at ut eum placeat asperiores impedit nihil corrupti aliquid beatae quam quibusdam magnam sit dignissimos, iusto labore. Mollitia.
-                    img(src="./img/architecture/architecture_exemple/2.jpg", alt="Description img")
+        section.scroll-container__big_image
+            h1(data-speed="1.6" data-key="title").language.scroll-container__paralax_text 
+            img(src="./img/architecture/architecture_exemple/1.png", alt="exemple image").big_image__img
+            
 
-                section.description__block
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro repellendus quos at ut eum placeat asperiores impedit nihil corrupti aliquid beatae quam quibusdam magnam sit dignissimos, iusto labore. Mollitia.
-                    img(src="./img/architecture/architecture_exemple/2.jpg", alt="Description img")
+        section.scroll-container__description
+            h2(data-key="years").language.scroll-container__years 
 
-                section.description__block
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro repellendus quos at ut eum placeat asperiores impedit nihil corrupti aliquid beatae quam quibusdam magnam sit dignissimos, iusto labore. Mollitia.
-                    img(src="./img/architecture/architecture_exemple/2.jpg", alt="Description img")
+            section.description__block
+                p(data-key="text1").language
+                img(src="./img/architecture/architecture_exemple/2.jpg", alt="Description img").block__image
 
-            span.toTop.mouse-active2
-                .toTop__icon
+            section.description__block
+                p(data-key="text2").language Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro repellendus quos at ut eum placeat asperiores impedit nihil corrupti aliquid beatae quam quibusdam magnam sit dignissimos, iusto labore. Mollitia.
+                img(src="./img/architecture/architecture_exemple/2.jpg", alt="Description img").block__image
+
+            section.description__block
+                p(data-key="text3").language Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro repellendus quos at ut eum placeat asperiores impedit nihil corrupti aliquid beatae quam quibusdam magnam sit dignissimos, iusto labore. Mollitia.
+                img(src="./img/architecture/architecture_exemple/2.jpg", alt="Description img").block__image
+
+        span.toTop.mouse-active2
+            .toTop__icon
 
 include ../../../navigation/navigation 

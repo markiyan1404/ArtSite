@@ -41,6 +41,10 @@ export const contentUpdate = (language: string): void => {
     if (pageType === "sculpture_author") import(`../../../sculptures/sculpture/author/content/${pageName}.json`).then(content => importContent(content["default"], language));
     if (pageName === "architecture") import("../../../architecture/content/architecture.json").then(content => importContent(content["default"], language));
     if (pageType === "architecture_type") import(`../../../architecture/architecture_type/content/${pageName}.json`).then(content => importContent(content["default"], language));
+    if (pageType === "architecture_exemple") {
+        import(`../../../architecture/architecture_type/architecture_exemple/content/${pageName}.json`).then(content => importContent(content["default"], language));
+    }
+    if (pageName === "404") import("../../../404/content/404.json").then(content => importContent(content["default"], language));
 };
 
 $(".choice__language").on("click", function (): void {

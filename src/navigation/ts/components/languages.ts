@@ -62,9 +62,9 @@ checkUserLangue();
 // Chouse language
 
 $(".choice__language").on("click", function (): void {
-    if (this.classList.value.indexOf("ua") !== -1) changeLang("ua");
-    if (this.classList.value.indexOf("en") !== -1) changeLang("en");
-    if (this.classList.value.indexOf("es") !== -1) changeLang("es");
+    if ($(this).hasClass("ua")) changeLang("ua");
+    if ($(this).hasClass("en")) changeLang("en");
+    if ($(this).hasClass("es")) changeLang("es");
 
     $(".choice__language").removeClass("languages-active");
     $(this).addClass("languages-active");
