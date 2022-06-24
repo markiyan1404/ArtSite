@@ -4,6 +4,8 @@
 
         p {
             font-size: 52px;
+            width: 20%;
+            text-align: center;
         }
 
         .year-line,
@@ -236,7 +238,7 @@
         }
     }
 
-    .authorToPainting .content__year {
+    .authorToSculpture .content__year {
         animation: mobileYearShow 0.3s reverse forwards;
     }
 
@@ -248,7 +250,7 @@
         animation: show 0.3s forwards;
     }
 
-    .paintingToAuthor .content__year {
+    .sculptureToAuthor .content__year {
         animation: show 0.6s forwards;
         animation-delay: 1s;
         opacity: 0;

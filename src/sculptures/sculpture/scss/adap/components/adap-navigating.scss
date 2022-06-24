@@ -115,8 +115,9 @@
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
 
-    .content__navigating {
+     .content__navigating {
         position: static;
+        animation: show 0.3s forwards;
 
         .navigating__arrow {
             position: absolute;
@@ -126,6 +127,19 @@
         .navigating__line {
             display: none;
         }
+    }
+
+    .sculpturesToSculpture  .content__navigating {
+        opacity: 0;
+        animation: show 0.4s forwards;
+        animation-delay: 0.7s;
+        transform: inherit;
+    }
+
+    .sculptureToAuthor .content__navigating {
+        position: static;
+        opacity: 1;
+        animation: hide 0.3s forwards;
     }
 
     .arrow__page-name {

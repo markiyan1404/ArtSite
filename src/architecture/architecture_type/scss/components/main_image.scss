@@ -9,6 +9,38 @@
     transform: rotate(45deg) translate(-36%, 40%);
     transition: $colorTransition;
     width: 42%;
+    opacity: 0;
+    left: -40%;
+    animation: mainImage 0.7s forwards;
+    animation-delay: 0.1s;
+
+    @keyframes mainImage {
+        from {
+            left: -40%;
+            opacity: 0;
+        }
+
+        to {
+            left: 0%;
+            opacity: 1;
+        }
+    }
+}
+
+.typeToexemples .content__main_image {
+    animation: mainImageRever 0.7s forwards;
+}
+
+@keyframes mainImageRever {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: -40%;
+        opacity: 0;
+    }
 }
 
 .content__years {
@@ -19,6 +51,13 @@
     text-align: center;
     width: 24%;
     z-index: 2;
+    opacity: 0;
+    animation: show 0.3s forwards;
+    animation-delay: 0.6s;
+}
+
+.typeToexemples .content__years {
+    animation: hide 0.1s forwards;
 }
 
 .content__main_image::after {

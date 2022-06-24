@@ -14,9 +14,9 @@
     }
 
     .navigation__languages .languages__choice::after {
-        border-bottom: 15px solid transparent;
-        border-left: 17px solid var(--contrastColorWhite);
-        border-top: 15px solid transparent;
+        border-bottom-width: 15px;
+        border-left-width: 17px;
+        border-top-width: 15px;
     }
 }
 
@@ -27,8 +27,8 @@
     }
 
     .navigation__languages .choice__language {
-        font-size: 25px;
-        padding: 17px;
+        font-size: 29px;
+        padding: 19px;
     }
 
     .navigation__languages .languages__choice {
@@ -36,9 +36,10 @@
     }
 
     .navigation__languages .languages__choice::after {
-        border-bottom: 10px solid transparent;
-        border-left: 15px solid var(--contrastColorWhite);
-        border-top: 10px solid transparent;
+        border-bottom-width: 14px;
+        border-left-width: 21px;
+        border-top-width: 14px;
+        top: 49vh;
     }
 }
 
@@ -59,14 +60,12 @@
 
         .languages__choice {
             border: 3px solid var(--contrastColorWhite);
-            right: 110%;
         }
 
         .languages__choice::after {
-            border-bottom: 7px solid transparent;
-            border-left: 10px solid var(--contrastColorWhite);
-            border-top: 7px solid transparent;
-            right: 98.9%;
+            border-bottom-width: 8px;
+            border-left-width: 12px;
+            border-top-width: 8px;
         }
 
         .languages__language {
@@ -96,14 +95,12 @@
 
         .languages__choice {
             border: 3px solid var(--contrastColorWhite);
-            right: 110%;
         }
 
         .languages__choice::after {
-            border-bottom: 7px solid transparent;
-            border-left: 10px solid var(--contrastColorWhite);
-            border-top: 7px solid transparent;
-            right: 98%;
+            border-bottom-width: 7px;
+            border-left-width: 10px;
+            border-top-width: 7px;
         }
     }
 }

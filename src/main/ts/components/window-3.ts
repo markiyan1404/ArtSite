@@ -1,4 +1,6 @@
 import * as $ from "jquery";
+import * as THREE from "three";
+import { crate3D, show3D } from "../../../3d/ts/3d";
 
 // Sculptures slider
 
@@ -33,3 +35,10 @@ const chengSculture = () => {
 };
 
 $(".next-slide__arrow").on("click", chengSculture);
+
+// 3D
+
+// $(".description__button").on("click", (): void => {
+//     const test: string = "scene.gltf";
+//     show3D(new URL(`../../../3d/textures/main/` + "scene.gltf", import.meta.url));
+// });

@@ -29,27 +29,17 @@ page.on("load", () => {
 
 const addAnimClass = (): void => {
     const allBlocks = $(".image-section__block"),
-        speedAnim: number = 100;
-    let blockNum2 = 0;
+        speedAnim: number = 70;
+    let blockNum = 0;
 
-    // $(allBlocks[0]).addClass("block-anim");
-    // const addClassToLines: NodeJS.Timer = setInterval((): void => {
+    $(allBlocks[0]).addClass("block-anim");
+    const addClassToLines: NodeJS.Timer = setInterval((): void => {
 
-    //     $(allBlocks[blockNum]).addClass("block-anim");
-    //     blockNum++;
-    // }, speedAnim); 
+        $(allBlocks[blockNum]).addClass("block-anim");
+        blockNum++;
+    }, speedAnim); 
 
-    setTimeout(() => {
-        const addClassToLines2: NodeJS.Timer = setInterval((): void => {
-            $(allBlocks[blockNum2]).css({
-                "animation": "none", 
-                "opacity": 1
-            });
-            blockNum2++;
-        }, speedAnim * 1.2);
-
-        setTimeout((): void => clearInterval(addClassToLines2), speedAnim * 2.5 * allBlocks.length);
-    }, speedAnim * 2.5);
+    setTimeout((): void => clearInterval(addClassToLines), speedAnim * allBlocks.length);
 };
 
 // Background image
@@ -59,21 +49,27 @@ const getActiveImage = function (element): string {
 };
 
 
-// $(".image-section__block").on("mouseenter", function (): void {
-//     if (page.width() <= 1000) return;
-//     $(".background").attr({"src": `./img/architecture/${getActiveImage(this)}_bg.webp`}).css({"display": "block", "opacity": 0.1});
-// });
+$(".image-section__block").on("mouseenter", function (): void {
+    if (page.width() <= 1000) return;
+    $(".background").addClass("background-active");
+    $(".background").attr({"src": `./img/architecture/backgrounds/${getActiveImage(this)}_bg.webp`});
+});
 
-// $(".image-section__block").on("mouseleave", (): void => {
-//     $(".background").css("opacity", "0");
-// });
+$(".image-section__block").on("mouseleave", (): void => {
+    $(".background").removeClass("background-active");
+});
 
 // Link to type of architecture
 
 $(".image-section__block").on("click", function (): void {
+    const allBlocks: JQuery<Element> = $(".image-section__block"),
+        getLastBlockOpacity: string = $(allBlocks[allBlocks.length-1]).css("opacity");
+
+    if (getLastBlockOpacity !== "1" ) return;
+
     $("body").addClass("architectureToarchitecture_type");
     $(".image-section__block").css("animation", "image-section__block 0.5s reverse forwards");
     setTimeout((): void => {
         location.href = "architecture_type.html#" + getActiveImage(this);
-    }, 500);
+    }, 550);
 });

@@ -39,7 +39,7 @@ $(".navigating__arrow-right").on("click", (): void => {
     const windowWidth: number = page.width();
 
     bottomArrowClick("nextSculpture", "sculptureToSculpture", "arrow__next-page-name", rightArrow());
-    if (windowWidth < 1000) bottomArrowClick("swipeLeft", "psculptureToSculpture", "arrow__prev-page-name", leftArrow());
+    if (windowWidth < 1000) bottomArrowClick("swipeLeft", "sculptureToSculpture", "arrow__prev-page-name", leftArrow());
 });
 
 export const bottomArrowClick = (addClass: string, classLS: string, arrowClass: string, linkFunction: string): void => {

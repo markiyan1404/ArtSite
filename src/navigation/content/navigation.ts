@@ -7,7 +7,6 @@ const menulangJSON = {
         "paintings": "paintings",
         "architecture": "architecture",
         "sculptures": "sculptures",
-        "music": "music",
         "active_language": "EN",
         "contrast_colors": "Contrast color",
         "main_colors": "Main color"
@@ -21,7 +20,6 @@ const menulangJSON = {
         "paintings": "pinturas",
         "architecture": "arquitectura",
         "sculptures": "escultura",
-        "music": "música",
         "active_language": "ESP",
         "contrast_colors": "color de contraste",
         "main_colors": "Color principal"
@@ -35,7 +33,6 @@ const menulangJSON = {
         "paintings": "картини",
         "architecture": "архітектура",
         "sculptures": "скульптури",
-        "music": "музика",
         "active_language": "УКР",
         "contrast_colors": "Контрастний колір",
         "main_colors": "Основний колір"

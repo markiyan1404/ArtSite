@@ -48,6 +48,12 @@
             width: 84px;
         }
     }
+
+    .colors__active::after {
+        border-bottom-width: 12px;
+        border-left-width: 20px;
+        border-top-width: 12px;
+    }
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3200px) {
@@ -99,6 +105,12 @@
             width: 60px;
         }
     }
+
+    .colors__active::after {
+        border-bottom-width: 12px;
+        border-left-width: 20px;
+        border-top-width: 12px;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1700px) {
@@ -147,6 +159,12 @@
         border-bottom: 18px solid transparent;
         border-left: 18px solid var(--mainColor);
         border-top: 18px solid transparent;
+    }
+
+    .colors__active::after {
+        border-bottom-width: 12px;
+        border-left-width: 20px;
+        border-top-width: 12px;
     }
 }
 
@@ -319,6 +337,7 @@
 
         .active__colors {
             width: 79%;
+            margin: 0;
 
             .colors__color {
                 height: 45px;
@@ -360,6 +379,7 @@
 
         .active__colors {
             width: 79%;
+            margin: 0;
 
             .colors__color {
                 height: 40px;

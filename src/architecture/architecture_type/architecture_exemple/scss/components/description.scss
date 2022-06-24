@@ -57,3 +57,9 @@
     width: 100%;
     z-index: 1;
 }
+
+.scroll-container__description, .toTop {
+    opacity: 0;
+    animation: show 0.3s forwards;
+    animation-delay: 1s;
+}

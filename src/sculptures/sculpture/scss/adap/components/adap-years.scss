@@ -63,7 +63,17 @@
         z-index: 2;
     }
 
-    .paintingsToPainting .content__year {
-        opacity: 0;
+    .sculpturesToSculpture .content__year {
+        animation: sculpturesToSculptureYears 0.3s forwards;
+    }
+
+    @keyframes sculpturesToSculptureYears {
+        from {
+            transform: translateY(-100%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
     }
 }

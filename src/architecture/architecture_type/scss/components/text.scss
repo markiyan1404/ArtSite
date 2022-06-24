@@ -1,13 +1,15 @@
 .content__text {
     font-family: "Spectral SC";
     margin-left: 37%;
-    margin-top: 8vh;
     width: 55%;
+    opacity: 0;
+    animation: show 0.7s forwards;
+    animation-delay: 0.1s;
 
     h2 {
         @include main-color-color;
 
-        font-size: 65px;
+        font-size: 60px;
         margin: 0 0 3vh;
     }
 
@@ -15,8 +17,12 @@
         @include contrast-color-white-color;
 
         font-size: 20px;
-        letter-spacing: 3px;
-        line-height: 35px;
+        letter-spacing: 2.5px;
+        line-height: 30px;
         width: 90%;
     }
+}
+
+.typeToexemples .content__text {
+    animation: hide 0.3s forwards;
 }

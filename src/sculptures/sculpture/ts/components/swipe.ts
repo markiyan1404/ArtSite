@@ -28,11 +28,11 @@ $("*").on("touchend", (): void => {
         checkPhone: boolean = phone.test(navigator.userAgent),
         navWindowDisplay: string = $(".menu, .languages__choice, .colors__active").css("display");
 
-    if (startingX + 150 < movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000){
+    if (startingX + 100 < movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000){
         bottomArrowClick("swipeLeft", "sculptureToSculpture", "arrow__prev-page-name", leftArrow());
     }
 
-    if (startingX - 150 > movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000) {
+    if (startingX - 100 > movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000) {
         bottomArrowClick("swipeRight", "sculptureToSculpture swipeRightLoad", "arrow__next-page-name", rightArrow());
     }
 });

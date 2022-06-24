@@ -3,6 +3,7 @@ import { allSculpturesName } from "./data-name";
 
 const page = $(window);
 
+
 // Create slides 
 
 const createSlides = () => {
@@ -83,7 +84,7 @@ const squareSize = (...squarer: string[]): void => {
     }
 };
 
-squareSize(".arrows__arrow");
+
 page.on("resize", (): void => squareSize(".arrows__arrow"));
 
 const arrowSize = (): void => {
@@ -92,7 +93,6 @@ const arrowSize = (): void => {
 };
 
 page.on("resize", (): void => arrowSize());
-arrowSize();
 
 // Generate button on mobile 
 
@@ -149,3 +149,8 @@ const goToSculpture = () => {
 };
 
 goToSculpture();
+
+$(window).on("load", (): void => {
+    arrowSize();
+    squareSize(".arrows__arrow");
+});

@@ -123,5 +123,7 @@
     .description__block {
         align-items: center;
         flex-direction: column-reverse !important;
+        background-size: cover;
+        background-position: 50% 50%;
     }
 }

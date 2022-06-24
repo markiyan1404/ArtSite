@@ -20,4 +20,4 @@ const contentWidth = (): void => {
 };
 
 $(window).on("resize", contentWidth);
-contentWidth();
+$(window).on("load", (): void => contentWidth());

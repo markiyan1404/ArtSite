@@ -1,0 +1,28 @@
+{
+    "en": {
+        "main_title": "St. Paul's Cathedral",
+        "title": "St. Paul's Cathedral",
+        "years": "1675-1710",
+        "text1": "St. Paul’s was one of more than fifty church commissions that Sir Christopher Wren received in the aftermath of the Great Fire. He was tasked with creating a cathedral that was a fitting replacement of the Old St. Paul’s, and a suitable place of worship. He designed the showpiece west facade to be fronted by a wide flight of steps, a double-storey portico and two Baroque towers. This creates an extremely fascinating architectural look.",
+        "text2": "St. Paul’s is unusual among cathedrals in that it has a crypt which extends under the entire building rather than just under the eastern end. The crypt has a structural purpose, as massive piers spread the weight of the structure’s slimmer piers, necessary due to London’s relatively weak clay soil.",
+        "text3": "The most notable feature is the dome. To ensure the dome appeared visually satisfying when viewed both externally and internally, Wren designed a double-shelled dome, with the the inner and outer domes using catenary curves rather than hemispheres. Between the two shells, a brick cone supports the timbers of the outer, lead-covered dome, and the ornate stone lantern that rises above it."
+    },
+
+    "ua": {
+        "main_title": "Собор св. Павла",
+        "title": "Собор св. Павла",
+        "years": "1675-1710",
+        "text1": "Собор Св. Павла був одним із більш ніж п'ятдесяти церковних доручень, які сер Крістофер Рен отримав після Великої пожежі. Йому було доручено створити собор, який був би гідною заміною старого собору Святого Павла, і відповідне місце для культу. Він спроектував експозиційний західний фасад так, щоб перед ним були широкі сходи, двоповерховий портик і дві барокові вежі. Це створює надзвичайно захоплюючий архітектурний вигляд.",
+        "text2": "Собор Святого Павла є незвичайним серед соборів тим, що він має склеп, який простягається під усією будівлею, а не тільки під східним кінцем. Склеп має конструктивне призначення, оскільки масивні опори поширюють вагу тонших опор споруди , необхідно через відносно слабкий глинистий ґрунт Лондона.",
+        "text3": "Найбільш помітною особливістю є купол. Щоб купол виглядав візуально задовільно, якщо дивитися як ззовні, так і зсередини, Рен спроектував купол з подвійною оболонкою, з внутрішнім і зовнішнім куполами з використанням ланцюжкових кривих, а не півкуль. Між дві оболонки — цегляний конус, що підтримує дерев’яні бруси зовнішнього, покритого свинцем купола, і ошатний кам’яний ліхтар, що височіє над ним."
+    },
+
+    "es": {
+        "main_title": "Catedral de San Pablo",
+        "title": "Catedral de San Pablo",
+        "years": "1675-1710",
+        "text1": "St. Paul's fue uno de los más de cincuenta encargos de la iglesia que recibió Sir Christopher Wren después del Gran Incendio. Se le encomendó la creación de una catedral que fuera un reemplazo adecuado de Old St. Paul's, y un adecuado lugar de culto. Diseñó la fachada oeste de la obra maestra para que esté al frente de un amplio tramo de escalones, un pórtico de dos pisos y dos torres barrocas. Esto crea una apariencia arquitectónica extremadamente fascinante.",
+        "text2": "St. Paul's es inusual entre las catedrales porque tiene una cripta que se extiende debajo de todo el edificio en lugar de solo debajo del extremo este. La cripta tiene un propósito estructural, ya que los pilares masivos distribuyen el peso de los pilares más delgados de la estructura , necesario debido al suelo arcilloso relativamente débil de Londres.",
+        "text3": "La característica más notable es el domo. Para garantizar que el domo pareciera visualmente satisfactorio tanto desde el exterior como desde el interior, Wren diseñó un domo de doble capa, con los domos interior y exterior usando curvas catenarias en lugar de hemisferios. Entre las dos conchas, un cono de ladrillo sostiene las vigas de la cúpula exterior cubierta de plomo y la linterna de piedra adornada que se eleva sobre ella."
+    }
+}

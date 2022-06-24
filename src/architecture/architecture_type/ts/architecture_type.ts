@@ -15,8 +15,7 @@ const bottomBlocksSize = (): void => {
     $(".image-section__block").css("height", blocksWidth);
 };
 
-bottomBlocksSize();
-
+$(window).on("load", (): void => bottomBlocksSize());
 $(window).on("resize", (): void => bottomBlocksSize());
 
 // Years position 
@@ -32,14 +31,17 @@ const yearsPosition = (): void => {
     $(".content__years").css("width", bigImageWidth);
 };
 
-yearsPosition();
-
+$(window).on("load", (): void => yearsPosition());
 $(window).on("resize", (): void => yearsPosition());
 
 // Close page 
 
 $(".content__close").on("click", (): void => {
-    location.href = "architecture.html";
+    $("body").addClass("typeToexemples");
+
+    setTimeout((): void => {
+        location.href = "architecture.html";
+    }, 400);
 });
 
 // Link to example
@@ -47,7 +49,10 @@ $(".content__close").on("click", (): void => {
 $(".image-section__block").on("click", function (): void {
     localStorage.setItem("lastArchitectureType", key);
 
-    location.href = `architecture_exemple.html#${$(this).attr("data-link")}`;
+    $("body").addClass("typeToexemples");
+    setTimeout((): void => {
+        location.href = `architecture_exemple.html#${$(this).attr("data-link")}`;
+    }, 400);
 });
 
 // Get exemple images and link

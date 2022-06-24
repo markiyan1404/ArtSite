@@ -50,11 +50,13 @@
         @include contrast-color-black-color;
 
         font-family: "Spectral SC";
-        font-size: 27px;
+        font-size: 26px;
         font-weight: 300;
         margin: 0;
         position: absolute;
         transform: translateX(-50%);
+        width: 20%;
+        text-align: center;
     }
 }
 

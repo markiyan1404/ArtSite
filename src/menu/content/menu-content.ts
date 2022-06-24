@@ -3,24 +3,21 @@ const menulangJSON = {
         "main": "main",
         "paintings": "paintings",
         "architecture": "architecture",
-        "sculptures": "sculptures",
-        "music": "music"
+        "sculptures": "sculptures"
     },
 
     "ua": {
         "main": "hogar",
         "paintings": "pinturas",
         "architecture": "arquitectura",
-        "sculptures": "escultura",
-        "music": "música"
+        "sculptures": "escultura"
     },
 
     "es": {
         "main": "головна",
         "paintings": "картини",
         "architecture": "архітектура",
-        "sculptures": "скульптури",
-        "music": "музика"
+        "sculptures": "скульптури"
     }
 };
 

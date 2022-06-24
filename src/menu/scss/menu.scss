@@ -22,7 +22,7 @@
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-        width: 19.9%;
+        width: 100%;
 
         @include contrast-color-white-color;
     }
@@ -115,10 +115,6 @@
 
     .menu__section-sculptures span {
         background-image: url("/img/menu/Sculptures.webp");
-    }
-
-    .menu__section-music span {
-        background-image: url("/img/menu/Music.webp");
     }
 
     section:hover span {

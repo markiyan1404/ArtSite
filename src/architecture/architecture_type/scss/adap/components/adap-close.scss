@@ -42,20 +42,6 @@
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1200px) {
-
-    .content__close_container {
-        top: 4vh;
-
-        .content__close {
-            border: 2px solid var(--contrastColorWhite);
-            font-size: 21px;
-            height: 40px;
-            width: 40px;
-        }
-    }
-}
-
 @media screen and (max-width: 500px) {
 
     .content__close_container .content__close {

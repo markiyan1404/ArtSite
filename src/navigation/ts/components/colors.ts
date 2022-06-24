@@ -117,7 +117,9 @@ const colorPosition = (): void => {
     $(".colors__active").css("top", languagesHeight);
 };
 
-colorPosition();
+$(window).on("load", (): void => {
+    colorPosition();
+});
 
 $(window).on("resize", (): void => colorPosition());
 

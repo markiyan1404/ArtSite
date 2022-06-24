@@ -116,7 +116,7 @@
 @media screen and (min-width: 0) and (max-width: 1000px) {
 
     .content__navigating {
-        animation: none;
+        animation: show 1s forwards;
         position: static;
         transform: none;
 
@@ -130,14 +130,22 @@
         }
     }
 
-    .paintingToAuthor .content__navigating {
+    .sculptureToAuthor .content__navigating {
+        opacity: 0;
+        animation: show 0.3s forwards;
+        animation-delay: 0.7s;
+        position: static;
+        transform: none;
+    }
+
+    .sculptureToAuthor .content__navigating {
         animation: show 0.5s forwards;
         animation-delay: 1s;
         opacity: 0;
         transform: initial;
     }
 
-    .authorToPainting .content__navigating {
+    .authorToSculpture .content__navigating {
         animation: hide 0.3s forwards !important;
     }
 
