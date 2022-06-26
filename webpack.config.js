@@ -299,8 +299,9 @@ module.exports = {
             // Loading PUG
             {
                 test: /\.pug$/,
-                use: {
-                    loader: "pug-loader",
+                loader: '@webdiscus/pug-loader',
+                options: {
+                    basedir: path.resolve(__dirname, './src')
                 }
             },
         ]
