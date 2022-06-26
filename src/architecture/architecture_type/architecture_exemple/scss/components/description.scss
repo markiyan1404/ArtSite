@@ -58,8 +58,9 @@
     z-index: 1;
 }
 
-.scroll-container__description, .toTop {
-    opacity: 0;
+.scroll-container__description,
+.toTop {
     animation: show 0.3s forwards;
     animation-delay: 1s;
+    opacity: 0;
 }

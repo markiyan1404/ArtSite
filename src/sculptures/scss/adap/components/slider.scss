@@ -128,6 +128,11 @@
                 order: 3;
             }
 
+            .slide__name,
+            .slider__image {
+                margin-top: 3vh;
+            }
+
             .slide__name {
                 font-size: 30px;
                 letter-spacing: 2px;
@@ -135,11 +140,6 @@
 
             .slide__name:hover {
                 color: transparent;
-            }
-
-            .slide__name,
-            .slider__image {
-                margin-top: 3vh;
             }
 
             .slide__button {
@@ -158,8 +158,7 @@
 
         .slider__slide {
             align-items: center;
-            flex-direction: column;
-            flex-wrap: wrap;
+            flex-flow: column wrap;
             width: 98%;
 
             .slide__name {
