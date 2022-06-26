@@ -150,6 +150,7 @@ module.exports = {
             chunks: print_names("architecture"),
             minify: {
                 collapseWhitespace: isProd,
+                basedir: "src"
             },
         }),
 
@@ -291,7 +292,7 @@ module.exports = {
                     },
                 },
                 resolve: {
-                    extensions: ['.js', '.ts'],
+                    extensions: [".js", ".ts"],
                 }
             },
 

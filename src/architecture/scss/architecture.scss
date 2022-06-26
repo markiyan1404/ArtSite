@@ -55,6 +55,7 @@ body {
     transform: scale(0.3) rotate(45deg);
     transition: $colorTransition, transform 0.5s;
     width: 23vh;
+    transition: 0.4s;
 
     h1 {
         color: #fff;
@@ -78,7 +79,7 @@ body {
 .block-anim {
     transform: scale(1) rotate(45deg);
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .content__image-section:first-child,
@@ -112,6 +113,23 @@ body {
 }
 
 .background-active {
-    opacity: 0.1;
+    opacity: 0.08;
     transition: 0.25s;
+}
+
+.architectureToarchitecture_type .background-active {
+    opacity: 0;
+    transition: 0.25s;
+}
+
+@keyframes image-section__block {
+    from {
+        transform: scale(1) rotate(45deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
 }

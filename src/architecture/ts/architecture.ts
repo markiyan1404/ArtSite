@@ -68,8 +68,26 @@ $(".image-section__block").on("click", function (): void {
     if (getLastBlockOpacity !== "1" ) return;
 
     $("body").addClass("architectureToarchitecture_type");
-    $(".image-section__block").css("animation", "image-section__block 0.5s reverse forwards");
+    removeAnimClass(allBlocks);
+
     setTimeout((): void => {
         location.href = "architecture_type.html#" + getActiveImage(this);
-    }, 550);
+    }, 750);
 });
+
+const removeAnimClass = (allBlocks: JQuery<Element>): number => {
+    const speedAnim: number = 50;
+    let blockNum = allBlocks.length;
+
+    $(allBlocks[allBlocks.length-1]).removeClass("block-anim");
+    const addClassToLines: NodeJS.Timer = setInterval((): void => {
+
+        blockNum--;
+        $(allBlocks[blockNum]).removeClass("block-anim");
+
+    }, speedAnim); 
+
+    setTimeout((): void => clearInterval(addClassToLines), speedAnim * allBlocks.length);
+
+    return speedAnim * allBlocks.length;
+};
