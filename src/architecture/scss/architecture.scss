@@ -20,6 +20,38 @@ body {
 .content__image-section {
     display: flex;
 
+    .image-section__block {
+        align-items: center;
+        border: 3px solid var(--mainColor);
+        display: flex;
+        height: 23vh;
+        justify-content: center;
+        margin: 5vh;
+        opacity: 0;
+        transform: scale(0.3) rotate(45deg);
+        transition: $colorTransition, transform 0.5s;
+        transition: 0.4s;
+        width: 23vh;
+
+        h1 {
+            color: #fff;
+            font-family: "Spectral SC";
+            font-size: 21px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin: 0;
+            text-align: center;
+            transform: rotate(-45deg);
+        }
+
+        img {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
     .image-section__block::after {
         @include main-color-background;
 
@@ -44,41 +76,9 @@ body {
     }
 }
 
-.image-section__block {
-    align-items: center;
-    border: 3px solid var(--mainColor);
-    display: flex;
-    height: 23vh;
-    justify-content: center;
-    margin: 5vh;
-    opacity: 0;
-    transform: scale(0.3) rotate(45deg);
-    transition: $colorTransition, transform 0.5s;
-    width: 23vh;
-    transition: 0.4s;
-
-    h1 {
-        color: #fff;
-        font-family: "Spectral SC";
-        font-size: 21px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        margin: 0;
-        text-align: center;
-        transform: rotate(-45deg);
-    }
-
-    img {
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-    }
-}
-
 .block-anim {
-    transform: scale(1) rotate(45deg);
     opacity: 1;
+    transform: scale(1) rotate(45deg);
     transition: 0.4s;
 }
 
@@ -104,12 +104,12 @@ body {
 .background {
     height: 100%;
     left: 0;
+    opacity: 0;
     position: fixed;
     top: 0;
+    transition: 0.25s;
     width: 100%;
     z-index: -2;
-    opacity: 0;
-    transition: 0.25s;
 }
 
 .background-active {
@@ -123,13 +123,14 @@ body {
 }
 
 @keyframes image-section__block {
+
     from {
-        transform: scale(1) rotate(45deg);
         opacity: 1;
+        transform: scale(1) rotate(45deg);
     }
 
     to {
-        transform: scale(0) rotate(45deg);
         opacity: 0;
+        transform: scale(0) rotate(45deg);
     }
 }

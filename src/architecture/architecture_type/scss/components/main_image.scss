@@ -1,20 +1,21 @@
 .content__main_image {
     align-items: center;
+    animation: mainImage 0.7s forwards;
+    animation-delay: 0.1s;
     background-size: 100%;
     border: 5px solid var(--mainColor);
     display: flex;
     height: 100vh;
     justify-content: center;
+    left: -40%;
+    opacity: 0;
     position: absolute;
     transform: rotate(45deg) translate(-36%, 40%);
     transition: $colorTransition;
     width: 42%;
-    opacity: 0;
-    left: -40%;
-    animation: mainImage 0.7s forwards;
-    animation-delay: 0.1s;
 
     @keyframes mainImage {
+
         from {
             left: -40%;
             opacity: 0;
@@ -32,6 +33,7 @@
 }
 
 @keyframes mainImageRever {
+
     from {
         left: 0;
         opacity: 1;
@@ -44,16 +46,16 @@
 }
 
 .content__years {
+    animation: show 0.3s forwards;
+    animation-delay: 0.6s;
     color: #fff;
     font-family: "Spectral SC";
     font-size: 70px;
+    opacity: 0;
     position: absolute;
     text-align: center;
     width: 24%;
     z-index: 2;
-    opacity: 0;
-    animation: show 0.3s forwards;
-    animation-delay: 0.6s;
 }
 
 .typeToexemples .content__years {

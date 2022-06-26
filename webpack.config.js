@@ -1,4 +1,5 @@
 const path = require("path"),
+      fs = require('fs'),
       HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
       CopyWebpackPlugin = require("copy-webpack-plugin"),
@@ -42,32 +43,61 @@ function print_names (...files) {
         "last_page"
     ]
 
-    for (let i=0; i<files.length; i++) baseFiles.push(files[i]);
+    for (let i = 0; i < files.length; i++) baseFiles.push(files[i]);
 
     return baseFiles;
 }
+
+function generateHtmlPlugins (directory, changeName) { 
+    if (directory == "main") {
+        return new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: `./main.pug`,
+            chunks: print_names("main"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        })
+    }
+    
+    else {
+        let name = directory.split("/").slice(-1),
+            filename = name;
+
+        if (changeName) filename = changeName;
+
+        return new HtmlWebpackPlugin({
+            filename: `${filename}.html`,
+            template: `./${directory}/${name}.pug`,
+            chunks: print_names(`${filename}`),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        });
+    }
+};
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
     entry: {
         navigation: ["@navigation/navigation.ts"],
         languages: ["@navigation/components/languages.ts"],
-        main: ["@mainTS/main.ts"],
-        paintings: ["@paintings/paintings.ts"],
-        painting: ["@painting/painting.ts"],
-        painting_author: ["@painting_author/author.ts"],
-        sculptures: ["@sculptures/sculptures.ts"],
-        sculpture: ["@sculpture/sculpture.ts"],
-        sculpture_author: ["@sculpture_author/author.ts"],
-        architecture: ["@architecture/architecture.ts"],
-        architecture_type: ["@architecture_type/architecture_type.ts"],
-        architecture_exemple: ["@architecture_exemple/architecture_exemple.ts"],
-        404: ["@404/404.ts"],
-        menu: ["@menu/menu.ts"],
+        main: ["/main/ts/main.ts"],
+        paintings: ["/paintings/ts/paintings.ts"],
+        painting: ["/paintings/painting/ts/painting.ts"],
+        painting_author: ["/paintings/painting/author/ts/author.ts"],
+        sculptures: ["/sculptures/ts/sculptures.ts"],
+        sculpture: ["/sculptures/sculpture/ts/sculpture.ts"],
+        sculpture_author: ["/sculptures/sculpture/author/ts/author.ts"],
+        architecture: ["/architecture/ts/architecture.ts"],
+        architecture_type: ["/architecture/architecture_type/ts/architecture_type.ts"],
+        architecture_exemple: ["/architecture/architecture_type/architecture_exemple/ts/architecture_exemple.ts"],
+        404: ["/404/ts/404.ts"],
+        menu: ["/menu/ts/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
         check_page_language: ["@navigation/components/check_page_language.ts"],
-        cursor: ["@cursor/ts/cursor.ts"],
+        cursor: ["/cursor/ts/cursor.ts"],
         firstLoad: ["@standartTS/checkFirstLoad.ts"],
         title: ["@standartTS/title.ts"],
         last_page: ["@standartTS/lastPage.ts"],
@@ -81,114 +111,28 @@ module.exports = {
     plugins: [
 
         // HTML plagin
-        new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: "./main.pug",
-            chunks: print_names("main"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
 
-        new HtmlWebpackPlugin({
-            filename: "paintings.html",
-            template: "./paintings/paintings.pug",
-            chunks: print_names("paintings"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
+        // main
+        generateHtmlPlugins("main"),
 
-        new HtmlWebpackPlugin({
-            filename: "painting.html",
-            template: "./paintings/painting/painting.pug",
-            chunks: print_names("painting"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
-        
-        new HtmlWebpackPlugin({
-            filename: "painting_author.html",
-            template: "./paintings/painting/author/author.pug",
-            chunks: print_names("painting_author"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
-        
-        new HtmlWebpackPlugin({
-            filename: "sculptures.html",
-            template: "./sculptures/sculptures.pug",
-            chunks: print_names("sculptures"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
+        // paintings
+        generateHtmlPlugins("paintings"),
+        generateHtmlPlugins("paintings/painting"),
+        generateHtmlPlugins("paintings/painting/author", "painting_author"),
 
-        new HtmlWebpackPlugin({
-            filename: "sculpture.html",
-            template: "./sculptures/sculpture/sculpture.pug",
-            chunks: print_names("sculpture"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
+        // sculptures
+        generateHtmlPlugins("sculptures"),
+        generateHtmlPlugins("sculptures/sculpture"),
+        generateHtmlPlugins("sculptures/sculpture"),
+        generateHtmlPlugins("sculptures/sculpture/author", "sculpture_author"),
 
-        new HtmlWebpackPlugin({
-            filename: "sculpture_author.html",
-            template: "./sculptures/sculpture/author/author.pug",
-            chunks: print_names("sculpture_author"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
-        
-        new HtmlWebpackPlugin({
-            filename: "architecture.html",
-            template: "./architecture/architecture.pug",
-            chunks: print_names("architecture"),
-            minify: {
-                collapseWhitespace: isProd,
-                basedir: "src"
-            },
-        }),
+        // architecture
+        generateHtmlPlugins("architecture"),
+        generateHtmlPlugins("architecture/architecture_type"),
+        generateHtmlPlugins("architecture/architecture_type/architecture_exemple"),
 
-        new HtmlWebpackPlugin({
-            filename: "architecture_type.html",
-            template: "./architecture/architecture_type/architecture_type.pug",
-            chunks: print_names("architecture_type"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
-
-        new HtmlWebpackPlugin({
-            filename: "architecture_type.html",
-            template: "./architecture/architecture_type/architecture_type.pug",
-            chunks: print_names("architecture_type"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
-
-        new HtmlWebpackPlugin({
-            filename: "architecture_exemple.html",
-            template: "./architecture/architecture_type/architecture_exemple/architecture_exemple.pug",
-            chunks: print_names("architecture_exemple"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
-
-        new HtmlWebpackPlugin({
-            filename: "404.html",
-            template: "./404/404.pug",
-            chunks: print_names("404"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        }),
+        // 404
+        generateHtmlPlugins("404"),
 
         // CLEAN plagin
         new CleanWebpackPlugin(),
@@ -217,20 +161,7 @@ module.exports = {
     resolve: {
         alias: {
             "@standartTS": path.resolve(__dirname, "./src/ts"),
-            "@mainTS": path.resolve(__dirname, "./src/main/ts"),
-            "@navigation": path.resolve(__dirname, "./src/navigation/ts"),
-            "@cursor": path.resolve(__dirname, "./src/cursor"),
-            "@menu": path.resolve(__dirname, "./src/menu/ts"),
-            "@paintings": path.resolve(__dirname, "./src/paintings/ts"),
-            "@painting": path.resolve(__dirname, "./src/paintings/painting/ts"),
-            "@painting_author": path.resolve(__dirname, "./src/paintings/painting/author/ts"),
-            "@sculptures": path.resolve(__dirname, "./src/sculptures/ts"),
-            "@sculpture": path.resolve(__dirname, "./src/sculptures/sculpture/ts"),
-            "@sculpture_author": path.resolve(__dirname, "./src/sculptures/sculpture/author/ts"),
-            "@architecture": path.resolve(__dirname, "./src/architecture/ts"),
-            "@architecture_type": path.resolve(__dirname, "./src/architecture/architecture_type/ts"),
-            "@architecture_exemple": path.resolve(__dirname, "./src/architecture/architecture_type/architecture_exemple/ts"),
-            "@404": path.resolve(__dirname, "./src/404/ts"),
+            "@navigation": path.resolve(__dirname, "./src/navigation/ts")
         }
     },
 
@@ -240,6 +171,7 @@ module.exports = {
         rules: [
 
             // Loading SCSS/SASS
+
             {
                 test: /\.scss$/,
                 use: [
@@ -248,14 +180,14 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                            // url: false,
+                            url: false,
                         },
                     },
                     {
                         loader: 'resolve-url-loader',
                         options: {
                             debug: true,
-                            root: path.join(__dirname, '/dist/'),
+                            root: path.join(__dirname, './dist/'),
                             includeRoot: true,
                             absolute: true,
                         },

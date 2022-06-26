@@ -1,10 +1,10 @@
 .content__text {
-    font-family: "Spectral SC";
-    margin-left: 37%;
-    width: 55%;
-    opacity: 0;
     animation: show 0.7s forwards;
     animation-delay: 0.1s;
+    font-family: "Spectral SC";
+    margin-left: 37%;
+    opacity: 0;
+    width: 55%;
 
     h2 {
         @include main-color-color;

@@ -131,14 +131,6 @@
     }
 
     .sculptureToAuthor .content__navigating {
-        opacity: 0;
-        animation: show 0.3s forwards;
-        animation-delay: 0.7s;
-        position: static;
-        transform: none;
-    }
-
-    .sculptureToAuthor .content__navigating {
         animation: show 0.5s forwards;
         animation-delay: 1s;
         opacity: 0;

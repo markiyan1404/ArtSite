@@ -31,11 +31,11 @@
 @media screen and (min-width: 700px) and (max-width: 1200px) {
 
     .body__close-container .close-container__close {
-            border: 2px solid var(--contrastColorWhite);
-            font-size: 18px;
-            height: 35px;
-            width: 35px;
-        }
+        border: 2px solid var(--contrastColorWhite);
+        font-size: 18px;
+        height: 35px;
+        width: 35px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -47,9 +47,10 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px) {
+
     .body__close-container {
-        width: 100%;
         top: 10vh;
+        width: 100%;
     }
 }
