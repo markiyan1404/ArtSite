@@ -1,11 +1,10 @@
 const path = require("path"),
-    //  HtmlWebpackPlugin = require("html-webpack-plugin"),
+      HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
       CopyWebpackPlugin = require("copy-webpack-plugin"),
       MiniCssExtractPlugin = require("mini-css-extract-plugin"),
       optimizationCssAssetPlugin = require("optimize-css-assets-webpack-plugin"),
       terserWebpackPlugin = require("terser-webpack-plugin"),
-      PugPlugin = require('pug-plugin'),
 
       StylelintPlugin = require("stylelint-webpack-plugin"),
       ESLintPlugin = require("eslint-webpack-plugin"),
@@ -72,23 +71,124 @@ module.exports = {
         firstLoad: ["@standartTS/checkFirstLoad.ts"],
         title: ["@standartTS/title.ts"],
         last_page: ["@standartTS/lastPage.ts"],
-
-        index: './main.pug',
     },
 
     output: { 
-        publicPath: "/dist",
         filename: `./js/${filename('.js')}`,
         path: path.resolve(__dirname, 'dist'),
  },
 
     plugins: [
 
-        
-        new PugPlugin({
-            pretty: true, 
+        // HTML plagin
+        new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: "./main.pug",
+            chunks: print_names("main"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
         }),
 
+        new HtmlWebpackPlugin({
+            filename: "paintings.html",
+            template: "./paintings/paintings.pug",
+            chunks: print_names("paintings"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "painting.html",
+            template: "./paintings/painting/painting.pug",
+            chunks: print_names("painting"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+        
+        new HtmlWebpackPlugin({
+            filename: "painting_author.html",
+            template: "./paintings/painting/author/author.pug",
+            chunks: print_names("painting_author"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+        
+        new HtmlWebpackPlugin({
+            filename: "sculptures.html",
+            template: "./sculptures/sculptures.pug",
+            chunks: print_names("sculptures"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "sculpture.html",
+            template: "./sculptures/sculpture/sculpture.pug",
+            chunks: print_names("sculpture"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "sculpture_author.html",
+            template: "./sculptures/sculpture/author/author.pug",
+            chunks: print_names("sculpture_author"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+        
+        new HtmlWebpackPlugin({
+            filename: "architecture.html",
+            template: "./architecture/architecture.pug",
+            chunks: print_names("architecture"),
+            minify: {
+                collapseWhitespace: isProd,
+                basedir: "src"
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "architecture_type.html",
+            template: "./architecture/architecture_type/architecture_type.pug",
+            chunks: print_names("architecture_type"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "architecture_type.html",
+            template: "./architecture/architecture_type/architecture_type.pug",
+            chunks: print_names("architecture_type"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "architecture_exemple.html",
+            template: "./architecture/architecture_type/architecture_exemple/architecture_exemple.pug",
+            chunks: print_names("architecture_exemple"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "404.html",
+            template: "./404/404.pug",
+            chunks: print_names("404"),
+            minify: {
+                collapseWhitespace: isProd,
+            },
+        }),
 
         // CLEAN plagin
         new CleanWebpackPlugin(),
@@ -199,12 +299,9 @@ module.exports = {
             // Loading PUG
             {
                 test: /\.pug$/,
-                use: {
-                    loader: PugPlugin.loader,
-                    options: {
-                        method: 'render',
-                        basedir: path.resolve(__dirname, './src')
-                    }
+                loader: '@webdiscus/pug-loader',
+                options: {
+                    basedir: path.resolve(__dirname, './src')
                 }
             },
         ]
