@@ -1,5 +1,4 @@
 const path = require("path"),
-      fs = require('fs'),
       HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
       CopyWebpackPlugin = require("copy-webpack-plugin"),
