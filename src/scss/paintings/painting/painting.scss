@@ -1,0 +1,39 @@
+@import "src/scss/global_styles/variables";
+@import "./components/zoom";
+@import "./components/contentInformation";
+@import "./components/backgroundLine";
+@import "./components/close";
+@import "./components/navigating";
+@import "./components/years";
+
+body {
+    @include contrast-color-black-background;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    @include contrast-color-black-background;
+
+    align-items: center;
+    animation-delay: 0.2s;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+}
+
+body,
+.content {
+    overflow-x: clip;
+}
+
+.paintingToPainting .content {
+    animation: none;
+    opacity: 1;
+}
+
+.author-link {
+    display: none;
+}

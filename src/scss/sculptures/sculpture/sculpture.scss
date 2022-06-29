@@ -1,0 +1,17 @@
+@import "src/scss/global_styles/variables";
+@import "./components/backgroundLine";
+@import "./components/close";
+@import "./components/contentInformation";
+@import "./components/navigating";
+@import "./components/years";
+
+.content {
+    @include main-color-background;
+
+    align-items: center;
+    animation-delay: 0.2s;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+}

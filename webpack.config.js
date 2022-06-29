@@ -47,33 +47,24 @@ function print_names (...files) {
     return baseFiles;
 }
 
-function generateHtmlPlugins (directory, changeName) { 
-    if (directory == "main") {
-        return new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: `./main.pug`,
-            chunks: print_names("main"),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        })
-    }
-    
-    else {
-        let name = directory.split("/").slice(-1),
-            filename = name;
+function generateHtmlPlugins (directory, addParent, rename) {
 
-        if (changeName) filename = changeName;
+    const folder = directory.split("/")[0],
+        name = directory.split("/").slice(-1);
 
-        return new HtmlWebpackPlugin({
-            filename: `${filename}.html`,
-            template: `./${directory}/${name}.pug`,
-            chunks: print_names(`${filename}`),
-            minify: {
-                collapseWhitespace: isProd,
-            },
-        });
-    }
+    let sourceName = name;
+
+    if (rename) sourceName = rename;
+    if (addParent) sourceName = `${folder}_${name}`
+
+    return new HtmlWebpackPlugin({
+        filename: `${sourceName}.html`,
+        template: `./pug/${folder}/${name}.pug`,
+        chunks: print_names(`${sourceName}`),
+        minify: {
+            collapseWhitespace: isProd,
+        },
+    });
 };
 
 module.exports = {
@@ -81,22 +72,22 @@ module.exports = {
     entry: {
         navigation: ["@navigation/navigation.ts"],
         languages: ["@navigation/components/languages.ts"],
-        main: ["/main/ts/main.ts"],
-        paintings: ["/paintings/ts/paintings.ts"],
-        painting: ["/paintings/painting/ts/painting.ts"],
-        painting_author: ["/paintings/painting/author/ts/author.ts"],
-        sculptures: ["/sculptures/ts/sculptures.ts"],
-        sculpture: ["/sculptures/sculpture/ts/sculpture.ts"],
-        sculpture_author: ["/sculptures/sculpture/author/ts/author.ts"],
-        architecture: ["/architecture/ts/architecture.ts"],
-        architecture_type: ["/architecture/architecture_type/ts/architecture_type.ts"],
-        architecture_exemple: ["/architecture/architecture_type/architecture_exemple/ts/architecture_exemple.ts"],
-        404: ["/404/ts/404.ts"],
-        menu: ["/menu/ts/menu.ts"],
+        index: ["/ts/main/main.ts"],
+        paintings: ["/ts/paintings/scripts/paintings.ts"],
+        painting: ["/ts/paintings/painting/painting.ts"],
+        paintings_author: ["/ts/paintings/author/author.ts"],
+        sculptures: ["/ts/sculptures/scripts/sculptures.ts"],
+        sculpture: ["/ts/sculptures/sculpture/sculpture.ts"],
+        sculptures_author: ["/ts/sculptures/author/author.ts"],
+        architecture: ["/ts/architecture/scripts/architecture.ts"],
+        type: ["/ts/architecture/type/type.ts"],
+        exemple: ["/ts/architecture/exemple/exemple.ts"],
+        404: ["/ts/404/404.ts"],
+        menu: ["/ts/menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],
         menu_icon: ["@navigation/components/menu_icon.ts"],
         check_page_language: ["@navigation/components/check_page_language.ts"],
-        cursor: ["/cursor/ts/cursor.ts"],
+        cursor: ["/ts/cursor/cursor.ts"],
         firstLoad: ["@standartTS/checkFirstLoad.ts"],
         title: ["@standartTS/title.ts"],
         last_page: ["@standartTS/lastPage.ts"],
@@ -112,26 +103,25 @@ module.exports = {
         // HTML plagin
 
         // main
-        generateHtmlPlugins("main"),
+        generateHtmlPlugins("main/main", false, "index"),
 
         // paintings
-        generateHtmlPlugins("paintings"),
+        generateHtmlPlugins("paintings/paintings"),
         generateHtmlPlugins("paintings/painting"),
-        generateHtmlPlugins("paintings/painting/author", "painting_author"),
+        generateHtmlPlugins("paintings/author", true),
 
         // sculptures
-        generateHtmlPlugins("sculptures"),
         generateHtmlPlugins("sculptures/sculpture"),
-        generateHtmlPlugins("sculptures/sculpture"),
-        generateHtmlPlugins("sculptures/sculpture/author", "sculpture_author"),
+        generateHtmlPlugins("sculptures/sculptures"),
+        generateHtmlPlugins("sculptures/author", true),
 
         // architecture
-        generateHtmlPlugins("architecture"),
-        generateHtmlPlugins("architecture/architecture_type"),
-        generateHtmlPlugins("architecture/architecture_type/architecture_exemple"),
+        generateHtmlPlugins("architecture/architecture"),
+        generateHtmlPlugins("architecture/type", true),
+        generateHtmlPlugins("architecture/exemple", true),
 
         // 404
-        generateHtmlPlugins("404"),
+        generateHtmlPlugins("404/404"),
 
         // CLEAN plagin
         new CleanWebpackPlugin(),
@@ -159,8 +149,8 @@ module.exports = {
 
     resolve: {
         alias: {
-            "@standartTS": path.resolve(__dirname, "./src/ts"),
-            "@navigation": path.resolve(__dirname, "./src/navigation/ts")
+            "@standartTS": path.resolve(__dirname, "./src/ts/global_scripts"),
+            "@navigation": path.resolve(__dirname, "./src/ts/navigation")
         }
     },
 
@@ -224,6 +214,11 @@ module.exports = {
                 },
                 resolve: {
                     extensions: [".js", ".ts"],
+                    alias: {
+                        origin: path.resolve(__dirname, 'src/'),
+                        originSCSS: path.resolve(__dirname, 'src/scss/'),
+                        originTS: path.resolve(__dirname, 'src/ts/')
+                    },
                 }
             },
 

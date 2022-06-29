@@ -1,0 +1,27 @@
+include /pug/global_pug/header
+body(data-menu="paintings" data-type="painting")
+
+    main.content
+        section.content__information
+            #information__image.mouse-active2
+                img(src="#")
+
+            article.information__description
+                    h1.language(data-key="name")
+                    a.description__link.language.mouse-active(data-key="author") 
+                    p.language(data-key="description")
+
+        span.content__close.mouse-active2 &#10010;
+
+        h2.content__year.language(data-key="year")
+
+        section.content__navigating
+            span.navigating__arrow.span.navigating__arrow-left.mouse-active
+                p.arrow__page-name.arrow__prev-page-name 
+            span.navigating__line
+            span.navigating__arrow.span.navigating__arrow-right.mouse-active
+                p.arrow__page-name.arrow__next-page-name
+
+        .content__background-line
+
+include /pug/global_pug/navigation

@@ -1,0 +1,63 @@
+@import "src/scss/global_styles/variables";
+
+.preloader {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+@keyframes preloaderAmim {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.preloader-1 {
+    @include main-color-background;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    img {
+        display: none;
+        width: 30%;
+    }
+
+    .preloaderActiveImage {
+        display: block;
+    }
+}
+
+.preloader-2 {
+    @include contrast-color-black-background;
+
+    animation: preloader2 0.9s forwards;
+    animation-delay: 1s;
+    transform: translateX(-100%);
+}
+
+@keyframes preloader2 {
+
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.loadedPage .content {
+    opacity: 1;
+    transition: $colorTransition, opacity 1s;
+}
