@@ -1,9 +1,9 @@
-import "./../scss/3d.scss";
-import "./../scss/adap/adap-3d.scss";
+import "originSCSS/3d/3d.scss";
+import "originSCSS/3d/adap/adap-3d.scss";
 
 import * as $ from "jquery";
 import * as THREE from "three";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export const crate3D = (url): void => {
@@ -17,15 +17,20 @@ export const crate3D = (url): void => {
     document.body.appendChild(renderer.domElement);
     
     const scene = new THREE.Scene();
-    
+
     const genarateWindow = (): void => {
-        const camera = new THREE.PerspectiveCamera(45, window.innerWidth * 0.96 / window.innerHeight, 0.1, 1000);
+        const camera = new THREE.PerspectiveCamera(30, window.innerWidth * 0.96 / window.innerHeight, 0.1, 1000);
     
         const orbit = new OrbitControls(camera, renderer.domElement);
-        camera.position.set(0, 0, 1);
+        camera.position.set(100, 60, 100);
+        orbit.autoRotate = true;
+        orbit.autoRotateSpeed = 5;
+        // orbit.minDistance = 50;
+        // orbit.maxDistance = 150;
         orbit.update();
     
         function animation() {
+            orbit.update();
             renderer.render(scene, camera);
         }
     
@@ -39,7 +44,6 @@ export const crate3D = (url): void => {
             else renderer.setSize(window.innerWidth*0.96, window.innerHeight);
             
         }
-    
         onWindowResize();
         renderer.setAnimationLoop(animation);
     };
@@ -52,24 +56,55 @@ export const crate3D = (url): void => {
     
     assetLoader.load(monkeyUrl.href, function(gltf) {
         const model = gltf.scene;
+        model.position.set(1, -2, 1);
+
+        // get and add scale
+
+        const addSize = () => {
+            const windowSize: number = $(window).width(),
+                getModelSize: number = renderer.info.render.triangles;
+            // let rest: number = getModelSize / windowSize;
+
+            const box = new THREE.Box3().setFromObject(model);
+            // if (box.max.y < 100) rest = 1;
+            // if (box.max.y < 500) rest = 0.1;
+            // if (box.max.y < 1000) rest = 0.06;
+            
+            const size = new THREE.Vector3();
+            box.getSize(size);
+            const scaleVec = new THREE.Vector3(0.09, 0.09, 0.09).divide(size);
+            const scale = Math.min( scaleVec.x, Math.min(scaleVec.y, scaleVec.z));
+            model.scale.setScalar(scale);
+
+            // rest = 10;
+            console.log(model.scale);
+            // return rest;
+        };
+
+        addSize();
+        // model.scale.set(addSize(), addSize(), addSize());
+        
         scene.add(model);
-        model.position.set(1, 1, 1);
+
+
     }, undefined, function(error) {
         console.error(error);
     });
     
-    const pLight = new THREE.PointLight(0xFFFFFF, 1.1);
+    const pLight = new THREE.PointLight(0xFFFFFF, 1);
     pLight.position.set(0, 0, 1);
     scene.add(pLight);
     
-    const aLight = new THREE.AmbientLight(0xFFFFFF, 1.1);
+    const aLight = new THREE.AmbientLight(0xFFFFFF, 1);
     scene.add(aLight);
     
     const changeColor = (): void => {
-        let getContrastColor: string | number = getComputedStyle(document.documentElement).getPropertyValue("--contrastColorWhite");
-        if (getContrastColor === "#fff") getContrastColor = 0x0B0B0B;
-        if (getContrastColor === "#0b0b0b" || getContrastColor === "#080808") getContrastColor = 0xFFFFFF;
-        renderer.setClearColor(getContrastColor);
+        let getActiveTheme: string = localStorage.getItem("contrastColor1LS");
+
+        if (!getActiveTheme) getActiveTheme = getComputedStyle(document.documentElement).getPropertyValue("--contrastColorWhite");
+        console.log(getActiveTheme);
+        if (getActiveTheme === "#fff") renderer.setClearColor(0xFFFFFF);
+        if (getActiveTheme === "#0b0b0b") renderer.setClearColor(0x0B0B0B);
     };
     
     changeColor();
@@ -79,9 +114,6 @@ export const crate3D = (url): void => {
     
     genarateWindow();
     generateClose();
-    //   adaptation();
-
-    // $(window).on("resize", (): void => adaptation());
 };
 
 
@@ -110,11 +142,6 @@ const generateClose = (): void => {
     });
 };
 
-// const adaptation = (): void => {
-//     if ($(window).width() < 1000) $("[data-engine]").css({"top": "4vh", "height": "96vh"});
-//     else $("[data-engine]").css({"top": "0", "height": "100vh"});
-// }; 
-
 // Show animation
 
 export const show3D = (way): void => {
@@ -127,10 +154,10 @@ export const show3D = (way): void => {
     
         setTimeout((): JQuery<Element> => $(".anim-show2").removeClass("show3D").css("display", "block"), 350);
     }, 1500);
-    
+
     setTimeout((): void => {
         crate3D(way);
     }, 1500);
 };
 
-// crate3D(new URL("../../3d/textures/main/scene.gltf", import.meta.url));
+crate3D(new URL("origin/3D_models/main/bust-of-nefertiti/scene.gltf", import.meta.url));

@@ -11,6 +11,7 @@ import "./components/window-3";
 import "./components/window-4";
 import "./components/window-5";
 import "originTS/global_scripts/preloader";
+import "originTS/3d/3d";
 
 const page = $(window);
 

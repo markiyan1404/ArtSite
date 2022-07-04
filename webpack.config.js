@@ -28,7 +28,7 @@ const optimization = () => {
     return config
 }
 
-const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
+const filename = ext => `[name].${ext}`;
 
 function print_names (...files) {
     const baseFiles = [
@@ -95,7 +95,7 @@ module.exports = {
 
     output: { 
         filename: `./js/${filename('.js')}`,
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/'),
  },
 
     plugins: [
@@ -132,6 +132,15 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, "src/img"),
                     to: path.resolve(__dirname, "dist/img")
+                },
+            ]
+        }),
+
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, "src/3D_models"),
+                    to: path.resolve(__dirname, "dist/3D_models")
                 },
             ]
         }),

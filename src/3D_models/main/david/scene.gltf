@@ -1,0 +1,593 @@
+{
+	"accessors": [
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 13631,
+			"max": [7.805536270141602, 6.1158766746521, 7.676117897033691],
+			"min": [-7.656455993652344, -6.66629695892334, -2.0882718563079834],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 163572,
+			"componentType": 5126,
+			"count": 13631,
+			"max": [1.0, 1.0, 1.0],
+			"min": [-1.0, -1.0, -1.0],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5126,
+			"count": 13631,
+			"max": [1.0, 1.0, 1.0, 1.0],
+			"min": [-1.0, -1.0, -1.0, -1.0],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 1,
+			"componentType": 5126,
+			"count": 13631,
+			"max": [0.9989792704582214, 0.9982316493988037],
+			"min": [0.0010206738952547312, 0.0010206738952547312],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 109048,
+			"componentType": 5126,
+			"count": 13631,
+			"max": [0.9989792704582214, 0.9982316493988037],
+			"min": [0.0010206738952547312, 0.0010206738952547312],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 0,
+			"componentType": 5125,
+			"count": 27636,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 327144,
+			"componentType": 5126,
+			"count": 39647,
+			"max": [
+				0.782660961151123, -0.11644434928894043, 4.2553019523620605
+			],
+			"min": [
+				-0.9466066360473633, -1.4989068508148193, -0.11995315551757813
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 802908,
+			"componentType": 5126,
+			"count": 39647,
+			"max": [0.9999992251396179, 0.9999791383743286, 0.9999462366104126],
+			"min": [
+				-0.9999933242797852, -0.9999690055847168, -0.9999987483024597
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 218096,
+			"componentType": 5126,
+			"count": 39647,
+			"max": [0.9999950528144836, 0.9999853372573853, 1.0, 1.0],
+			"min": [
+				-0.9998170733451843, -0.9999694228172302, -0.9999989867210388,
+				-1.0
+			],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 218096,
+			"componentType": 5126,
+			"count": 39647,
+			"max": [0.9994731545448303, 0.9750668406486511],
+			"min": [0.0005269305547699332, 0.0005269305547699332],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 535272,
+			"componentType": 5126,
+			"count": 39647,
+			"max": [0.0, 0.0],
+			"min": [0.0, 0.0],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 852448,
+			"componentType": 5126,
+			"count": 39647,
+			"max": [0.9994731545448303, 0.9750668406486511],
+			"min": [0.0005269305547699332, 0.0005269305547699332],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 110544,
+			"componentType": 5125,
+			"count": 210051,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 1278672,
+			"componentType": 5126,
+			"count": 354,
+			"max": [
+				0.3288320302963257, -0.2712533473968506, 3.5322837829589844
+			],
+			"min": [
+				-0.830843985080719, -1.4987527132034302, 1.7442365884780884
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 1282920,
+			"componentType": 5126,
+			"count": 354,
+			"max": [0.9900326132774353, 0.9895037412643433, 0.936474084854126],
+			"min": [
+				-0.9921658635139465, -0.997661828994751, -0.9991171360015869
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 852448,
+			"componentType": 5126,
+			"count": 354,
+			"max": [
+				0.8711895942687988, 0.9111376404762268, 0.9954773783683777, 1.0
+			],
+			"min": [
+				-0.9916700124740601, -0.9989203214645386, -0.9978014230728149,
+				1.0
+			],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 1169624,
+			"componentType": 5126,
+			"count": 354,
+			"max": [0.22585943341255188, 0.5449235439300537],
+			"min": [-0.001742508728057146, 0.3985425531864166],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 1172456,
+			"componentType": 5126,
+			"count": 354,
+			"max": [0.22585943341255188, 0.5449235439300537],
+			"min": [-0.001742508728057146, 0.3985425531864166],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 950748,
+			"componentType": 5125,
+			"count": 1464,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 1287168,
+			"componentType": 5126,
+			"count": 1366,
+			"max": [
+				-0.15472054481506348, -0.6169763207435608, 3.953134775161743
+			],
+			"min": [
+				-0.34072160720825195, -0.8430652022361755, 3.879786729812622
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 1303560,
+			"componentType": 5126,
+			"count": 1366,
+			"max": [0.9988551139831543, 0.9976826906204224, 0.9985411763191223],
+			"min": [-0.999923586845398, -0.997681736946106, -0.9971963763237],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 858112,
+			"componentType": 5126,
+			"count": 1366,
+			"max": [
+				0.9998438954353333, 0.9755980968475342, 0.9995205402374268, 1.0
+			],
+			"min": [
+				-0.9999311566352844, -0.9569763541221619, -0.9472988247871399,
+				1.0
+			],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 1175288,
+			"componentType": 5126,
+			"count": 1366,
+			"max": [0.901200532913208, 0.9753061532974243],
+			"min": [0.091099314391613, 0.41836944222450256],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 1186216,
+			"componentType": 5126,
+			"count": 1366,
+			"max": [0.901200532913208, 0.9753061532974243],
+			"min": [0.091099314391613, 0.41836944222450256],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 956604,
+			"componentType": 5125,
+			"count": 6156,
+			"type": "SCALAR"
+		}
+	],
+	"asset": {
+		"extras": {
+			"author": "Kefla (https://sketchfab.com/Kefla)",
+			"license": "CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)",
+			"source": "https://sketchfab.com/3d-models/david-michelangelo-5c7f5013566c411c8b55a6220c95eeb3",
+			"title": "David - Michelangelo"
+		},
+		"generator": "Sketchfab-12.67.0",
+		"version": "2.0"
+	},
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 981228,
+			"name": "floatBufferViews",
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1197144,
+			"byteOffset": 981228,
+			"byteStride": 8,
+			"name": "floatBufferViews",
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1319952,
+			"byteOffset": 2178372,
+			"byteStride": 12,
+			"name": "floatBufferViews",
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 879968,
+			"byteOffset": 3498324,
+			"byteStride": 16,
+			"name": "floatBufferViews",
+			"target": 34962
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 4378292,
+			"uri": "/dist/3D_models/main/david/scene.bin"
+		}
+	],
+	"images": [
+		{
+			"uri": "/dist/3D_models/main/david/textures/Decors_baseColor.png"
+		},
+		{
+			"uri": "/dist/3D_models/main/david/textures/Decors_metallicRoughness.png"
+		},
+		{
+			"uri": "/dist/3D_models/main/david/textures/Decors_normal.png"
+		},
+		{
+			"uri": "/dist/3D_models/main/david/textures/marbre_baseColor.png"
+		},
+		{
+			"uri": "/dist/3D_models/main/david/textures/marbre_metallicRoughness.png"
+		},
+		{
+			"uri": "/dist/3D_models/main/david/textures/marbre_normal.png"
+		}
+	],
+	"materials": [
+		{
+			"doubleSided": true,
+			"name": "Decors",
+			"normalTexture": {
+				"index": 2
+			},
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicRoughnessTexture": {
+					"index": 1
+				}
+			}
+		},
+		{
+			"doubleSided": true,
+			"name": "marbre",
+			"normalTexture": {
+				"index": 5
+			},
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 3
+				},
+				"metallicRoughnessTexture": {
+					"index": 4
+				}
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Decors_salle_socle_Decors_0",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 1,
+						"POSITION": 0,
+						"TANGENT": 2,
+						"TEXCOORD_0": 3,
+						"TEXCOORD_1": 4
+					},
+					"indices": 5,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		},
+		{
+			"name": "Marbre_marbre_0",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 7,
+						"POSITION": 6,
+						"TANGENT": 8,
+						"TEXCOORD_0": 9,
+						"TEXCOORD_1": 10,
+						"TEXCOORD_2": 11
+					},
+					"indices": 12,
+					"material": 1,
+					"mode": 4
+				}
+			]
+		},
+		{
+			"name": "Marbre fronde_marbre_0",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 14,
+						"POSITION": 13,
+						"TANGENT": 15,
+						"TEXCOORD_0": 16,
+						"TEXCOORD_1": 17
+					},
+					"indices": 18,
+					"material": 1,
+					"mode": 4
+				}
+			]
+		},
+		{
+			"name": "Marbre yeux_marbre_0",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 20,
+						"POSITION": 19,
+						"TANGENT": 21,
+						"TEXCOORD_0": 22,
+						"TEXCOORD_1": 23
+					},
+					"indices": 24,
+					"material": 1,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"children": [1],
+			"matrix": [
+				1.0, 0.0, 0.0, 0.0, 0.0, 2.220446049250313e-16, -1.0, 0.0, 0.0,
+				1.0, 2.220446049250313e-16, 0.0, 0.0, 0.0, 0.0, 1.0
+			],
+			"name": "Sketchfab_model"
+		},
+		{
+			"children": [2],
+			"matrix": [
+				1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 1.0
+			],
+			"name": "4f5d53bf4ebf4ce395809c5d2aaf1267.fbx"
+		},
+		{
+			"children": [3],
+			"name": "Object_2"
+		},
+		{
+			"children": [4, 6, 9, 12, 15, 17, 19],
+			"name": "RootNode"
+		},
+		{
+			"children": [5],
+			"name": "Decors_salle_socle",
+			"rotation": [-0.7071068286895752, 0.0, 0.0, 0.7071067094802856],
+			"scale": [100.0, 100.0, 100.0]
+		},
+		{
+			"mesh": 0,
+			"name": "Decors_salle_socle_Decors_0"
+		},
+		{
+			"children": [7],
+			"name": "Spot",
+			"rotation": [
+				0.27292028069496155, 0.1216350793838501, 0.025037074461579323,
+				0.953987717628479
+			],
+			"scale": [34.3292350769043, 104.9155044555664, 36.183738708496094],
+			"translation": [
+				-1.8025487661361694, 722.0835571289063, 372.5887145996094
+			]
+		},
+		{
+			"children": [8],
+			"matrix": [
+				1.0, 0.0, 0.0, 0.0, 0.0, 2.220446049250313e-16, 1.0, 0.0, 0.0,
+				-1.0, 2.220446049250313e-16, 0.0, 0.0, 0.0, 0.0, 1.0
+			],
+			"name": "Object_7"
+		},
+		{
+			"name": "Object_8"
+		},
+		{
+			"children": [10],
+			"name": "Spot.001",
+			"rotation": [
+				0.9003259539604187, 0.06873829662799835, 0.114769347012043,
+				-0.4141451418399811
+			],
+			"scale": [10.46481704711914, 10.46481704711914, 10.46481704711914],
+			"translation": [
+				138.19200134277344, -131.60227966308594, -353.8630676269531
+			]
+		},
+		{
+			"children": [11],
+			"matrix": [
+				1.0, 0.0, 0.0, 0.0, 0.0, 2.220446049250313e-16, 1.0, 0.0, 0.0,
+				-1.0, 2.220446049250313e-16, 0.0, 0.0, 0.0, 0.0, 1.0
+			],
+			"name": "Object_10"
+		},
+		{
+			"name": "Object_11"
+		},
+		{
+			"children": [13],
+			"name": "Spot.002",
+			"rotation": [
+				-0.14292259514331818, 0.0157161932438612, 0.1419985294342041,
+				0.9793684482574463
+			],
+			"scale": [98.7597885131836, 31.111953735351563, 99.83859252929688],
+			"translation": [
+				-136.94537353515625, 611.4430541992188, -71.126953125
+			]
+		},
+		{
+			"children": [14],
+			"matrix": [
+				1.0, 0.0, 0.0, 0.0, 0.0, 2.220446049250313e-16, 1.0, 0.0, 0.0,
+				-1.0, 2.220446049250313e-16, 0.0, 0.0, 0.0, 0.0, 1.0
+			],
+			"name": "Object_13"
+		},
+		{
+			"name": "Object_14"
+		},
+		{
+			"children": [16],
+			"name": "Marbre",
+			"rotation": [-0.7071068286895752, 0.0, 0.0, 0.7071067094802856],
+			"scale": [100.0, 100.0, 100.0]
+		},
+		{
+			"mesh": 1,
+			"name": "Marbre_marbre_0"
+		},
+		{
+			"children": [18],
+			"name": "Marbre fronde",
+			"rotation": [-0.7071068286895752, 0.0, 0.0, 0.7071067094802856],
+			"scale": [100.0, 100.0, 100.0]
+		},
+		{
+			"mesh": 2,
+			"name": "Marbre fronde_marbre_0"
+		},
+		{
+			"children": [20],
+			"name": "Marbre yeux",
+			"rotation": [-0.7071068286895752, 0.0, 0.0, 0.7071067094802856],
+			"scale": [100.0, 100.0, 100.0]
+		},
+		{
+			"mesh": 3,
+			"name": "Marbre yeux_marbre_0"
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9987,
+			"wrapS": 10497,
+			"wrapT": 10497
+		}
+	],
+	"scene": 0,
+	"scenes": [
+		{
+			"name": "Sketchfab_Scene",
+			"nodes": [0]
+		}
+	],
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"sampler": 0,
+			"source": 1
+		},
+		{
+			"sampler": 0,
+			"source": 2
+		},
+		{
+			"sampler": 0,
+			"source": 3
+		},
+		{
+			"sampler": 0,
+			"source": 4
+		},
+		{
+			"sampler": 0,
+			"source": 5
+		}
+	]
+}
