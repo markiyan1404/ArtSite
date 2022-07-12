@@ -1,0 +1,179 @@
+{
+	"asset": { "version": "2.0", "generator": "VECTARY" },
+	"nodes": [
+		{
+			"translation": [0, -0.35899999999999993, -5.684341886080802e-17],
+			"scale": [1.24708, 1.24708, 1.247080167],
+			"rotation": [-0.7071067811865475, 0, 0, 0.7071067811865476],
+			"name": "Sketchfab_model",
+			"children": [1]
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "root",
+			"children": [2]
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0.7071067811865475, 0, 0, 0.7071067811865476],
+			"name": "GLTF_SceneRootNode",
+			"children": [3]
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "Nike2_midPoly_0",
+			"children": [4]
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "Object_0",
+			"mesh": 0
+		}
+	],
+	"materials": [
+		{
+			"pbrMetallicRoughness": {
+				"baseColorFactor": [1, 1, 1, 1],
+				"baseColorTexture": {
+					"index": 0,
+					"extensions": {
+						"KHR_texture_transform": {
+							"offset": [0, 0],
+							"scale": [1, 1],
+							"rotation": 0
+						}
+					},
+					"texCoord": 0
+				},
+				"metallicRoughnessTexture": {
+					"index": 1,
+					"extensions": {
+						"KHR_texture_transform": {
+							"offset": [0, 0],
+							"scale": [1, 1],
+							"rotation": 0
+						}
+					},
+					"texCoord": 0
+				},
+				"metallicFactor": 1,
+				"roughnessFactor": 1
+			},
+			"name": "Nike.001",
+			"emissiveFactor": [0, 0, 0],
+			"extensions": {},
+			"alphaMode": "OPAQUE",
+			"doubleSided": true
+		}
+	],
+	"textures": [
+		{ "sampler": 0, "source": 0 },
+		{ "sampler": 0, "source": 1 }
+	],
+	"images": [
+		{ "uri": "textures/Nike001_baseColor.jpg", "mimeType": "image/jpeg" },
+		{
+			"uri": "textures/Nike001_metallicRoughness.jpg",
+			"mimeType": "image/jpeg"
+		}
+	],
+	"samplers": [{ "wrapS": 10497, "wrapT": 10497 }],
+	"meshes": [
+		{
+			"primitives": [
+				{
+					"mode": 4,
+					"attributes": {
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TEXCOORD_0": 3,
+						"TEXCOORD_1": 4
+					},
+					"material": 0,
+					"indices": 0
+				}
+			]
+		}
+	],
+	"accessors": [
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5125,
+			"count": 43914,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12067,
+			"max": [
+				0.1926533430814743, 0.6579035520553589, 0.09752100706100464
+			],
+			"min": [
+				-0.2611927390098572, 0.003199872560799122, -0.1990990936756134
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12067,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12067,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 4,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 12067,
+			"type": "VEC2"
+		}
+	],
+	"bufferViews": [
+		{ "buffer": 0, "byteOffset": 0, "byteLength": 175656, "target": 34963 },
+		{
+			"buffer": 0,
+			"byteOffset": 175656,
+			"byteLength": 144804,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 320460,
+			"byteLength": 144804,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 465264,
+			"byteLength": 96536,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 561800,
+			"byteLength": 96536,
+			"target": 34962
+		}
+	],
+	"scene": 0,
+	"scenes": [{ "nodes": [0], "name": "Project Name" }],
+	"extensionsUsed": ["KHR_texture_transform"],
+	"buffers": [{ "byteLength": 658336, "uri": "scene.bin" }]
+}

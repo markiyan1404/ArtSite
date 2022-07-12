@@ -1,23 +1,21 @@
 export const allSculpturesName: string[] = 
 
-["nefertiti-bust", 
-    "the-discus-thrower",
+["nefertiti-bust",
+    "discobolus",
+    "winged-victory-of-samothrace",
     "venus-de-milo",
+    "apollo-belvedere",
     "laocoon-and-his-sons",
-    "augustus-of-prima-porta",
     "david",
-    "perseus",
-    "ecstasy-of-saint-teresa",
+    "little-dancer",
     "thinker",
-    "mademoiselle-pogany"],
+    "kiss"],
 
     allAuthorsName: string[] = 
 
 ["auguste-rodin",
-    "benvenuto-cellini",
-    "constantine-brancusi",
-    "gian-lorenzo-bernini",
     "michelangelo-buonarroti",
     "myron",
+    "giovanni-angelo",
     "pliny-the-elder",
     "thutmose"];

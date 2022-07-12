@@ -5,6 +5,7 @@ import * as $ from "jquery";
 import {nearbyPages, rightArrow, leftArrow} from "./components/arrows";
 import {allSculpturesName, allAuthorsName} from "../scripts/components/data-name";
 import "./components/swipe";
+import "./components/3d";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
     body: JQuery<HTMLElement> = $("body"),
@@ -14,6 +15,7 @@ const page: JQuery<Window & typeof globalThis> = $(window),
 
 const key: string = location.href.split("#")[1];
 body.attr("data-name", key);
+export default key;
 
 // New user
 
@@ -48,7 +50,7 @@ page.on("load", (): JQuery<Element> => $(".content__information img").attr("src"
 export const allSculptures = (): string[] => {
     const allSculpturesLS: string = localStorage.getItem("allSculptures"),
         allSculptures: string[] = allSculpturesLS.split(",");
-
+        
     return allSculptures;
 };
 

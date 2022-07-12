@@ -39,7 +39,8 @@ function print_names (...files) {
         "menu_icon", 
         "languages", 
         "colors", 
-        "last_page"
+        "last_page",
+        "firstLoad"
     ]
 
     for (let i = 0; i < files.length; i++) baseFiles.push(files[i]);
@@ -80,8 +81,8 @@ module.exports = {
         sculpture: ["/ts/sculptures/sculpture/sculpture.ts"],
         sculptures_author: ["/ts/sculptures/author/author.ts"],
         architecture: ["/ts/architecture/scripts/architecture.ts"],
-        type: ["/ts/architecture/type/type.ts"],
-        exemple: ["/ts/architecture/exemple/exemple.ts"],
+        architecture_type: ["/ts/architecture/type/type.ts"],
+        architecture_exemple: ["/ts/architecture/exemple/exemple.ts"],
         404: ["/ts/404/404.ts"],
         menu: ["/ts/menu/menu.ts"],
         colors: ["@navigation/components/colors.ts"],

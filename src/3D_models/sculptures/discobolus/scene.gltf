@@ -1,0 +1,261 @@
+{
+	"asset": { "version": "2.0", "generator": "VECTARY" },
+	"nodes": [
+		{
+			"translation": [0, -0.25000000000000006, 1.3497469808498862e-13],
+			"scale": [0.00032, 0.00032, 0.00032],
+			"rotation": [-0.7071067811865476, 0, 0, 0.7071067811865475],
+			"name": "Sketchfab_model",
+			"children": [1]
+		},
+		{
+			"translation": [
+				-461.9999694824219, -221.46966552734375, -1.581009864807129
+			],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "The_Discobolus_SMK_KAS1549_10pct.obj.cleaner.gles",
+			"children": [2]
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "Object_2",
+			"children": [3, 4]
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "Object_0",
+			"mesh": 0
+		},
+		{
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"rotation": [0, 0, 0, 1],
+			"name": "Object_1",
+			"mesh": 1
+		}
+	],
+	"materials": [
+		{
+			"pbrMetallicRoughness": {
+				"baseColorFactor": [1, 1, 1, 1],
+				"baseColorTexture": {
+					"index": 0,
+					"extensions": {
+						"KHR_texture_transform": {
+							"offset": [0, 0],
+							"scale": [1, 1],
+							"rotation": 0
+						}
+					},
+					"texCoord": 0
+				},
+				"metallicRoughnessTexture": {
+					"index": 2,
+					"extensions": {
+						"KHR_texture_transform": {
+							"offset": [0, 0],
+							"scale": [1, 1],
+							"rotation": 0
+						}
+					},
+					"texCoord": 0
+				},
+				"metallicFactor": 1,
+				"roughnessFactor": 1
+			},
+			"name": "Concrete 1",
+			"normalTexture": {
+				"index": 1,
+				"scale": 1,
+				"extensions": {
+					"KHR_texture_transform": {
+						"offset": [0, 0],
+						"scale": [1, 1],
+						"rotation": 0
+					}
+				},
+				"texCoord": 0
+			},
+			"emissiveFactor": [0, 0, 0],
+			"extensions": {},
+			"alphaMode": "OPAQUE",
+			"doubleSided": false
+		}
+	],
+	"textures": [
+		{ "sampler": 0, "source": 0 },
+		{ "sampler": 0, "source": 1 },
+		{ "sampler": 0, "source": 2 }
+	],
+	"images": [
+		{
+			"uri": "textures/Concrete_009_Color.jpg",
+			"mimeType": "image/jpeg"
+		},
+		{
+			"uri": "textures/Concrete_009_NormalMap.jpg",
+			"mimeType": "image/jpeg"
+		},
+		{
+			"uri": "textures/Concrete_009_Metalic&Concrete_009_Roughness.jpg",
+			"mimeType": "image/jpeg"
+		}
+	],
+	"samplers": [{ "wrapS": 10497, "wrapT": 10497 }],
+	"meshes": [
+		{
+			"primitives": [
+				{
+					"mode": 4,
+					"attributes": {
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TEXCOORD_0": 3
+					},
+					"material": 0,
+					"indices": 0
+				}
+			]
+		},
+		{
+			"primitives": [
+				{
+					"mode": 4,
+					"attributes": {
+						"POSITION": 5,
+						"NORMAL": 6,
+						"TEXCOORD_0": 7
+					},
+					"material": 0,
+					"indices": 4
+				}
+			]
+		}
+	],
+	"accessors": [
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5125,
+			"count": 319368,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 165679,
+			"max": [1052.249267578125, 516.7003173828125, 1681.9852294921875],
+			"min": [0, 0, 0],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 165679,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 165679,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 4,
+			"byteOffset": 0,
+			"componentType": 5125,
+			"count": 285726,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 5,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 150922,
+			"max": [1053.15087890625, 515.028564453125, 1682.0753173828125],
+			"min": [0, 0, 0.1806091070175171],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 6,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 150922,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 7,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 150922,
+			"type": "VEC2"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteOffset": 0,
+			"byteLength": 1277472,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 1277472,
+			"byteLength": 1988148,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 3265620,
+			"byteLength": 1988148,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 5253768,
+			"byteLength": 1325432,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 6579200,
+			"byteLength": 1142904,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 7722104,
+			"byteLength": 1811064,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 9533168,
+			"byteLength": 1811064,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteOffset": 11344232,
+			"byteLength": 1207376,
+			"target": 34962
+		}
+	],
+	"scene": 0,
+	"scenes": [{ "nodes": [0], "name": "Project Name" }],
+	"extensionsUsed": ["KHR_texture_transform"],
+	"buffers": [
+		{
+			"byteLength": 12551608,
+			"uri": "scene.bin"
+		}
+	]
+}

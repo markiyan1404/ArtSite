@@ -58,7 +58,6 @@ export const bottomArrowClick = (addClass: string, classLS: string, arrowClass: 
     setTimeout((): void => {
         localStorage.setItem("newPageArrowClick", arrowClass);
         location.href = "./painting_author.html#" + linkFunction;
-        location.reload();
     }, 300);
 };
 
@@ -71,7 +70,7 @@ export const nearbyPages = (direction: string, arrowName: string): void => {
 
     import("origin/content/paintings/author/" + direction + ".json").then(langJSON => {
         const currLangExport: langApp = Object.entries(langJSON.default)[Object.keys(langJSON.default).indexOf(activeLanguageLS)][1], 
-            nearbyPageName = currLangExport.mainTitle;
+            nearbyPageName = currLangExport.main_title;
         $(arrowName).html(nearbyPageName);   
     }); 
 };

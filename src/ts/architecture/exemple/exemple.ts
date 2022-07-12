@@ -40,7 +40,7 @@ $(".scroll-container__close").on("click", (): void => {
     $("body").addClass("exemplesToType");
 
     setTimeout((): void => {
-        location.href = "type.html#" + lastArchitectureType;
+        location.href = "architecture_type.html#" + lastArchitectureType;
     }, 300);
 
 });
@@ -109,11 +109,11 @@ const getExempleImages = (): void => {
         allImages: JQuery<Element> = $(".block__image");
 
     for (let i: number = 0; i < allImages.length; i++) {
-        $(allImages[i]).attr("src", `img/architecture/architecture_exemple/descriptions_images/${key}/${key}-${[i]}.webp`);
-        $(allBlocks[i]).css("background-image", `url(img/architecture/architecture_exemple/descriptions_images/${key}/backgrounds/bg-${key}-${[i]}.webp)`);
+        $(allImages[i]).attr("src", `img/architecture/exemple/descriptions_images/${key}/${key}-${[i]}.webp`);
+        $(allBlocks[i]).css("background-image", `url(img/architecture/exemple/descriptions_images/${key}/backgrounds/bg-${key}-${[i]}.webp)`);
     }
 
-    $(".big_image__img").attr("src", `img/architecture/architecture_exemple/big_images/${key}.webp`);
+    $(".big_image__img").attr("src", `img/architecture/exemple/big_images/${key}.webp`);
 };
 
 getExempleImages();

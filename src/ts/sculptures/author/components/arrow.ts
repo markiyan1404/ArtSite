@@ -56,9 +56,9 @@ export const bottomArrowClick = (addClass: string, classLS: string, arrowClass: 
     $("html").animate({scrollTop: "0"});
 
     setTimeout((): void => {
+        console.log(linkFunction);
         localStorage.setItem("newPageArrowClick", arrowClass);
-        location.href = "./sculpture_author.html#" + linkFunction;
-        location.reload();
+        location.href = "./sculptures_author.html#" + linkFunction;
     }, 300);
 };
 
@@ -71,7 +71,7 @@ export const nearbyPages = (direction: string, arrowName: string): void => {
 
     import("origin/content/sculptures/author/" + direction + ".json").then(langJSON => {
         const currLangExport: langApp = Object.entries(langJSON.default)[Object.keys(langJSON.default).indexOf(activeLanguageLS)][1], 
-            nearbyPageName = currLangExport.mainTitle;
+            nearbyPageName = currLangExport.main_title;
         $(arrowName).html(nearbyPageName);   
     }); 
 };

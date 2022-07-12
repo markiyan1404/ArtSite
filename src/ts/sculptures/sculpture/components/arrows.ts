@@ -57,7 +57,6 @@ export const bottomArrowClick = (addClass: string, classLS: string, arrowClass: 
     setTimeout((): void => {
         localStorage.setItem("newPageArrowClick", arrowClass);
         location.href = "./sculpture.html#" + linkFunction;
-        location.reload();
     }, 300);
 };
 
@@ -68,9 +67,9 @@ page.on("popstate", (): void => location.reload());
 export const nearbyPages = (direction: string, arrowName: string): void => {
     const activeLanguageLS = localStorage.getItem("lang");
 
-    import("origin/content/sculptures/sculpture/content_files" + direction + ".json").then(langJSON => {
+    import("origin/content/sculptures/sculpture/" + direction + ".json").then(langJSON => {
         const currLangExport: langApp = Object.entries(langJSON.default)[Object.keys(langJSON.default).indexOf(activeLanguageLS)][1], 
-            nearbyPageName: string = currLangExport.mainTitle;
+            nearbyPageName: string = currLangExport.main_title;
         $(arrowName).html(nearbyPageName);   
     }); 
 };

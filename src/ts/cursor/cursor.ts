@@ -62,7 +62,7 @@ requestAnimationFrame(loop);
 
 // Active elements hover
 
-const mouveHover = (): void => {
+export const mouveHover = (): void => {
     
     $(".mouse-active").on("mousemove", function (): void {
         if ($(this).hasClass("activeArchitecture")) {
@@ -81,7 +81,7 @@ const mouveHover = (): void => {
     });
 };
 
-const mouveHover2 = (): void => {
+export const mouveHover2 = (): void => {
     const mouseActive2 = $(".mouse-active2");
 
     mouseActive2.on("mouseenter", function (): void {

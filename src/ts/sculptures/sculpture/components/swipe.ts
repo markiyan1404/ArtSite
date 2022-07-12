@@ -24,6 +24,8 @@ $("*").on("touchmove", (event): void => {
 });
 
 $("*").on("touchend", (): void => {
+    if ($("body").hasClass("3dActive")) return;
+    
     const windowWidth: number = page.width(),
         checkPhone: boolean = phone.test(navigator.userAgent),
         navWindowDisplay: string = $(".menu, .languages__choice, .colors__active").css("display");

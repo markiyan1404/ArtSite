@@ -4,9 +4,16 @@
 
 html {
     --mainColor: #ffc700;
-    --contrastColorBlack:#080808;
-    --contrastColorWhite:#fff;
+    --contrastColorBlack: #080808;
+    --contrastColorWhite: #fff;
     --transitionTime: 0;
+}
+
+canvas {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 $colorTransition: var(--transitionTime);

@@ -51,7 +51,7 @@ $(".image-section__block").on("click", function (): void {
 
     $("body").addClass("typeToexemples");
     setTimeout((): void => {
-        location.href = `exemple.html#${$(this).attr("data-link")}`;
+        location.href = `architecture_exemple.html#${$(this).attr("data-link")}`;
     }, 400);
 });
 

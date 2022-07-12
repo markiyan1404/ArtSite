@@ -71,7 +71,7 @@ $(".image-section__block").on("click", function (): void {
     removeAnimClass(allBlocks);
 
     setTimeout((): void => {
-        location.href = "type.html#" + getActiveImage(this);
+        location.href = "architecture_type.html#" + getActiveImage(this);
     }, 750);
 });
 

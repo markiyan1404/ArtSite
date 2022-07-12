@@ -22,8 +22,8 @@ const creationYears = (): void => {
         yearsBlock.append(`<div class="year-line year-line-${leftLinesNum}"></div>`);
     }
 
-    $( "<p class='language year__text1' data-key='birthday_year'></p>").insertAfter( ".year-line-active-1");
-    $( "<p class='language year__text2' data-key='dead_year'></p>").insertAfter( ".year-line-active-5");
+    $( "<p class='language year__text1' data-key='born_year'></p>").insertAfter( ".year-line-active-1");
+    $( "<p class='language year__text2' data-key='died_year'></p>").insertAfter( ".year-line-active-5");
 };
 
 creationYears();
