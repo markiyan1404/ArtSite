@@ -5,7 +5,11 @@ import * as $ from "jquery";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import { mouveHover2 } from "originTS/cursor/cursor";
+
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath("https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/libs/draco/");
 
 export const crate3D = (url): void => {
 
@@ -54,6 +58,7 @@ export const crate3D = (url): void => {
     });
     
     const assetLoader = new GLTFLoader();
+    assetLoader.setDRACOLoader(dracoLoader);
     
     assetLoader.load(monkeyUrl, function(gltf) {
         const model = gltf.scene;

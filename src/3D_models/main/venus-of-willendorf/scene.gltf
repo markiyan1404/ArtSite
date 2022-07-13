@@ -182,7 +182,7 @@
 	"buffers": [
 		{
 			"byteLength": 80944,
-			"uri": "/dist/3D_models/main/venus-of-willendorf/scene.bin"
+			"uri": "scene.bin"
 		}
 	]
 }

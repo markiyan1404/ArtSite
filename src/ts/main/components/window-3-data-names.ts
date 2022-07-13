@@ -1,7 +1,7 @@
 export const allSculpturesName: string[] = 
 
 ["david",
-    "bust-of-nefertiti",
+    "nefertiti-bust",
     "venus-of-willendorf",
     "laocoon-and-his-sons",   
     "pieta"];
