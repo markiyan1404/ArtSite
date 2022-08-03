@@ -35,7 +35,8 @@
     "swiper": "^8.0.3",
     "three": "^0.141.0",
     "webpack": "^5.58.1",
-    "webpack-cli": "^4.9.0"
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.9.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -70,6 +71,7 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "server": "cross-env NODE_ENV=production webpack-dev-server --mode production",
     "eslint": "eslint --ext .ts src --fix",
     "stylelint": "stylelint src --fix"
   },

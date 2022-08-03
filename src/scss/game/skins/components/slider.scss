@@ -1,0 +1,104 @@
+.swiper-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: clip;
+    position: absolute;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    align-items: center;
+    margin-top: 21vh;
+}
+
+.swiper-slide {
+    @include main-color-background;
+
+    animation: fadeInSlider 0.7s forwards;
+    opacity: 0;
+    text-align: center;
+    transition: transform 0.5s, $colorTransition, box-shadow 0.3s;
+
+    img {
+        transition: 0.4s;
+    }
+
+    &:hover {
+        transform: scale(1.04);
+        transition: 0.3s;
+    }
+}
+
+.swiper-wrapper-obstacles,
+.swiper-wrapper-characters {
+
+    img {
+        padding: 15%;
+        width: 45%;
+    }
+}
+
+.slider__img-backgrounds {
+
+    img {
+        padding: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes fadeInSlider {
+
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.active {
+    box-shadow: 0 0 30px var(--mainColor);
+    opacity: 1;
+}
+
+.open {
+    opacity: 0.8;
+}
+
+.close {
+    opacity: 1;
+
+    .swiper-slide__image {
+        mix-blend-mode: saturation;
+    }
+
+    &::before {
+        background: #000;
+        content: "";
+        display: block;
+        height: 100%;
+        opacity: 0.6;
+        position: absolute;
+        width: 100%;
+    }
+
+    .swiper-slide__lock {
+        left: 25%;
+        position: absolute;
+        top: 25%;
+        width: 50%;
+
+        .lock__image {
+            width: 50%;
+        }
+
+        h2 {
+            color: #fff;
+            font-family: "Spectral SC";
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+}

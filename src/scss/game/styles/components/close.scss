@@ -1,0 +1,29 @@
+.content__close_container {
+    animation: increase 0.5s forwards;
+    animation-delay: 0.3s;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3vh;
+    transform: scale(0);
+    width: 100%;
+    z-index: 3;
+
+    .content__close {
+        @include main-color-color;
+
+        align-items: center;
+        border: 2px solid var(--contrastColorWhite);
+        display: flex;
+        font-size: 19px;
+        height: 35px;
+        justify-content: center;
+        transform: rotate(45deg) scale(1);
+        width: 35px;
+    }
+
+    .content__close:hover {
+        @include main-color-background;
+        @include contrast-color-white-color;
+    }
+}

@@ -1,0 +1,18 @@
+@import "./scrollbar";
+@import "./slider";
+
+.content__character {
+    @include contrast-color-black-background;
+
+    align-items: center;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+
+    .character__skin {
+        height: 20%;
+        width: 20%;
+    }
+}

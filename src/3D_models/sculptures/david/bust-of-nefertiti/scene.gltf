@@ -120,15 +120,15 @@
 	],
 	"images": [
 		{
-			"uri": "/dist/3D_models/main/bust-of-nefertiti/textures/material_0_baseColor.jpg",
+			"uri": "textures/material_0_baseColor.jpg",
 			"mimeType": "image/jpeg"
 		},
 		{
-			"uri": "/dist/3D_models/main/bust-of-nefertiti/textures/material_0_normal.jpg",
+			"uri": "textures/material_0_normal.jpg",
 			"mimeType": "image/jpeg"
 		},
 		{
-			"uri": "/dist/3D_models/main/bust-of-nefertiti/textures/material_0_metallicRoughness.jpg",
+			"uri": "textures/material_0_metallicRoughness.jpg",
 			"mimeType": "image/jpeg"
 		}
 	],
@@ -629,7 +629,7 @@
 	"buffers": [
 		{
 			"byteLength": 20593944,
-			"uri": "/dist/3D_models/main/bust-of-nefertiti/scene.bin"
+			"uri": "bust-of-nefertiti/scene.bin"
 		}
 	]
 }

@@ -1,0 +1,111 @@
+@import "src/scss/global_styles/variables";
+@import "./components/select_skin";
+
+body {
+    @include contrast-color-black-background;
+
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+}
+
+.content__skins {
+    @include main-color-background;
+
+    animation: increase 0.5s forwards;
+    animation-delay: 0.1s;
+    background-position: center;
+    background-size: cover;
+    margin: 1.5%;
+    padding: 7% 5%;
+    position: relative;
+    transform: scale(0);
+    transition: box-shadow 0.3s, $colorTransition;
+    width: 23%;
+
+    h1 {
+        color: #fff;
+        font-family: "Spectral SC";
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 0 0 15px var(--mainColor);
+        transform: scale(0.97) !important;
+        transition: 0.3s;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        margin-top: 8vh;
+    }
+}
+
+.content__skins-character {
+    background-image: url("./../../../dist/img/game/skins/characters-background.webp");
+
+    &::before {
+        background-image: url("./../../../dist/img/game/1.png");
+        left: -5%;
+        transform: rotate(-20deg);
+    }
+}
+
+.content__skins-obstacle {
+    background-image: url("./../../../dist/img/game/skins/obstacles-background.webp");
+
+    &::before {
+        background-image: url("./../../../dist/img/game/2.png");
+        right: -5%;
+        transform: rotate(20deg);
+    }
+}
+
+.content__skins-character::before,
+.content__skins-obstacle::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 150px;
+    position: absolute;
+    top: -15%;
+    width: 100px;
+}
+
+.content__skins-background {
+    background-image: url("./../../../dist/img/game/skins/backgrounds-background.webp");
+}
+
+.content__close {
+    @include main-color-color;
+
+    align-items: center;
+    border: 2px solid var(--contrastColorWhite);
+    display: flex;
+    font-size: 19px;
+    height: 35px;
+    justify-content: center;
+    position: fixed;
+    top: 3vh;
+    transform: rotate(45deg);
+    width: 35px;
+    z-index: 5;
+
+    &:hover {
+        @include main-color-background;
+        @include contrast-color-white-color;
+    }
+}

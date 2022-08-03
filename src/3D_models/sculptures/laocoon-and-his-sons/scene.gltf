@@ -81,15 +81,15 @@
 	],
 	"images": [
 		{
-			"uri": "/dist/3D_models/main/laocoon-and-his-sons/textures/None_baseColor.jpg",
+			"uri": "textures/None_baseColor.jpg",
 			"mimeType": "image/jpeg"
 		},
 		{
-			"uri": "/dist/3D_models/main/laocoon-and-his-sons/textures/None_normal.jpg",
+			"uri": "textures/None_normal.jpg",
 			"mimeType": "image/jpeg"
 		},
 		{
-			"uri": "/dist/3D_models/main/laocoon-and-his-sons/textures/None_metallicRoughness.jpg",
+			"uri": "textures/None_metallicRoughness.jpg",
 			"mimeType": "image/jpeg"
 		}
 	],
@@ -171,7 +171,7 @@
 	"buffers": [
 		{
 			"byteLength": 1907416,
-			"uri": "/dist/3D_models/main/laocoon-and-his-sons/scene.bin"
+			"uri": "scene.bin"
 		}
 	]
 }

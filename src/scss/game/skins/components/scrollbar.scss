@@ -1,0 +1,51 @@
+.scrollbar {
+    align-items: center;
+    animation: scrollbarFadeIn 0.5s forwards;
+    animation-delay: 0.4s;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+
+    h1 {
+        @include main-color-color;
+
+        font-family: "Spectral SC";
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin: 0 0 5vh;
+    }
+
+    .swiper-scrollbar {
+        @include contrast-color-white-background;
+
+        align-items: center;
+        display: flex;
+        height: 3px;
+        width: 350px;
+
+        .swiper-scrollbar-drag::after {
+            background: var(--contrastColorWhite);
+            content: "";
+            display: block;
+            height: 25px;
+            transform: rotate(45deg);
+            transition: transform 1s, $colorTransition;
+            width: 25px;
+        }
+    }
+}
+
+@keyframes scrollbarFadeIn {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

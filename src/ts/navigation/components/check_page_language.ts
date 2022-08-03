@@ -43,7 +43,8 @@ export const contentUpdate = (language: string): void => {
     else {
         import(`origin/content/${pageName}/${pageName}.json`)
             .then(content => importContent(content["default"], language))
-            .catch(err => import(`origin/content/${pageName}/content_files/${pageName}.json`).then(content => importContent(content["default"], language)));
+            .catch(err => import(`origin/content/${pageName}/content_files/${pageName}.json`).then(content => importContent(content["default"], language)))
+            .catch(err => import(`origin/content/${pageType}/${pageName}.json`).then(content => importContent(content["default"], language)));
     }
 };
 

@@ -1,0 +1,34 @@
+{
+    "en": {
+        "main_title": "Game",
+        "firstText": "Play and unlock new colors and skins!",
+        "firstButton": "Lets play!",
+        "lobbyText": "Play and unlock new colors and skins",
+        "result": "Your result -",
+        "record": "Your record -",
+        "skins": "skins",
+        "restart": "restart"
+    },
+
+    "es": {
+        "main_title": "Juego",
+        "firstText": "¡Juega y desbloquea nuevos colores y máscaras!",
+        "firstButton": "¡Vamos a jugar!",
+        "lobbyText": "Juega y desbloquea nuevos colores y máscaras",
+        "result": "Tu resultado -",
+        "record": "Tu registro -",
+        "skins": "pieles",
+        "restart": "reiniciar"
+    },
+
+    "ua": {
+        "main_title": "Гра",
+        "firstText": "Грайте та відкривайте нові кольори та скіни!",
+        "firstButton": "Давайте грати!",
+        "lobbyText": "Грайте та відкривайте нові кольори та скіни",
+        "result": "Ваш результат -",
+        "record": "Ваш запис -",
+        "skins": "скіни",
+        "restart": "перезапуск"
+    }
+}

@@ -1,0 +1,42 @@
+.content__first_window {
+    align-items: center;
+    animation: show 0.4s forwards;
+    animation-delay: 0.2s;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    opacity: 0;
+    width: 70%;
+
+    .first_window__title {
+        @include contrast-color-white-color;
+
+        font-family: "Spectral SC";
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .first_window__button {
+        @include contrast-color-white-color;
+
+        background: none;
+        border: 3px solid var(--mainColor);
+        font-family: "Spectral SC";
+        font-size: 25px;
+        margin-top: 5vh;
+        padding: 20px 30px;
+        transition: $colorTransition, 0.3s;
+    }
+
+    .first_window__button:hover {
+        @include main-color-background;
+
+        transform: scale(0.95);
+        transition: $colorTransition, 0.3s;
+    }
+}
+
+.content__first_window-hide {
+    animation: hide 0.3s forwards;
+}

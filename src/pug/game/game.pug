@@ -1,0 +1,33 @@
+include /pug/global_pug/header
+body(data-name="game" data-menu="")
+
+    main.content
+        .content__close_container
+            span.content__close.mouse-active2 &#10010;
+
+        .content__first_window
+            h1.language.first_window__title(data-key="firstText")
+            button.language.first_window__button.mouse-active2(data-key="firstButton") 
+
+        .content__game
+            img.game__character(src="#" alt="character")
+
+            .game__obstacle
+                img.obstacle__block(src="#" alt="obstacle")
+
+            img.game__background(scr="#" alt="background")
+            .game__ground
+            .game__counter 
+                img.counter__image_obstacle(src="#" alt="obstacle")
+                .counter__rest
+
+        .content__lobby
+            h1.language(data-key="lobbyText")
+            h2.lobby__result.language(data-key="result")
+            h2.lobby__record.language(data-key="record")
+        
+            section.lobby__buttons
+                button.buttons__skins.language.mouse-active2(data-key="skins")
+                button.buttons__restart.language.mouse-active2(data-key="restart")
+
+include /pug/global_pug/navigation

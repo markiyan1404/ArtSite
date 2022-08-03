@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     transform: translateX(-100.1%);
-    width: 100%;
+    width: 96%;
     z-index: 98;
 }
 
@@ -21,7 +21,7 @@
 
 .anim-show-active {
     transform: translateX(0%);
-    transition: 0.7s ease;
+    transition: 0.6s ease;
 }
 
 .anim-show-close {

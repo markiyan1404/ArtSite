@@ -22,7 +22,6 @@
         ],
         "no-var": "error",
         "prefer-const": "error",
-        "no-duplicate-imports": ["error", { "includeExports": true }],
         "no-sparse-arrays": "error",
         "eqeqeq": ["error", "always"],
         "operator-assignment": ["error", "always"],

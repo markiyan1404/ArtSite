@@ -1,0 +1,28 @@
+{
+    "en": {
+        "main_title": "Skins",
+        "characters": "characters",
+        "obstacles": "obstacles",
+        "backgrounds": "backgrounds",
+        "scrollBar": "Character skins",
+        "point": "point"
+    },
+
+    "es": {
+        "main_title": "Máscaras",
+        "characters": "personajes",
+        "obstacles": "obstáculos",
+        "backgrounds": "fondos",
+        "scrollBar": "Máscaras de personajes",
+        "point": "puntos"
+    },
+
+    "ua": {
+        "main_title": "Скіни",
+        "characters": "персонажі",
+        "obstacles": "перешкоди",
+        "backgrounds": "фони",
+        "scrollBar": "Скіни персонажів",
+        "point": "балів"
+    }
+}

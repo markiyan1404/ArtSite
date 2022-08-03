@@ -1,0 +1,124 @@
+@import "src/scss/global_styles/variables";
+@import "./components/first_window";
+@import "./components/lobby_window";
+@import "./components/close";
+
+body {
+    @include contrast-color-black-background;
+
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.content__game {
+    align-items: flex-start;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    width: 100%;
+
+    .game__character {
+        margin-left: 5%;
+        transition: 0.3s;
+        width: 5%;
+        z-index: 1;
+    }
+
+    .game__character-active {
+        animation: character-active 0.4s;
+    }
+
+    .character-game_over {
+        animation: none;
+        position: absolute;
+    }
+
+    @keyframes character-active {
+
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-175%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .game__obstacle {
+        align-items: center;
+        bottom: 25vh;
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        right: 0;
+        width: 5%;
+
+        .game__new_skin {
+            margin-bottom: 5vh;
+            opacity: 0.9;
+            width: 60%;
+        }
+
+        .game__new_skin-bg {
+            width: 120%;
+        }
+
+        .obstacle__block {
+            width: 100%;
+            z-index: 0;
+        }
+    }
+
+    .game__background {
+        height: 100vh;
+        left: 0;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .game__ground {
+        @include main-color-background;
+
+        height: 25vh;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .game__counter {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 2%;
+        top: 2vh;
+
+        .counter__rest {
+            @include main-color-color;
+
+            font-family: "Spectral SC";
+            font-size: 35px;
+            margin-left: 5%;
+        }
+
+        .counter__image_obstacle {
+            width: 20%;
+        }
+    }
+}

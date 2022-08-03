@@ -3,6 +3,12 @@
 @import "./components/language";
 @import "./components/menu_icon";
 
+.content,
+.menu,
+.anim-show {
+    width: 96%;
+}
+
 .navigation {
     @include contrast-color-white-background;
 

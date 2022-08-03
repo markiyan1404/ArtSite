@@ -11,6 +11,11 @@
     top: 3vh;
     transform: rotate(45deg) scale(0);
     width: 35px;
+
+    &:hover {
+        @include main-color-background;
+        @include contrast-color-white-color;
+    }
 }
 
 .paintingsToPainting .content__close {
@@ -39,12 +44,6 @@
     to {
         transform: scale(1) rotate(45deg);
     }
-}
-
-.content__close:hover {
-    background: var(--mainColor);
-    color: var(--contrastColorWhite);
-    transition: $colorTransition;
 }
 
 .allPaintings {

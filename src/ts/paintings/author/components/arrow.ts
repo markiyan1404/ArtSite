@@ -57,7 +57,7 @@ export const bottomArrowClick = (addClass: string, classLS: string, arrowClass: 
 
     setTimeout((): void => {
         localStorage.setItem("newPageArrowClick", arrowClass);
-        location.href = "./painting_author.html#" + linkFunction;
+        location.href = "./paintings_author.html#" + linkFunction;
     }, 300);
 };
 

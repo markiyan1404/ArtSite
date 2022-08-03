@@ -91,6 +91,8 @@ module.exports = {
         cursor: ["/ts/cursor/cursor.ts"],
         firstLoad: ["@standartTS/checkFirstLoad.ts"],
         title: ["@standartTS/title.ts"],
+        game: ["/ts/game/scripts/game.ts"],
+        game_skins: ["/ts/game/skins/skins.ts"],
         last_page: ["@standartTS/lastPage.ts"],
     },
 
@@ -123,6 +125,10 @@ module.exports = {
 
         // 404
         generateHtmlPlugins("404/404"),
+
+        // game
+        generateHtmlPlugins("game/game"),
+        generateHtmlPlugins("game/skins", true),
 
         // CLEAN plagin
         new CleanWebpackPlugin(),
@@ -241,5 +247,9 @@ module.exports = {
                 }
             },
         ]
+    },
+
+    devServer: {
+        open: true
     }
 };

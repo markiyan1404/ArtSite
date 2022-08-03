@@ -1,0 +1,116 @@
+@import "./components/adap-first_window";
+@import "./components/adap-lobby_window";
+@import "./components/adap-close";
+
+@media screen and (min-width: 3200px) {
+
+    .content__game .game__counter {
+        right: 1%;
+
+        .counter__image_obstacle {
+            width: 30%;
+        }
+
+        .counter__rest {
+            font-size: 65px;
+            margin-left: 8%;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .content__game .game__counter {
+        right: 1%;
+
+        .counter__image_obstacle {
+            width: 25%;
+        }
+
+        .counter__rest {
+            font-size: 42px;
+            margin-left: 6%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .content__game .game__counter {
+        top: 3vh;
+
+        .counter__image_obstacle {
+            width: 22%;
+        }
+
+        .counter__rest {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .content__game {
+
+        .game__character {
+            width: 10%;
+        }
+
+        .game__obstacle {
+            width: 8%;
+        }
+
+        .game__counter {
+            top: 2vh;
+
+            .counter__rest {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    .content__game {
+
+        .game__character {
+            width: 14%;
+        }
+
+        .game__obstacle {
+            width: 11%;
+        }
+
+        .game__counter {
+            top: 2vh;
+
+            .counter__rest {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 500px) {
+
+    .content__game {
+
+        .game__character {
+            width: 15%;
+        }
+
+        .game__obstacle {
+            width: 12%;
+        }
+
+        .game__counter {
+            top: 2vh;
+
+            .counter__rest {
+                font-size: 25px;
+            }
+        }
+    }
+}

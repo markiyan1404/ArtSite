@@ -1,0 +1,144 @@
+@media screen and (min-width: 3200px) {
+
+    .content__lobby {
+
+        h1 {
+            font-size: 85px;
+            font-size: 75px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+
+        .lobby__buttons button {
+            border-width: 3px;
+            font-size: 45px;
+            padding: 35px 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+
+    .content__lobby {
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .lobby__buttons button {
+            border-width: 3px;
+            font-size: 35px;
+            padding: 25px 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .content__lobby {
+
+        h1 {
+            font-size: 40px;
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 4%;
+        }
+
+        .lobby__buttons button {
+            font-size: 22px;
+            margin-top: 6%;
+            padding: 18px 23px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .content__lobby {
+
+        h1 {
+            font-size: 40px;
+            margin-top: 0;
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 6%;
+        }
+
+        .lobby__buttons {
+            margin-top: 11vh;
+
+            button {
+                font-size: 22px;
+                padding: 18px 23px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    .content__lobby {
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 4vh;
+            margin-top: 0;
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-top: 6%;
+        }
+
+        .lobby__buttons {
+            margin-top: 10vh;
+
+            button {
+                font-size: 20px;
+                padding: 15px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 500px) {
+
+    .content__lobby {
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 4vh;
+            margin-top: 0;
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 23px;
+            margin-top: 5%;
+        }
+
+        .lobby__buttons {
+            flex-wrap: wrap;
+            margin-top: 5vh;
+
+            button {
+                font-size: 20px;
+                margin: 2vh 3%;
+                padding: 16px 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+include /pug/global_pug/header
+body(data-type="game" data-name="skins" data-menu="")
+
+    main.content
+        span.content__close.mouse-active2 &#10010;
+
+        section.content__skins.content__skins-character.mouse-active(data-skins="characters")
+            h1.language(data-key="characters")
+        section.content__skins.content__skins-obstacle.mouse-active(data-skins="obstacles")
+            h1.language(data-key="obstacles")
+        section.content__skins.content__skins-background.mouse-active(data-skins="backgrounds")
+            h1.language(data-key="backgrounds")
+
+        .content__character
+
+include /pug/global_pug/navigation
