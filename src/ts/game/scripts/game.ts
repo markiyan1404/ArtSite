@@ -13,11 +13,26 @@ const character: JQuery<Element> = $(".game__character"),
     obstacl: JQuery<Element> = $(".game__obstacle");
 export let rest: number = 0;
 
+// get active color
+
+const getActoveColor = (): string => {
+    const activeColor = localStorage.getItem("contrastColor1LS");
+
+    if (activeColor === "#fff") return "black";
+    else return "white";
+};
+
+$(".colors__color").on("click", (): void => {
+    setTimeout((): void => {
+        addSkins();
+    });
+});
+
 // Add skins 
 
 const addSkins = (): void => {
-    $(".game__character").attr("src", `/src/img/game/choose_skin/characters/${getActiveSkins("characters")}.png`);
-    $(".obstacle__block, .counter__image_obstacle").attr("src", `/src/img/game/choose_skin/obstacles/${getActiveSkins("obstacles")}.png`);
+    $(".game__character").attr("src", `/src/img/game/choose_skin/characters/${getActoveColor()}/${getActiveSkins("characters")}.png`);
+    $(".obstacle__block, .counter__image_obstacle").attr("src", `/src/img/game/choose_skin/obstacles/${getActoveColor()}/${getActiveSkins("obstacles")}.png`);
     $(".game__background").attr("src", `/src/img/game/choose_skin/backgrounds/${getActiveSkins("backgrounds")}.png`);
 };
 
@@ -51,13 +66,27 @@ export const startGame = (): void => {
             if (obstacLeft >= character.offset().left && obstacLeft <= character.offset().left + parseInt(character.css("width")) && defoltCharacterTop*0.8 < characterTop) {
                 clearInterval(gameplay);
                 clearInterval(obstacle);
-                clearInterval(test);
+                clearInterval(addSpeed);
                 stopGame();
             } 
         }, 10);
 
-        let speed: number = 3;
-        const test = setInterval((): number => {
+
+        let speed: number;
+
+        const windowWidth = $(window).width();
+        
+        if (windowWidth >= 1000) {
+            speed = 3;
+        } 
+        else if (windowWidth >= 500 && windowWidth < 1000) {
+            speed = 2;
+        }
+        else {
+            speed = 1.2;
+        }
+
+        const addSpeed = setInterval((): number => {
             speed+= 0.01;
 
             return speed;
@@ -69,7 +98,7 @@ export const startGame = (): void => {
 
         const obstacle = setInterval((): void => {
             const obstacle: JQuery<Element> = $(".game__obstacle"),
-                pushLeftNumber: number = $(window).width() * 0.5;
+                pushLeftNumber: number = $(".game__obstacle").width() * 2;
             
             obstacle.css("right", obstacleLeft);
             obstacleLeft+=speed;
@@ -90,7 +119,7 @@ export const startGame = (): void => {
 
 // Jump
 
-$(window).on("click", (): void => {
+const jump = (): void => {
     if (!character.hasClass("game__character-active")) {
         character.addClass("game__character-active");
         setTimeout(() => {
@@ -98,6 +127,16 @@ $(window).on("click", (): void => {
 
         }, 400);
     }
+};
+
+$(window).on("click", (): void => jump());
+$(window).on("keydown", (event): void => {
+    const pressedKey: string = event.key;
+
+    if (pressedKey === "w" || pressedKey ==="ArrowUp" || pressedKey === " ") {
+        jump();
+    }
+
 });
 
 // Stop game 

@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 3vh;
     overflow-x: clip;
     position: absolute;
     width: 100%;
@@ -9,19 +10,21 @@
 
 .swiper-wrapper {
     align-items: center;
-    margin-top: 21vh;
+    margin-top: 16vh;
 }
 
 .swiper-slide {
     @include main-color-background;
 
     animation: fadeInSlider 0.7s forwards;
+    display: flex;
     opacity: 0;
     text-align: center;
     transition: transform 0.5s, $colorTransition, box-shadow 0.3s;
 
     img {
         transition: 0.4s;
+        width: 100%;
     }
 
     &:hover {
@@ -100,5 +103,9 @@
             font-weight: 300;
             text-transform: uppercase;
         }
+    }
+
+    &:hover {
+        transform: none;
     }
 }

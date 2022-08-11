@@ -1,0 +1,10 @@
+@import "./components/adap-select_skin";
+@import "./components/adap-skins_sections";
+@import "./components/adap-close";
+
+@media screen and (min-width: 0) and (max-width: 1000px) {
+
+    .content {
+        flex-flow: column;
+    }
+}

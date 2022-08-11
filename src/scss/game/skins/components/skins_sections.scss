@@ -1,0 +1,72 @@
+.content__skins {
+    @include main-color-background;
+
+    align-items: center;
+    animation: increase 0.5s forwards;
+    animation-delay: 0.1s;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 3vh 1.5%;
+    padding: 14vh 6%;
+    position: relative;
+    transform: scale(0);
+    transition: box-shadow 0.3s, $colorTransition;
+    width: 23%;
+
+    h1 {
+        color: #fff;
+        font-family: "Spectral SC";
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 0 0 15px var(--mainColor);
+        transform: scale(0.97) !important;
+        transition: 0.3s;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        margin-top: 8vh;
+    }
+}
+
+.content__skins-character {
+    background-image: url("./../../../dist/img/game/skins/characters-background.webp");
+
+    &::before {
+        background-image: url("./../../../dist/img/game/1.png");
+        left: -5%;
+        transform: rotate(-20deg);
+    }
+}
+
+.content__skins-obstacle {
+    background-image: url("./../../../dist/img/game/skins/obstacles-background.webp");
+
+    &::before {
+        background-image: url("./../../../dist/img/game/2.png");
+        right: -5%;
+        transform: rotate(20deg);
+    }
+}
+
+.content__skins-character::before,
+.content__skins-obstacle::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 50%;
+    position: absolute;
+    top: -22%;
+    width: 10%;
+}
+
+.content__skins-background {
+    background-image: url("./../../../dist/img/game/skins/backgrounds-background.webp");
+}

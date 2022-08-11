@@ -6,7 +6,8 @@ const skins = {
         3: "close",
         20: "close",
         35: "close",
-        45: "close"
+        45: "close",
+        55: "close"
     },
 
     "characters": {
@@ -14,7 +15,8 @@ const skins = {
         5: "close",
         40: "close",
         55: "close",
-        65: "close"
+        65: "close",
+        50: "close"
     },
     
     "obstacles": {
@@ -22,7 +24,8 @@ const skins = {
         7: "close",
         660: "close",
         365: "close",
-        75: "close"
+        75: "close",
+        50: "close"
     }
 }; 
 

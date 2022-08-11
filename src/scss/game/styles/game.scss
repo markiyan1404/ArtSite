@@ -66,6 +66,7 @@ body {
         position: absolute;
         right: 0;
         width: 5%;
+        z-index: 1;
 
         .game__new_skin {
             margin-bottom: 5vh;
@@ -86,7 +87,7 @@ body {
     .game__background {
         height: 100vh;
         left: 0;
-        opacity: 0.2;
+        opacity: 0.1;
         position: absolute;
         top: 0;
         width: 100%;

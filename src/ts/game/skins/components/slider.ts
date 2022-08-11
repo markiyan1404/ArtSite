@@ -23,9 +23,12 @@ $(".content__skins").on("click", function (): void {
         generateSkins(activeSkinsSection);
         addSkinsType(activeSkinsSection);
 
-        if (activeSkinsSection === "characters") createSlider(".swiper-container-characters", ".swiper-wrapper-characters", 4);
-        if (activeSkinsSection === "obstacles") createSlider(".swiper-container-obstacles", ".swiper-wrapper-obstacles", 4);
-        if (activeSkinsSection === "backgrounds") createSlider(".swiper-container-backgrounds", ".swiper-wrapper-backgrounds", 3);
+        if (activeSkinsSection === "characters" || activeSkinsSection === "obstacles") {
+            createSlider(`.swiper-container-${activeSkinsSection}`, `.swiper-wrapper-${activeSkinsSection}`, 4, 1.5, 2.5, 3.5, 3.9);
+        }
+        else {
+            createSlider(".swiper-container-backgrounds", ".swiper-wrapper-backgrounds", 3, 1.2, 1.5, 2.5, 2.8);
+        }
     } 
     else {
         $(`.swiper-container-${activeSkinsSection}`).css("display", "flex");
@@ -79,13 +82,21 @@ const createStandartSlider = (activeSkinsSection): void => {
 // Generate skins
 
 const generateSkins = (activeSkinsSection): void => {
-    const points: string = JSON.parse(localStorage.getItem("skins"))[activeSkinsSection];
-    const skinsNumbers: number = 5;
+    const points: string = JSON.parse(localStorage.getItem("skins"))[activeSkinsSection],
+        skinsNumbers: number = 6;
+    let colorOfSkins: string = "";
+
+    if (localStorage.getItem("contrastColor1LS") === "#fff") colorOfSkins = "black/";
+    else colorOfSkins = "white/";
+    
+    if (activeSkinsSection === "backgrounds") {
+        colorOfSkins = "";
+    }
 
     for (let p: number = 0; p < skinsNumbers; p++) {
         $(`.swiper-wrapper-${activeSkinsSection}`).append(
             `<section class="swiper-slide swiper-slide-${p}" data-point="${Object.keys(points)[p]}">
-                <img data-src="./img/game/choose_skin/${activeSkinsSection}/${p}.png" class="swiper-slide__image"/>
+                <img data-src="./img/game/choose_skin/${activeSkinsSection}/${colorOfSkins}${p}.png" class="swiper-slide__image" data-section="${activeSkinsSection}"/>
                 <div class='swiper-lazy-preloader'></div>
             </section>`); 
 

@@ -79,6 +79,10 @@
             width: 14%;
         }
 
+        .game__character-active {
+            animation: character-active 0.5s;
+        }
+
         .game__obstacle {
             width: 11%;
         }

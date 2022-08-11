@@ -1,7 +1,7 @@
 import * as $ from "jquery";
 import {Swiper} from "swiper";
 
-export const createSlider = (mainBlock, wrapper, sliders): void => {
+export const createSlider = (mainBlock, wrapper, slidersStandart, sliders0, sliders600, sliders1000, sliders1600): void => {
     new Swiper(mainBlock, {
         scrollbar: {
             el: ".swiper-scrollbar",
@@ -14,7 +14,7 @@ export const createSlider = (mainBlock, wrapper, sliders): void => {
             invert: true
         },
     
-        slidesPerView: sliders,
+        slidesPerView: slidersStandart,
         initialSlide: 0,
         centeredSlides: true,
         freeMode: true,
@@ -33,30 +33,25 @@ export const createSlider = (mainBlock, wrapper, sliders): void => {
     
         breakpoints: {
             3200: {
-                slidesPerView: sliders,
+                slidesPerView: slidersStandart,
                 scrollbar: {
                     dragSize: 35
                 }
             },
             
-            1200: {
-                slidesPerView: sliders,
-                scrollbar: {
-                    dragSize: 25
-                }
-            },
-            1000: {
-                slidesPerView: sliders,
+            1600: {
+                slidesPerView: sliders1600,
                 lazy: {
                     loadPrevNext: true,
                     loadOnTransitionStart: true,
                     loadPrevNextAmount: 3
                 }
             },
-            767: {
-                slidesPerView: sliders,
+
+            1000: {
+                slidesPerView: sliders1000,
                 scrollbar: {
-                    dragSize: 20
+                    dragSize: 25
                 },
                 lazy: {
                     loadPrevNext: true,
@@ -64,8 +59,18 @@ export const createSlider = (mainBlock, wrapper, sliders): void => {
                     loadPrevNextAmount: 3
                 }
             },
-            500: {
-                slidesPerView: 2.2,
+
+            600: {
+                slidesPerView: sliders600,
+                lazy: {
+                    loadPrevNext: true,
+                    loadOnTransitionStart: true,
+                    loadPrevNextAmount: 3
+                }
+            },
+
+            400: {
+                slidesPerView: sliders0,
                 scrollbar: {
                     dragSize: 20
                 },
@@ -76,16 +81,15 @@ export const createSlider = (mainBlock, wrapper, sliders): void => {
                 }
             },
             0: {
-                slidesPerView: 1.5,
+                slidesPerView: sliders0,
+                scrollbar: {
+                    dragSize: 20
+                },
                 lazy: {
                     loadPrevNext: true,
                     loadOnTransitionStart: true,
                     loadPrevNextAmount: 3
                 }
-            },
-    
-            "@0.74": {
-                slidesPerView: 2.5
             }
         },
     
