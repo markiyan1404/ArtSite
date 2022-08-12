@@ -9,9 +9,9 @@ const page = $(window),
 const changeIcon = (typeIcon: string): any => {
     let activeColor: string = localStorage.getItem("color");
 
-    activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "FFC700";
+    activeColor !== null ? activeColor = activeColor.substring(1) : activeColor = "ffc700";
 
-    $("link[rel*='icon']").attr("href", "img/head/" + activeColor + `-${typeIcon}.webp`);
+    $("link[rel*='icon']").attr("href", "./../img/head/" + activeColor + `-${typeIcon}.webp`);
 };
 
 page.on("blur", (): void => { 

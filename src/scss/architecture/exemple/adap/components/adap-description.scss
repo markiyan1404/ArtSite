@@ -116,6 +116,11 @@
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
 
+    .scroll-container__description {
+        animation-delay: 0.5s;
+        animation-duration: 0.5s;
+    }
+
     .scroll-container__years {
         -webkit-text-stroke-width: 1px;
     }
@@ -125,5 +130,22 @@
         background-position: 50% 50%;
         background-size: cover;
         flex-direction: column-reverse !important;
+    }
+
+    .exemplesToType .scroll-container__description {
+        animation: hideContent 0.3s forwards;
+    }
+
+    @keyframes hideContent {
+
+        from {
+            opacity: 1;
+            transform: none;
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(-3%);
+        }
     }
 }

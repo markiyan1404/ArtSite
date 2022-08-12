@@ -10,6 +10,7 @@ import "./components/window-2";
 import "./components/window-3";
 import "./components/window-4";
 import "./components/window-5";
+import "./components/star_game";
 import "originTS/global_scripts/preloader";
 
 const page = $(window);

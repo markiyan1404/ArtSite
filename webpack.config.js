@@ -40,7 +40,8 @@ function print_names (...files) {
         "languages", 
         "colors", 
         "last_page",
-        "firstLoad"
+        "firstLoad",
+        "title"
     ]
 
     for (let i = 0; i < files.length; i++) baseFiles.push(files[i]);
@@ -250,6 +251,9 @@ module.exports = {
     },
 
     devServer: {
-        open: true
+        open: true,
+        client: {
+            overlay: false,
+          },
     }
 };

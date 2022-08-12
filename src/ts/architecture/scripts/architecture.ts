@@ -29,7 +29,7 @@ page.on("load", () => {
 
 const addAnimClass = (): void => {
     const allBlocks = $(".image-section__block"),
-        speedAnim: number = 70;
+        speedAnim: number = 60;
     let blockNum = 0;
 
     $(allBlocks[0]).addClass("block-anim");
@@ -65,7 +65,7 @@ $(".image-section__block").on("click", function (): void {
     const allBlocks: JQuery<Element> = $(".image-section__block"),
         getLastBlockOpacity: string = $(allBlocks[allBlocks.length-1]).css("opacity");
 
-    if (getLastBlockOpacity !== "1" ) return;
+    if (getLastBlockOpacity !== "1") return;
 
     $("body").addClass("architectureToarchitecture_type");
     removeAnimClass(allBlocks);
@@ -80,6 +80,7 @@ const removeAnimClass = (allBlocks: JQuery<Element>): number => {
     let blockNum = allBlocks.length;
 
     $(allBlocks[allBlocks.length-1]).removeClass("block-anim");
+    $(".image-section__block").css("transition", "0.4s");
     const addClassToLines: NodeJS.Timer = setInterval((): void => {
 
         blockNum--;

@@ -69,6 +69,8 @@
         align-items: center;
         flex-direction: column;
         width: 100% !important;
+        height: 93vh;
+        top: 7vh;
 
         section {
             border-bottom: 1px solid #4e4e4e;
@@ -87,19 +89,19 @@
         }
 
         .menu__section-main span {
-            background-image: url("/img/menu/Main-mobile.webp");
+            background-image: url("/../img/menu/Main-mobile.webp");
         }
 
         .menu__section-paintings span {
-            background-image: url("/img/menu/Paintings-mobile.webp");
+            background-image: url("/../img/menu/Paintings-mobile.webp");
         }
 
         .menu__section-architecture span {
-            background-image: url("/img/menu/Architecture-mobile.webp");
+            background-image: url("/../img/menu/Architecture-mobile.webp");
         }
 
         .menu__section-sculptures span {
-            background-image: url("/img/menu/Sculptures-mobile.webp");
+            background-image: url("/../img/menu/Sculptures-mobile.webp");
         }
     }
 
@@ -142,19 +144,19 @@
         }
 
         .menu__section-main span {
-            background-image: url("/img/menu/Main-mobile.webp");
+            background-image: url("/../img/menu/Main-mobile.webp");
         }
 
         .menu__section-paintings span {
-            background-image: url("/img/menu/Paintings-mobile.webp");
+            background-image: url("/../img/menu/Paintings-mobile.webp");
         }
 
         .menu__section-architecture span {
-            background-image: url("/img/menu/Architecture-mobile.webp");
+            background-image: url("/../img/menu/Architecture-mobile.webp");
         }
 
         .menu__section-sculptures span {
-            background-image: url("/img/menu/Sculptures-mobile.webp");
+            background-image: url("/../img/menu/Sculptures-mobile.webp");
         }
     }
 

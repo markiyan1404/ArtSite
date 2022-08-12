@@ -96,7 +96,7 @@ const generateSkins = (activeSkinsSection: string): void => {
     for (let p: number = 0; p < skinsNumbers; p++) {
         $(`.swiper-wrapper-${activeSkinsSection}`).append(
             `<section class="swiper-slide swiper-slide-${p}" data-point="${Object.keys(points)[p]}">
-                <img data-src="./img/game/choose_skin/${activeSkinsSection}/${colorOfSkins}${p}.webp" class="swiper-slide__image" data-section="${activeSkinsSection}"/>
+                <img data-src="/../img/game/choose_skin/${activeSkinsSection}/${colorOfSkins}${p}.webp" class="swiper-slide__image" data-section="${activeSkinsSection}"/>
                 <div class='swiper-lazy-preloader'></div>
             </section>`); 
 
@@ -114,7 +114,7 @@ const addSkinsType = (activeSkinsSection: string): void => {
         if (skinsClasses[s] === "close") {
             $(`.swiper-container-${activeSkinsSection} .swiper-slide-${s}`).append(
                 `<section class='swiper-slide__lock'>
-                <img src='./img/game/choose_skin/lock.webp' class='lock__image' />
+                <img src='/../img/game/choose_skin/lock.webp' class='lock__image' />
                 <h2>${Object.keys(point)[s]} <b class='language' data-key='point'></b></h2>
                 </section>`);
         }

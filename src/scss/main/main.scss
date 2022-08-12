@@ -12,13 +12,9 @@ body {
 }
 
 .content {
-    bottom: 0;
-    left: 0;
     opacity: 0;
     overflow: hidden;
     position: fixed;
-    right: 0;
-    top: 0;
 }
 
 .scroll-container {
@@ -73,4 +69,9 @@ body {
 .scrolled-text {
     opacity: 1;
     transition: opacity 0.3s;
+}
+
+.showGame {
+    display: flex !important;
+    animation: topToStatic 0.7s forwards;
 }

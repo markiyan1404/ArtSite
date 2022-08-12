@@ -112,14 +112,56 @@
 
 @media screen and (max-width: 1200px) {
 
+    .typeToexemples .content {
+        animation: hideContent 0.5s forwards;
+    }
+
     .content__exemples {
         flex-direction: column;
         margin-left: 0;
         padding-bottom: 0;
+        transform: translateY(0);
         width: 100%;
 
         .exemples__section {
             justify-content: space-evenly;
+        }
+    }
+
+    @keyframes exemple {
+
+        from {
+            opacity: 0;
+            transform: translateY(20%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .typeToexemples .content__text,
+    .typeToexemples .content__exemples,
+    .typeToexemples .content__years {
+        animation: none;
+    }
+
+    .typeToexemples .content__exemples,
+    .typeToexemples, .content__text {
+        opacity: 1;
+    }
+
+    @keyframes hideContent {
+
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(2%);
         }
     }
 }

@@ -31,9 +31,9 @@ $(".colors__color").on("click", (): void => {
 // Add skins 
 
 const addSkins = (): void => {
-    $(".game__character").attr("src", `/src/img/game/choose_skin/characters/${getActoveColor()}/${getActiveSkins("characters")}.webp`);
-    $(".obstacle__block, .counter__image_obstacle").attr("src", `/src/img/game/choose_skin/obstacles/${getActoveColor()}/${getActiveSkins("obstacles")}.webp`);
-    $(".game__background").attr("src", `/src/img/game/choose_skin/backgrounds/${getActiveSkins("backgrounds")}.webp`);
+    $(".game__character").attr("src", `/../img/game/choose_skin/characters/${getActoveColor()}/${getActiveSkins("characters")}.webp`);
+    $(".obstacle__block, .counter__image_obstacle").attr("src", `/../img/game/choose_skin/obstacles/${getActoveColor()}/${getActiveSkins("obstacles")}.webp`);
+    $(".game__background").attr("src", `/../img/game/choose_skin/backgrounds/${getActiveSkins("backgrounds")}.webp`);
 };
 
 const getActiveSkins = (activePath): number => {
@@ -86,8 +86,8 @@ export const startGame = (): void => {
             maxSpeed = 6;
         }
         else {
-            speed = 1.2;
-            maxSpeed = 5;
+            speed = 1.3;
+            maxSpeed = 4;
         }
 
         const addSpeed = setInterval((): number => {
@@ -166,3 +166,15 @@ const stopGame = (): void => {
         unlockSkins();
     }, 300);
 };
+
+// Close game 
+
+$(".content__close").on("click", (): void => {
+
+    $(".anim-show1").addClass("closeGame");
+    setTimeout((): JQuery<Element> => $(".anim-show2").addClass("closeGame"), 700);
+
+    setTimeout((): void => {
+        location.href = "/";
+    }, 1500);
+}); 

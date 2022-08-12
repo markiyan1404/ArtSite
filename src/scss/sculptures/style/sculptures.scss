@@ -5,6 +5,7 @@
 .content {
     @include contrast-color-black-background;
 
+    height: 100vh;
     overflow: hidden;
     position: absolute;
 }

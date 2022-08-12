@@ -27,3 +27,8 @@
         @include contrast-color-white-color;
     }
 }
+
+.closeGame {
+    animation: bottomToStatic 0.7s forwards;
+    display: flex !important;
+}

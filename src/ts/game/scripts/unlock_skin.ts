@@ -77,7 +77,12 @@ export const spawnSkins = (point): void => {
         
         for (let a: number = 1; a < allKeys.length; a++) {
             if (Number(allKeys[a]) === point+1 && allValues[a] === "close") {
-                $(".game__obstacle").append(`<img src="/src/img/game/choose_skin/${skinTypes[s]}/${getActiveColor()}/${a}.webp" class="game__new_skin"/>`);
+                if (skinTypes[s] !== "backgrounds") {
+                    $(".game__obstacle").append(`<img src="/../img/game/choose_skin/${skinTypes[s]}/${getActiveColor()}/${a}.webp" class="game__new_skin"/>`);
+                }
+                else {
+                    $(".game__obstacle").append(`<img src="/../img/game/choose_skin/${skinTypes[s]}/${a}.webp" class="game__new_skin"/>`);
+                }
                 
                 skinTypes[s] === "backgrounds" ? $(".game__new_skin").addClass("game__new_skin-bg") : $(".game__new_skin").removeClass("game__new_skin-bg");
             }
