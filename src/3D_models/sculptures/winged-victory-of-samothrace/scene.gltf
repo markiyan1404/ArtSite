@@ -1,120 +1,154 @@
 {
-	"asset": { "version": "2.0", "generator": "VECTARY" },
+	"asset": {
+		"generator": "Khronos glTF Blender I/O v3.2.40",
+		"version": "2.0"
+	},
+	"extensionsUsed": ["KHR_draco_mesh_compression"],
+	"extensionsRequired": ["KHR_draco_mesh_compression"],
+	"scene": 0,
+	"scenes": [
+		{
+			"name": "Scene",
+			"nodes": [1, 2, 3, 4, 9]
+		}
+	],
 	"nodes": [
 		{
-			"translation": [0, -0.35899999999999993, -5.684341886080802e-17],
-			"scale": [1.24708, 1.24708, 1.247080167],
-			"rotation": [-0.7071067811865475, 0, 0, 0.7071067811865476],
-			"name": "Sketchfab_model",
-			"children": [1]
+			"name": "Object_2"
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "root",
-			"children": [2]
+			"children": [0],
+			"name": "The_Discobolus_SMK_KAS1549_10pct.obj.cleaner.gles",
+			"translation": [
+				-461.9999694824219, -221.46966552734375, -1.581009864807129
+			]
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0.7071067811865475, 0, 0, 0.7071067811865476],
+			"name": "Sketchfab_model 1",
+			"rotation": [
+				0.7354272603988647, -0.6666097044944763, -0.07606972754001617,
+				0.09482503682374954
+			],
+			"translation": [
+				9.92296314239502, 6.762499809265137, -5.4461894035339355
+			]
+		},
+		{
+			"name": "Sketchfab_model 1.001",
+			"rotation": [
+				0.7354272603988647, -0.6666097044944763, -0.07606972754001617,
+				0.09482503682374954
+			],
+			"translation": [
+				9.92296314239502, 6.762499809265137, -5.4461894035339355
+			]
+		},
+		{
+			"name": "Sketchfab_model 1.002",
+			"rotation": [
+				0.7354272603988647, -0.6666097044944763, -0.07606972754001617,
+				0.09482503682374954
+			],
+			"translation": [
+				9.92296314239502, 6.762499809265137, -5.4461894035339355
+			]
+		},
+		{
+			"mesh": 0,
+			"name": "Object_0"
+		},
+		{
+			"children": [5],
+			"name": "Nike2_midPoly_0"
+		},
+		{
+			"children": [6],
 			"name": "GLTF_SceneRootNode",
-			"children": [3]
+			"rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "Nike2_midPoly_0",
-			"children": [4]
+			"children": [7],
+			"name": "root"
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "Object_0",
-			"mesh": 0
+			"children": [8],
+			"name": "Sketchfab_model",
+			"rotation": [-0.7071068286895752, 0, 0, 0.7071067094802856],
+			"scale": [
+				1.2470799684524536, 1.2470800876617432, 1.2470803260803223
+			],
+			"translation": [0, -0.35899999737739563, 0]
 		}
 	],
 	"materials": [
 		{
+			"doubleSided": true,
+			"name": "Nike.001",
 			"pbrMetallicRoughness": {
-				"baseColorFactor": [1, 1, 1, 1],
 				"baseColorTexture": {
-					"index": 0,
-					"extensions": {
-						"KHR_texture_transform": {
-							"offset": [0, 0],
-							"scale": [1, 1],
-							"rotation": 0
-						}
-					},
-					"texCoord": 0
+					"index": 0
 				},
 				"metallicRoughnessTexture": {
-					"index": 1,
-					"extensions": {
-						"KHR_texture_transform": {
-							"offset": [0, 0],
-							"scale": [1, 1],
-							"rotation": 0
-						}
-					},
-					"texCoord": 0
-				},
-				"metallicFactor": 1,
-				"roughnessFactor": 1
-			},
-			"name": "Nike.001",
-			"emissiveFactor": [0, 0, 0],
-			"extensions": {},
-			"alphaMode": "OPAQUE",
-			"doubleSided": true
+					"index": 1
+				}
+			}
 		}
 	],
-	"textures": [
-		{ "sampler": 0, "source": 0 },
-		{ "sampler": 0, "source": 1 }
-	],
-	"images": [
-		{ "uri": "textures/Nike001_baseColor.jpg", "mimeType": "image/jpeg" },
-		{
-			"uri": "textures/Nike001_metallicRoughness.jpg",
-			"mimeType": "image/jpeg"
-		}
-	],
-	"samplers": [{ "wrapS": 10497, "wrapT": 10497 }],
 	"meshes": [
 		{
+			"name": "Mesh_0.010",
 			"primitives": [
 				{
-					"mode": 4,
 					"attributes": {
-						"POSITION": 1,
-						"NORMAL": 2,
-						"TEXCOORD_0": 3,
-						"TEXCOORD_1": 4
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TEXCOORD_1": 3
 					},
+					"extensions": {
+						"KHR_draco_mesh_compression": {
+							"bufferView": 0,
+							"attributes": {
+								"POSITION": 0,
+								"NORMAL": 1,
+								"TEXCOORD_0": 2,
+								"TEXCOORD_1": 3
+							}
+						}
+					},
+					"indices": 4,
 					"material": 0,
-					"indices": 0
+					"mode": 4
 				}
 			]
 		}
 	],
-	"accessors": [
+	"textures": [
 		{
-			"bufferView": 0,
-			"byteOffset": 0,
-			"componentType": 5125,
-			"count": 43914,
-			"type": "SCALAR"
+			"sampler": 0,
+			"source": 0
 		},
 		{
-			"bufferView": 1,
-			"byteOffset": 0,
+			"sampler": 0,
+			"source": 1
+		}
+	],
+	"images": [
+		{
+			"mimeType": "image/jpeg",
+			"name": "Nike001_baseColor",
+			"uri": "textures/Nike001_baseColor.jpg"
+		},
+		{
+			"mimeType": "image/jpeg",
+			"name": "Nike001_metallicRoughness",
+			"uri": "textures/Nike001_metallicRoughness.jpg"
+		}
+	],
+	"accessors": [
+		{
 			"componentType": 5126,
-			"count": 12067,
+			"count": 12249,
 			"max": [
 				0.1926533430814743, 0.6579035520553589, 0.09752100706100464
 			],
@@ -124,56 +158,43 @@
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 2,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 12067,
+			"count": 12249,
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 3,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 12067,
+			"count": 12249,
 			"type": "VEC2"
 		},
 		{
-			"bufferView": 4,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 12067,
+			"count": 12249,
 			"type": "VEC2"
+		},
+		{
+			"componentType": 5123,
+			"count": 43914,
+			"type": "SCALAR"
 		}
 	],
 	"bufferViews": [
-		{ "buffer": 0, "byteOffset": 0, "byteLength": 175656, "target": 34963 },
 		{
 			"buffer": 0,
-			"byteOffset": 175656,
-			"byteLength": 144804,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 320460,
-			"byteLength": 144804,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 465264,
-			"byteLength": 96536,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 561800,
-			"byteLength": 96536,
-			"target": 34962
+			"byteLength": 118278,
+			"byteOffset": 0
 		}
 	],
-	"scene": 0,
-	"scenes": [{ "nodes": [0], "name": "Project Name" }],
-	"extensionsUsed": ["KHR_texture_transform"],
-	"buffers": [{ "byteLength": 658336, "uri": "scene.bin" }]
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9987
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 118280,
+			"uri": "scene.bin"
+		}
+	]
 }

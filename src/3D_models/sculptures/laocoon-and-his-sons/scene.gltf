@@ -1,126 +1,117 @@
 {
-	"asset": { "version": "2.0", "generator": "VECTARY" },
+	"asset": {
+		"generator": "Khronos glTF Blender I/O v3.2.40",
+		"version": "2.0"
+	},
+	"extensionsUsed": ["KHR_draco_mesh_compression"],
+	"extensionsRequired": ["KHR_draco_mesh_compression"],
+	"scene": 0,
+	"scenes": [
+		{
+			"name": "Scene",
+			"nodes": [2]
+		}
+	],
 	"nodes": [
 		{
-			"translation": [0, -0.22, -4.263256414560601e-17],
-			"scale": [0.016710000000000003, 0.016705202, 0.016710000000000003],
-			"rotation": [
-				0.7071067811865475, -5.551115123125783e-17, 0.7071067811865475,
-				-5.551115123125783e-17
-			],
+			"mesh": 0,
+			"name": "Object_0"
+		},
+		{
+			"children": [0],
+			"name": "Laocoon-and-his-sons.OBJ.cleaner.materialmerger.gles"
+		},
+		{
+			"children": [1],
 			"name": "Sketchfab_model 1",
-			"children": [1]
-		},
-		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "Laocoon-and-his-sons.OBJ.cleaner.materialmerger.gles",
-			"children": [2]
-		},
-		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "Object_0",
-			"mesh": 0
+			"rotation": [
+				-0.7071068286895752, 0, -0.7071068286895752,
+				5.551115784870273e-17
+			],
+			"scale": [
+				0.016710001975297928, 0.016705205664038658, 0.016710001975297928
+			],
+			"translation": [0, -0.2199999988079071, 0]
 		}
 	],
 	"materials": [
 		{
-			"pbrMetallicRoughness": {
-				"baseColorFactor": [1, 1, 1, 1],
-				"baseColorTexture": {
-					"index": 0,
-					"extensions": {
-						"KHR_texture_transform": {
-							"offset": [0, 0],
-							"scale": [1, 1],
-							"rotation": 0
-						}
-					},
-					"texCoord": 0
-				},
-				"metallicRoughnessTexture": {
-					"index": 2,
-					"extensions": {
-						"KHR_texture_transform": {
-							"offset": [0, 0],
-							"scale": [1, 1],
-							"rotation": 0
-						}
-					},
-					"texCoord": 0
-				},
-				"metallicFactor": 0.8,
-				"roughnessFactor": 1
-			},
+			"doubleSided": true,
 			"name": "None",
 			"normalTexture": {
-				"index": 1,
-				"scale": 1,
-				"extensions": {
-					"KHR_texture_transform": {
-						"offset": [0, 0],
-						"scale": [1, 1],
-						"rotation": 0
-					}
-				},
-				"texCoord": 0
+				"index": 0
 			},
-			"emissiveFactor": [0, 0, 0],
-			"extensions": {},
-			"alphaMode": "OPAQUE",
-			"doubleSided": true
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 1
+				},
+				"metallicFactor": 0.800000011920929,
+				"metallicRoughnessTexture": {
+					"index": 2
+				}
+			}
 		}
 	],
-	"textures": [
-		{ "sampler": 0, "source": 0 },
-		{ "sampler": 0, "source": 1 },
-		{ "sampler": 0, "source": 2 }
-	],
-	"images": [
-		{
-			"uri": "textures/None_baseColor.jpg",
-			"mimeType": "image/jpeg"
-		},
-		{
-			"uri": "textures/None_normal.jpg",
-			"mimeType": "image/jpeg"
-		},
-		{
-			"uri": "textures/None_metallicRoughness.jpg",
-			"mimeType": "image/jpeg"
-		}
-	],
-	"samplers": [{ "wrapS": 10497, "wrapT": 10497 }],
 	"meshes": [
 		{
+			"name": "Mesh_0",
 			"primitives": [
 				{
-					"mode": 4,
 					"attributes": {
-						"POSITION": 1,
-						"NORMAL": 2,
-						"TEXCOORD_0": 3
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2
 					},
+					"extensions": {
+						"KHR_draco_mesh_compression": {
+							"bufferView": 0,
+							"attributes": {
+								"POSITION": 0,
+								"NORMAL": 1,
+								"TEXCOORD_0": 2
+							}
+						}
+					},
+					"indices": 3,
 					"material": 0,
-					"indices": 0
+					"mode": 4
 				}
 			]
 		}
 	],
-	"accessors": [
+	"textures": [
 		{
-			"bufferView": 0,
-			"byteOffset": 0,
-			"componentType": 5125,
-			"count": 150318,
-			"type": "SCALAR"
+			"sampler": 0,
+			"source": 0
 		},
 		{
-			"bufferView": 1,
-			"byteOffset": 0,
+			"sampler": 0,
+			"source": 1
+		},
+		{
+			"sampler": 0,
+			"source": 2
+		}
+	],
+	"images": [
+		{
+			"mimeType": "image/jpeg",
+			"name": "None_normal",
+			"uri": "textures/None_normal.jpg"
+		},
+		{
+			"mimeType": "image/jpeg",
+			"name": "None_baseColor",
+			"uri": "textures/None_baseColor.jpg"
+		},
+		{
+			"mimeType": "image/jpeg",
+			"name": "None_metallicRoughness",
+			"uri": "textures/None_metallicRoughness.jpg"
+		}
+	],
+	"accessors": [
+		{
 			"componentType": 5126,
 			"count": 40817,
 			"max": [5.763899803161621, 2.055867910385132, 10.721480369567871],
@@ -130,47 +121,37 @@
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 2,
-			"byteOffset": 0,
 			"componentType": 5126,
 			"count": 40817,
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 3,
-			"byteOffset": 0,
 			"componentType": 5126,
 			"count": 40817,
 			"type": "VEC2"
+		},
+		{
+			"componentType": 5123,
+			"count": 150318,
+			"type": "SCALAR"
 		}
 	],
 	"bufferViews": [
-		{ "buffer": 0, "byteOffset": 0, "byteLength": 601272, "target": 34963 },
 		{
 			"buffer": 0,
-			"byteOffset": 601272,
-			"byteLength": 489804,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 1091076,
-			"byteLength": 489804,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 1580880,
-			"byteLength": 326536,
-			"target": 34962
+			"byteLength": 197543,
+			"byteOffset": 0
 		}
 	],
-	"scene": 0,
-	"scenes": [{ "nodes": [0], "name": "Project Name" }],
-	"extensionsUsed": ["KHR_texture_transform"],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9987
+		}
+	],
 	"buffers": [
 		{
-			"byteLength": 1907416,
+			"byteLength": 197544,
 			"uri": "scene.bin"
 		}
 	]

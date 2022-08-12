@@ -1,260 +1,282 @@
 {
-	"asset": { "version": "2.0", "generator": "VECTARY" },
+	"asset": {
+		"generator": "Khronos glTF Blender I/O v3.2.40",
+		"version": "2.0"
+	},
+	"extensionsUsed": ["KHR_draco_mesh_compression"],
+	"extensionsRequired": ["KHR_draco_mesh_compression"],
+	"scene": 0,
+	"scenes": [
+		{
+			"name": "Scene",
+			"nodes": [3, 8]
+		}
+	],
 	"nodes": [
 		{
-			"translation": [0, -0.25000000000000006, 1.3497469808498862e-13],
-			"scale": [0.00032, 0.00032, 0.00032],
-			"rotation": [-0.7071067811865476, 0, 0, 0.7071067811865475],
-			"name": "Sketchfab_model",
-			"children": [1]
+			"name": "venus_medpoly",
+			"scale": [
+				0.009999999776482582, 0.009999998845160007, 0.009999999776482582
+			]
 		},
 		{
-			"translation": [
-				-461.9999694824219, -221.46966552734375, -1.581009864807129
-			],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "The_Discobolus_SMK_KAS1549_10pct.obj.cleaner.gles",
-			"children": [2]
+			"children": [0],
+			"name": "RootNode"
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
-			"name": "Object_2",
-			"children": [3, 4]
+			"children": [1],
+			"name": "cb6f8c35f05e40f9a8f6d4fc2d82aaa2.fbx",
+			"rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
+			"children": [2],
+			"name": "Sketchfab_model 1",
+			"rotation": [-0.7071068286895752, 0, 0, 0.7071067094802856],
+			"scale": [1.1769700050354004, 1.17697012424469, 1.1769658327102661],
+			"translation": [0, -0.25, 0]
+		},
+		{
+			"mesh": 0,
 			"name": "Object_0",
-			"mesh": 0
+			"translation": [-3.0517578125e-5, 0, -2.9756407457171008e-5]
 		},
 		{
-			"translation": [0, 0, 0],
-			"scale": [1, 1, 1],
-			"rotation": [0, 0, 0, 1],
+			"mesh": 1,
 			"name": "Object_1",
-			"mesh": 1
+			"translation": [-3.0517578125e-5, 0, -2.9756407457171008e-5]
+		},
+		{
+			"children": [4, 5],
+			"name": "Object_2",
+			"translation": [-3.0517578125e-5, 0, -2.9756407457171008e-5]
+		},
+		{
+			"children": [6],
+			"name": "The_Discobolus_SMK_KAS1549_10pct.obj.cleaner.gles",
+			"translation": [-462, -221.4696502685547, -1.5809624195098877]
+		},
+		{
+			"children": [7],
+			"name": "Sketchfab_model",
+			"rotation": [-0.7071068286895752, 0, 0, 0.7071067094802856],
+			"scale": [
+				0.00031999999191612005, 0.0003200000210199505,
+				0.0003200000210199505
+			],
+			"translation": [0, -0.25, 0]
+		}
+	],
+	"animations": [
+		{
+			"channels": [
+				{
+					"sampler": 0,
+					"target": {
+						"node": 5,
+						"path": "rotation"
+					}
+				}
+			],
+			"name": "Object_1Action",
+			"samplers": [
+				{
+					"input": 8,
+					"interpolation": "STEP",
+					"output": 9
+				}
+			]
 		}
 	],
 	"materials": [
 		{
-			"pbrMetallicRoughness": {
-				"baseColorFactor": [1, 1, 1, 1],
-				"baseColorTexture": {
-					"index": 0,
-					"extensions": {
-						"KHR_texture_transform": {
-							"offset": [0, 0],
-							"scale": [1, 1],
-							"rotation": 0
-						}
-					},
-					"texCoord": 0
-				},
-				"metallicRoughnessTexture": {
-					"index": 2,
-					"extensions": {
-						"KHR_texture_transform": {
-							"offset": [0, 0],
-							"scale": [1, 1],
-							"rotation": 0
-						}
-					},
-					"texCoord": 0
-				},
-				"metallicFactor": 1,
-				"roughnessFactor": 1
-			},
 			"name": "Concrete 1",
 			"normalTexture": {
-				"index": 1,
-				"scale": 1,
-				"extensions": {
-					"KHR_texture_transform": {
-						"offset": [0, 0],
-						"scale": [1, 1],
-						"rotation": 0
-					}
-				},
-				"texCoord": 0
+				"index": 0
 			},
-			"emissiveFactor": [0, 0, 0],
-			"extensions": {},
-			"alphaMode": "OPAQUE",
-			"doubleSided": false
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 1
+				},
+				"metallicRoughnessTexture": {
+					"index": 2
+				}
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Mesh_0.005",
+			"primitives": [
+				{
+					"attributes": {
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2
+					},
+					"extensions": {
+						"KHR_draco_mesh_compression": {
+							"bufferView": 0,
+							"attributes": {
+								"POSITION": 0,
+								"NORMAL": 1,
+								"TEXCOORD_0": 2
+							}
+						}
+					},
+					"indices": 3,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		},
+		{
+			"name": "Mesh_1.002",
+			"primitives": [
+				{
+					"attributes": {
+						"POSITION": 4,
+						"NORMAL": 5,
+						"TEXCOORD_0": 6
+					},
+					"extensions": {
+						"KHR_draco_mesh_compression": {
+							"bufferView": 1,
+							"attributes": {
+								"POSITION": 0,
+								"NORMAL": 1,
+								"TEXCOORD_0": 2
+							}
+						}
+					},
+					"indices": 7,
+					"material": 0,
+					"mode": 4
+				}
+			]
 		}
 	],
 	"textures": [
-		{ "sampler": 0, "source": 0 },
-		{ "sampler": 0, "source": 1 },
-		{ "sampler": 0, "source": 2 }
+		{
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"sampler": 0,
+			"source": 1
+		},
+		{
+			"sampler": 0,
+			"source": 2
+		}
 	],
 	"images": [
 		{
-			"uri": "textures/Concrete_009_Color.jpg",
-			"mimeType": "image/jpeg"
+			"mimeType": "image/jpeg",
+			"name": "Concrete_009_NormalMap",
+			"uri": "textures/Concrete_009_NormalMap.jpg"
 		},
 		{
-			"uri": "textures/Concrete_009_NormalMap.jpg",
-			"mimeType": "image/jpeg"
+			"mimeType": "image/jpeg",
+			"name": "Concrete_009_Color",
+			"uri": "textures/Concrete_009_Color.jpg"
 		},
 		{
-			"uri": "textures/Concrete_009_Metalic&Concrete_009_Roughness.jpg",
-			"mimeType": "image/jpeg"
-		}
-	],
-	"samplers": [{ "wrapS": 10497, "wrapT": 10497 }],
-	"meshes": [
-		{
-			"primitives": [
-				{
-					"mode": 4,
-					"attributes": {
-						"POSITION": 1,
-						"NORMAL": 2,
-						"TEXCOORD_0": 3
-					},
-					"material": 0,
-					"indices": 0
-				}
-			]
-		},
-		{
-			"primitives": [
-				{
-					"mode": 4,
-					"attributes": {
-						"POSITION": 5,
-						"NORMAL": 6,
-						"TEXCOORD_0": 7
-					},
-					"material": 0,
-					"indices": 4
-				}
-			]
+			"mimeType": "image/jpeg",
+			"name": "Concrete_009_Metalic&Concrete_009_Roughness",
+			"uri": "textures/Concrete_009_MetalicConcrete_009_Roughness.jpg"
 		}
 	],
 	"accessors": [
 		{
-			"bufferView": 0,
-			"byteOffset": 0,
-			"componentType": 5125,
-			"count": 319368,
-			"type": "SCALAR"
-		},
-		{
-			"bufferView": 1,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 165679,
+			"count": 319368,
 			"max": [1052.249267578125, 516.7003173828125, 1681.9852294921875],
 			"min": [0, 0, 0],
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 2,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 165679,
+			"count": 319368,
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 3,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 165679,
+			"count": 319368,
 			"type": "VEC2"
 		},
 		{
-			"bufferView": 4,
-			"byteOffset": 0,
 			"componentType": 5125,
-			"count": 285726,
+			"count": 319368,
 			"type": "SCALAR"
 		},
 		{
-			"bufferView": 5,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 150922,
+			"count": 285726,
 			"max": [1053.15087890625, 515.028564453125, 1682.0753173828125],
 			"min": [0, 0, 0.1806091070175171],
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 6,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 150922,
+			"count": 285726,
 			"type": "VEC3"
 		},
 		{
-			"bufferView": 7,
-			"byteOffset": 0,
 			"componentType": 5126,
-			"count": 150922,
+			"count": 285726,
 			"type": "VEC2"
+		},
+		{
+			"componentType": 5125,
+			"count": 285726,
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 1,
+			"max": [0.041666666666666664],
+			"min": [0.041666666666666664],
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5126,
+			"count": 1,
+			"type": "VEC4"
 		}
 	],
 	"bufferViews": [
 		{
 			"buffer": 0,
-			"byteOffset": 0,
-			"byteLength": 1277472,
-			"target": 34963
+			"byteLength": 1600682,
+			"byteOffset": 0
 		},
 		{
 			"buffer": 0,
-			"byteOffset": 1277472,
-			"byteLength": 1988148,
-			"target": 34962
+			"byteLength": 1466263,
+			"byteOffset": 1600684
 		},
 		{
 			"buffer": 0,
-			"byteOffset": 3265620,
-			"byteLength": 1988148,
-			"target": 34962
+			"byteLength": 4,
+			"byteOffset": 3066948
 		},
 		{
 			"buffer": 0,
-			"byteOffset": 5253768,
-			"byteLength": 1325432,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 6579200,
-			"byteLength": 1142904,
-			"target": 34963
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 7722104,
-			"byteLength": 1811064,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 9533168,
-			"byteLength": 1811064,
-			"target": 34962
-		},
-		{
-			"buffer": 0,
-			"byteOffset": 11344232,
-			"byteLength": 1207376,
-			"target": 34962
+			"byteLength": 16,
+			"byteOffset": 3066952
 		}
 	],
-	"scene": 0,
-	"scenes": [{ "nodes": [0], "name": "Project Name" }],
-	"extensionsUsed": ["KHR_texture_transform"],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9987
+		}
+	],
 	"buffers": [
 		{
-			"byteLength": 12551608,
+			"byteLength": 3066968,
 			"uri": "scene.bin"
 		}
 	]
