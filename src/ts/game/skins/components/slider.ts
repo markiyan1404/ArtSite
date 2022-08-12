@@ -66,7 +66,7 @@ $(".content__skins").on("click", function (): void {
 
 });
 
-const createStandartSlider = (activeSkinsSection): void => {
+const createStandartSlider = (activeSkinsSection: string): void => {
     $(".content__character").append(
         `<div class="swiper-container swiper-container-${activeSkinsSection}">
             <div class="scrollbar">
@@ -81,7 +81,7 @@ const createStandartSlider = (activeSkinsSection): void => {
 
 // Generate skins
 
-const generateSkins = (activeSkinsSection): void => {
+const generateSkins = (activeSkinsSection: string): void => {
     const points: string = JSON.parse(localStorage.getItem("skins"))[activeSkinsSection],
         skinsNumbers: number = 6;
     let colorOfSkins: string = "";
@@ -96,7 +96,7 @@ const generateSkins = (activeSkinsSection): void => {
     for (let p: number = 0; p < skinsNumbers; p++) {
         $(`.swiper-wrapper-${activeSkinsSection}`).append(
             `<section class="swiper-slide swiper-slide-${p}" data-point="${Object.keys(points)[p]}">
-                <img data-src="./img/game/choose_skin/${activeSkinsSection}/${colorOfSkins}${p}.png" class="swiper-slide__image" data-section="${activeSkinsSection}"/>
+                <img data-src="./img/game/choose_skin/${activeSkinsSection}/${colorOfSkins}${p}.webp" class="swiper-slide__image" data-section="${activeSkinsSection}"/>
                 <div class='swiper-lazy-preloader'></div>
             </section>`); 
 
@@ -104,17 +104,17 @@ const generateSkins = (activeSkinsSection): void => {
     }
 };
 
-const addSkinsType = (activeSkinsSection): void => {
+const addSkinsType = (activeSkinsSection: string): void => {
     const point = JSON.parse(localStorage.getItem("skins"))[activeSkinsSection];
 
-    const skinsClasses = Object.values(point);
+    const skinsClasses: string[] = Object.values(point);
     for (let s: number = 0; s < skinsClasses.length; s++) {
         $(`.swiper-container-${activeSkinsSection} .swiper-slide-${s}`).addClass(skinsClasses[s]);
 
         if (skinsClasses[s] === "close") {
             $(`.swiper-container-${activeSkinsSection} .swiper-slide-${s}`).append(
                 `<section class='swiper-slide__lock'>
-                <img src='./img/game/choose_skin/lock.png' class='lock__image' />
+                <img src='./img/game/choose_skin/lock.webp' class='lock__image' />
                 <h2>${Object.keys(point)[s]} <b class='language' data-key='point'></b></h2>
                 </section>`);
         }

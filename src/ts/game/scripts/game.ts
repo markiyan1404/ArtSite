@@ -31,9 +31,9 @@ $(".colors__color").on("click", (): void => {
 // Add skins 
 
 const addSkins = (): void => {
-    $(".game__character").attr("src", `/src/img/game/choose_skin/characters/${getActoveColor()}/${getActiveSkins("characters")}.png`);
-    $(".obstacle__block, .counter__image_obstacle").attr("src", `/src/img/game/choose_skin/obstacles/${getActoveColor()}/${getActiveSkins("obstacles")}.png`);
-    $(".game__background").attr("src", `/src/img/game/choose_skin/backgrounds/${getActiveSkins("backgrounds")}.png`);
+    $(".game__character").attr("src", `/src/img/game/choose_skin/characters/${getActoveColor()}/${getActiveSkins("characters")}.webp`);
+    $(".obstacle__block, .counter__image_obstacle").attr("src", `/src/img/game/choose_skin/obstacles/${getActoveColor()}/${getActiveSkins("obstacles")}.webp`);
+    $(".game__background").attr("src", `/src/img/game/choose_skin/backgrounds/${getActiveSkins("backgrounds")}.webp`);
 };
 
 const getActiveSkins = (activePath): number => {
@@ -72,22 +72,28 @@ export const startGame = (): void => {
         }, 10);
 
 
-        let speed: number;
+        let speed: number,
+            maxSpeed: number;
 
         const windowWidth = $(window).width();
         
         if (windowWidth >= 1000) {
             speed = 3;
+            maxSpeed = 9;
         } 
         else if (windowWidth >= 500 && windowWidth < 1000) {
             speed = 2;
+            maxSpeed = 6;
         }
         else {
             speed = 1.2;
+            maxSpeed = 5;
         }
 
         const addSpeed = setInterval((): number => {
             speed+= 0.01;
+
+            if (speed >= maxSpeed) speed = maxSpeed;
 
             return speed;
         }, 100);

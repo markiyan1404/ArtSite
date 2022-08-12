@@ -38,7 +38,7 @@
     background-image: url("./../../../dist/img/game/skins/characters-background.webp");
 
     &::before {
-        background-image: url("./../../../dist/img/game/1.png");
+        background-image: url("./../../../dist/img/game/1.webp");
         left: -5%;
         transform: rotate(-20deg);
     }
@@ -48,7 +48,7 @@
     background-image: url("./../../../dist/img/game/skins/obstacles-background.webp");
 
     &::before {
-        background-image: url("./../../../dist/img/game/2.png");
+        background-image: url("./../../../dist/img/game/2.webp");
         right: -5%;
         transform: rotate(20deg);
     }

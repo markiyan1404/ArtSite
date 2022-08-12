@@ -18,6 +18,8 @@
 
     animation: fadeInSlider 0.7s forwards;
     display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     text-align: center;
     transition: transform 0.5s, $colorTransition, box-shadow 0.3s;

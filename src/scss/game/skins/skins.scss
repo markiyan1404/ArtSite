@@ -44,21 +44,21 @@ body {
 .black_images {
 
     .content__skins-character::before {
-        background-image: url("./../../../dist/img/game/1-black.png");
+        background-image: url("./../../../dist/img/game/choose_skin/characters/black/0.webp");
     }
 
     .content__skins-obstacle::before {
-        background-image: url("./../../../dist/img/game/2-black.png");
+        background-image: url("./../../../dist/img/game/choose_skin/obstacles/black/0.webp");
     }
 }
 
 .white_images {
 
     .content__skins-character::before {
-        background-image: url("./../../../dist/img/game/1-white.png");
+        background-image: url("./../../../dist/img/game/choose_skin/characters/white/0.webp");
     }
 
     .content__skins-obstacle::before {
-        background-image: url("./../../../dist/img/game/2-white.png");
+        background-image: url("./../../../dist/img/game/choose_skin/obstacles/white/0.webp");
     }
 }

@@ -3,29 +3,29 @@ import * as $ from "jquery";
 const skins = {
     "backgrounds": {
         0: "active",
-        3: "close",
+        5: "close",
         20: "close",
         35: "close",
-        45: "close",
-        55: "close"
+        50: "close",
+        70: "close"
     },
 
     "characters": {
         0: "active",
-        5: "close",
+        10: "close",
+        25: "close",
         40: "close",
         55: "close",
-        65: "close",
-        50: "close"
+        75: "close"
     },
     
     "obstacles": {
         0: "active",
-        7: "close",
-        660: "close",
-        365: "close",
-        75: "close",
-        50: "close"
+        15: "close",
+        30: "close",
+        45: "close",
+        60: "close",
+        80: "close"
     }
 }; 
 
@@ -63,13 +63,21 @@ export const spawnSkins = (point): void => {
     const allSkins = JSON.parse(localStorage.getItem("skins")),
         skinTypes = Object.keys(skins);
 
+
+    const getActiveColor = (): string => {
+        const activeColor: string = localStorage.getItem("contrastColor1LS");
+
+        if (activeColor === "#fff") return "black";
+        else return "white";
+    };
+
     for (let s: number = 0; s < skinTypes.length; s++) {
         const allKeys: string[] = Object.keys(allSkins[skinTypes[s]]),
             allValues: string[] = Object.values(allSkins[skinTypes[s]]);
         
         for (let a: number = 1; a < allKeys.length; a++) {
             if (Number(allKeys[a]) === point+1 && allValues[a] === "close") {
-                $(".game__obstacle").append(`<img src="/src/img/game/choose_skin/${skinTypes[s]}/${a}.png" class="game__new_skin"/>`);
+                $(".game__obstacle").append(`<img src="/src/img/game/choose_skin/${skinTypes[s]}/${getActiveColor()}/${a}.webp" class="game__new_skin"/>`);
                 
                 skinTypes[s] === "backgrounds" ? $(".game__new_skin").addClass("game__new_skin-bg") : $(".game__new_skin").removeClass("game__new_skin-bg");
             }

@@ -3,7 +3,7 @@ import * as $ from "jquery";
 // Change images color
 
 $(window).on("load", (): void => {
-    const activeColor = localStorage.getItem("contrastColor1LS");
+    const activeColor: string = localStorage.getItem("contrastColor1LS");
 
     if (activeColor === "#fff") {
         $("body").addClass("black_images");
@@ -51,16 +51,16 @@ const getAllSkinsWays = () => {
 
 const changeSkinsColor = (color: string): void => {
 
-    const allSrcWays = getAllSkinsWays()[2],
-        allDataSrcWays = getAllSkinsWays()[3],
+    const allSrcWays: Element[] | string[] = getAllSkinsWays()[2],
+        allDataSrcWays: Element[] | string[] = getAllSkinsWays()[3],
 
-        allSkinsSrc = getAllSkinsWays()[0],
-        allSkinsDataSrc = getAllSkinsWays()[1];
+        allSkinsSrc: Element[] | string[] = getAllSkinsWays()[0],
+        allSkinsDataSrc: Element[] | string[] = getAllSkinsWays()[1];
 
     workWithWays(allDataSrcWays);
     workWithWays(allSrcWays);
 
-    function workWithWays(way): void {
+    function workWithWays(way: Element[] | string[]): void {
 
         if (way.length === 1) {
             for (let w: number = 0; w < way.length; w++) {
@@ -77,7 +77,7 @@ const changeSkinsColor = (color: string): void => {
 
             if ($($(allSkinsSrc)[w]).attr("data-section") === "backgrounds") return;
 
-            const cutWay: string[] = way[w].split("/");
+            const cutWay: string[] = String(way[w]).split("/");
             let baseWay: string = "";
 
             for (let b: number = 0; b < cutWay.length - 2; b++) {
