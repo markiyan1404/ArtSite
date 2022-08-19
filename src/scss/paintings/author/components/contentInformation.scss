@@ -90,11 +90,15 @@
 }
 
 .authorToAuthor .content__information {
-    animation: nextInformation 0.7s reverse forwards ease-in-out;
+    animation: loadLeftSwipe 0.7s forwards ease-in-out;
 }
 
 .nextAuthor .content__information {
     animation: nextInformation 0.5s forwards;
+}
+
+.swipeRightLoad .content__information {
+    animation: nextInformation 0.7s reverse forwards ease-in-out;
 }
 
 @keyframes nextInformation {

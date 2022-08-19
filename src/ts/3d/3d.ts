@@ -11,17 +11,49 @@ import { mouveHover2 } from "originTS/cursor/cursor";
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath("https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/libs/draco/");
 
-export const crate3D = (url): void => {
+export const crate3D = (url: string): void => {
 
-    const monkeyUrl = url;
+    // Progress bar
 
-    const renderer = new THREE.WebGLRenderer();
-    
+    const loadingManager = new THREE.LoadingManager();
+
+    let isProgressBar = false;
+    loadingManager.onProgress = function (url, loaded, total) {
+        if (!isProgressBar) {
+            
+            $("body").append(`
+            
+            <div class='progress_bar-3d-container'>
+            
+
+                <div class='progress_bar-3d-title'>
+                    <h1 class='progress_bar-3d-title-1'>3d</h1>
+                    <h1 class='progress_bar-3d-title-2'>3d</h1>
+                </div>
+            
+            </div>`);
+
+            isProgressBar = true;
+        }
+
+        $(".progress_bar-3d-title-2").css("width", (loaded / (total)) * 100 + "%");
+    };
+
+    loadingManager.onLoad = function () {
+        isProgressBar = false;
+        $(".progress_bar-3d-container").fadeOut(300);
+        
+        setTimeout((): void => {
+            $(".progress_bar-3d-container").remove(); 
+        }, 300);
+    };
+
+    const monkeyUrl = url,
+        renderer = new THREE.WebGLRenderer(),
+        scene = new THREE.Scene();
+
     renderer.setSize(window.innerWidth, window.innerHeight);
-    
     document.body.appendChild(renderer.domElement);
-    
-    const scene = new THREE.Scene();
 
     const genarateWindow = (): void => {
         const camera = new THREE.PerspectiveCamera(30, window.innerWidth * 0.96 / window.innerHeight, 0.1, 1000);
@@ -57,7 +89,7 @@ export const crate3D = (url): void => {
         genarateWindow();
     });
     
-    const assetLoader = new GLTFLoader();
+    const assetLoader = new GLTFLoader(loadingManager);
     assetLoader.setDRACOLoader(dracoLoader);
     
     assetLoader.load(monkeyUrl, function(gltf) {
@@ -107,7 +139,6 @@ export const crate3D = (url): void => {
     genarateWindow();
     generateClose();
 };
-
 
 // Generate close
 

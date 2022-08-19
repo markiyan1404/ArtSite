@@ -27,15 +27,8 @@ page.on("blur", (): void => {
 });
 
 page.on("focus", (): void => {
-    const appLang: string = localStorage.getItem("lang");
-
-    contentUpdate(appLang);
+    document.title = localStorage.getItem("title");
     changeIcon("activeIcon");
 });
 
-page.on("load", (): void => {
-    const appLang: string = localStorage.getItem("lang");
-
-    contentUpdate(appLang);
-    changeIcon("activeIcon");
-});
+page.on("load", (): void => changeIcon("activeIcon"));

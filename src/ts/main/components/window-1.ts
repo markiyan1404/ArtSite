@@ -23,17 +23,31 @@ page.on("load", (): void => {
 
 // Paralax
 
-gsap.registerPlugin(ScrollTrigger);
-
-const backgroundImage: JQuery<Element> = $(".window-1");
-
-gsap.to(backgroundImage, {
-    backgroundPositionY: "40%",
-    ease: "none",
-    scrollTrigger: {
-        trigger: backgroundImage,
-        start: "+=0px",
-        end: "bottom top",
-        scrub: 1.5
+page.on("load", (): void => {
+    if (page.width() >= 1000) {
+        startParalax();
     }
 });
+
+page.on("resize", (): void => {
+    if (page.width() >= 1000) {
+        startParalax();
+    }
+});
+
+const startParalax = (): void => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const backgroundImage: JQuery<Element> = $(".window-1");
+    
+    gsap.to(backgroundImage, {
+        backgroundPositionY: "40%",
+        ease: "none",
+        scrollTrigger: {
+            trigger: backgroundImage,
+            start: "+=0px",
+            end: "bottom top",
+            scrub: 1.5
+        }
+    });
+};

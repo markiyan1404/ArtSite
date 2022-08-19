@@ -4,6 +4,7 @@ import "originSCSS/paintings/author/adap/adap-author.scss";
 import * as $ from "jquery";
 import {allPaintingsName, allAuthorsName} from "../scripts/components/data-name";
 import {nearbyPages, leftArrow, rightArrow} from "./components/arrow";
+import "./components/swipe";
 import "./components/years";
 
 const page: JQuery<Window & typeof globalThis> = $(window),

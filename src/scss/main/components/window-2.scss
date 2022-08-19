@@ -213,7 +213,7 @@
             font-size: 32px;
             letter-spacing: 5px;
             margin: 30px 0;
-            -webkit-text-stroke: 0.01px var(--contrastColorWhite);
+            -webkit-text-stroke: 1px var(--contrastColorWhite);
             text-transform: uppercase;
             transition: $colorTransition;
         }

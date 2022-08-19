@@ -254,6 +254,6 @@ module.exports = {
         open: true,
         client: {
             overlay: false,
-          },
-    }
+        },   
+    },
 };

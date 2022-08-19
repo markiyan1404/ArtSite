@@ -97,8 +97,10 @@ page.on("resize", (): void => arrowSize());
 // Generate button on mobile 
 
 const generateButton = () => {
-    $(".slider__text").append("<button class='slide__button language' data-key='button'></button>");
-    goToSculpture();
+    if ($(".slide__button").length === 0) {
+        $(".slider__text").append("<button class='slide__button language' data-key='button'></button>");
+        goToSculpture();
+    }
 };
 
 page.on("load", () => {

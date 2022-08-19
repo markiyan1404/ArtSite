@@ -29,6 +29,6 @@ $("*").on("touchend", (): void => {
     }
 
     if (startingX - 100 > movingX && checkPhone && navWindowDisplay === "none" && windowWidth < 1000) {
-        bottomArrowClick("swipeRight", "authorToAuthor", "arrow__next-page-name", rightArrow());
+        bottomArrowClick("swipeRight", "authorToAuthor swipeRightLoad", "arrow__next-page-name", rightArrow());
     }
 });

@@ -71,7 +71,7 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "server": "cross-env NODE_ENV=development webpack-dev-server --mode development",
+    "server": "cross-env NODE_ENV=development webpack-dev-server --hot",
     "eslint": "eslint --ext .ts src --fix",
     "stylelint": "stylelint src --fix"
   },

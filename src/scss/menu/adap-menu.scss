@@ -30,6 +30,22 @@
 
     .menu {
 
+        .menu__section-main span {
+            background-image: url("/../img/menu/Main-mobile.webp");
+        }
+
+        .menu__section-paintings span {
+            background-image: url("/../img/menu/Paintings-mobile.webp");
+        }
+
+        .menu__section-architecture span {
+            background-image: url("/../img/menu/Architecture-mobile.webp");
+        }
+
+        .menu__section-sculptures span {
+            background-image: url("/../img/menu/Sculptures-mobile.webp");
+        }
+
         .menu__section p {
             font-size: 26px;
         }
@@ -40,6 +56,22 @@
 
     .menu {
 
+        .menu__section-main span {
+            background-image: url("/../img/menu/Main-mobile.webp");
+        }
+
+        .menu__section-paintings span {
+            background-image: url("/../img/menu/Paintings-mobile.webp");
+        }
+
+        .menu__section-architecture span {
+            background-image: url("/../img/menu/Architecture-mobile.webp");
+        }
+
+        .menu__section-sculptures span {
+            background-image: url("/../img/menu/Sculptures-mobile.webp");
+        }
+
         .menu__section p {
             font-size: 22px;
         }
@@ -49,6 +81,10 @@
 @media screen and (min-width: 0) and (max-width: 500px) {
 
     .menu {
+
+        .menu__section span {
+            background: none;
+        }
 
         .menu__section p {
             font-size: 22px;
@@ -68,9 +104,9 @@
     .menu {
         align-items: center;
         flex-direction: column;
-        width: 100% !important;
         height: 93vh;
         top: 7vh;
+        width: 100% !important;
 
         section {
             border-bottom: 1px solid #4e4e4e;
@@ -86,22 +122,6 @@
 
         .menu__section span {
             height: 100%;
-        }
-
-        .menu__section-main span {
-            background-image: url("/../img/menu/Main-mobile.webp");
-        }
-
-        .menu__section-paintings span {
-            background-image: url("/../img/menu/Paintings-mobile.webp");
-        }
-
-        .menu__section-architecture span {
-            background-image: url("/../img/menu/Architecture-mobile.webp");
-        }
-
-        .menu__section-sculptures span {
-            background-image: url("/../img/menu/Sculptures-mobile.webp");
         }
     }
 

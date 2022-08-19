@@ -86,7 +86,7 @@ export const startGame = (): void => {
             maxSpeed = 6;
         }
         else {
-            speed = 1.3;
+            speed = 1.5;
             maxSpeed = 4;
         }
 

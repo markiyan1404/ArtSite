@@ -65,6 +65,8 @@ function importContent (obj: Object, language: string): void {
         const getAttrExport: string = getSelectorExport.getAttribute("data-key");
         getSelectorExport.innerHTML = content[getAttrExport];
     }
+
+    localStorage.setItem("title", document.title);
 };
 
 const repeatItem = (): number => {

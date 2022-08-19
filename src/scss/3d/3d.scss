@@ -75,3 +75,49 @@ canvas {
     top: 0;
     z-index: 10;
 }
+
+// Progress bar
+
+.progress_bar-3d-container {
+    @include contrast-color-black-background;
+
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: fit-content;
+    width: 96%;
+    z-index: 10;
+
+    .progress_bar-3d-title {
+        overflow: hidden;
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 90px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .progress_bar-3d-title-1 {
+        color: transparent;
+        -webkit-text-stroke: 1px var(--contrastColorWhite);
+    }
+
+    .progress_bar-3d-title-2 {
+        @include main-color-color;
+
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 0;
+        z-index: -1;
+    }
+}
