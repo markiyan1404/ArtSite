@@ -1,0 +1,809 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/game/skins/skins.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap);
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/game/skins/skins.scss (1) ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap);
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/cursor/cursor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap);
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/cursor/cursor.scss (1) ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap);
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/game/skins/skins.scss (2) ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+html {
+  --mainColor: #ffc700;
+  --contrastColorBlack: #080808;
+  --contrastColorWhite: #fff;
+  --transitionTime: 0;
+}
+
+@keyframes increase {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes reduction {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes leftToStatic {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes rightToStatic {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes topToStatic {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes bottomToStatic {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.scrollbar {
+  align-items: center;
+  animation: scrollbarFadeIn 0.5s forwards;
+  animation-delay: 0.4s;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+}
+.scrollbar h1 {
+  color: var(--mainColor);
+  transition: var(--transitionTime);
+  font-family: "Spectral SC";
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0 0 5vh;
+}
+.scrollbar .swiper-scrollbar {
+  background: var(--contrastColorWhite);
+  transition: var(--transitionTime);
+  align-items: center;
+  display: flex;
+  height: 3px;
+  width: 350px;
+}
+.scrollbar .swiper-scrollbar .swiper-scrollbar-drag::after {
+  background: var(--contrastColorWhite);
+  content: "";
+  display: block;
+  height: 25px;
+  transform: rotate(45deg);
+  transition: transform 1s, var(--transitionTime);
+  width: 25px;
+}
+
+@keyframes scrollbarFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.swiper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3vh;
+  overflow-x: clip;
+  position: absolute;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  align-items: center;
+  margin-top: 16vh;
+}
+
+.swiper-slide {
+  background: var(--mainColor);
+  transition: var(--transitionTime);
+  animation: fadeInSlider 0.7s forwards;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  text-align: center;
+  transition: transform 0.5s, var(--transitionTime), box-shadow 0.3s;
+}
+.swiper-slide img {
+  transition: 0.4s;
+  width: 100%;
+}
+.swiper-slide:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+}
+
+.swiper-wrapper-obstacles img,
+.swiper-wrapper-characters img {
+  padding: 15%;
+  width: 45%;
+}
+
+.slider__img-backgrounds img {
+  padding: 0%;
+  width: 100%;
+}
+
+@keyframes fadeInSlider {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.active {
+  box-shadow: 0 0 30px var(--mainColor);
+  opacity: 1;
+}
+
+.open {
+  opacity: 0.8;
+}
+
+.close {
+  opacity: 1;
+}
+.close .swiper-slide__image {
+  mix-blend-mode: saturation;
+}
+.close::before {
+  background: #000;
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+}
+.close .swiper-slide__lock {
+  left: 25%;
+  position: absolute;
+  top: 25%;
+  width: 50%;
+}
+.close .swiper-slide__lock .lock__image {
+  width: 50%;
+}
+.close .swiper-slide__lock h2 {
+  color: #fff;
+  font-family: "Spectral SC";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.close:hover {
+  transform: none;
+}
+
+.content__character {
+  background: var(--contrastColorBlack);
+  transition: var(--transitionTime);
+  align-items: center;
+  display: none;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.content__character .character__skin {
+  height: 20%;
+  width: 20%;
+}
+
+.content__skins {
+  background: var(--mainColor);
+  transition: var(--transitionTime);
+  align-items: center;
+  animation: increase 0.5s forwards;
+  animation-delay: 0.1s;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin: 3vh 1.5%;
+  padding: 14vh 6%;
+  position: relative;
+  transform: scale(0);
+  transition: box-shadow 0.3s, var(--transitionTime);
+  width: 23%;
+}
+.content__skins h1 {
+  color: #fff;
+  font-family: "Spectral SC";
+  text-align: center;
+  text-transform: uppercase;
+}
+.content__skins:hover {
+  box-shadow: 0 0 15px var(--mainColor);
+  transform: scale(0.97) !important;
+  transition: 0.3s;
+}
+.content__skins:nth-child(2), .content__skins:nth-child(3) {
+  margin-top: 8vh;
+}
+
+.content__skins-character {
+  background-image: url("../../dist/img/game/skins/characters-background.webp");
+}
+.content__skins-character::before {
+  background-image: url("../../dist/img/game/1.webp");
+  left: -5%;
+  transform: rotate(-20deg);
+}
+
+.content__skins-obstacle {
+  background-image: url("../../dist/img/game/skins/obstacles-background.webp");
+}
+.content__skins-obstacle::before {
+  background-image: url("../../dist/img/game/2.webp");
+  right: -5%;
+  transform: rotate(20deg);
+}
+
+.content__skins-character::before,
+.content__skins-obstacle::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 50%;
+  position: absolute;
+  top: -22%;
+  width: 10%;
+}
+
+.content__skins-background {
+  background-image: url("../../dist/img/game/skins/backgrounds-background.webp");
+}
+
+body {
+  background: var(--contrastColorBlack);
+  transition: var(--transitionTime);
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+.content__close {
+  color: var(--mainColor);
+  transition: var(--transitionTime);
+  align-items: center;
+  border: 2px solid var(--contrastColorWhite);
+  display: flex;
+  font-size: 19px;
+  height: 35px;
+  justify-content: center;
+  position: fixed;
+  top: 3vh;
+  transform: rotate(45deg);
+  width: 35px;
+  z-index: 5;
+}
+.content__close:hover {
+  background: var(--mainColor);
+  transition: var(--transitionTime);
+  color: var(--contrastColorWhite);
+  transition: var(--transitionTime);
+}
+
+.black_images .content__skins-character::before {
+  background-image: url("../../../../img/game/choose_skin/characters/black/0.webp");
+}
+.black_images .content__skins-obstacle::before {
+  background-image: url("../../../../img/game/choose_skin/obstacles/black/0.webp");
+}
+
+.white_images .content__skins-character::before {
+  background-image: url("../../../../img/game/choose_skin/characters/white/0.webp");
+}
+.white_images .content__skins-obstacle::before {
+  background-image: url("../../../../img/game/choose_skin/obstacles/white/0.webp");
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/game/skins/adap/adap-skins.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+@media screen and (min-width: 3200px) {
+  .scrollbar h1 {
+    font-size: 50px;
+  }
+  .scrollbar .swiper-scrollbar {
+    height: 5px;
+    width: 600px;
+  }
+
+  .scrollbar .swiper-scrollbar .swiper-scrollbar-drag::after {
+    height: 35px;
+    width: 35px;
+  }
+
+  .swiper-container {
+    margin-top: 3vh;
+  }
+  .swiper-container .swiper-wrapper {
+    margin-top: 16vh;
+  }
+
+  .close .swiper-slide__lock h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+  .scrollbar h1 {
+    font-size: 40px;
+  }
+  .scrollbar .swiper-scrollbar {
+    height: 4px;
+    width: 450px;
+  }
+
+  .swiper-container {
+    margin-top: 3vh;
+  }
+  .swiper-container .swiper-wrapper {
+    margin-top: 16vh;
+  }
+
+  .close .swiper-slide__lock h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .scrollbar h1 {
+    font-size: 25px;
+  }
+  .scrollbar .swiper-scrollbar {
+    width: 300px;
+  }
+
+  .swiper-container {
+    margin-top: 3vh;
+  }
+  .swiper-container .swiper-wrapper {
+    margin-top: 16vh;
+  }
+
+  .close .swiper-slide__lock h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .swiper-container {
+    margin-top: -3vh;
+  }
+
+  .scrollbar h1 {
+    font-size: 26px;
+  }
+  .scrollbar .swiper-scrollbar {
+    width: 300px;
+  }
+
+  .scrollbar .swiper-scrollbar .swiper-scrollbar-drag::after {
+    height: 20px;
+    width: 20px;
+  }
+
+  .close .swiper-slide__lock h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  .swiper-container {
+    margin-top: -2vh;
+  }
+
+  .scrollbar h1 {
+    font-size: 25px;
+  }
+  .scrollbar .swiper-scrollbar {
+    width: 250px;
+  }
+
+  .scrollbar .swiper-scrollbar .swiper-scrollbar-drag::after {
+    height: 20px;
+    width: 20px;
+  }
+
+  .close .swiper-slide__lock h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 400px) {
+  .swiper-container {
+    margin-top: -3vh;
+  }
+
+  .scrollbar h1 {
+    font-size: 20px;
+  }
+  .scrollbar .swiper-scrollbar {
+    width: 220px;
+  }
+
+  .scrollbar .swiper-scrollbar .swiper-scrollbar-drag::after {
+    height: 20px;
+    width: 20px;
+  }
+
+  .close .swiper-slide__lock h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 3200px) {
+  .content__skins h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+  .content__skins h1 {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .content__skins {
+    padding: 14vh 8.5%;
+  }
+
+  .content__skins-character::before,
+.content__skins-obstacle::before {
+    width: 12%;
+  }
+
+  .content__skins h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .content__skins {
+    padding: 14vh 8.5%;
+  }
+
+  .content__skins-character::before,
+.content__skins-obstacle::before {
+    width: 12%;
+  }
+
+  .content__skins h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  .content__skins {
+    background-size: contain;
+    margin: 1.5vh 1.5% !important;
+    padding: 7vh 30%;
+  }
+
+  .content__skins-character::before,
+.content__skins-obstacle::before {
+    display: none;
+  }
+
+  .content__skins h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 3200px) {
+  .content__close {
+    border: 4px solid var(--contrastColorWhite);
+    font-size: 32px;
+    height: 65px;
+    width: 65px;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 3200px) {
+  .content__close {
+    border: 4px solid var(--contrastColorWhite);
+    font-size: 26px;
+    height: 47px;
+    width: 47px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .content__close {
+    border: 3px solid var(--contrastColorWhite);
+    font-size: 19px;
+    height: 32px;
+    width: 32px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .content__close {
+    border: 2px solid var(--contrastColorWhite);
+    font-size: 18px;
+    height: 32px;
+    width: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .content__close {
+    font-size: 19px;
+    height: 37px;
+    width: 37px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .content__close {
+    font-size: 19px;
+    height: 37px;
+    width: 37px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 550px) {
+  .content__close {
+    font-size: 16px;
+    height: 32px;
+    width: 32px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  .content__close {
+    position: absolute;
+    top: 3.5vh;
+    z-index: 90;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 1000px) {
+  .content {
+    flex-flow: column;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/cursor/cursor.scss (2) ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+html {
+  --mainColor: #ffc700;
+  --contrastColorBlack: #080808;
+  --contrastColorWhite: #fff;
+  --transitionTime: 0;
+}
+
+@keyframes increase {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes reduction {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes leftToStatic {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes rightToStatic {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes topToStatic {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes bottomToStatic {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+* {
+  cursor: none !important;
+}
+
+.cursor {
+  background: var(--mainColor);
+  transition: var(--transitionTime);
+  transition: width 0.2s, height 0.2s, opacity 0.7s, left 0.2s, top 0.2s;
+  border-radius: 50%;
+  height: 7px;
+  left: -3.5px;
+  mix-blend-mode: difference;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: -3.5px;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  z-index: 997;
+}
+
+#cursor {
+  transition: width 0.2s, height 0.2s, opacity 0.7s, left 0.2s, top 0.2s;
+  left: 0;
+  mix-blend-mode: difference;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  z-index: 997;
+}
+#cursor .progress-wrap {
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  height: 45px;
+  margin: -50% 0 0 -50%;
+  mix-blend-mode: difference;
+  width: 45px;
+}
+#cursor .cursor-circle {
+  transition: width 0.2s, height 0.2s, opacity 0.7s, left 0.2s, top 0.2s;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  height: 40px;
+  margin: -50% 0 0 -50%;
+  mix-blend-mode: difference;
+  width: 40px;
+}
+
+.mouse-active:hover .cursor {
+  height: 50px;
+  width: 50px;
+}
+
+.mousedown {
+  color: #db393900;
+  transform: scale(0);
+  transition: transform 0.3s !important;
+}
+
+.progress-wrap svg path {
+  fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+  box-sizing: border-box;
+  stroke: #ecedf3;
+  stroke-width: 4;
+}
+
+.hideCursor {
+  opacity: 0 !important;
+}
+
+.activeCursor {
+  transition: width 0.2s, height 0.2s, opacity 0.7s, left 0.2s, top 0.2s;
+  height: 50px;
+  left: -25px;
+  opacity: 0.3 !important;
+  top: -25px;
+  width: 50px;
+}
+
+.activeCursore2 {
+  opacity: 0 !important;
+  transition: opacity 0.5s;
+}
+
+.close-cursor {
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+}
+
+html:not(html:hover) .hideCursor {
+  opacity: 0 !important;
+  transition: opacity 0.5s;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/cursor/adap/adap-cursor.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+@media screen and (min-width: 0) and (max-width: 1500px) {
+  #cursor .progress-wrap {
+    height: 38px;
+    width: 38px;
+  }
+
+  .cursor {
+    height: 5px;
+    width: 5px;
+  }
+
+  .activeCursor {
+    height: 38px;
+    left: -18px;
+    top: -18px;
+    width: 38px;
+  }
+}

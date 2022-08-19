@@ -1,0 +1,200 @@
+{
+	"asset": {
+		"generator": "Khronos glTF Blender I/O v3.2.40",
+		"version": "2.0"
+	},
+	"extensionsUsed": ["KHR_draco_mesh_compression"],
+	"extensionsRequired": ["KHR_draco_mesh_compression"],
+	"scene": 0,
+	"scenes": [
+		{
+			"name": "Scene",
+			"nodes": [1, 2, 3, 4, 9]
+		}
+	],
+	"nodes": [
+		{
+			"name": "Object_2"
+		},
+		{
+			"children": [0],
+			"name": "The_Discobolus_SMK_KAS1549_10pct.obj.cleaner.gles",
+			"translation": [
+				-461.9999694824219, -221.46966552734375, -1.581009864807129
+			]
+		},
+		{
+			"name": "Sketchfab_model 1",
+			"rotation": [
+				0.7354272603988647, -0.6666097044944763, -0.07606972754001617,
+				0.09482503682374954
+			],
+			"translation": [
+				9.92296314239502, 6.762499809265137, -5.4461894035339355
+			]
+		},
+		{
+			"name": "Sketchfab_model 1.001",
+			"rotation": [
+				0.7354272603988647, -0.6666097044944763, -0.07606972754001617,
+				0.09482503682374954
+			],
+			"translation": [
+				9.92296314239502, 6.762499809265137, -5.4461894035339355
+			]
+		},
+		{
+			"name": "Sketchfab_model 1.002",
+			"rotation": [
+				0.7354272603988647, -0.6666097044944763, -0.07606972754001617,
+				0.09482503682374954
+			],
+			"translation": [
+				9.92296314239502, 6.762499809265137, -5.4461894035339355
+			]
+		},
+		{
+			"mesh": 0,
+			"name": "Object_0"
+		},
+		{
+			"children": [5],
+			"name": "Nike2_midPoly_0"
+		},
+		{
+			"children": [6],
+			"name": "GLTF_SceneRootNode",
+			"rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
+		},
+		{
+			"children": [7],
+			"name": "root"
+		},
+		{
+			"children": [8],
+			"name": "Sketchfab_model",
+			"rotation": [-0.7071068286895752, 0, 0, 0.7071067094802856],
+			"scale": [
+				1.2470799684524536, 1.2470800876617432, 1.2470803260803223
+			],
+			"translation": [0, -0.35899999737739563, 0]
+		}
+	],
+	"materials": [
+		{
+			"doubleSided": true,
+			"name": "Nike.001",
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicRoughnessTexture": {
+					"index": 1
+				}
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Mesh_0.010",
+			"primitives": [
+				{
+					"attributes": {
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TEXCOORD_1": 3
+					},
+					"extensions": {
+						"KHR_draco_mesh_compression": {
+							"bufferView": 0,
+							"attributes": {
+								"POSITION": 0,
+								"NORMAL": 1,
+								"TEXCOORD_0": 2,
+								"TEXCOORD_1": 3
+							}
+						}
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"sampler": 0,
+			"source": 1
+		}
+	],
+	"images": [
+		{
+			"mimeType": "image/jpeg",
+			"name": "Nike001_baseColor",
+			"uri": "textures/Nike001_baseColor.jpg"
+		},
+		{
+			"mimeType": "image/jpeg",
+			"name": "Nike001_metallicRoughness",
+			"uri": "textures/Nike001_metallicRoughness.jpg"
+		}
+	],
+	"accessors": [
+		{
+			"componentType": 5126,
+			"count": 12249,
+			"max": [
+				0.1926533430814743, 0.6579035520553589, 0.09752100706100464
+			],
+			"min": [
+				-0.2611927390098572, 0.003199872560799122, -0.1990990936756134
+			],
+			"type": "VEC3"
+		},
+		{
+			"componentType": 5126,
+			"count": 12249,
+			"type": "VEC3"
+		},
+		{
+			"componentType": 5126,
+			"count": 12249,
+			"type": "VEC2"
+		},
+		{
+			"componentType": 5126,
+			"count": 12249,
+			"type": "VEC2"
+		},
+		{
+			"componentType": 5123,
+			"count": 43914,
+			"type": "SCALAR"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 118278,
+			"byteOffset": 0
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9987
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 118280,
+			"uri": "scene.bin"
+		}
+	]
+}
