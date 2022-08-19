@@ -11,7 +11,7 @@ $(".content__close").on("click", (): void => {
     setTimeout((): JQuery<Element> => $(".anim-show2").addClass("menu-click"), 700);
     
     setTimeout((): void => {
-        if (lasPageLS === "") location.href = "./";
+        if (lasPageLS === "") location.href = "/";
         if (lasPageLS) location.href = lasPageLS;
         else showMenu();
     }, 1600);
