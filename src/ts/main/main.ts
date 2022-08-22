@@ -20,7 +20,6 @@ const page = $(window);
 const loaderContetnt = (): void => {
     $("body").addClass("loadedPage");
 
-    updateScroller();  
     page.focus();
 
     page.on("resize", onResize);
@@ -28,25 +27,27 @@ const loaderContetnt = (): void => {
 
     $(".window-1").attr("data-splitting", "words");
     Splitting();
+
+    updateScroller();
 };
 
-$(window).on("load", (): void => {
-    if (localStorage.getItem("firstLoad") === null) {
-        let firstLoad: boolean | string = true;
-    
-        setTimeout(loaderContetnt, 1700);  
-    
-        firstLoad = false;
-        firstLoad = String(firstLoad);
-      
-        localStorage.setItem("firstLoad", firstLoad);
-    }
-    else {
-        $(".preloader").css("display", "none");
-        setTimeout(loaderContetnt, 200);  
-    }
-});
+if (localStorage.getItem("firstLoad") === null) {
+    let firstLoad: boolean | string = true;
 
+    setTimeout(loaderContetnt, 1700);  
+
+    firstLoad = false;
+    firstLoad = String(firstLoad);
+    
+    localStorage.setItem("firstLoad", firstLoad);
+}
+else {
+    $(".preloader").css("display", "none");
+}
+
+$(window).on("load", (): void => {
+    setTimeout(loaderContetnt, 200);
+});
 
 // Animation show  
 

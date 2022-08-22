@@ -42,7 +42,7 @@ export const updateScroller = (): void => {
         resized: boolean = scroller.resizeRequest > 0;
     
     if (resized) {    
-        const height: number = scroller.target.innerHeight();
+        const height: number = $(".scroll-container").height();
         body.css("height", height);
         scroller.resizeRequest = 0;
     }
@@ -88,5 +88,3 @@ $(window).on("load", (): void => {
         onResize();
     });
 });
-
-// Add overflow: auto; and add position: static; plus change top

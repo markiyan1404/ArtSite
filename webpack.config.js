@@ -1,3 +1,5 @@
+const { TorusGeometry } = require("three");
+
 const path = require("path"),
       HtmlWebpackPlugin = require("html-webpack-plugin"),
       { CleanWebpackPlugin } = require("clean-webpack-plugin"),
@@ -251,9 +253,16 @@ module.exports = {
     },
 
     devServer: {
-        open: true,
         client: {
             overlay: false,
-        },   
+        },
+        static: {
+            directory: path.join(__dirname, "./src/")
+          },
+        port: 3010,
+        hot: true,
+        open: true,
     },
+    target: "web"
 };
+

@@ -1,9 +1,8 @@
 import * as $ from "jquery";
 
 $(window).on("load", (): void => {
-    const getFullString: string[] = location.href.split("/"),
-        pageName: string = getFullString[getFullString.length - 1];
+    const pageName = $("body").attr("data-name");
     
-    if (pageName === "404.html") return;
+    if (pageName === "404") return;
     localStorage.setItem("lastPage", pageName);
 });

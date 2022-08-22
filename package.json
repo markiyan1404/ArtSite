@@ -10,6 +10,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@terwanerik/scrolltrigger": "^1.0.5",
     "@typescript-eslint/parser": "^5.22.0",
+    "3.0.0": "^3.0.0",
     "aos": "^2.3.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.3",
@@ -36,7 +37,7 @@
     "three": "^0.141.0",
     "webpack": "^5.58.1",
     "webpack-cli": "^4.9.0",
-    "webpack-dev-server": "^4.9.3"
+    "webpack-dev-server": "^4.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -71,7 +72,7 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "server": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "server": "webpack serve --mode development --hot --open",
     "eslint": "eslint --ext .ts src --fix",
     "stylelint": "stylelint src --fix"
   },

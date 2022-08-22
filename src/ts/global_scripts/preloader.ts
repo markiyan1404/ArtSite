@@ -5,7 +5,7 @@ import "originSCSS/preloader/adap.preloader.scss";
 setTimeout((): void => {
     $(".preloader-1").css("display", "none");
     $(".preloader-2").fadeOut();
-}, 1900);
+}, 2000);
 
 $(window).on("load", (): void => {
     let preloadImageNum: number = 0, 

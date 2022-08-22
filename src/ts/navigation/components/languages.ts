@@ -31,7 +31,6 @@ const contentUpdate = (cl: string): void => {
     }
 };
 
-
 // Get language form Local Storage
 
 const checkUserLangue = () => {
