@@ -56,7 +56,6 @@ export const bottomArrowClick = (addClass: string, classLS: string, arrowClass: 
     $("html").animate({scrollTop: "0"});
 
     setTimeout((): void => {
-        console.log(linkFunction);
         localStorage.setItem("newPageArrowClick", arrowClass);
         location.href = "./sculptures_author.html#" + linkFunction;
     }, 300);

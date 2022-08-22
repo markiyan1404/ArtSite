@@ -71,7 +71,7 @@ export const nearbyPages = (direction: string, arrowName: string): void => {
         const currLangExport: langApp = Object.entries(langJSON.default)[Object.keys(langJSON.default).indexOf(activeLanguageLS)][1], 
             nearbyPageName: string = currLangExport.main_title;
         $(arrowName).html(nearbyPageName);
-        console.log(currLangExport);
+
     }); 
 };
 

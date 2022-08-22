@@ -30,20 +30,23 @@ const loaderContetnt = (): void => {
     Splitting();
 };
 
-if (localStorage.getItem("firstLoad") === null) {
-    let firstLoad: boolean | string = true;
+$(window).on("load", (): void => {
+    if (localStorage.getItem("firstLoad") === null) {
+        let firstLoad: boolean | string = true;
+    
+        setTimeout(loaderContetnt, 1700);  
+    
+        firstLoad = false;
+        firstLoad = String(firstLoad);
+      
+        localStorage.setItem("firstLoad", firstLoad);
+    }
+    else {
+        $(".preloader").css("display", "none");
+        setTimeout(loaderContetnt, 200);  
+    }
+});
 
-    setTimeout(loaderContetnt, 1700);  
-
-    firstLoad = false;
-    firstLoad = String(firstLoad);
-  
-    localStorage.setItem("firstLoad", firstLoad);
-}
-else {
-    $(".preloader").css("display", "none");
-    setTimeout(loaderContetnt, 200);  
-}
 
 // Animation show  
 
