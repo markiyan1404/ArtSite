@@ -91,7 +91,9 @@ export const startGame = (): void => {
         }
 
         const addSpeed = setInterval((): number => {
-            speed+= 0.01;
+
+            $(window).width() >= 1000 ? speed+= 0.01 : speed+= 0.005;
+            
 
             if (speed >= maxSpeed) speed = maxSpeed;
 
