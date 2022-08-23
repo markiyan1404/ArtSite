@@ -63,8 +63,8 @@ body {
         bottom: 25vh;
         display: flex;
         flex-direction: column-reverse;
+        left: 110%;
         position: absolute;
-        right: 0;
         width: 5%;
         z-index: 1;
 
@@ -81,6 +81,17 @@ body {
         .obstacle__block {
             width: 100%;
             z-index: 0;
+        }
+    }
+
+    @keyframes obstacleMove {
+
+        from {
+            left: 110%;
+        }
+
+        to {
+            left: -10%;
         }
     }
 

@@ -126,9 +126,9 @@
                 font-size: 25px;
             }
         }
-    }
 
-    .game__character-active {
-        animation: character-active 0.6s;
+        .game__character-active {
+            animation: character-active 0.5s;
+        }
     }
 }

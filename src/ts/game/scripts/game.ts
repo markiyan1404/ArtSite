@@ -7,6 +7,8 @@ import "./lobby_window";
 import { showResult, showRecord } from "./lobby_window";
 import { unlockSkins, spawnSkins} from "./unlock_skin";
 
+const page = $(window);
+
 // Objects and record
 
 const character: JQuery<Element> = $(".game__character"),
@@ -59,97 +61,108 @@ export const startGame = (): void => {
         $(".content__game").css("display", "flex");
     
         const defoltCharacterTop: number = character.offset().top;
+        
         const gameplay = setInterval((): void => {
             const obstacLeft: number = obstacl.offset().left,
                 characterTop: number = character.offset().top;
                 
             if (obstacLeft >= character.offset().left && obstacLeft <= character.offset().left + parseInt(character.css("width")) && defoltCharacterTop*0.8 < characterTop) {
                 clearInterval(gameplay);
-                clearInterval(obstacle);
-                clearInterval(addSpeed);
                 stopGame();
+                $(".game__obstacle").css("animation-play-state", "paused");
             } 
         }, 10);
 
 
-        let speed: number,
-            maxSpeed: number;
+        let speed: number = 0,
+            maxSpeed: number = 0,
+            standartSpeed: number = 0;
 
-        const windowWidth = $(window).width();
+        const windowWidth = page.width();
         
         if (windowWidth >= 1000) {
-            speed = 3;
-            maxSpeed = 9;
+            standartSpeed = 2000;
+            maxSpeed = 1000;
         } 
         else if (windowWidth >= 500 && windowWidth < 1000) {
-            speed = 2;
-            maxSpeed = 6;
+            standartSpeed = 1500;
+            maxSpeed = 700;
         }
         else {
-            speed = 1.5;
-            maxSpeed = 4;
+            standartSpeed = 1300;
+            maxSpeed = 900;
         }
 
-        const addSpeed = setInterval((): number => {
+        speed = standartSpeed;
 
-            $(window).width() >= 1000 ? speed+= 0.01 : speed+= 0.005;
-            
+        const spawnObstacle = (timeForAnim: number) => {
+            $(".game__obstacle").css("animation", `obstacleMove ${timeForAnim}ms linear forwards`);
+            upSpeed();
+        };
 
-            if (speed >= maxSpeed) speed = maxSpeed;
+        spawnObstacle(standartSpeed);
 
-            return speed;
-        }, 100);
+        function upSpeed(): void {
 
-        // run obstacle 
+            const changeSpeed = setTimeout((): void => {
+
+                if (speed > maxSpeed) speed -= 100;
+
+                $(".game__obstacle").css("animation", "none");
+                setTimeout((): void => {
+                    spawnObstacle(speed);
+                }, 10);
+
+                // add new skins and rest 
         
-        let obstacleLeft: number = 0;
+                setTimeout((): void => {
+                    rest++;
+                    $(".counter__rest").html(String(rest));
 
-        const obstacle = setInterval((): void => {
-            const obstacle: JQuery<Element> = $(".game__obstacle"),
-                pushLeftNumber: number = $(".game__obstacle").width() * 2;
-            
-            obstacle.css("right", obstacleLeft);
-            obstacleLeft+=speed;
+                    $(".game__new_skin").remove();
+                    spawnSkins(rest);
+                }, 100);
+                
+            }, speed);
 
-            if (obstacleLeft >= $(".content__game").width()){
-                obstacle.css("right", -pushLeftNumber);
-                obstacleLeft = -pushLeftNumber;
+            setInterval((): void => {
+                if ($(".content__game").css("display") === "none") clearTimeout(changeSpeed);
+            }, 10);
+        };
 
-                rest++;
-                $(".counter__rest").html(String(rest));
-
-                $(".game__new_skin").remove();
-                spawnSkins(rest);
-            }
-        }, 0);
     }, 100);
 };
 
 // Jump
 
 const jump = (): void => {
+
+    let animTime: number = 400;
+
+    if (page.width() < 1000) animTime = 500;
+
     if (!character.hasClass("game__character-active")) {
         character.addClass("game__character-active");
         setTimeout(() => {
             character.removeClass("game__character-active");
-
-        }, 400);
+        }, animTime);
     }
 };
 
-$(window).on("click", (): void => jump());
-$(window).on("keydown", (event): void => {
+$(".content__game").on("click", (): void => jump());
+
+page.on("keydown", (event): void => {
     const pressedKey: string = event.key;
 
     if (pressedKey === "w" || pressedKey ==="ArrowUp" || pressedKey === " ") {
         jump();
     }
-
 });
 
 // Stop game 
 
 const stopGame = (): void => {
+    
     character.css("top", character.offset().top).addClass("character-game_over");
 
     const getRecord: number = Number(localStorage.getItem("game_record"));
@@ -161,11 +174,11 @@ const stopGame = (): void => {
         $(".game__new_skin").remove();
 
         character.removeClass("character-game_over");
-        obstacl.css("right", "0");
-
+        
         showResult();
         showRecord();
         unlockSkins();
+
     }, 300);
 };
 
