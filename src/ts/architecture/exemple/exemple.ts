@@ -30,7 +30,6 @@ page.on("load", (): void => {
     }, 200);
 });
 
-
 // Close 
 
 const lastArchitectureType = localStorage.getItem("lastArchitectureType");
@@ -110,7 +109,7 @@ const getExempleImages = (): void => {
 
     for (let i: number = 0; i < allImages.length; i++) {
         $(allImages[i]).attr("src", `img/architecture/exemple/descriptions_images/${key}/${key}-${[i]}.webp`);
-        $(allBlocks[i]).css("background-image", `url(img/architecture/exemple/descriptions_images/${key}/backgrounds/bg-${key}-${[i]}.webp)`);
+        $(allBlocks[i]).css("background-image", `url(img/architecture/exemple/descriptions_images/${key}/${key}-${[i]}.webp)`);
     }
 
     $(".big_image__img").attr("src", `img/architecture/exemple/big_images/${key}.webp`);
