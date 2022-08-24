@@ -131,4 +131,15 @@
             animation: character-active 0.5s;
         }
     }
+
+    @keyframes obstacleMove {
+
+        from {
+            left: 120%;
+        }
+
+        to {
+            left: -10%;
+        }
+    }
 }
