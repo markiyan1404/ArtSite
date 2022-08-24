@@ -106,14 +106,7 @@ export const startGame = (): void => {
 
             const changeSpeed = setTimeout((): void => {
 
-                if (speed > maxSpeed) speed -= 100;
-
-                $(".game__obstacle").css("animation", "none");
-                setTimeout((): void => {
-                    spawnObstacle(speed);
-                }, 10);
-
-                // add new skins and rest 
+                // add new skins and rest
         
                 setTimeout((): void => {
                     rest++;
@@ -122,6 +115,15 @@ export const startGame = (): void => {
                     $(".game__new_skin").remove();
                     spawnSkins(rest);
                 }, 100);
+
+                // Add speed 
+                
+                if (speed > maxSpeed) speed -= 100;
+
+                $(".game__obstacle").css("animation", "none");
+                setTimeout((): void => {
+                    spawnObstacle(speed);
+                }, 10);
                 
             }, speed);
 
