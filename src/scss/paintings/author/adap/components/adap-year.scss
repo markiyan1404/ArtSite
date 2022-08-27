@@ -261,9 +261,17 @@
         justify-content: center;
         width: 100%;
 
+        .year-line:first-child {
+            margin-left: 0;
+        }
+
         .year-line,
         .content__year .year-line-active {
             margin-left: 25px;
+        }
+    
+        .year-line {
+            width: 5px;
         }
 
         p {
@@ -293,14 +301,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-    }
-
-    .year-line {
-        width: 5px;
-    }
-
-    .year-line:first-child {
-        margin-left: 0;
     }
 
     .authorToAuthor .content__year p {
