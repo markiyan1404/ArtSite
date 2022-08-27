@@ -54,10 +54,11 @@
     }
 }
 
-@media screen and (min-width: 0) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px),
+    screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
 
     .content__year {
-        margin-top: 19px;
+        margin-top: 35px;
         position: static;
         -webkit-text-stroke: 1px var(--contrastColorWhite);
         z-index: 2;

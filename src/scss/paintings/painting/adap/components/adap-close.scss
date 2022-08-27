@@ -80,3 +80,20 @@
         color: var(--contrastColorBlack);
     }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
+    .content__close {
+        color: var(--contrastColorBlack);
+        font-size: 30px;
+        height: 55px;
+        position: absolute;
+        top: 4.5vh;
+        width: 55px;
+        z-index: 90;
+    }
+
+    .content__close:hover {
+        color: var(--contrastColorBlack);
+    }
+}

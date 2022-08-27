@@ -1,7 +1,9 @@
 import * as $ from "jquery";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
-    body: JQuery<HTMLElement> = $("body");
+    body: JQuery<HTMLElement> = $("body"),
+    windowWidth: number = $(window).width(),
+    widthHeight: number = $(window).height();
 
 // Creation years
 
@@ -50,7 +52,7 @@ page.on("load", () => {
     if (body.hasClass("paintingToAuthor")) allLinesAnim();
 });
 
-function allLinesAnim (): void {
+export function allLinesAnim (): void {
     const speedAnim: number = 80;
 
     let yearLineNum: number = 1;
@@ -94,7 +96,21 @@ function activeLineAnim (speed: number): void {
     $(".content__year p").css("animation-delay", lineReading + "ms");
 };
 
-$(".content__close").on("click", (): void => {
-    $(".year-line-show").removeClass("year-line-show");
-    allLinesAnim();
-});
+// Adaptation 
+
+const mobileYearsPosition = (): void => {
+    if (windowWidth < 1000 || 
+        windowWidth > 900 && windowWidth < 1400 && widthHeight > 900 && widthHeight < 1600) {
+
+        const image: JQuery<Element> = $(".content__information img"),
+            yearsPosition: number = image[0].getBoundingClientRect().top + image.height() - $(".navigation").outerHeight();
+    
+        $(".content__year").css("top", yearsPosition);
+    }
+    else {
+        $(".content__year").css("top", "0");
+    }
+};
+
+page.on("load", (): void => mobileYearsPosition());
+page.on("resize", (): void => mobileYearsPosition()); 

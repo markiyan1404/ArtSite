@@ -135,6 +135,19 @@
             border: 12px solid transparent;
             border-top: 17px solid var(--mainColor);
         }
+
+        @keyframes window-1__button {
+
+            from {
+                opacity: 0;
+                top: 65vh;
+            }
+
+            to {
+                opacity: 1;
+                top: 75vh;
+            }
+        }
     }
 }
 
@@ -166,6 +179,19 @@
             border: 10px solid transparent;
             border-top: 14px solid var(--mainColor);
         }
+
+        @keyframes window-1__button {
+
+            from {
+                opacity: 0;
+                top: 65vh;
+            }
+
+            to {
+                opacity: 1;
+                top: 75vh;
+            }
+        }
     }
 }
 
@@ -175,6 +201,19 @@
 
         .window-1__title-1 {
             font-size: 95px;
+        }
+
+        @keyframes window-1__button {
+
+            from {
+                opacity: 0;
+                top: 65vh;
+            }
+
+            to {
+                opacity: 1;
+                top: 75vh;
+            }
         }
     }
 }
@@ -214,6 +253,19 @@
         .window-1__button {
             height: 55px;
             width: 55px;
+        }
+
+        @keyframes window-1__button {
+
+            from {
+                opacity: 0;
+                top: 65vh;
+            }
+
+            to {
+                opacity: 1;
+                top: 75vh;
+            }
         }
 
         .window-1__button span {

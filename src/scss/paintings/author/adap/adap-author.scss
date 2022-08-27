@@ -4,7 +4,8 @@
 @import "./components/adap-year";
 @import "./components/backgroundLine";
 
-@media screen and (min-width: 0) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px),
+    screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
 
     body {
         overflow-y: scroll;

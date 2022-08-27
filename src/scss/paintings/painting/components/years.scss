@@ -12,27 +12,27 @@
 }
 
 .paintingsToPainting .content__year {
-    animation: topToStatic 0.5s forwards;
-    animation-delay: 1s;
+    animation: showYear 0.5s reverse forwards;
+    animation-delay: 0.6s;
     transform: translateY(-100%);
 }
 
 .paintingToPainting .content__year {
-    animation: nextYear 0.5s reverse forwards;
+    animation: showYear 0.5s reverse forwards;
 }
 
 .nextPainting .content__year,
 .paintingAuthor .content__year {
-    animation: nextYear 0.5s forwards;
+    animation: showYear 0.5s forwards;
     opacity: 1;
 }
 
 .swipeRight .content__year,
 .swipeLeft .content__year {
-    animation: nextYear 0.5s forwards;
+    animation: showYear 0.5s forwards;
 }
 
-@keyframes nextYear {
+@keyframes showYear {
 
     from {
         opacity: 1;

@@ -8,6 +8,7 @@ const menuShow: JQuery<Element> = $(".anim-show"),
 
 const menuShowAnim = (): void => {
     menuShow.removeClass("anim-show-default anim-show-close");
+    $(".progress-circle").fadeOut();
     setTimeout(() => $(".anim-show1").addClass("anim-show-active"), 10);
     setTimeout(() => $(".anim-show2").addClass("anim-show-active"), 150);
     setTimeout(() => menuShow.addClass("anim-show-default"), 800);
@@ -19,6 +20,7 @@ const menuShowAnim = (): void => {
 const menuHide = (): void => {
     menuShow.removeClass("anim-show-default anim-show-close");
     animShow1.addClass("anim-show-close");
+    $(".progress-circle").fadeIn();
     setTimeout(() => $(".anim-show2").addClass("anim-show-close"), 150);
     setTimeout(() => menuShow.fadeOut(300), 900);
     setTimeout(() => $(".menu, .anim-show1").css("display", "none"), 800);

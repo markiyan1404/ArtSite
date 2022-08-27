@@ -98,3 +98,21 @@ $(".content__close").on("click", (): void => {
     $(".year-line-show").removeClass("year-line-show");
     allLinesAnim();
 });
+
+// Adaptation 
+
+const mobileYearsPosition = (): void => {
+    if (page.width() < 1000 || 
+    page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) {
+        const image: JQuery<Element> = $(".content__information img"),
+            yearsPosition: number = image[0].getBoundingClientRect().top + image.height() - $(".navigation").outerHeight();
+    
+        $(".content__year").css("top", yearsPosition);
+    }
+    else {
+        $(".content__year").css("top", "0");
+    }
+};
+
+page.on("load", (): void => mobileYearsPosition());
+page.on("resize", (): void => mobileYearsPosition()); 

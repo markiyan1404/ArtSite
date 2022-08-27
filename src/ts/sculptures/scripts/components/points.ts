@@ -57,14 +57,16 @@ export const activationSlide = (): number => {
 // Points and years position on phone
 
 page.on("load", (): void => {
-    if (page.width() < 1000) {
+    if (page.width() < 1000 || 
+    page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) {
         pointsPotionOnPhone();
         generateYearsOnPhone();
     }
 });
 
 page.on("resize", (): void => {
-    if (page.width() < 1000) {
+    if (page.width() < 1000 || 
+    page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) {
         generateYearsOnPhone();
         pointsPotionOnPhone();
     }

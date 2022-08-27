@@ -109,7 +109,8 @@ page.on("load", (): void => {
 
 // Adap sculpture 
 
-if (page.width() <= 1000) {
+if (page.width() <= 1000 || 
+page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) {
     const year: JQuery<Element> = $(".content__year");
     $(".description__title").before(year);
     informationImage.removeClass("mouse-active2");
@@ -119,7 +120,8 @@ let fistAnimation: boolean = false;
 page.on("resize", (): void => {
     const year: JQuery<Element> = $(".content__year");
 
-    if (page.width() <= 1000 && !fistAnimation) {
+    if (page.width() <= 1000 && !fistAnimation || 
+    page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) {
         informationImage.removeClass("mouse-active2");
         $(".description__title").append(year);
         fistAnimation = true;

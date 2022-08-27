@@ -3,7 +3,6 @@ import { allSculpturesName } from "./data-name";
 
 const page = $(window);
 
-
 // Create slides 
 
 const createSlides = () => {
@@ -104,13 +103,19 @@ const generateButton = () => {
 };
 
 page.on("load", () => {
-    if (page.width() <= 1000) generateButton();
+    if (page.width() <= 1000 || 
+        page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) generateButton();
 });
 
 page.on("resize", () => {
     const getButton = $(".slide__button").length === 0;
-    if (page.width() <= 1000 && getButton) generateButton();
-    if (page.width() > 1000) $(".slide__button").remove();
+    if (page.width() <= 1000 && getButton || 
+        page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600 && getButton) generateButton();
+        
+    if (page.width() > 1000) {
+        if (page.width() > 900 && page.width() < 1400 && page.height() > 900 && page.height() < 1600) return;
+        $(".slide__button").remove();
+    }
 });
 
 // Add anim class 

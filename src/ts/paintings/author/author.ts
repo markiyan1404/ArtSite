@@ -6,6 +6,7 @@ import {allPaintingsName, allAuthorsName} from "../scripts/components/data-name"
 import {nearbyPages, leftArrow, rightArrow} from "./components/arrow";
 import "./components/swipe";
 import "./components/years";
+import "./components/close";
 
 const page: JQuery<Window & typeof globalThis> = $(window),
     body: JQuery<HTMLElement> = $("body");
@@ -85,20 +86,3 @@ page.on("load", (): void => {
     nearbyPages(rightArrow(), ".arrow__next-page-name");
     nearbyPages(leftArrow(), ".arrow__prev-page-name");
 });
-
-// Adaptation 
-
-const mobileYearsPosition = (): void => {
-    if (page.width() < 1000) {
-        const image: JQuery<Element> = $(".content__information img"),
-            yearsPosition: number = image[0].getBoundingClientRect().top + image.height() - $(".navigation").outerHeight();
-    
-        $(".content__year").css("top", yearsPosition);
-    }
-    else {
-        $(".content__year").css("top", "0");
-    }
-};
-
-page.on("load", (): void => mobileYearsPosition());
-page.on("resize", (): void => mobileYearsPosition()); 

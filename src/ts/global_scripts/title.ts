@@ -1,8 +1,8 @@
 import * as $ from "jquery";
-import { changeLang, contentUpdate } from "originTS/navigation/components/check_page_language";
 
-const page = $(window),
-    timeChangeHead = 3000;
+const page: JQuery<Window> = $(window),
+    timeChangeHead: number = 3000;
+let isFocus: boolean = true;
 
 // Check focus
 
@@ -14,8 +14,14 @@ const changeIcon = (typeIcon: string): any => {
     $("link[rel*='icon']").attr("href", "./../img/head/" + activeColor + `-${typeIcon}.webp`);
 };
 
-page.on("blur", (): void => { 
+page.on("blur", (): void => {
+
+    isFocus = false;
+
     setTimeout((): void => {
+
+        if (isFocus === true) return;
+
         const appLang: string = localStorage.getItem("lang");
 
         if (appLang === "ua") document.title="Верніться 😭";
@@ -27,6 +33,7 @@ page.on("blur", (): void => {
 });
 
 page.on("focus", (): void => {
+    isFocus = true;
     document.title = localStorage.getItem("title");
     changeIcon("activeIcon");
 });

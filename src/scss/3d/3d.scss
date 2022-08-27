@@ -1,6 +1,6 @@
 @import "src/scss/global_styles/variables";
 
-.body__close-container {
+.body__close-container-3d {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -8,7 +8,7 @@
     width: 96%;
     z-index: 11;
 
-    .close-container__close {
+    .close-container-3d__close {
         @include main-color-color;
 
         align-items: center;
@@ -22,7 +22,7 @@
         z-index: 11;
     }
 
-    .close-container__close:hover {
+    .close-container-3d__close:hover {
         background: var(--mainColor);
         color: var(--contrastColorWhite);
         transition: $colorTransition;

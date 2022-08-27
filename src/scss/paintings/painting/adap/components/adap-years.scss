@@ -64,3 +64,21 @@
         opacity: 0;
     }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
+    .content__year {
+        font-size: 70px;
+        right: 17%;
+        top: 11.5vh;
+    }
+
+    .content__year {
+        -webkit-text-stroke: 1px #fff;
+        z-index: 2;
+    }
+
+    .paintingsToPainting .content__year {
+        opacity: 0;
+    }
+}

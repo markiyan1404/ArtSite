@@ -56,5 +56,11 @@
     .content__close_container {
         top: 3vh;
         width: 100%;
+
+        .content__close {
+            font-size: 30px;
+            height: 55px;
+            width: 55px;
+        }
     }
 }

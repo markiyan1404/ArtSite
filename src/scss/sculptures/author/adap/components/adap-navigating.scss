@@ -145,3 +145,44 @@
         display: none !important;
     }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
+    .content__navigating {
+        animation: none;
+        position: static;
+        transform: none;
+
+        .navigating__arrow {
+            position: absolute;
+            top: 33.5vh;
+        }
+
+        .navigating__line {
+            display: none;
+        }
+    }
+
+    .sculptureToAuthor .content__navigating {
+        animation: show 0.5s forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        transform: initial;
+    }
+
+    .authorToSculpture .content__navigating {
+        animation: hide 0.3s forwards !important;
+    }
+
+    .arrow__page-name {
+        display: none !important;
+    }
+
+    .navigating__arrow-left {
+        left: 3%;
+    }
+
+    .navigating__arrow-right {
+        right: 3%;
+    }
+}

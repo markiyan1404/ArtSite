@@ -208,7 +208,8 @@
     }
 }
 
-@media screen and (min-width: 0) and (max-width: 1000px) {
+@media screen and (min-width: 0) and (max-width: 1000px),
+    screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
 
     .content__year {
         justify-content: center;
@@ -254,5 +255,19 @@
         animation: show 0.6s forwards;
         animation-delay: 1s;
         opacity: 0;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
+    .content__year .year-line,
+    .content__year .year-line-active {
+        margin-left: 30px;
+        width: 5px;
+    }
+
+    .content__year p {
+        font-size: 32px;
+        font-weight: 500;
     }
 }

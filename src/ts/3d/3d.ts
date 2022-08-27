@@ -13,6 +13,9 @@ dracoLoader.setDecoderPath("https://raw.githubusercontent.com/mrdoob/three.js/de
 
 export const crate3D = (url: string): void => {
 
+    const windowWidth: number = $(window).width(),
+        widthHeight: number = $(window).height();
+
     // Progress bar
 
     const loadingManager = new THREE.LoadingManager();
@@ -77,7 +80,11 @@ export const crate3D = (url: string): void => {
         
             camera.updateProjectionMatrix();
             
-            if ($(window).width() < 1000) renderer.setSize(window.innerWidth, window.innerHeight);
+            if (windowWidth < 1000 || 
+                windowWidth > 900 && windowWidth < 1400 && widthHeight > 900 && widthHeight < 1600) {
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            } 
+
             else renderer.setSize(window.innerWidth*0.96, window.innerHeight);
             
         }
@@ -143,9 +150,10 @@ export const crate3D = (url: string): void => {
 // Generate close
 
 const generateClose = (): void => {
-    $("body").append("<span class='body__close-container'><div class='close-container__close mouse-active2'>&#10010;</div></span>");
+
+    $("body").append("<span class='body__close-container-3d'><div class='close-container-3d__close mouse-active2'>&#10010;</div></span>");
     mouveHover2();
-    $(".close-container__close").on("click", function (): void {
+    $(".close-container-3d__close").on("click", function (): void {
 
         $("body").removeClass("3dActive");
         $(".anim-show1").addClass("hide3D");
@@ -155,12 +163,14 @@ const generateClose = (): void => {
 
         setTimeout((): void => {
             $("[data-engine]").remove();
-            $(this).remove();
+            $(".body__close-container-3d").remove();
 
             $(".anim-show1").removeClass("hide3D");
             $(".hide3D").fadeOut(300);
 
             setTimeout((): JQuery<Element> => $(".anim-show2").removeClass("hide3D").css("display", "block"), 350);
+
+            $(".progress-circle").fadeIn();
         }, 1600);
     });
 };
@@ -170,7 +180,7 @@ const generateClose = (): void => {
 export const show3D = (way): void => {
     $(".anim-show1").addClass("show3D");
     setTimeout((): JQuery<Element> => $(".anim-show2").addClass("show3D"), 700);
-    
+
     setTimeout((): void => {
         $(".anim-show1").removeClass("show3D");
         $(".show3D").fadeOut(300);
@@ -181,4 +191,6 @@ export const show3D = (way): void => {
     setTimeout((): void => {
         crate3D(way);
     }, 1500);
+
+    $(".progress-circle").fadeOut();
 };

@@ -79,3 +79,25 @@
         }
     }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
+
+    .toTop {
+        height: 70px;
+        margin-bottom: 12vh;
+        width: 70px;
+
+        .toTop__icon {
+            border-width: 14px;
+            border-top-width: 21px;
+        }
+    }
+
+    .toTop:hover {
+        background: transparent;
+    }
+
+    .toTop:hover .toTop__icon {
+        border-top-color: var(--mainColor);
+    }
+}
