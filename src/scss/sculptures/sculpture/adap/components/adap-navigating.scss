@@ -130,10 +130,10 @@
     }
 
     .sculpturesToSculpture .content__navigating {
-        animation: show 0.4s forwards;
-        animation-delay: 0.7s;
+        animation: show 0.7s forwards;
+        animation-delay: 1s;
         opacity: 0;
-        transform: inherit;
+        transform: unset;
     }
 
     .sculptureToAuthor .content__navigating {
@@ -144,13 +144,6 @@
 
     .arrow__page-name {
         display: none !important;
-    }
-
-    .sculpturesToSculpture .content__navigating {
-        animation: show 0.7s forwards;
-        animation-delay: 1s;
-        opacity: 0;
-        transform: unset;
     }
 
     .sculptureAuthor .content__navigating {

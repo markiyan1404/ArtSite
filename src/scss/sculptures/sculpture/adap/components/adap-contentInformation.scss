@@ -270,6 +270,10 @@
         top: 15vh;
         width: 100vw;
 
+        img {
+            width: 43%;
+        }
+
         #information__image {
             height: auto !important;
             width: 45% !important;
@@ -312,10 +316,6 @@
                 font-size: 35px;
                 padding: 3% 11%;
             }
-        }
-
-        img {
-            width: 43%;
         }
     }
 }

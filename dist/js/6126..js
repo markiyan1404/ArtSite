@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[6126],{6126:e=>{e.exports=JSON.parse('{"en":{"main_title":"Error"},"ua":{"main_title":"Помилка"},"es":{"main_title":"Error"}}')}}]);

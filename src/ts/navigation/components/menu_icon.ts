@@ -35,7 +35,7 @@ const noClickMenuIcon = (): void => {
 
 // Show menu
 
-$(".navigation__menu").on("click", (): void => showMenu());
+$(".menu__lines").on("click", (): void => showMenu());
 
 export const showMenu = (): void => {
     const noClickBlocks: string = $(".navigation__menu, .navigation__clouse").attr("value");

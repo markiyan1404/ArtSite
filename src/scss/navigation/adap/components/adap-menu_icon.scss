@@ -175,7 +175,6 @@
     }
 
     .navigation__clouse {
-        margin: 0 -1px 0 13px;
 
         .navigation__clouse-diamond {
             font-size: 13px;
@@ -215,7 +214,6 @@
     }
 
     .navigation__clouse {
-        margin: 0 6px 0 3px;
 
         .navigation__clouse-diamond {
             font-size: 13px;
@@ -251,7 +249,6 @@
     }
 
     .navigation__clouse {
-        margin: 0 5px 0 4px;
 
         .navigation__clouse-diamond {
             font-size: 13px;
@@ -286,12 +283,7 @@
         }
     }
 
-    .menu__lines {
-        margin: 2px 0;
-    }
-
     .navigation__clouse {
-        margin: 0 4px;
 
         .navigation__clouse-diamond {
             font-size: 11px;
@@ -305,6 +297,11 @@
 
     .navigation__menu {
         position: relative;
+        width: fill-available;
+    }
+
+    .navigation__clouse {
+        width: fill-available;
     }
 }
 
@@ -313,6 +310,7 @@
     .navigation__menu {
         position: relative;
         right: -8px;
+        width: fill-available;
 
         .menu__lines-lines1 {
             width: 45px;
@@ -336,7 +334,7 @@
     }
 
     .navigation__clouse {
-        margin: 0 0 0 18px;
+        width: fill-available;
 
         .navigation__clouse-diamond {
             font-size: 17px;

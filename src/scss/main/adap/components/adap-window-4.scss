@@ -464,12 +464,13 @@
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1000px),
+@media screen and (min-width: 0) and (max-width: 1000px),
     screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
-        .window-4 .window-4__architecture .close-architecture:hover {
-            color: var(--mainColor);
-            background: initial;
-        }
+
+    .window-4 .window-4__architecture .close-architecture:hover {
+        background: initial;
+        color: var(--mainColor);
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {

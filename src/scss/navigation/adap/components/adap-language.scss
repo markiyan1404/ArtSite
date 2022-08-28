@@ -208,6 +208,10 @@
     .navigation__languages .languages__choice::after {
         display: none;
     }
+
+    .navigation__languages {
+        width: fill-available;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) and (min-height: 900px) and (max-height: 1600px) {
@@ -218,6 +222,10 @@
 
     .navigation__languages .languages__language {
         font-size: 28px;
+    }
+
+    .navigation__languages {
+        width: fill-available;
     }
 
     .languages__choice {
