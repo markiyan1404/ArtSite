@@ -14,7 +14,7 @@ dracoLoader.setDecoderPath("https://raw.githubusercontent.com/mrdoob/three.js/de
 export const crate3D = (url: string): void => {
 
     const windowWidth: number = $(window).width(),
-        widthHeight: number = $(window).height();
+        windowHeight: number = $(window).height();
 
     // Progress bar
 
@@ -81,7 +81,7 @@ export const crate3D = (url: string): void => {
             camera.updateProjectionMatrix();
             
             if (windowWidth < 1000 || 
-                windowWidth > 900 && windowWidth < 1400 && widthHeight > 900 && widthHeight < 1600) {
+                windowWidth > 900 && windowWidth < 1400 && windowHeight > 900 && windowHeight < 1600) {
                 renderer.setSize(window.innerWidth, window.innerHeight);
             } 
 

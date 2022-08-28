@@ -23,10 +23,6 @@ page.on("resize", (): void => jumpBlock());
 
 // Add active class
 
-page.on("load", () => {
-    addAnimClass();
-});
-
 const addAnimClass = (): void => {
     const allBlocks = $(".image-section__block"),
         speedAnim: number = 60;
@@ -42,12 +38,32 @@ const addAnimClass = (): void => {
     setTimeout((): void => clearInterval(addClassToLines), speedAnim * allBlocks.length);
 };
 
+setTimeout((): void => {
+    addAnimClass();
+    
+    // Link to type of architecture
+
+    $(".image-section__block").on("click", function (): void {
+        const allBlocks: JQuery<Element> = $(".image-section__block"),
+            getLastBlockOpacity: string = $(allBlocks[allBlocks.length-1]).css("opacity");
+
+        if (getLastBlockOpacity !== "1") return;
+
+        $("body").addClass("architectureToarchitecture_type");
+        removeAnimClass(allBlocks);
+
+        setTimeout((): void => {
+            location.href = "architecture_type.html#" + getActiveImage(this);
+        }, 750);
+    });
+
+});
+
 // Background image
 
 const getActiveImage = function (element): string {
     return $(element.lastChild).attr("src").split("/").pop().split(".")[0]; 
 };
-
 
 $(".image-section__block").on("mouseenter", function (): void {
     if (page.width() <= 1000) return;
@@ -59,21 +75,6 @@ $(".image-section__block").on("mouseleave", (): void => {
     $(".background").removeClass("background-active");
 });
 
-// Link to type of architecture
-
-$(".image-section__block").on("click", function (): void {
-    const allBlocks: JQuery<Element> = $(".image-section__block"),
-        getLastBlockOpacity: string = $(allBlocks[allBlocks.length-1]).css("opacity");
-
-    if (getLastBlockOpacity !== "1") return;
-
-    $("body").addClass("architectureToarchitecture_type");
-    removeAnimClass(allBlocks);
-
-    setTimeout((): void => {
-        location.href = "architecture_type.html#" + getActiveImage(this);
-    }, 750);
-});
 
 const removeAnimClass = (allBlocks: JQuery<Element>): number => {
     const speedAnim: number = 50;

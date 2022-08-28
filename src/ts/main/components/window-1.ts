@@ -10,9 +10,12 @@ const page = $(window);
 page.on("load", (): void => {
     $(".window-1__button").on("click", (): void => {
         const windowWidth: number = page.width();
+
         let window2Top: number = $(".window-2").offset().top;
 
-        if (windowWidth <= 1000) {
+        if (windowWidth <= 1000 || 
+            windowWidth > 900 && windowWidth < 1400 && page.height() > 900 && page.height() < 1600) {
+                
             const windowHeight: number = page.height() * 0.06;
             window2Top = $(".window-2").offset().top - windowHeight;
         }

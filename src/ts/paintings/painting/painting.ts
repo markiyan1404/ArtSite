@@ -85,8 +85,8 @@ $(".description__link").on("click", function (): void {
 
 const checkBodyClass = (): void => {
     const getTypeAnimLS: string = localStorage.getItem("typePaintingAnim");
-
-    getTypeAnimLS === null ? body.addClass("paintingToPainting") : body.addClass(getTypeAnimLS);
+    
+    getTypeAnimLS === null || getTypeAnimLS === "authorToAuthor" ? body.addClass("paintingToPainting") : body.addClass(getTypeAnimLS);
 };
 
 $(".languages__choice").on("click", (): void => {
@@ -97,7 +97,6 @@ $(".languages__choice").on("click", (): void => {
 checkBodyClass();
 
 page.on("load", (): void => {
-    checkBodyClass();
 
     nearbyPages(rightArrow(), ".arrow__next-page-name");
     nearbyPages(leftArrow(), ".arrow__prev-page-name");

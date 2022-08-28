@@ -372,6 +372,12 @@
             padding: 5% 2.5%;
             right: 45%;
         }
+
+        .text__button-to-top:hover,
+        .text__button-footer:hover {
+            background: none;
+            transform: scale(1);
+        }
     }
 }
 

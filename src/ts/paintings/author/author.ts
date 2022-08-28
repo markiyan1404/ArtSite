@@ -81,7 +81,6 @@ $(".languages__choice").on("click", (): void => {
 checkBodyClass();
 
 page.on("load", (): void => {
-    checkBodyClass();
 
     nearbyPages(rightArrow(), ".arrow__next-page-name");
     nearbyPages(leftArrow(), ".arrow__prev-page-name");

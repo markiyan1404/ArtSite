@@ -877,6 +877,18 @@
             margin-top: 88px;
         }
 
+        .image-paint__button:hover {
+            transform: scale(1);
+        }
+
+        .image-paint__next:hover {
+            transform: scale(1) rotate(180deg);
+        }
+
+        .image-paint__button:hover::before {
+            border-bottom-color: var(--mainColor);
+        }
+
         .image-paint__number {
             font-size: 50px;
             left: -50px;

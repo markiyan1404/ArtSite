@@ -323,7 +323,6 @@
 
     .window-1 {
         background-size: cover;
-        margin-top: -4vh;
 
         .window-1__title-1 {
             font-size: 160px;
@@ -359,6 +358,15 @@
         .window-1__button span {
             border-width: 12px;
             border-top-width: 17px;
+        }
+
+        .window-1__button:hover {
+            background: none;
+            transform: scale(1) rotate(45deg);
+        }
+
+        .window-1__button:hover span {
+            border-top-color: var(--mainColor);
         }
     }
 }
