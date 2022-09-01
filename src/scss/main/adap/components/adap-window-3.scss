@@ -21,7 +21,8 @@
         }
 
         .slider__point {
-            margin-top: -50px;
+            margin-top: 0;
+            padding-top: 5vh;
 
             .point__child {
                 height: 45px;
@@ -37,7 +38,6 @@
         }
 
         .slider__information {
-            margin-top: 100px;
 
             .information__images img {
                 margin: 190px 0 0 5%;
@@ -108,7 +108,8 @@
         }
 
         .slider__point {
-            margin-top: -60px;
+            margin-top: 0;
+            padding-top: 3vh;
 
             .point__child {
                 height: 30px;
@@ -123,7 +124,6 @@
         }
 
         .slider__information {
-            margin-top: 100px;
 
             .information__images img {
                 margin-left: 5%;
@@ -191,7 +191,8 @@
         }
 
         .slider__point {
-            margin-top: -53px;
+            margin-top: 0;
+            padding-top: 3vh;
 
             .point__child {
                 height: 21px;
@@ -208,7 +209,6 @@
 
         .slider__information {
             align-items: normal;
-            margin-top: 85px;
             width: 68%;
 
             .information__images img {
@@ -287,7 +287,7 @@
 
         .slider__point {
             justify-content: center;
-            margin: -30px 0 0;
+            padding-top: 12vh;
             width: 100%;
 
             .description__button {
@@ -302,6 +302,7 @@
             display: flex;
             flex-direction: column;
             margin-left: 5%;
+            margin-top: 0;
             width: 90%;
 
             .images__background-1 {
@@ -397,6 +398,7 @@
         .slider__point {
             justify-content: center;
             margin-left: 0;
+            padding-top: 7vh;
             width: 100%;
 
             .description__button {
@@ -411,6 +413,7 @@
             display: flex;
             flex-direction: column;
             margin-left: 5%;
+            margin-top: 0;
             width: 90%;
 
             .images__background-1 {
@@ -508,7 +511,7 @@
 
         .slider__point {
             justify-content: center;
-            margin: -75px 0 0;
+            padding-top: 4vh;
             width: 100%;
 
             .description__button {
@@ -530,7 +533,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin: 120px 0 0;
+            margin: 30px 0 0;
             width: 100%;
 
             .images__background-1 {
@@ -628,7 +631,8 @@
         .slider__point {
             flex-wrap: wrap;
             justify-content: center;
-            margin-left: 0;
+            margin: 0;
+            padding-top: 4vh;
             width: 100%;
 
             .description__button {
@@ -656,7 +660,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin: 120px 0 0;
+            margin: 0;
             width: 100%;
 
             .images__background-1 {
@@ -673,7 +677,7 @@
                 align-items: center;
                 display: flex;
                 justify-content: center;
-                margin: 22vh 0 0;
+                margin: 12vh 0 0;
 
                 img {
                     margin-left: 0;
@@ -704,7 +708,7 @@
                 }
 
                 .next-slide__image-active {
-                    margin: 29vh 0 0;
+                    margin: 22vh 0 0;
                     width: 155px;
                 }
             }
@@ -713,7 +717,7 @@
                 align-items: center;
                 display: flex;
                 flex-direction: column;
-                margin: 325px 0 0;
+                margin: 48vh 0 0;
                 text-align: center;
             }
 
@@ -726,6 +730,7 @@
 
             .description__text {
                 font-size: 15px;
+                margin: 0;
                 width: 90%;
             }
         }
@@ -816,7 +821,7 @@
             }
 
             .information__images {
-                margin-top: 20vh;
+                margin-top: 12vh;
             }
 
             .information__next-slide {
@@ -833,11 +838,16 @@
                 margin-bottom: 0;
             }
 
-            .description__text {
-                font-size: 14px;
-                letter-spacing: 1px;
-                line-height: 1.4;
-                width: 95%;
+            .information__description {
+                margin: 38vh 0 0;
+
+                .description__text {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 1.4;
+                    margin-top: 20px;
+                    width: 95%;
+                }
             }
         }
     }
@@ -864,7 +874,7 @@
 
         .slider__point {
             justify-content: center;
-            margin: -75px 0 0;
+            padding-top: 5vh;
             width: 100%;
 
             .point__child {
@@ -890,7 +900,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin: 120px 0 0;
+            margin: 0;
             width: 100%;
 
             .images__background-1 {

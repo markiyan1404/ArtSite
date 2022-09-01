@@ -30,8 +30,8 @@
     .slider__point {
         align-items: center;
         display: flex;
-        margin: -40px 0 0 3%;
-        position: absolute;
+        margin-left: 3%;
+        padding-top: 5vh;
 
         .point__child {
             border: 2px solid var(--contrastColorWhite);
@@ -96,7 +96,7 @@
 
 .slider__information {
     display: flex;
-    margin: 70px 0 0 5%;
+    margin-left: 5%;
     width: 74%;
 
     .images__sculptur {
